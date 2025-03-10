@@ -29,47 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            tabPageBooks = new TabPage();
-            panelTitleBooks = new Panel();
-            labelTitle = new Label();
-            buttonClearBooks = new Button();
-            buttonRefreshBooks = new Button();
-            textBoxSearchBooks = new TextBox();
-            dataGridViewBooks = new DataGridView();
-            panelRecordBooks = new Panel();
-            labelRecordBooks = new Label();
-            labelBookID = new Label();
-            textBoxBookID = new TextBox();
-            labelTitleBooks = new Label();
-            textBoxTitleBooks = new TextBox();
-            labelAuthorBooks = new Label();
-            textBoxAuthorBooks = new TextBox();
-            labelGenreBooks = new Label();
-            textBoxGenreBooks = new TextBox();
-            labelPublishedYearBooks = new Label();
-            textBoxPublishedYearBooks = new TextBox();
-            labelISBNBooks = new Label();
-            textBoxISBNBooks = new TextBox();
-            labelCopiesAvailableBooks = new Label();
-            textBoxCopiesAvailableBooks = new TextBox();
-            labelControlBooks = new Label();
-            panelControlBooks = new Panel();
-            buttonNewBook = new Button();
-            buttonDeleteBook = new Button();
-            buttonChangeBook = new Button();
-            buttonSaveBook = new Button();
-            buttonWordBook = new Button();
-            buttonExcelBook = new Button();
-            buttonTXTBook = new Button();
             tabControl1 = new TabControl();
-            tabPageLoans = new TabPage();
-            panelTitleLoans = new Panel();
-            labelTitleLoans = new Label();
-            buttonClearLoans = new Button();
-            buttonRefreshLoans = new Button();
-            textBoxSearchLoans = new TextBox();
-            dataGridViewLoans = new DataGridView();
-            panelRecordLoans = new Panel();
+            tabPageProjects = new TabPage();
+            panelTitleProjects = new Panel();
+            labelTitleProjects = new Label();
+            buttonClearProjects = new Button();
+            buttonRefreshProjects = new Button();
+            textBoxSearchProjects = new TextBox();
+            dataGridViewProjects = new DataGridView();
+            panelRecordProjects = new Panel();
             labelRecordLoans = new Label();
             labelLoanID = new Label();
             textBoxLoanID = new TextBox();
@@ -84,536 +52,365 @@
             checkBoxReturnDateLoans = new CheckBox();
             labelIsReturnedLoans = new Label();
             textBoxIsReturnedLoans = new TextBox();
-            labelControlLoans = new Label();
-            panelControlLoans = new Panel();
-            buttonNewLoan = new Button();
-            buttonDeleteLoan = new Button();
-            buttonChangeLoan = new Button();
-            buttonSaveLoan = new Button();
-            buttonWordLoan = new Button();
-            buttonExcelLoan = new Button();
-            buttonTXTLoan = new Button();
-            tabPageBooks.SuspendLayout();
-            panelTitleBooks.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBooks).BeginInit();
-            panelRecordBooks.SuspendLayout();
-            panelControlBooks.SuspendLayout();
+            labelControlProjects = new Label();
+            panelControlProjects = new Panel();
+            buttonNewProject = new Button();
+            buttonDeleteProject = new Button();
+            buttonChangeProject = new Button();
+            buttonSaveProject = new Button();
+            buttonWordProject = new Button();
+            buttonExcelProject = new Button();
+            buttonTXTProject = new Button();
+            tabPageEmployees = new TabPage();
+            panelTitleEmployees = new Panel();
+            labelTitleEmployees = new Label();
+            buttonClearEmployees = new Button();
+            buttonRefreshEmployees = new Button();
+            textBoxSearchEmployees = new TextBox();
+            dataGridViewEmployees = new DataGridView();
+            panelRecordEmployees = new Panel();
+            label2 = new Label();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            label4 = new Label();
+            textBox3 = new TextBox();
+            label5 = new Label();
+            textBox4 = new TextBox();
+            label6 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label7 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            checkBox1 = new CheckBox();
+            label8 = new Label();
+            textBox5 = new TextBox();
+            labelControlEmployees = new Label();
+            panelControlEmployees = new Panel();
+            buttonNewEmployee = new Button();
+            buttonDeleteEmployee = new Button();
+            buttonChangeEmployee = new Button();
+            buttonSaveEmployee = new Button();
+            buttonWordEmployee = new Button();
+            buttonExcelEmployee = new Button();
+            buttonTXTEmployee = new Button();
+            tabPageSalaryAccruals = new TabPage();
+            panelTitleSalaryAccruals = new Panel();
+            labelTitleSalaryAccruals = new Label();
+            buttonClearSalaryAccruals = new Button();
+            buttonRefreshSalaryAccruals = new Button();
+            textBoxSearchSalaryAccruals = new TextBox();
+            dataGridViewSalaryAccruals = new DataGridView();
+            panelRecordSalaryAccruals = new Panel();
+            label11 = new Label();
+            label12 = new Label();
+            textBox7 = new TextBox();
+            label13 = new Label();
+            textBox8 = new TextBox();
+            label14 = new Label();
+            textBox9 = new TextBox();
+            label15 = new Label();
+            dateTimePicker3 = new DateTimePicker();
+            label16 = new Label();
+            dateTimePicker4 = new DateTimePicker();
+            checkBox2 = new CheckBox();
+            label17 = new Label();
+            textBox10 = new TextBox();
+            labelControlSalaryAccruals = new Label();
+            panelControlSalaryAccruals = new Panel();
+            buttonNewSalaryAccrual = new Button();
+            buttonDeleteSalaryAccrual = new Button();
+            buttonChangeSalaryAccrual = new Button();
+            buttonSaveSalaryAccrual = new Button();
+            buttonWordSalaryAccrual = new Button();
+            buttonExcelSalaryAccrual = new Button();
+            buttonTXTSalaryAccrual = new Button();
+            tabPageSalary = new TabPage();
+            panelTitleSalary = new Panel();
+            labelTitleSalary = new Label();
+            buttonClearSalary = new Button();
+            buttonRefreshSalary = new Button();
+            textBoxSearchSalary = new TextBox();
+            dataGridViewSalary = new DataGridView();
+            panelRecordSalary = new Panel();
+            label20 = new Label();
+            label21 = new Label();
+            textBox12 = new TextBox();
+            label22 = new Label();
+            textBox13 = new TextBox();
+            label23 = new Label();
+            textBox14 = new TextBox();
+            label24 = new Label();
+            dateTimePicker5 = new DateTimePicker();
+            label25 = new Label();
+            dateTimePicker6 = new DateTimePicker();
+            checkBox3 = new CheckBox();
+            label26 = new Label();
+            textBox15 = new TextBox();
+            labelControlSalary = new Label();
+            panelControlSalary = new Panel();
+            buttonNewSalary = new Button();
+            buttonDeleteSalary = new Button();
+            buttonChangeSalary = new Button();
+            buttonSaveSalary = new Button();
+            buttonWordSalary = new Button();
+            buttonExcelSalary = new Button();
+            buttonTXTSalary = new Button();
+            tabPageAccountingsOfWorkingHours = new TabPage();
+            panelTitleAccountingsOfWorkingHours = new Panel();
+            labelTitleAccountingsOfWorkingHours = new Label();
+            buttonClearAccountingsOfWorkingHours = new Button();
+            buttonRefreshAccountingsOfWorkingHours = new Button();
+            textBoxSearchAccountingsOfWorkingHours = new TextBox();
+            dataGridViewAccountingsOfWorkingHours = new DataGridView();
+            panelRecordAccountingsOfWorkingHours = new Panel();
+            label29 = new Label();
+            label30 = new Label();
+            textBox17 = new TextBox();
+            label31 = new Label();
+            textBox18 = new TextBox();
+            label32 = new Label();
+            textBox19 = new TextBox();
+            label33 = new Label();
+            dateTimePicker7 = new DateTimePicker();
+            label34 = new Label();
+            dateTimePicker8 = new DateTimePicker();
+            checkBox4 = new CheckBox();
+            label35 = new Label();
+            textBox20 = new TextBox();
+            labelControlAccountingsOfWorkingHours = new Label();
+            panelControlAccountingsOfWorkingHours = new Panel();
+            buttonNewAccountingOfWorkingHours = new Button();
+            buttonDeleteAccountingOfWorkingHours = new Button();
+            buttonChangeAccountingOfWorkingHours = new Button();
+            buttonSaveAccountingOfWorkingHours = new Button();
+            buttonWordAccountingOfWorkingHours = new Button();
+            buttonExcelAccountingOfWorkingHours = new Button();
+            buttonTXTAccountingOfWorkingHours = new Button();
+            tabPageVacationPay = new TabPage();
+            panelTitleVacationPay = new Panel();
+            labelTitleVacationPay = new Label();
+            buttonClearVacationPay = new Button();
+            buttonRefreshVacationPay = new Button();
+            textBoxSearchVacationPay = new TextBox();
+            dataGridViewVacationPay = new DataGridView();
+            panelRecordVacationPay = new Panel();
+            label38 = new Label();
+            label39 = new Label();
+            textBox22 = new TextBox();
+            label40 = new Label();
+            textBox23 = new TextBox();
+            label41 = new Label();
+            textBox24 = new TextBox();
+            label42 = new Label();
+            dateTimePicker9 = new DateTimePicker();
+            label43 = new Label();
+            dateTimePicker10 = new DateTimePicker();
+            checkBox5 = new CheckBox();
+            label44 = new Label();
+            textBox25 = new TextBox();
+            labelControlVacationPay = new Label();
+            panelControlVacationPay = new Panel();
+            buttonNewVacationPay = new Button();
+            buttonDeleteVacationPay = new Button();
+            buttonChangeVacationPay = new Button();
+            buttonSaveVacationPay = new Button();
+            buttonWordVacationPay = new Button();
+            buttonExcelVacationPay = new Button();
+            buttonTXTVacationPay = new Button();
+            tabPageSickPay = new TabPage();
+            panelTitleSickPay = new Panel();
+            labelTitleSickPay = new Label();
+            buttonClearSickPay = new Button();
+            buttonRefreshSickPay = new Button();
+            textBoxSearchSickPay = new TextBox();
+            dataGridViewSickPay = new DataGridView();
+            panelRecordSickPay = new Panel();
+            label47 = new Label();
+            label48 = new Label();
+            textBox27 = new TextBox();
+            label49 = new Label();
+            textBox28 = new TextBox();
+            label50 = new Label();
+            textBox29 = new TextBox();
+            label51 = new Label();
+            dateTimePicker11 = new DateTimePicker();
+            label52 = new Label();
+            dateTimePicker12 = new DateTimePicker();
+            checkBox6 = new CheckBox();
+            label53 = new Label();
+            textBox30 = new TextBox();
+            labelControlSickPay = new Label();
+            panelControlSickPay = new Panel();
+            buttonNewSickPay = new Button();
+            buttonDeleteSickPay = new Button();
+            buttonChangeSickPay = new Button();
+            buttonSaveSickPay = new Button();
+            buttonWordSickPay = new Button();
+            buttonExcelSickPay = new Button();
+            buttonTXTSickPay = new Button();
             tabControl1.SuspendLayout();
-            tabPageLoans.SuspendLayout();
-            panelTitleLoans.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLoans).BeginInit();
-            panelRecordLoans.SuspendLayout();
-            panelControlLoans.SuspendLayout();
+            tabPageProjects.SuspendLayout();
+            panelTitleProjects.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProjects).BeginInit();
+            panelRecordProjects.SuspendLayout();
+            panelControlProjects.SuspendLayout();
+            tabPageEmployees.SuspendLayout();
+            panelTitleEmployees.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEmployees).BeginInit();
+            panelRecordEmployees.SuspendLayout();
+            panelControlEmployees.SuspendLayout();
+            tabPageSalaryAccruals.SuspendLayout();
+            panelTitleSalaryAccruals.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSalaryAccruals).BeginInit();
+            panelRecordSalaryAccruals.SuspendLayout();
+            panelControlSalaryAccruals.SuspendLayout();
+            tabPageSalary.SuspendLayout();
+            panelTitleSalary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSalary).BeginInit();
+            panelRecordSalary.SuspendLayout();
+            panelControlSalary.SuspendLayout();
+            tabPageAccountingsOfWorkingHours.SuspendLayout();
+            panelTitleAccountingsOfWorkingHours.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewAccountingsOfWorkingHours).BeginInit();
+            panelRecordAccountingsOfWorkingHours.SuspendLayout();
+            panelControlAccountingsOfWorkingHours.SuspendLayout();
+            tabPageVacationPay.SuspendLayout();
+            panelTitleVacationPay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVacationPay).BeginInit();
+            panelRecordVacationPay.SuspendLayout();
+            panelControlVacationPay.SuspendLayout();
+            tabPageSickPay.SuspendLayout();
+            panelTitleSickPay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSickPay).BeginInit();
+            panelRecordSickPay.SuspendLayout();
+            panelControlSickPay.SuspendLayout();
             SuspendLayout();
-            // 
-            // tabPageBooks
-            // 
-            tabPageBooks.BackgroundImage = (Image)resources.GetObject("tabPageBooks.BackgroundImage");
-            tabPageBooks.Controls.Add(panelTitleBooks);
-            tabPageBooks.Controls.Add(dataGridViewBooks);
-            tabPageBooks.Controls.Add(panelRecordBooks);
-            tabPageBooks.Controls.Add(labelControlBooks);
-            tabPageBooks.Controls.Add(panelControlBooks);
-            tabPageBooks.Location = new Point(4, 24);
-            tabPageBooks.Margin = new Padding(4, 3, 4, 3);
-            tabPageBooks.Name = "tabPageBooks";
-            tabPageBooks.Padding = new Padding(4, 3, 4, 3);
-            tabPageBooks.Size = new Size(889, 1010);
-            tabPageBooks.TabIndex = 0;
-            tabPageBooks.Text = "Книги";
-            tabPageBooks.UseVisualStyleBackColor = true;
-            // 
-            // panelTitleBooks
-            // 
-            panelTitleBooks.Controls.Add(labelTitle);
-            panelTitleBooks.Controls.Add(buttonClearBooks);
-            panelTitleBooks.Controls.Add(buttonRefreshBooks);
-            panelTitleBooks.Controls.Add(textBoxSearchBooks);
-            panelTitleBooks.Location = new Point(0, 0);
-            panelTitleBooks.Margin = new Padding(4, 3, 4, 3);
-            panelTitleBooks.Name = "panelTitleBooks";
-            panelTitleBooks.Size = new Size(876, 84);
-            panelTitleBooks.TabIndex = 3;
-            // 
-            // labelTitle
-            // 
-            labelTitle.AutoSize = true;
-            labelTitle.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitle.ForeColor = Color.WhiteSmoke;
-            labelTitle.Location = new Point(4, 3);
-            labelTitle.Margin = new Padding(4, 0, 4, 0);
-            labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(158, 65);
-            labelTitle.TabIndex = 4;
-            labelTitle.Text = "Книги";
-            // 
-            // buttonClearBooks
-            // 
-            buttonClearBooks.FlatStyle = FlatStyle.Flat;
-            buttonClearBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearBooks.Image = (Image)resources.GetObject("buttonClearBooks.Image");
-            buttonClearBooks.Location = new Point(528, 3);
-            buttonClearBooks.Margin = new Padding(4, 3, 4, 3);
-            buttonClearBooks.Name = "buttonClearBooks";
-            buttonClearBooks.Size = new Size(78, 77);
-            buttonClearBooks.TabIndex = 0;
-            buttonClearBooks.UseVisualStyleBackColor = true;
-            buttonClearBooks.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshBooks
-            // 
-            buttonRefreshBooks.FlatStyle = FlatStyle.Flat;
-            buttonRefreshBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshBooks.Image = (Image)resources.GetObject("buttonRefreshBooks.Image");
-            buttonRefreshBooks.Location = new Point(614, 3);
-            buttonRefreshBooks.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshBooks.Name = "buttonRefreshBooks";
-            buttonRefreshBooks.Size = new Size(78, 77);
-            buttonRefreshBooks.TabIndex = 1;
-            buttonRefreshBooks.UseVisualStyleBackColor = true;
-            buttonRefreshBooks.Click += ButtonRefresh_Click;
-            // 
-            // textBoxSearchBooks
-            // 
-            textBoxSearchBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchBooks.Location = new Point(699, 37);
-            textBoxSearchBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxSearchBooks.Name = "textBoxSearchBooks";
-            textBoxSearchBooks.Size = new Size(173, 33);
-            textBoxSearchBooks.TabIndex = 2;
-            textBoxSearchBooks.TextChanged += TextBoxSearchBooks_TextChanged;
-            // 
-            // dataGridViewBooks
-            // 
-            dataGridViewBooks.AllowUserToAddRows = false;
-            dataGridViewBooks.AllowUserToDeleteRows = false;
-            dataGridViewBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewBooks.Location = new Point(9, 91);
-            dataGridViewBooks.Margin = new Padding(4, 3, 4, 3);
-            dataGridViewBooks.Name = "dataGridViewBooks";
-            dataGridViewBooks.ReadOnly = true;
-            dataGridViewBooks.RowHeadersWidth = 62;
-            dataGridViewBooks.Size = new Size(867, 352);
-            dataGridViewBooks.TabIndex = 0;
-            dataGridViewBooks.CellClick += DataGridViewBooks_CellClick;
-            // 
-            // panelRecordBooks
-            // 
-            panelRecordBooks.Controls.Add(labelRecordBooks);
-            panelRecordBooks.Controls.Add(labelBookID);
-            panelRecordBooks.Controls.Add(textBoxBookID);
-            panelRecordBooks.Controls.Add(labelTitleBooks);
-            panelRecordBooks.Controls.Add(textBoxTitleBooks);
-            panelRecordBooks.Controls.Add(labelAuthorBooks);
-            panelRecordBooks.Controls.Add(textBoxAuthorBooks);
-            panelRecordBooks.Controls.Add(labelGenreBooks);
-            panelRecordBooks.Controls.Add(textBoxGenreBooks);
-            panelRecordBooks.Controls.Add(labelPublishedYearBooks);
-            panelRecordBooks.Controls.Add(textBoxPublishedYearBooks);
-            panelRecordBooks.Controls.Add(labelISBNBooks);
-            panelRecordBooks.Controls.Add(textBoxISBNBooks);
-            panelRecordBooks.Controls.Add(labelCopiesAvailableBooks);
-            panelRecordBooks.Controls.Add(textBoxCopiesAvailableBooks);
-            panelRecordBooks.Location = new Point(9, 450);
-            panelRecordBooks.Margin = new Padding(4, 3, 4, 3);
-            panelRecordBooks.Name = "panelRecordBooks";
-            panelRecordBooks.Size = new Size(611, 552);
-            panelRecordBooks.TabIndex = 1;
-            // 
-            // labelRecordBooks
-            // 
-            labelRecordBooks.AutoSize = true;
-            labelRecordBooks.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordBooks.ForeColor = Color.WhiteSmoke;
-            labelRecordBooks.Location = new Point(4, 10);
-            labelRecordBooks.Margin = new Padding(4, 0, 4, 0);
-            labelRecordBooks.Name = "labelRecordBooks";
-            labelRecordBooks.Size = new Size(142, 47);
-            labelRecordBooks.TabIndex = 7;
-            labelRecordBooks.Text = "Запись:";
-            // 
-            // labelBookID
-            // 
-            labelBookID.AutoSize = true;
-            labelBookID.ForeColor = Color.WhiteSmoke;
-            labelBookID.Location = new Point(93, 82);
-            labelBookID.Margin = new Padding(4, 0, 4, 0);
-            labelBookID.Name = "labelBookID";
-            labelBookID.Size = new Size(48, 15);
-            labelBookID.TabIndex = 8;
-            labelBookID.Text = "Номер:";
-            // 
-            // textBoxBookID
-            // 
-            textBoxBookID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxBookID.Location = new Point(152, 68);
-            textBoxBookID.Margin = new Padding(4, 3, 4, 3);
-            textBoxBookID.Name = "textBoxBookID";
-            textBoxBookID.Size = new Size(455, 33);
-            textBoxBookID.TabIndex = 0;
-            // 
-            // labelTitleBooks
-            // 
-            labelTitleBooks.AutoSize = true;
-            labelTitleBooks.ForeColor = Color.WhiteSmoke;
-            labelTitleBooks.Location = new Point(73, 124);
-            labelTitleBooks.Margin = new Padding(4, 0, 4, 0);
-            labelTitleBooks.Name = "labelTitleBooks";
-            labelTitleBooks.Size = new Size(68, 15);
-            labelTitleBooks.TabIndex = 9;
-            labelTitleBooks.Text = "Заголовок:";
-            // 
-            // textBoxTitleBooks
-            // 
-            textBoxTitleBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTitleBooks.Location = new Point(152, 113);
-            textBoxTitleBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxTitleBooks.Name = "textBoxTitleBooks";
-            textBoxTitleBooks.Size = new Size(455, 33);
-            textBoxTitleBooks.TabIndex = 1;
-            // 
-            // labelAuthorBooks
-            // 
-            labelAuthorBooks.AutoSize = true;
-            labelAuthorBooks.ForeColor = Color.WhiteSmoke;
-            labelAuthorBooks.Location = new Point(98, 169);
-            labelAuthorBooks.Margin = new Padding(4, 0, 4, 0);
-            labelAuthorBooks.Name = "labelAuthorBooks";
-            labelAuthorBooks.Size = new Size(43, 15);
-            labelAuthorBooks.TabIndex = 10;
-            labelAuthorBooks.Text = "Автор:";
-            // 
-            // textBoxAuthorBooks
-            // 
-            textBoxAuthorBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxAuthorBooks.Location = new Point(152, 158);
-            textBoxAuthorBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxAuthorBooks.Name = "textBoxAuthorBooks";
-            textBoxAuthorBooks.Size = new Size(455, 33);
-            textBoxAuthorBooks.TabIndex = 2;
-            // 
-            // labelGenreBooks
-            // 
-            labelGenreBooks.AutoSize = true;
-            labelGenreBooks.ForeColor = Color.WhiteSmoke;
-            labelGenreBooks.Location = new Point(100, 217);
-            labelGenreBooks.Margin = new Padding(4, 0, 4, 0);
-            labelGenreBooks.Name = "labelGenreBooks";
-            labelGenreBooks.Size = new Size(41, 15);
-            labelGenreBooks.TabIndex = 11;
-            labelGenreBooks.Text = "Жанр:";
-            // 
-            // textBoxGenreBooks
-            // 
-            textBoxGenreBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxGenreBooks.Location = new Point(152, 206);
-            textBoxGenreBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxGenreBooks.Name = "textBoxGenreBooks";
-            textBoxGenreBooks.Size = new Size(455, 33);
-            textBoxGenreBooks.TabIndex = 3;
-            // 
-            // labelPublishedYearBooks
-            // 
-            labelPublishedYearBooks.AutoSize = true;
-            labelPublishedYearBooks.ForeColor = Color.WhiteSmoke;
-            labelPublishedYearBooks.Location = new Point(63, 259);
-            labelPublishedYearBooks.Margin = new Padding(4, 0, 4, 0);
-            labelPublishedYearBooks.Name = "labelPublishedYearBooks";
-            labelPublishedYearBooks.Size = new Size(78, 15);
-            labelPublishedYearBooks.TabIndex = 12;
-            labelPublishedYearBooks.Text = "Год выпуска:";
-            // 
-            // textBoxPublishedYearBooks
-            // 
-            textBoxPublishedYearBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPublishedYearBooks.Location = new Point(152, 248);
-            textBoxPublishedYearBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxPublishedYearBooks.Name = "textBoxPublishedYearBooks";
-            textBoxPublishedYearBooks.Size = new Size(455, 33);
-            textBoxPublishedYearBooks.TabIndex = 4;
-            // 
-            // labelISBNBooks
-            // 
-            labelISBNBooks.AutoSize = true;
-            labelISBNBooks.ForeColor = Color.WhiteSmoke;
-            labelISBNBooks.Location = new Point(106, 304);
-            labelISBNBooks.Margin = new Padding(4, 0, 4, 0);
-            labelISBNBooks.Name = "labelISBNBooks";
-            labelISBNBooks.Size = new Size(35, 15);
-            labelISBNBooks.TabIndex = 13;
-            labelISBNBooks.Text = "ISBN:";
-            // 
-            // textBoxISBNBooks
-            // 
-            textBoxISBNBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxISBNBooks.Location = new Point(152, 293);
-            textBoxISBNBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxISBNBooks.Name = "textBoxISBNBooks";
-            textBoxISBNBooks.Size = new Size(455, 33);
-            textBoxISBNBooks.TabIndex = 5;
-            // 
-            // labelCopiesAvailableBooks
-            // 
-            labelCopiesAvailableBooks.AutoSize = true;
-            labelCopiesAvailableBooks.ForeColor = Color.WhiteSmoke;
-            labelCopiesAvailableBooks.Location = new Point(41, 349);
-            labelCopiesAvailableBooks.Margin = new Padding(4, 0, 4, 0);
-            labelCopiesAvailableBooks.Name = "labelCopiesAvailableBooks";
-            labelCopiesAvailableBooks.Size = new Size(100, 15);
-            labelCopiesAvailableBooks.TabIndex = 14;
-            labelCopiesAvailableBooks.Text = "Доступно копий:";
-            // 
-            // textBoxCopiesAvailableBooks
-            // 
-            textBoxCopiesAvailableBooks.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxCopiesAvailableBooks.Location = new Point(152, 338);
-            textBoxCopiesAvailableBooks.Margin = new Padding(4, 3, 4, 3);
-            textBoxCopiesAvailableBooks.Name = "textBoxCopiesAvailableBooks";
-            textBoxCopiesAvailableBooks.Size = new Size(455, 33);
-            textBoxCopiesAvailableBooks.TabIndex = 6;
-            // 
-            // labelControlBooks
-            // 
-            labelControlBooks.AutoSize = true;
-            labelControlBooks.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelControlBooks.ForeColor = Color.WhiteSmoke;
-            labelControlBooks.Location = new Point(628, 450);
-            labelControlBooks.Margin = new Padding(4, 0, 4, 0);
-            labelControlBooks.Name = "labelControlBooks";
-            labelControlBooks.Size = new Size(213, 25);
-            labelControlBooks.TabIndex = 4;
-            labelControlBooks.Text = "Управление записями:";
-            // 
-            // panelControlBooks
-            // 
-            panelControlBooks.Controls.Add(buttonNewBook);
-            panelControlBooks.Controls.Add(buttonDeleteBook);
-            panelControlBooks.Controls.Add(buttonChangeBook);
-            panelControlBooks.Controls.Add(buttonSaveBook);
-            panelControlBooks.Controls.Add(buttonWordBook);
-            panelControlBooks.Controls.Add(buttonExcelBook);
-            panelControlBooks.Controls.Add(buttonTXTBook);
-            panelControlBooks.Location = new Point(634, 482);
-            panelControlBooks.Margin = new Padding(4, 3, 4, 3);
-            panelControlBooks.Name = "panelControlBooks";
-            panelControlBooks.Size = new Size(243, 520);
-            panelControlBooks.TabIndex = 2;
-            // 
-            // buttonNewBook
-            // 
-            buttonNewBook.FlatStyle = FlatStyle.Flat;
-            buttonNewBook.ForeColor = Color.WhiteSmoke;
-            buttonNewBook.Location = new Point(4, 3);
-            buttonNewBook.Margin = new Padding(4, 3, 4, 3);
-            buttonNewBook.Name = "buttonNewBook";
-            buttonNewBook.Size = new Size(236, 67);
-            buttonNewBook.TabIndex = 0;
-            buttonNewBook.Text = "Новая запись";
-            buttonNewBook.UseVisualStyleBackColor = true;
-            buttonNewBook.Click += ButtonNewBook_Click;
-            // 
-            // buttonDeleteBook
-            // 
-            buttonDeleteBook.FlatStyle = FlatStyle.Flat;
-            buttonDeleteBook.ForeColor = Color.WhiteSmoke;
-            buttonDeleteBook.Location = new Point(4, 78);
-            buttonDeleteBook.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteBook.Name = "buttonDeleteBook";
-            buttonDeleteBook.Size = new Size(236, 67);
-            buttonDeleteBook.TabIndex = 1;
-            buttonDeleteBook.Text = "Удалить";
-            buttonDeleteBook.UseVisualStyleBackColor = true;
-            buttonDeleteBook.Click += ButtonDeleteBook_Click;
-            // 
-            // buttonChangeBook
-            // 
-            buttonChangeBook.FlatStyle = FlatStyle.Flat;
-            buttonChangeBook.ForeColor = Color.WhiteSmoke;
-            buttonChangeBook.Location = new Point(4, 152);
-            buttonChangeBook.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeBook.Name = "buttonChangeBook";
-            buttonChangeBook.Size = new Size(236, 67);
-            buttonChangeBook.TabIndex = 2;
-            buttonChangeBook.Text = "Изменить";
-            buttonChangeBook.UseVisualStyleBackColor = true;
-            buttonChangeBook.Click += ButtonChangeBook_Click;
-            // 
-            // buttonSaveBook
-            // 
-            buttonSaveBook.FlatStyle = FlatStyle.Flat;
-            buttonSaveBook.ForeColor = Color.WhiteSmoke;
-            buttonSaveBook.Location = new Point(4, 226);
-            buttonSaveBook.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveBook.Name = "buttonSaveBook";
-            buttonSaveBook.Size = new Size(236, 67);
-            buttonSaveBook.TabIndex = 3;
-            buttonSaveBook.Text = "Сохранить";
-            buttonSaveBook.UseVisualStyleBackColor = true;
-            buttonSaveBook.Click += ButtonSaveBook_Click;
-            // 
-            // buttonWordBook
-            // 
-            buttonWordBook.FlatStyle = FlatStyle.Flat;
-            buttonWordBook.ForeColor = Color.WhiteSmoke;
-            buttonWordBook.Location = new Point(4, 301);
-            buttonWordBook.Margin = new Padding(4, 3, 4, 3);
-            buttonWordBook.Name = "buttonWordBook";
-            buttonWordBook.Size = new Size(236, 67);
-            buttonWordBook.TabIndex = 4;
-            buttonWordBook.Text = "Вывод в Word";
-            buttonWordBook.UseVisualStyleBackColor = true;
-            buttonWordBook.Click += ButtonWordBook_Click;
-            // 
-            // buttonExcelBook
-            // 
-            buttonExcelBook.FlatStyle = FlatStyle.Flat;
-            buttonExcelBook.ForeColor = Color.WhiteSmoke;
-            buttonExcelBook.Location = new Point(4, 375);
-            buttonExcelBook.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelBook.Name = "buttonExcelBook";
-            buttonExcelBook.Size = new Size(236, 67);
-            buttonExcelBook.TabIndex = 5;
-            buttonExcelBook.Text = "Вывод в Excel";
-            buttonExcelBook.UseVisualStyleBackColor = true;
-            buttonExcelBook.Click += ButtonExcelBook_Click;
-            // 
-            // buttonTXTBook
-            // 
-            buttonTXTBook.FlatStyle = FlatStyle.Flat;
-            buttonTXTBook.ForeColor = Color.WhiteSmoke;
-            buttonTXTBook.Location = new Point(4, 449);
-            buttonTXTBook.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTBook.Name = "buttonTXTBook";
-            buttonTXTBook.Size = new Size(236, 67);
-            buttonTXTBook.TabIndex = 6;
-            buttonTXTBook.Text = "Вывод в TXT";
-            buttonTXTBook.UseVisualStyleBackColor = true;
-            buttonTXTBook.Click += ButtonTXTBook_Click;
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPageBooks);
-            tabControl1.Controls.Add(tabPageLoans);
+            tabControl1.Controls.Add(tabPageProjects);
+            tabControl1.Controls.Add(tabPageEmployees);
+            tabControl1.Controls.Add(tabPageSalaryAccruals);
+            tabControl1.Controls.Add(tabPageSalary);
+            tabControl1.Controls.Add(tabPageAccountingsOfWorkingHours);
+            tabControl1.Controls.Add(tabPageVacationPay);
+            tabControl1.Controls.Add(tabPageSickPay);
             tabControl1.Location = new Point(0, 0);
             tabControl1.Margin = new Padding(4, 3, 4, 3);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(897, 1038);
             tabControl1.TabIndex = 0;
-            tabControl1.Click += ButtonClear_Click;
             // 
-            // tabPageLoans
+            // tabPageProjects
             // 
-            tabPageLoans.BackgroundImage = (Image)resources.GetObject("tabPageLoans.BackgroundImage");
-            tabPageLoans.Controls.Add(panelTitleLoans);
-            tabPageLoans.Controls.Add(dataGridViewLoans);
-            tabPageLoans.Controls.Add(panelRecordLoans);
-            tabPageLoans.Controls.Add(labelControlLoans);
-            tabPageLoans.Controls.Add(panelControlLoans);
-            tabPageLoans.Location = new Point(4, 24);
-            tabPageLoans.Margin = new Padding(4, 3, 4, 3);
-            tabPageLoans.Name = "tabPageLoans";
-            tabPageLoans.Padding = new Padding(4, 3, 4, 3);
-            tabPageLoans.Size = new Size(889, 1010);
-            tabPageLoans.TabIndex = 1;
-            tabPageLoans.Text = "Выдачи";
-            tabPageLoans.UseVisualStyleBackColor = true;
+            tabPageProjects.BackgroundImage = (Image)resources.GetObject("tabPageProjects.BackgroundImage");
+            tabPageProjects.Controls.Add(panelTitleProjects);
+            tabPageProjects.Controls.Add(dataGridViewProjects);
+            tabPageProjects.Controls.Add(panelRecordProjects);
+            tabPageProjects.Controls.Add(labelControlProjects);
+            tabPageProjects.Controls.Add(panelControlProjects);
+            tabPageProjects.Location = new Point(4, 24);
+            tabPageProjects.Margin = new Padding(4, 3, 4, 3);
+            tabPageProjects.Name = "tabPageProjects";
+            tabPageProjects.Padding = new Padding(4, 3, 4, 3);
+            tabPageProjects.Size = new Size(889, 1010);
+            tabPageProjects.TabIndex = 1;
+            tabPageProjects.Text = "Проекты";
+            tabPageProjects.UseVisualStyleBackColor = true;
             // 
-            // panelTitleLoans
+            // panelTitleProjects
             // 
-            panelTitleLoans.Controls.Add(labelTitleLoans);
-            panelTitleLoans.Controls.Add(buttonClearLoans);
-            panelTitleLoans.Controls.Add(buttonRefreshLoans);
-            panelTitleLoans.Controls.Add(textBoxSearchLoans);
-            panelTitleLoans.Location = new Point(0, 0);
-            panelTitleLoans.Margin = new Padding(4, 3, 4, 3);
-            panelTitleLoans.Name = "panelTitleLoans";
-            panelTitleLoans.Size = new Size(876, 84);
-            panelTitleLoans.TabIndex = 3;
+            panelTitleProjects.Controls.Add(labelTitleProjects);
+            panelTitleProjects.Controls.Add(buttonClearProjects);
+            panelTitleProjects.Controls.Add(buttonRefreshProjects);
+            panelTitleProjects.Controls.Add(textBoxSearchProjects);
+            panelTitleProjects.Location = new Point(0, 0);
+            panelTitleProjects.Margin = new Padding(4, 3, 4, 3);
+            panelTitleProjects.Name = "panelTitleProjects";
+            panelTitleProjects.Size = new Size(876, 84);
+            panelTitleProjects.TabIndex = 3;
             // 
-            // labelTitleLoans
+            // labelTitleProjects
             // 
-            labelTitleLoans.AutoSize = true;
-            labelTitleLoans.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleLoans.ForeColor = Color.WhiteSmoke;
-            labelTitleLoans.Location = new Point(4, 3);
-            labelTitleLoans.Margin = new Padding(4, 0, 4, 0);
-            labelTitleLoans.Name = "labelTitleLoans";
-            labelTitleLoans.Size = new Size(195, 65);
-            labelTitleLoans.TabIndex = 4;
-            labelTitleLoans.Text = "Выдачи";
+            labelTitleProjects.AutoSize = true;
+            labelTitleProjects.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleProjects.ForeColor = Color.WhiteSmoke;
+            labelTitleProjects.Location = new Point(4, 3);
+            labelTitleProjects.Margin = new Padding(4, 0, 4, 0);
+            labelTitleProjects.Name = "labelTitleProjects";
+            labelTitleProjects.Size = new Size(221, 65);
+            labelTitleProjects.TabIndex = 4;
+            labelTitleProjects.Text = "Проекты";
             // 
-            // buttonClearLoans
+            // buttonClearProjects
             // 
-            buttonClearLoans.FlatStyle = FlatStyle.Flat;
-            buttonClearLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearLoans.Image = (Image)resources.GetObject("buttonClearLoans.Image");
-            buttonClearLoans.Location = new Point(528, 3);
-            buttonClearLoans.Margin = new Padding(4, 3, 4, 3);
-            buttonClearLoans.Name = "buttonClearLoans";
-            buttonClearLoans.Size = new Size(78, 77);
-            buttonClearLoans.TabIndex = 0;
-            buttonClearLoans.UseVisualStyleBackColor = true;
-            buttonClearLoans.Click += ButtonClear_Click;
+            buttonClearProjects.BackgroundImage = (Image)resources.GetObject("buttonClearProjects.BackgroundImage");
+            buttonClearProjects.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearProjects.FlatStyle = FlatStyle.Flat;
+            buttonClearProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearProjects.Location = new Point(528, 3);
+            buttonClearProjects.Margin = new Padding(4, 3, 4, 3);
+            buttonClearProjects.Name = "buttonClearProjects";
+            buttonClearProjects.Size = new Size(78, 77);
+            buttonClearProjects.TabIndex = 0;
+            buttonClearProjects.UseVisualStyleBackColor = true;
             // 
-            // buttonRefreshLoans
+            // buttonRefreshProjects
             // 
-            buttonRefreshLoans.FlatStyle = FlatStyle.Flat;
-            buttonRefreshLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshLoans.Image = (Image)resources.GetObject("buttonRefreshLoans.Image");
-            buttonRefreshLoans.Location = new Point(614, 3);
-            buttonRefreshLoans.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshLoans.Name = "buttonRefreshLoans";
-            buttonRefreshLoans.Size = new Size(78, 77);
-            buttonRefreshLoans.TabIndex = 1;
-            buttonRefreshLoans.UseVisualStyleBackColor = true;
-            buttonRefreshLoans.Click += ButtonRefresh_Click;
+            buttonRefreshProjects.BackgroundImage = (Image)resources.GetObject("buttonRefreshProjects.BackgroundImage");
+            buttonRefreshProjects.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshProjects.FlatStyle = FlatStyle.Flat;
+            buttonRefreshProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshProjects.Location = new Point(614, 3);
+            buttonRefreshProjects.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshProjects.Name = "buttonRefreshProjects";
+            buttonRefreshProjects.Size = new Size(78, 77);
+            buttonRefreshProjects.TabIndex = 1;
+            buttonRefreshProjects.UseVisualStyleBackColor = true;
             // 
-            // textBoxSearchLoans
+            // textBoxSearchProjects
             // 
-            textBoxSearchLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchLoans.Location = new Point(699, 37);
-            textBoxSearchLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxSearchLoans.Name = "textBoxSearchLoans";
-            textBoxSearchLoans.Size = new Size(173, 33);
-            textBoxSearchLoans.TabIndex = 2;
-            textBoxSearchLoans.TextChanged += TextBoxSearchLoans_TextChanged;
+            textBoxSearchProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchProjects.Location = new Point(699, 37);
+            textBoxSearchProjects.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchProjects.Name = "textBoxSearchProjects";
+            textBoxSearchProjects.Size = new Size(173, 33);
+            textBoxSearchProjects.TabIndex = 2;
             // 
-            // dataGridViewLoans
+            // dataGridViewProjects
             // 
-            dataGridViewLoans.AllowUserToAddRows = false;
-            dataGridViewLoans.AllowUserToDeleteRows = false;
-            dataGridViewLoans.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewLoans.Location = new Point(9, 91);
-            dataGridViewLoans.Margin = new Padding(4, 3, 4, 3);
-            dataGridViewLoans.Name = "dataGridViewLoans";
-            dataGridViewLoans.ReadOnly = true;
-            dataGridViewLoans.RowHeadersWidth = 62;
-            dataGridViewLoans.Size = new Size(867, 352);
-            dataGridViewLoans.TabIndex = 0;
-            dataGridViewLoans.CellClick += DataGridViewLoans_CellClick;
+            dataGridViewProjects.AllowUserToAddRows = false;
+            dataGridViewProjects.AllowUserToDeleteRows = false;
+            dataGridViewProjects.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProjects.Location = new Point(9, 91);
+            dataGridViewProjects.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewProjects.Name = "dataGridViewProjects";
+            dataGridViewProjects.ReadOnly = true;
+            dataGridViewProjects.RowHeadersWidth = 62;
+            dataGridViewProjects.Size = new Size(867, 352);
+            dataGridViewProjects.TabIndex = 0;
             // 
-            // panelRecordLoans
+            // panelRecordProjects
             // 
-            panelRecordLoans.Controls.Add(labelRecordLoans);
-            panelRecordLoans.Controls.Add(labelLoanID);
-            panelRecordLoans.Controls.Add(textBoxLoanID);
-            panelRecordLoans.Controls.Add(labelRegistrationIDLoans);
-            panelRecordLoans.Controls.Add(textBoxRegistrationIDLoans);
-            panelRecordLoans.Controls.Add(labelBookIDLoans);
-            panelRecordLoans.Controls.Add(textBoxBookIDLoans);
-            panelRecordLoans.Controls.Add(labelLoanDateLoans);
-            panelRecordLoans.Controls.Add(dateTimePickerLoanDateLoans);
-            panelRecordLoans.Controls.Add(labelReturnDateLoans);
-            panelRecordLoans.Controls.Add(dateTimePickerReturnDateLoans);
-            panelRecordLoans.Controls.Add(checkBoxReturnDateLoans);
-            panelRecordLoans.Controls.Add(labelIsReturnedLoans);
-            panelRecordLoans.Controls.Add(textBoxIsReturnedLoans);
-            panelRecordLoans.Location = new Point(9, 450);
-            panelRecordLoans.Margin = new Padding(4, 3, 4, 3);
-            panelRecordLoans.Name = "panelRecordLoans";
-            panelRecordLoans.Size = new Size(611, 552);
-            panelRecordLoans.TabIndex = 1;
+            panelRecordProjects.Controls.Add(labelRecordLoans);
+            panelRecordProjects.Controls.Add(labelLoanID);
+            panelRecordProjects.Controls.Add(textBoxLoanID);
+            panelRecordProjects.Controls.Add(labelRegistrationIDLoans);
+            panelRecordProjects.Controls.Add(textBoxRegistrationIDLoans);
+            panelRecordProjects.Controls.Add(labelBookIDLoans);
+            panelRecordProjects.Controls.Add(textBoxBookIDLoans);
+            panelRecordProjects.Controls.Add(labelLoanDateLoans);
+            panelRecordProjects.Controls.Add(dateTimePickerLoanDateLoans);
+            panelRecordProjects.Controls.Add(labelReturnDateLoans);
+            panelRecordProjects.Controls.Add(dateTimePickerReturnDateLoans);
+            panelRecordProjects.Controls.Add(checkBoxReturnDateLoans);
+            panelRecordProjects.Controls.Add(labelIsReturnedLoans);
+            panelRecordProjects.Controls.Add(textBoxIsReturnedLoans);
+            panelRecordProjects.Location = new Point(9, 450);
+            panelRecordProjects.Margin = new Padding(4, 3, 4, 3);
+            panelRecordProjects.Name = "panelRecordProjects";
+            panelRecordProjects.Size = new Size(611, 552);
+            panelRecordProjects.TabIndex = 1;
             // 
             // labelRecordLoans
             // 
@@ -735,7 +532,6 @@
             checkBoxReturnDateLoans.TabIndex = 5;
             checkBoxReturnDateLoans.Text = "Еще не возвращена";
             checkBoxReturnDateLoans.UseVisualStyleBackColor = true;
-            checkBoxReturnDateLoans.CheckedChanged += CheckBoxReturnDateLoans_CheckedChanged;
             // 
             // labelIsReturnedLoans
             // 
@@ -758,124 +554,2310 @@
             textBoxIsReturnedLoans.Size = new Size(455, 33);
             textBoxIsReturnedLoans.TabIndex = 6;
             // 
-            // labelControlLoans
+            // labelControlProjects
             // 
-            labelControlLoans.AutoSize = true;
-            labelControlLoans.BackColor = Color.Transparent;
-            labelControlLoans.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelControlLoans.ForeColor = Color.WhiteSmoke;
-            labelControlLoans.Location = new Point(632, 453);
-            labelControlLoans.Margin = new Padding(4, 0, 4, 0);
-            labelControlLoans.Name = "labelControlLoans";
-            labelControlLoans.Size = new Size(213, 25);
-            labelControlLoans.TabIndex = 4;
-            labelControlLoans.Text = "Управление записями:";
+            labelControlProjects.AutoSize = true;
+            labelControlProjects.BackColor = Color.Transparent;
+            labelControlProjects.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlProjects.ForeColor = Color.Black;
+            labelControlProjects.Location = new Point(632, 453);
+            labelControlProjects.Margin = new Padding(4, 0, 4, 0);
+            labelControlProjects.Name = "labelControlProjects";
+            labelControlProjects.Size = new Size(213, 25);
+            labelControlProjects.TabIndex = 4;
+            labelControlProjects.Text = "Управление записями:";
             // 
-            // panelControlLoans
+            // panelControlProjects
             // 
-            panelControlLoans.Controls.Add(buttonNewLoan);
-            panelControlLoans.Controls.Add(buttonDeleteLoan);
-            panelControlLoans.Controls.Add(buttonChangeLoan);
-            panelControlLoans.Controls.Add(buttonSaveLoan);
-            panelControlLoans.Controls.Add(buttonWordLoan);
-            panelControlLoans.Controls.Add(buttonExcelLoan);
-            panelControlLoans.Controls.Add(buttonTXTLoan);
-            panelControlLoans.Location = new Point(634, 482);
-            panelControlLoans.Margin = new Padding(4, 3, 4, 3);
-            panelControlLoans.Name = "panelControlLoans";
-            panelControlLoans.Size = new Size(243, 520);
-            panelControlLoans.TabIndex = 2;
+            panelControlProjects.Controls.Add(buttonNewProject);
+            panelControlProjects.Controls.Add(buttonDeleteProject);
+            panelControlProjects.Controls.Add(buttonChangeProject);
+            panelControlProjects.Controls.Add(buttonSaveProject);
+            panelControlProjects.Controls.Add(buttonWordProject);
+            panelControlProjects.Controls.Add(buttonExcelProject);
+            panelControlProjects.Controls.Add(buttonTXTProject);
+            panelControlProjects.Location = new Point(634, 482);
+            panelControlProjects.Margin = new Padding(4, 3, 4, 3);
+            panelControlProjects.Name = "panelControlProjects";
+            panelControlProjects.Size = new Size(243, 520);
+            panelControlProjects.TabIndex = 2;
             // 
-            // buttonNewLoan
+            // buttonNewProject
             // 
-            buttonNewLoan.FlatStyle = FlatStyle.Flat;
-            buttonNewLoan.ForeColor = Color.WhiteSmoke;
-            buttonNewLoan.Location = new Point(4, 3);
-            buttonNewLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonNewLoan.Name = "buttonNewLoan";
-            buttonNewLoan.Size = new Size(236, 67);
-            buttonNewLoan.TabIndex = 0;
-            buttonNewLoan.Text = "Новая запись";
-            buttonNewLoan.UseVisualStyleBackColor = true;
-            buttonNewLoan.Click += ButtonNewLoan_Click;
+            buttonNewProject.FlatStyle = FlatStyle.Flat;
+            buttonNewProject.ForeColor = Color.WhiteSmoke;
+            buttonNewProject.Location = new Point(4, 3);
+            buttonNewProject.Margin = new Padding(4, 3, 4, 3);
+            buttonNewProject.Name = "buttonNewProject";
+            buttonNewProject.Size = new Size(236, 67);
+            buttonNewProject.TabIndex = 0;
+            buttonNewProject.Text = "Новая запись";
+            buttonNewProject.UseVisualStyleBackColor = true;
             // 
-            // buttonDeleteLoan
+            // buttonDeleteProject
             // 
-            buttonDeleteLoan.FlatStyle = FlatStyle.Flat;
-            buttonDeleteLoan.ForeColor = Color.WhiteSmoke;
-            buttonDeleteLoan.Location = new Point(4, 78);
-            buttonDeleteLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteLoan.Name = "buttonDeleteLoan";
-            buttonDeleteLoan.Size = new Size(236, 67);
-            buttonDeleteLoan.TabIndex = 1;
-            buttonDeleteLoan.Text = "Удалить";
-            buttonDeleteLoan.UseVisualStyleBackColor = true;
-            buttonDeleteLoan.Click += ButtonDeleteLoan_Click;
+            buttonDeleteProject.FlatStyle = FlatStyle.Flat;
+            buttonDeleteProject.ForeColor = Color.WhiteSmoke;
+            buttonDeleteProject.Location = new Point(4, 78);
+            buttonDeleteProject.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteProject.Name = "buttonDeleteProject";
+            buttonDeleteProject.Size = new Size(236, 67);
+            buttonDeleteProject.TabIndex = 1;
+            buttonDeleteProject.Text = "Удалить";
+            buttonDeleteProject.UseVisualStyleBackColor = true;
             // 
-            // buttonChangeLoan
+            // buttonChangeProject
             // 
-            buttonChangeLoan.FlatStyle = FlatStyle.Flat;
-            buttonChangeLoan.ForeColor = Color.WhiteSmoke;
-            buttonChangeLoan.Location = new Point(4, 152);
-            buttonChangeLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeLoan.Name = "buttonChangeLoan";
-            buttonChangeLoan.Size = new Size(236, 67);
-            buttonChangeLoan.TabIndex = 2;
-            buttonChangeLoan.Text = "Изменить";
-            buttonChangeLoan.UseVisualStyleBackColor = true;
-            buttonChangeLoan.Click += ButtonChangeLoan_Click;
+            buttonChangeProject.FlatStyle = FlatStyle.Flat;
+            buttonChangeProject.ForeColor = Color.Black;
+            buttonChangeProject.Location = new Point(4, 152);
+            buttonChangeProject.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeProject.Name = "buttonChangeProject";
+            buttonChangeProject.Size = new Size(236, 67);
+            buttonChangeProject.TabIndex = 2;
+            buttonChangeProject.Text = "Изменить";
+            buttonChangeProject.UseVisualStyleBackColor = true;
             // 
-            // buttonSaveLoan
+            // buttonSaveProject
             // 
-            buttonSaveLoan.FlatStyle = FlatStyle.Flat;
-            buttonSaveLoan.ForeColor = Color.WhiteSmoke;
-            buttonSaveLoan.Location = new Point(4, 226);
-            buttonSaveLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveLoan.Name = "buttonSaveLoan";
-            buttonSaveLoan.Size = new Size(236, 67);
-            buttonSaveLoan.TabIndex = 3;
-            buttonSaveLoan.Text = "Сохранить";
-            buttonSaveLoan.UseVisualStyleBackColor = true;
-            buttonSaveLoan.Click += ButtonSaveLoan_Click;
+            buttonSaveProject.FlatStyle = FlatStyle.Flat;
+            buttonSaveProject.ForeColor = Color.Black;
+            buttonSaveProject.Location = new Point(4, 226);
+            buttonSaveProject.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveProject.Name = "buttonSaveProject";
+            buttonSaveProject.Size = new Size(236, 67);
+            buttonSaveProject.TabIndex = 3;
+            buttonSaveProject.Text = "Сохранить";
+            buttonSaveProject.UseVisualStyleBackColor = true;
             // 
-            // buttonWordLoan
+            // buttonWordProject
             // 
-            buttonWordLoan.FlatStyle = FlatStyle.Flat;
-            buttonWordLoan.ForeColor = Color.WhiteSmoke;
-            buttonWordLoan.Location = new Point(4, 301);
-            buttonWordLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonWordLoan.Name = "buttonWordLoan";
-            buttonWordLoan.Size = new Size(236, 67);
-            buttonWordLoan.TabIndex = 4;
-            buttonWordLoan.Text = "Вывод в Word";
-            buttonWordLoan.UseVisualStyleBackColor = true;
-            buttonWordLoan.Click += ButtonWordLoan_Click;
+            buttonWordProject.FlatStyle = FlatStyle.Flat;
+            buttonWordProject.ForeColor = Color.Black;
+            buttonWordProject.Location = new Point(4, 301);
+            buttonWordProject.Margin = new Padding(4, 3, 4, 3);
+            buttonWordProject.Name = "buttonWordProject";
+            buttonWordProject.Size = new Size(236, 67);
+            buttonWordProject.TabIndex = 4;
+            buttonWordProject.Text = "Вывод в Word";
+            buttonWordProject.UseVisualStyleBackColor = true;
+            buttonWordProject.Click += ButtonWordLoan_Click;
             // 
-            // buttonExcelLoan
+            // buttonExcelProject
             // 
-            buttonExcelLoan.FlatStyle = FlatStyle.Flat;
-            buttonExcelLoan.ForeColor = Color.WhiteSmoke;
-            buttonExcelLoan.Location = new Point(4, 375);
-            buttonExcelLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelLoan.Name = "buttonExcelLoan";
-            buttonExcelLoan.Size = new Size(236, 67);
-            buttonExcelLoan.TabIndex = 5;
-            buttonExcelLoan.Text = "Вывод в Excel";
-            buttonExcelLoan.UseVisualStyleBackColor = true;
-            buttonExcelLoan.Click += ButtonExcelLoan_Click;
+            buttonExcelProject.FlatStyle = FlatStyle.Flat;
+            buttonExcelProject.ForeColor = Color.WhiteSmoke;
+            buttonExcelProject.Location = new Point(4, 375);
+            buttonExcelProject.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelProject.Name = "buttonExcelProject";
+            buttonExcelProject.Size = new Size(236, 67);
+            buttonExcelProject.TabIndex = 5;
+            buttonExcelProject.Text = "Вывод в Excel";
+            buttonExcelProject.UseVisualStyleBackColor = true;
+            buttonExcelProject.Click += ButtonExcelLoan_Click;
             // 
-            // buttonTXTLoan
+            // buttonTXTProject
             // 
-            buttonTXTLoan.FlatStyle = FlatStyle.Flat;
-            buttonTXTLoan.ForeColor = Color.WhiteSmoke;
-            buttonTXTLoan.Location = new Point(4, 449);
-            buttonTXTLoan.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTLoan.Name = "buttonTXTLoan";
-            buttonTXTLoan.Size = new Size(236, 67);
-            buttonTXTLoan.TabIndex = 6;
-            buttonTXTLoan.Text = "Вывод в TXT";
-            buttonTXTLoan.UseVisualStyleBackColor = true;
-            buttonTXTLoan.Click += ButtonTXTLoan_Click;
+            buttonTXTProject.FlatStyle = FlatStyle.Flat;
+            buttonTXTProject.ForeColor = Color.WhiteSmoke;
+            buttonTXTProject.Location = new Point(4, 449);
+            buttonTXTProject.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTProject.Name = "buttonTXTProject";
+            buttonTXTProject.Size = new Size(236, 67);
+            buttonTXTProject.TabIndex = 6;
+            buttonTXTProject.Text = "Вывод в TXT";
+            buttonTXTProject.UseVisualStyleBackColor = true;
+            buttonTXTProject.Click += ButtonTXTLoan_Click;
+            // 
+            // tabPageEmployees
+            // 
+            tabPageEmployees.BackgroundImage = (Image)resources.GetObject("tabPageEmployees.BackgroundImage");
+            tabPageEmployees.Controls.Add(panelTitleEmployees);
+            tabPageEmployees.Controls.Add(dataGridViewEmployees);
+            tabPageEmployees.Controls.Add(panelRecordEmployees);
+            tabPageEmployees.Controls.Add(labelControlEmployees);
+            tabPageEmployees.Controls.Add(panelControlEmployees);
+            tabPageEmployees.Location = new Point(4, 24);
+            tabPageEmployees.Margin = new Padding(4, 3, 4, 3);
+            tabPageEmployees.Name = "tabPageEmployees";
+            tabPageEmployees.Padding = new Padding(4, 3, 4, 3);
+            tabPageEmployees.Size = new Size(889, 1010);
+            tabPageEmployees.TabIndex = 2;
+            tabPageEmployees.Text = "Сотрудники";
+            tabPageEmployees.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleEmployees
+            // 
+            panelTitleEmployees.Controls.Add(labelTitleEmployees);
+            panelTitleEmployees.Controls.Add(buttonClearEmployees);
+            panelTitleEmployees.Controls.Add(buttonRefreshEmployees);
+            panelTitleEmployees.Controls.Add(textBoxSearchEmployees);
+            panelTitleEmployees.Location = new Point(0, 0);
+            panelTitleEmployees.Margin = new Padding(4, 3, 4, 3);
+            panelTitleEmployees.Name = "panelTitleEmployees";
+            panelTitleEmployees.Size = new Size(876, 84);
+            panelTitleEmployees.TabIndex = 3;
+            // 
+            // labelTitleEmployees
+            // 
+            labelTitleEmployees.AutoSize = true;
+            labelTitleEmployees.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleEmployees.ForeColor = Color.WhiteSmoke;
+            labelTitleEmployees.Location = new Point(4, 3);
+            labelTitleEmployees.Margin = new Padding(4, 0, 4, 0);
+            labelTitleEmployees.Name = "labelTitleEmployees";
+            labelTitleEmployees.Size = new Size(291, 65);
+            labelTitleEmployees.TabIndex = 4;
+            labelTitleEmployees.Text = "Сотрудники";
+            // 
+            // buttonClearEmployees
+            // 
+            buttonClearEmployees.BackgroundImage = (Image)resources.GetObject("buttonClearEmployees.BackgroundImage");
+            buttonClearEmployees.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearEmployees.FlatStyle = FlatStyle.Flat;
+            buttonClearEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearEmployees.Location = new Point(528, 3);
+            buttonClearEmployees.Margin = new Padding(4, 3, 4, 3);
+            buttonClearEmployees.Name = "buttonClearEmployees";
+            buttonClearEmployees.Size = new Size(78, 77);
+            buttonClearEmployees.TabIndex = 0;
+            buttonClearEmployees.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshEmployees
+            // 
+            buttonRefreshEmployees.BackgroundImage = (Image)resources.GetObject("buttonRefreshEmployees.BackgroundImage");
+            buttonRefreshEmployees.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshEmployees.FlatStyle = FlatStyle.Flat;
+            buttonRefreshEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshEmployees.Location = new Point(614, 3);
+            buttonRefreshEmployees.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshEmployees.Name = "buttonRefreshEmployees";
+            buttonRefreshEmployees.Size = new Size(78, 77);
+            buttonRefreshEmployees.TabIndex = 1;
+            buttonRefreshEmployees.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchEmployees
+            // 
+            textBoxSearchEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchEmployees.Location = new Point(699, 37);
+            textBoxSearchEmployees.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchEmployees.Name = "textBoxSearchEmployees";
+            textBoxSearchEmployees.Size = new Size(173, 33);
+            textBoxSearchEmployees.TabIndex = 2;
+            // 
+            // dataGridViewEmployees
+            // 
+            dataGridViewEmployees.AllowUserToAddRows = false;
+            dataGridViewEmployees.AllowUserToDeleteRows = false;
+            dataGridViewEmployees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewEmployees.Location = new Point(9, 91);
+            dataGridViewEmployees.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewEmployees.Name = "dataGridViewEmployees";
+            dataGridViewEmployees.ReadOnly = true;
+            dataGridViewEmployees.RowHeadersWidth = 62;
+            dataGridViewEmployees.Size = new Size(867, 352);
+            dataGridViewEmployees.TabIndex = 0;
+            // 
+            // panelRecordEmployees
+            // 
+            panelRecordEmployees.Controls.Add(label2);
+            panelRecordEmployees.Controls.Add(label3);
+            panelRecordEmployees.Controls.Add(textBox2);
+            panelRecordEmployees.Controls.Add(label4);
+            panelRecordEmployees.Controls.Add(textBox3);
+            panelRecordEmployees.Controls.Add(label5);
+            panelRecordEmployees.Controls.Add(textBox4);
+            panelRecordEmployees.Controls.Add(label6);
+            panelRecordEmployees.Controls.Add(dateTimePicker1);
+            panelRecordEmployees.Controls.Add(label7);
+            panelRecordEmployees.Controls.Add(dateTimePicker2);
+            panelRecordEmployees.Controls.Add(checkBox1);
+            panelRecordEmployees.Controls.Add(label8);
+            panelRecordEmployees.Controls.Add(textBox5);
+            panelRecordEmployees.Location = new Point(9, 450);
+            panelRecordEmployees.Margin = new Padding(4, 3, 4, 3);
+            panelRecordEmployees.Name = "panelRecordEmployees";
+            panelRecordEmployees.Size = new Size(611, 552);
+            panelRecordEmployees.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.ForeColor = Color.WhiteSmoke;
+            label2.Location = new Point(4, 10);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(142, 47);
+            label2.TabIndex = 7;
+            label2.Text = "Запись:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(93, 82);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(48, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Номер:";
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox2.Location = new Point(152, 68);
+            textBox2.Margin = new Padding(4, 3, 4, 3);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(455, 33);
+            textBox2.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.WhiteSmoke;
+            label4.Location = new Point(24, 124);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(122, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Логин пользователя:";
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox3.Location = new Point(152, 113);
+            textBox3.Margin = new Padding(4, 3, 4, 3);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(455, 33);
+            textBox3.TabIndex = 1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = Color.WhiteSmoke;
+            label5.Location = new Point(58, 169);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(83, 15);
+            label5.TabIndex = 10;
+            label5.Text = "Номер книги:";
+            // 
+            // textBox4
+            // 
+            textBox4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox4.Location = new Point(152, 158);
+            textBox4.Margin = new Padding(4, 3, 4, 3);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(455, 33);
+            textBox4.TabIndex = 2;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = Color.WhiteSmoke;
+            label6.Location = new Point(62, 217);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(79, 15);
+            label6.TabIndex = 11;
+            label6.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker1.Location = new Point(152, 203);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(455, 33);
+            dateTimePicker1.TabIndex = 3;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = Color.WhiteSmoke;
+            label7.Location = new Point(55, 259);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(86, 15);
+            label7.TabIndex = 12;
+            label7.Text = "Дата возврата:";
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker2.Location = new Point(152, 245);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(244, 33);
+            dateTimePicker2.TabIndex = 4;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI", 14.25F);
+            checkBox1.Location = new Point(402, 250);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(205, 29);
+            checkBox1.TabIndex = 5;
+            checkBox1.Text = "Еще не возвращена";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.WhiteSmoke;
+            label8.Location = new Point(95, 304);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(46, 15);
+            label8.TabIndex = 13;
+            label8.Text = "Статус:";
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox5.Location = new Point(152, 293);
+            textBox5.Margin = new Padding(4, 3, 4, 3);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(455, 33);
+            textBox5.TabIndex = 6;
+            // 
+            // labelControlEmployees
+            // 
+            labelControlEmployees.AutoSize = true;
+            labelControlEmployees.BackColor = Color.Transparent;
+            labelControlEmployees.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlEmployees.ForeColor = Color.Black;
+            labelControlEmployees.Location = new Point(636, 456);
+            labelControlEmployees.Margin = new Padding(4, 0, 4, 0);
+            labelControlEmployees.Name = "labelControlEmployees";
+            labelControlEmployees.Size = new Size(213, 25);
+            labelControlEmployees.TabIndex = 4;
+            labelControlEmployees.Text = "Управление записями:";
+            // 
+            // panelControlEmployees
+            // 
+            panelControlEmployees.Controls.Add(buttonNewEmployee);
+            panelControlEmployees.Controls.Add(buttonDeleteEmployee);
+            panelControlEmployees.Controls.Add(buttonChangeEmployee);
+            panelControlEmployees.Controls.Add(buttonSaveEmployee);
+            panelControlEmployees.Controls.Add(buttonWordEmployee);
+            panelControlEmployees.Controls.Add(buttonExcelEmployee);
+            panelControlEmployees.Controls.Add(buttonTXTEmployee);
+            panelControlEmployees.Location = new Point(634, 482);
+            panelControlEmployees.Margin = new Padding(4, 3, 4, 3);
+            panelControlEmployees.Name = "panelControlEmployees";
+            panelControlEmployees.Size = new Size(243, 520);
+            panelControlEmployees.TabIndex = 2;
+            // 
+            // buttonNewEmployee
+            // 
+            buttonNewEmployee.FlatStyle = FlatStyle.Flat;
+            buttonNewEmployee.ForeColor = Color.WhiteSmoke;
+            buttonNewEmployee.Location = new Point(4, 3);
+            buttonNewEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonNewEmployee.Name = "buttonNewEmployee";
+            buttonNewEmployee.Size = new Size(236, 67);
+            buttonNewEmployee.TabIndex = 0;
+            buttonNewEmployee.Text = "Новая запись";
+            buttonNewEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteEmployee
+            // 
+            buttonDeleteEmployee.FlatStyle = FlatStyle.Flat;
+            buttonDeleteEmployee.ForeColor = Color.WhiteSmoke;
+            buttonDeleteEmployee.Location = new Point(4, 78);
+            buttonDeleteEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteEmployee.Name = "buttonDeleteEmployee";
+            buttonDeleteEmployee.Size = new Size(236, 67);
+            buttonDeleteEmployee.TabIndex = 1;
+            buttonDeleteEmployee.Text = "Удалить";
+            buttonDeleteEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeEmployee
+            // 
+            buttonChangeEmployee.FlatStyle = FlatStyle.Flat;
+            buttonChangeEmployee.ForeColor = Color.Black;
+            buttonChangeEmployee.Location = new Point(8, 152);
+            buttonChangeEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeEmployee.Name = "buttonChangeEmployee";
+            buttonChangeEmployee.Size = new Size(236, 67);
+            buttonChangeEmployee.TabIndex = 2;
+            buttonChangeEmployee.Text = "Изменить";
+            buttonChangeEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveEmployee
+            // 
+            buttonSaveEmployee.FlatStyle = FlatStyle.Flat;
+            buttonSaveEmployee.ForeColor = Color.Black;
+            buttonSaveEmployee.Location = new Point(4, 226);
+            buttonSaveEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveEmployee.Name = "buttonSaveEmployee";
+            buttonSaveEmployee.Size = new Size(236, 67);
+            buttonSaveEmployee.TabIndex = 3;
+            buttonSaveEmployee.Text = "Сохранить";
+            buttonSaveEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordEmployee
+            // 
+            buttonWordEmployee.FlatStyle = FlatStyle.Flat;
+            buttonWordEmployee.ForeColor = Color.Black;
+            buttonWordEmployee.Location = new Point(4, 301);
+            buttonWordEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonWordEmployee.Name = "buttonWordEmployee";
+            buttonWordEmployee.Size = new Size(236, 67);
+            buttonWordEmployee.TabIndex = 4;
+            buttonWordEmployee.Text = "Вывод в Word";
+            buttonWordEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelEmployee
+            // 
+            buttonExcelEmployee.FlatStyle = FlatStyle.Flat;
+            buttonExcelEmployee.ForeColor = Color.WhiteSmoke;
+            buttonExcelEmployee.Location = new Point(4, 375);
+            buttonExcelEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelEmployee.Name = "buttonExcelEmployee";
+            buttonExcelEmployee.Size = new Size(236, 67);
+            buttonExcelEmployee.TabIndex = 5;
+            buttonExcelEmployee.Text = "Вывод в Excel";
+            buttonExcelEmployee.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTEmployee
+            // 
+            buttonTXTEmployee.FlatStyle = FlatStyle.Flat;
+            buttonTXTEmployee.ForeColor = Color.WhiteSmoke;
+            buttonTXTEmployee.Location = new Point(4, 449);
+            buttonTXTEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTEmployee.Name = "buttonTXTEmployee";
+            buttonTXTEmployee.Size = new Size(236, 67);
+            buttonTXTEmployee.TabIndex = 6;
+            buttonTXTEmployee.Text = "Вывод в TXT";
+            buttonTXTEmployee.UseVisualStyleBackColor = true;
+            // 
+            // tabPageSalaryAccruals
+            // 
+            tabPageSalaryAccruals.BackgroundImage = (Image)resources.GetObject("tabPageSalaryAccruals.BackgroundImage");
+            tabPageSalaryAccruals.Controls.Add(panelTitleSalaryAccruals);
+            tabPageSalaryAccruals.Controls.Add(dataGridViewSalaryAccruals);
+            tabPageSalaryAccruals.Controls.Add(panelRecordSalaryAccruals);
+            tabPageSalaryAccruals.Controls.Add(labelControlSalaryAccruals);
+            tabPageSalaryAccruals.Controls.Add(panelControlSalaryAccruals);
+            tabPageSalaryAccruals.Location = new Point(4, 24);
+            tabPageSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            tabPageSalaryAccruals.Name = "tabPageSalaryAccruals";
+            tabPageSalaryAccruals.Padding = new Padding(4, 3, 4, 3);
+            tabPageSalaryAccruals.Size = new Size(889, 1010);
+            tabPageSalaryAccruals.TabIndex = 3;
+            tabPageSalaryAccruals.Text = "Зарплаты";
+            tabPageSalaryAccruals.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleSalaryAccruals
+            // 
+            panelTitleSalaryAccruals.Controls.Add(labelTitleSalaryAccruals);
+            panelTitleSalaryAccruals.Controls.Add(buttonClearSalaryAccruals);
+            panelTitleSalaryAccruals.Controls.Add(buttonRefreshSalaryAccruals);
+            panelTitleSalaryAccruals.Controls.Add(textBoxSearchSalaryAccruals);
+            panelTitleSalaryAccruals.Location = new Point(0, 0);
+            panelTitleSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            panelTitleSalaryAccruals.Name = "panelTitleSalaryAccruals";
+            panelTitleSalaryAccruals.Size = new Size(876, 84);
+            panelTitleSalaryAccruals.TabIndex = 3;
+            // 
+            // labelTitleSalaryAccruals
+            // 
+            labelTitleSalaryAccruals.AutoSize = true;
+            labelTitleSalaryAccruals.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelTitleSalaryAccruals.Location = new Point(4, 3);
+            labelTitleSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
+            labelTitleSalaryAccruals.Name = "labelTitleSalaryAccruals";
+            labelTitleSalaryAccruals.Size = new Size(237, 65);
+            labelTitleSalaryAccruals.TabIndex = 4;
+            labelTitleSalaryAccruals.Text = "Зарплаты";
+            // 
+            // buttonClearSalaryAccruals
+            // 
+            buttonClearSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonClearSalaryAccruals.BackgroundImage");
+            buttonClearSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearSalaryAccruals.FlatStyle = FlatStyle.Flat;
+            buttonClearSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearSalaryAccruals.Location = new Point(528, 3);
+            buttonClearSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            buttonClearSalaryAccruals.Name = "buttonClearSalaryAccruals";
+            buttonClearSalaryAccruals.Size = new Size(78, 77);
+            buttonClearSalaryAccruals.TabIndex = 0;
+            buttonClearSalaryAccruals.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshSalaryAccruals
+            // 
+            buttonRefreshSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalaryAccruals.BackgroundImage");
+            buttonRefreshSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSalaryAccruals.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSalaryAccruals.Location = new Point(614, 3);
+            buttonRefreshSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSalaryAccruals.Name = "buttonRefreshSalaryAccruals";
+            buttonRefreshSalaryAccruals.Size = new Size(78, 77);
+            buttonRefreshSalaryAccruals.TabIndex = 1;
+            buttonRefreshSalaryAccruals.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchSalaryAccruals
+            // 
+            textBoxSearchSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchSalaryAccruals.Location = new Point(699, 37);
+            textBoxSearchSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchSalaryAccruals.Name = "textBoxSearchSalaryAccruals";
+            textBoxSearchSalaryAccruals.Size = new Size(173, 33);
+            textBoxSearchSalaryAccruals.TabIndex = 2;
+            // 
+            // dataGridViewSalaryAccruals
+            // 
+            dataGridViewSalaryAccruals.AllowUserToAddRows = false;
+            dataGridViewSalaryAccruals.AllowUserToDeleteRows = false;
+            dataGridViewSalaryAccruals.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSalaryAccruals.Location = new Point(9, 91);
+            dataGridViewSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewSalaryAccruals.Name = "dataGridViewSalaryAccruals";
+            dataGridViewSalaryAccruals.ReadOnly = true;
+            dataGridViewSalaryAccruals.RowHeadersWidth = 62;
+            dataGridViewSalaryAccruals.Size = new Size(867, 352);
+            dataGridViewSalaryAccruals.TabIndex = 0;
+            // 
+            // panelRecordSalaryAccruals
+            // 
+            panelRecordSalaryAccruals.Controls.Add(label11);
+            panelRecordSalaryAccruals.Controls.Add(label12);
+            panelRecordSalaryAccruals.Controls.Add(textBox7);
+            panelRecordSalaryAccruals.Controls.Add(label13);
+            panelRecordSalaryAccruals.Controls.Add(textBox8);
+            panelRecordSalaryAccruals.Controls.Add(label14);
+            panelRecordSalaryAccruals.Controls.Add(textBox9);
+            panelRecordSalaryAccruals.Controls.Add(label15);
+            panelRecordSalaryAccruals.Controls.Add(dateTimePicker3);
+            panelRecordSalaryAccruals.Controls.Add(label16);
+            panelRecordSalaryAccruals.Controls.Add(dateTimePicker4);
+            panelRecordSalaryAccruals.Controls.Add(checkBox2);
+            panelRecordSalaryAccruals.Controls.Add(label17);
+            panelRecordSalaryAccruals.Controls.Add(textBox10);
+            panelRecordSalaryAccruals.Location = new Point(9, 450);
+            panelRecordSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            panelRecordSalaryAccruals.Name = "panelRecordSalaryAccruals";
+            panelRecordSalaryAccruals.Size = new Size(611, 552);
+            panelRecordSalaryAccruals.TabIndex = 1;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label11.ForeColor = Color.WhiteSmoke;
+            label11.Location = new Point(4, 10);
+            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Name = "label11";
+            label11.Size = new Size(142, 47);
+            label11.TabIndex = 7;
+            label11.Text = "Запись:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.ForeColor = Color.WhiteSmoke;
+            label12.Location = new Point(93, 82);
+            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(48, 15);
+            label12.TabIndex = 8;
+            label12.Text = "Номер:";
+            // 
+            // textBox7
+            // 
+            textBox7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox7.Location = new Point(152, 68);
+            textBox7.Margin = new Padding(4, 3, 4, 3);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(455, 33);
+            textBox7.TabIndex = 0;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.ForeColor = Color.WhiteSmoke;
+            label13.Location = new Point(24, 124);
+            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(122, 15);
+            label13.TabIndex = 9;
+            label13.Text = "Логин пользователя:";
+            // 
+            // textBox8
+            // 
+            textBox8.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox8.Location = new Point(152, 113);
+            textBox8.Margin = new Padding(4, 3, 4, 3);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(455, 33);
+            textBox8.TabIndex = 1;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.ForeColor = Color.WhiteSmoke;
+            label14.Location = new Point(58, 169);
+            label14.Margin = new Padding(4, 0, 4, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(83, 15);
+            label14.TabIndex = 10;
+            label14.Text = "Номер книги:";
+            // 
+            // textBox9
+            // 
+            textBox9.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox9.Location = new Point(152, 158);
+            textBox9.Margin = new Padding(4, 3, 4, 3);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(455, 33);
+            textBox9.TabIndex = 2;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.ForeColor = Color.WhiteSmoke;
+            label15.Location = new Point(62, 217);
+            label15.Margin = new Padding(4, 0, 4, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(79, 15);
+            label15.TabIndex = 11;
+            label15.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker3
+            // 
+            dateTimePicker3.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker3.Location = new Point(152, 203);
+            dateTimePicker3.Name = "dateTimePicker3";
+            dateTimePicker3.Size = new Size(455, 33);
+            dateTimePicker3.TabIndex = 3;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.ForeColor = Color.WhiteSmoke;
+            label16.Location = new Point(55, 259);
+            label16.Margin = new Padding(4, 0, 4, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(86, 15);
+            label16.TabIndex = 12;
+            label16.Text = "Дата возврата:";
+            // 
+            // dateTimePicker4
+            // 
+            dateTimePicker4.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker4.Location = new Point(152, 245);
+            dateTimePicker4.Name = "dateTimePicker4";
+            dateTimePicker4.Size = new Size(244, 33);
+            dateTimePicker4.TabIndex = 4;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Font = new Font("Segoe UI", 14.25F);
+            checkBox2.Location = new Point(402, 250);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(205, 29);
+            checkBox2.TabIndex = 5;
+            checkBox2.Text = "Еще не возвращена";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.ForeColor = Color.WhiteSmoke;
+            label17.Location = new Point(95, 304);
+            label17.Margin = new Padding(4, 0, 4, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(46, 15);
+            label17.TabIndex = 13;
+            label17.Text = "Статус:";
+            // 
+            // textBox10
+            // 
+            textBox10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox10.Location = new Point(152, 293);
+            textBox10.Margin = new Padding(4, 3, 4, 3);
+            textBox10.Name = "textBox10";
+            textBox10.ReadOnly = true;
+            textBox10.Size = new Size(455, 33);
+            textBox10.TabIndex = 6;
+            // 
+            // labelControlSalaryAccruals
+            // 
+            labelControlSalaryAccruals.AutoSize = true;
+            labelControlSalaryAccruals.BackColor = Color.Transparent;
+            labelControlSalaryAccruals.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlSalaryAccruals.ForeColor = Color.Black;
+            labelControlSalaryAccruals.Location = new Point(636, 456);
+            labelControlSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
+            labelControlSalaryAccruals.Name = "labelControlSalaryAccruals";
+            labelControlSalaryAccruals.Size = new Size(213, 25);
+            labelControlSalaryAccruals.TabIndex = 4;
+            labelControlSalaryAccruals.Text = "Управление записями:";
+            // 
+            // panelControlSalaryAccruals
+            // 
+            panelControlSalaryAccruals.Controls.Add(buttonNewSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonDeleteSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonChangeSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonSaveSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonWordSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonExcelSalaryAccrual);
+            panelControlSalaryAccruals.Controls.Add(buttonTXTSalaryAccrual);
+            panelControlSalaryAccruals.Location = new Point(634, 482);
+            panelControlSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            panelControlSalaryAccruals.Name = "panelControlSalaryAccruals";
+            panelControlSalaryAccruals.Size = new Size(243, 520);
+            panelControlSalaryAccruals.TabIndex = 2;
+            // 
+            // buttonNewSalaryAccrual
+            // 
+            buttonNewSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonNewSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonNewSalaryAccrual.Location = new Point(4, 3);
+            buttonNewSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSalaryAccrual.Name = "buttonNewSalaryAccrual";
+            buttonNewSalaryAccrual.Size = new Size(236, 67);
+            buttonNewSalaryAccrual.TabIndex = 0;
+            buttonNewSalaryAccrual.Text = "Новая запись";
+            buttonNewSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteSalaryAccrual
+            // 
+            buttonDeleteSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSalaryAccrual.Location = new Point(4, 78);
+            buttonDeleteSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSalaryAccrual.Name = "buttonDeleteSalaryAccrual";
+            buttonDeleteSalaryAccrual.Size = new Size(236, 67);
+            buttonDeleteSalaryAccrual.TabIndex = 1;
+            buttonDeleteSalaryAccrual.Text = "Удалить";
+            buttonDeleteSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeSalaryAccrual
+            // 
+            buttonChangeSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonChangeSalaryAccrual.ForeColor = Color.Black;
+            buttonChangeSalaryAccrual.Location = new Point(4, 152);
+            buttonChangeSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSalaryAccrual.Name = "buttonChangeSalaryAccrual";
+            buttonChangeSalaryAccrual.Size = new Size(236, 67);
+            buttonChangeSalaryAccrual.TabIndex = 2;
+            buttonChangeSalaryAccrual.Text = "Изменить";
+            buttonChangeSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveSalaryAccrual
+            // 
+            buttonSaveSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonSaveSalaryAccrual.ForeColor = Color.Black;
+            buttonSaveSalaryAccrual.Location = new Point(4, 226);
+            buttonSaveSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSalaryAccrual.Name = "buttonSaveSalaryAccrual";
+            buttonSaveSalaryAccrual.Size = new Size(236, 67);
+            buttonSaveSalaryAccrual.TabIndex = 3;
+            buttonSaveSalaryAccrual.Text = "Сохранить";
+            buttonSaveSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordSalaryAccrual
+            // 
+            buttonWordSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonWordSalaryAccrual.ForeColor = Color.Black;
+            buttonWordSalaryAccrual.Location = new Point(4, 301);
+            buttonWordSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSalaryAccrual.Name = "buttonWordSalaryAccrual";
+            buttonWordSalaryAccrual.Size = new Size(236, 67);
+            buttonWordSalaryAccrual.TabIndex = 4;
+            buttonWordSalaryAccrual.Text = "Вывод в Word";
+            buttonWordSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelSalaryAccrual
+            // 
+            buttonExcelSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonExcelSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonExcelSalaryAccrual.Location = new Point(4, 375);
+            buttonExcelSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSalaryAccrual.Name = "buttonExcelSalaryAccrual";
+            buttonExcelSalaryAccrual.Size = new Size(236, 67);
+            buttonExcelSalaryAccrual.TabIndex = 5;
+            buttonExcelSalaryAccrual.Text = "Вывод в Excel";
+            buttonExcelSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTSalaryAccrual
+            // 
+            buttonTXTSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonTXTSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonTXTSalaryAccrual.Location = new Point(4, 449);
+            buttonTXTSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTSalaryAccrual.Name = "buttonTXTSalaryAccrual";
+            buttonTXTSalaryAccrual.Size = new Size(236, 67);
+            buttonTXTSalaryAccrual.TabIndex = 6;
+            buttonTXTSalaryAccrual.Text = "Вывод в TXT";
+            buttonTXTSalaryAccrual.UseVisualStyleBackColor = true;
+            // 
+            // tabPageSalary
+            // 
+            tabPageSalary.BackgroundImage = (Image)resources.GetObject("tabPageSalary.BackgroundImage");
+            tabPageSalary.Controls.Add(panelTitleSalary);
+            tabPageSalary.Controls.Add(dataGridViewSalary);
+            tabPageSalary.Controls.Add(panelRecordSalary);
+            tabPageSalary.Controls.Add(labelControlSalary);
+            tabPageSalary.Controls.Add(panelControlSalary);
+            tabPageSalary.Location = new Point(4, 24);
+            tabPageSalary.Margin = new Padding(4, 3, 4, 3);
+            tabPageSalary.Name = "tabPageSalary";
+            tabPageSalary.Padding = new Padding(4, 3, 4, 3);
+            tabPageSalary.Size = new Size(889, 1010);
+            tabPageSalary.TabIndex = 4;
+            tabPageSalary.Text = "Начисления зарплаты";
+            tabPageSalary.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleSalary
+            // 
+            panelTitleSalary.Controls.Add(labelTitleSalary);
+            panelTitleSalary.Controls.Add(buttonClearSalary);
+            panelTitleSalary.Controls.Add(buttonRefreshSalary);
+            panelTitleSalary.Controls.Add(textBoxSearchSalary);
+            panelTitleSalary.Location = new Point(0, 0);
+            panelTitleSalary.Margin = new Padding(4, 3, 4, 3);
+            panelTitleSalary.Name = "panelTitleSalary";
+            panelTitleSalary.Size = new Size(876, 84);
+            panelTitleSalary.TabIndex = 3;
+            // 
+            // labelTitleSalary
+            // 
+            labelTitleSalary.AutoSize = true;
+            labelTitleSalary.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleSalary.ForeColor = Color.WhiteSmoke;
+            labelTitleSalary.Location = new Point(4, 3);
+            labelTitleSalary.Margin = new Padding(4, 0, 4, 0);
+            labelTitleSalary.Name = "labelTitleSalary";
+            labelTitleSalary.Size = new Size(510, 65);
+            labelTitleSalary.TabIndex = 4;
+            labelTitleSalary.Text = "Начисления зарплаты";
+            // 
+            // buttonClearSalary
+            // 
+            buttonClearSalary.BackgroundImage = (Image)resources.GetObject("buttonClearSalary.BackgroundImage");
+            buttonClearSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearSalary.FlatStyle = FlatStyle.Flat;
+            buttonClearSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearSalary.Location = new Point(528, 3);
+            buttonClearSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonClearSalary.Name = "buttonClearSalary";
+            buttonClearSalary.Size = new Size(78, 77);
+            buttonClearSalary.TabIndex = 0;
+            buttonClearSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshSalary
+            // 
+            buttonRefreshSalary.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalary.BackgroundImage");
+            buttonRefreshSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSalary.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSalary.Location = new Point(614, 3);
+            buttonRefreshSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSalary.Name = "buttonRefreshSalary";
+            buttonRefreshSalary.Size = new Size(78, 77);
+            buttonRefreshSalary.TabIndex = 1;
+            buttonRefreshSalary.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchSalary
+            // 
+            textBoxSearchSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchSalary.Location = new Point(699, 37);
+            textBoxSearchSalary.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchSalary.Name = "textBoxSearchSalary";
+            textBoxSearchSalary.Size = new Size(173, 33);
+            textBoxSearchSalary.TabIndex = 2;
+            // 
+            // dataGridViewSalary
+            // 
+            dataGridViewSalary.AllowUserToAddRows = false;
+            dataGridViewSalary.AllowUserToDeleteRows = false;
+            dataGridViewSalary.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSalary.Location = new Point(9, 91);
+            dataGridViewSalary.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewSalary.Name = "dataGridViewSalary";
+            dataGridViewSalary.ReadOnly = true;
+            dataGridViewSalary.RowHeadersWidth = 62;
+            dataGridViewSalary.Size = new Size(867, 352);
+            dataGridViewSalary.TabIndex = 0;
+            // 
+            // panelRecordSalary
+            // 
+            panelRecordSalary.Controls.Add(label20);
+            panelRecordSalary.Controls.Add(label21);
+            panelRecordSalary.Controls.Add(textBox12);
+            panelRecordSalary.Controls.Add(label22);
+            panelRecordSalary.Controls.Add(textBox13);
+            panelRecordSalary.Controls.Add(label23);
+            panelRecordSalary.Controls.Add(textBox14);
+            panelRecordSalary.Controls.Add(label24);
+            panelRecordSalary.Controls.Add(dateTimePicker5);
+            panelRecordSalary.Controls.Add(label25);
+            panelRecordSalary.Controls.Add(dateTimePicker6);
+            panelRecordSalary.Controls.Add(checkBox3);
+            panelRecordSalary.Controls.Add(label26);
+            panelRecordSalary.Controls.Add(textBox15);
+            panelRecordSalary.Location = new Point(9, 450);
+            panelRecordSalary.Margin = new Padding(4, 3, 4, 3);
+            panelRecordSalary.Name = "panelRecordSalary";
+            panelRecordSalary.Size = new Size(611, 552);
+            panelRecordSalary.TabIndex = 1;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label20.ForeColor = Color.WhiteSmoke;
+            label20.Location = new Point(4, 10);
+            label20.Margin = new Padding(4, 0, 4, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(142, 47);
+            label20.TabIndex = 7;
+            label20.Text = "Запись:";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.ForeColor = Color.WhiteSmoke;
+            label21.Location = new Point(93, 82);
+            label21.Margin = new Padding(4, 0, 4, 0);
+            label21.Name = "label21";
+            label21.Size = new Size(48, 15);
+            label21.TabIndex = 8;
+            label21.Text = "Номер:";
+            // 
+            // textBox12
+            // 
+            textBox12.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox12.Location = new Point(152, 68);
+            textBox12.Margin = new Padding(4, 3, 4, 3);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(455, 33);
+            textBox12.TabIndex = 0;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.ForeColor = Color.WhiteSmoke;
+            label22.Location = new Point(24, 124);
+            label22.Margin = new Padding(4, 0, 4, 0);
+            label22.Name = "label22";
+            label22.Size = new Size(122, 15);
+            label22.TabIndex = 9;
+            label22.Text = "Логин пользователя:";
+            // 
+            // textBox13
+            // 
+            textBox13.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox13.Location = new Point(152, 113);
+            textBox13.Margin = new Padding(4, 3, 4, 3);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(455, 33);
+            textBox13.TabIndex = 1;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.ForeColor = Color.WhiteSmoke;
+            label23.Location = new Point(58, 169);
+            label23.Margin = new Padding(4, 0, 4, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(83, 15);
+            label23.TabIndex = 10;
+            label23.Text = "Номер книги:";
+            // 
+            // textBox14
+            // 
+            textBox14.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox14.Location = new Point(152, 158);
+            textBox14.Margin = new Padding(4, 3, 4, 3);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(455, 33);
+            textBox14.TabIndex = 2;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.ForeColor = Color.WhiteSmoke;
+            label24.Location = new Point(62, 217);
+            label24.Margin = new Padding(4, 0, 4, 0);
+            label24.Name = "label24";
+            label24.Size = new Size(79, 15);
+            label24.TabIndex = 11;
+            label24.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker5
+            // 
+            dateTimePicker5.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker5.Location = new Point(152, 203);
+            dateTimePicker5.Name = "dateTimePicker5";
+            dateTimePicker5.Size = new Size(455, 33);
+            dateTimePicker5.TabIndex = 3;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.ForeColor = Color.WhiteSmoke;
+            label25.Location = new Point(55, 259);
+            label25.Margin = new Padding(4, 0, 4, 0);
+            label25.Name = "label25";
+            label25.Size = new Size(86, 15);
+            label25.TabIndex = 12;
+            label25.Text = "Дата возврата:";
+            // 
+            // dateTimePicker6
+            // 
+            dateTimePicker6.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker6.Location = new Point(152, 245);
+            dateTimePicker6.Name = "dateTimePicker6";
+            dateTimePicker6.Size = new Size(244, 33);
+            dateTimePicker6.TabIndex = 4;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Font = new Font("Segoe UI", 14.25F);
+            checkBox3.Location = new Point(402, 250);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(205, 29);
+            checkBox3.TabIndex = 5;
+            checkBox3.Text = "Еще не возвращена";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.ForeColor = Color.WhiteSmoke;
+            label26.Location = new Point(95, 304);
+            label26.Margin = new Padding(4, 0, 4, 0);
+            label26.Name = "label26";
+            label26.Size = new Size(46, 15);
+            label26.TabIndex = 13;
+            label26.Text = "Статус:";
+            // 
+            // textBox15
+            // 
+            textBox15.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox15.Location = new Point(152, 293);
+            textBox15.Margin = new Padding(4, 3, 4, 3);
+            textBox15.Name = "textBox15";
+            textBox15.ReadOnly = true;
+            textBox15.Size = new Size(455, 33);
+            textBox15.TabIndex = 6;
+            // 
+            // labelControlSalary
+            // 
+            labelControlSalary.AutoSize = true;
+            labelControlSalary.BackColor = Color.Transparent;
+            labelControlSalary.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlSalary.ForeColor = Color.Black;
+            labelControlSalary.Location = new Point(636, 456);
+            labelControlSalary.Margin = new Padding(4, 0, 4, 0);
+            labelControlSalary.Name = "labelControlSalary";
+            labelControlSalary.Size = new Size(213, 25);
+            labelControlSalary.TabIndex = 4;
+            labelControlSalary.Text = "Управление записями:";
+            // 
+            // panelControlSalary
+            // 
+            panelControlSalary.Controls.Add(buttonNewSalary);
+            panelControlSalary.Controls.Add(buttonDeleteSalary);
+            panelControlSalary.Controls.Add(buttonChangeSalary);
+            panelControlSalary.Controls.Add(buttonSaveSalary);
+            panelControlSalary.Controls.Add(buttonWordSalary);
+            panelControlSalary.Controls.Add(buttonExcelSalary);
+            panelControlSalary.Controls.Add(buttonTXTSalary);
+            panelControlSalary.Location = new Point(634, 482);
+            panelControlSalary.Margin = new Padding(4, 3, 4, 3);
+            panelControlSalary.Name = "panelControlSalary";
+            panelControlSalary.Size = new Size(243, 520);
+            panelControlSalary.TabIndex = 2;
+            // 
+            // buttonNewSalary
+            // 
+            buttonNewSalary.FlatStyle = FlatStyle.Flat;
+            buttonNewSalary.ForeColor = Color.WhiteSmoke;
+            buttonNewSalary.Location = new Point(4, 3);
+            buttonNewSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSalary.Name = "buttonNewSalary";
+            buttonNewSalary.Size = new Size(236, 67);
+            buttonNewSalary.TabIndex = 0;
+            buttonNewSalary.Text = "Новая запись";
+            buttonNewSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteSalary
+            // 
+            buttonDeleteSalary.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSalary.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSalary.Location = new Point(4, 78);
+            buttonDeleteSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSalary.Name = "buttonDeleteSalary";
+            buttonDeleteSalary.Size = new Size(236, 67);
+            buttonDeleteSalary.TabIndex = 1;
+            buttonDeleteSalary.Text = "Удалить";
+            buttonDeleteSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeSalary
+            // 
+            buttonChangeSalary.FlatStyle = FlatStyle.Flat;
+            buttonChangeSalary.ForeColor = Color.Black;
+            buttonChangeSalary.Location = new Point(4, 152);
+            buttonChangeSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSalary.Name = "buttonChangeSalary";
+            buttonChangeSalary.Size = new Size(236, 67);
+            buttonChangeSalary.TabIndex = 2;
+            buttonChangeSalary.Text = "Изменить";
+            buttonChangeSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveSalary
+            // 
+            buttonSaveSalary.FlatStyle = FlatStyle.Flat;
+            buttonSaveSalary.ForeColor = Color.Black;
+            buttonSaveSalary.Location = new Point(4, 226);
+            buttonSaveSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSalary.Name = "buttonSaveSalary";
+            buttonSaveSalary.Size = new Size(236, 67);
+            buttonSaveSalary.TabIndex = 3;
+            buttonSaveSalary.Text = "Сохранить";
+            buttonSaveSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordSalary
+            // 
+            buttonWordSalary.FlatStyle = FlatStyle.Flat;
+            buttonWordSalary.ForeColor = Color.Black;
+            buttonWordSalary.Location = new Point(4, 301);
+            buttonWordSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSalary.Name = "buttonWordSalary";
+            buttonWordSalary.Size = new Size(236, 67);
+            buttonWordSalary.TabIndex = 4;
+            buttonWordSalary.Text = "Вывод в Word";
+            buttonWordSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelSalary
+            // 
+            buttonExcelSalary.FlatStyle = FlatStyle.Flat;
+            buttonExcelSalary.ForeColor = Color.WhiteSmoke;
+            buttonExcelSalary.Location = new Point(4, 375);
+            buttonExcelSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSalary.Name = "buttonExcelSalary";
+            buttonExcelSalary.Size = new Size(236, 67);
+            buttonExcelSalary.TabIndex = 5;
+            buttonExcelSalary.Text = "Вывод в Excel";
+            buttonExcelSalary.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTSalary
+            // 
+            buttonTXTSalary.FlatStyle = FlatStyle.Flat;
+            buttonTXTSalary.ForeColor = Color.WhiteSmoke;
+            buttonTXTSalary.Location = new Point(4, 449);
+            buttonTXTSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTSalary.Name = "buttonTXTSalary";
+            buttonTXTSalary.Size = new Size(236, 67);
+            buttonTXTSalary.TabIndex = 6;
+            buttonTXTSalary.Text = "Вывод в TXT";
+            buttonTXTSalary.UseVisualStyleBackColor = true;
+            // 
+            // tabPageAccountingsOfWorkingHours
+            // 
+            tabPageAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("tabPageAccountingsOfWorkingHours.BackgroundImage");
+            tabPageAccountingsOfWorkingHours.Controls.Add(panelTitleAccountingsOfWorkingHours);
+            tabPageAccountingsOfWorkingHours.Controls.Add(dataGridViewAccountingsOfWorkingHours);
+            tabPageAccountingsOfWorkingHours.Controls.Add(panelRecordAccountingsOfWorkingHours);
+            tabPageAccountingsOfWorkingHours.Controls.Add(labelControlAccountingsOfWorkingHours);
+            tabPageAccountingsOfWorkingHours.Controls.Add(panelControlAccountingsOfWorkingHours);
+            tabPageAccountingsOfWorkingHours.Location = new Point(4, 24);
+            tabPageAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            tabPageAccountingsOfWorkingHours.Name = "tabPageAccountingsOfWorkingHours";
+            tabPageAccountingsOfWorkingHours.Padding = new Padding(4, 3, 4, 3);
+            tabPageAccountingsOfWorkingHours.Size = new Size(889, 1010);
+            tabPageAccountingsOfWorkingHours.TabIndex = 5;
+            tabPageAccountingsOfWorkingHours.Text = "Учет времени";
+            tabPageAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleAccountingsOfWorkingHours
+            // 
+            panelTitleAccountingsOfWorkingHours.Controls.Add(labelTitleAccountingsOfWorkingHours);
+            panelTitleAccountingsOfWorkingHours.Controls.Add(buttonClearAccountingsOfWorkingHours);
+            panelTitleAccountingsOfWorkingHours.Controls.Add(buttonRefreshAccountingsOfWorkingHours);
+            panelTitleAccountingsOfWorkingHours.Controls.Add(textBoxSearchAccountingsOfWorkingHours);
+            panelTitleAccountingsOfWorkingHours.Location = new Point(0, 0);
+            panelTitleAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            panelTitleAccountingsOfWorkingHours.Name = "panelTitleAccountingsOfWorkingHours";
+            panelTitleAccountingsOfWorkingHours.Size = new Size(876, 84);
+            panelTitleAccountingsOfWorkingHours.TabIndex = 3;
+            // 
+            // labelTitleAccountingsOfWorkingHours
+            // 
+            labelTitleAccountingsOfWorkingHours.AutoSize = true;
+            labelTitleAccountingsOfWorkingHours.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelTitleAccountingsOfWorkingHours.Location = new Point(4, 3);
+            labelTitleAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelTitleAccountingsOfWorkingHours.Name = "labelTitleAccountingsOfWorkingHours";
+            labelTitleAccountingsOfWorkingHours.Size = new Size(333, 65);
+            labelTitleAccountingsOfWorkingHours.TabIndex = 4;
+            labelTitleAccountingsOfWorkingHours.Text = "Учет времени";
+            // 
+            // buttonClearAccountingsOfWorkingHours
+            // 
+            buttonClearAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonClearAccountingsOfWorkingHours.BackgroundImage");
+            buttonClearAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonClearAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearAccountingsOfWorkingHours.Location = new Point(528, 3);
+            buttonClearAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonClearAccountingsOfWorkingHours.Name = "buttonClearAccountingsOfWorkingHours";
+            buttonClearAccountingsOfWorkingHours.Size = new Size(78, 77);
+            buttonClearAccountingsOfWorkingHours.TabIndex = 0;
+            buttonClearAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshAccountingsOfWorkingHours
+            // 
+            buttonRefreshAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonRefreshAccountingsOfWorkingHours.BackgroundImage");
+            buttonRefreshAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonRefreshAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshAccountingsOfWorkingHours.Location = new Point(614, 3);
+            buttonRefreshAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshAccountingsOfWorkingHours.Name = "buttonRefreshAccountingsOfWorkingHours";
+            buttonRefreshAccountingsOfWorkingHours.Size = new Size(78, 77);
+            buttonRefreshAccountingsOfWorkingHours.TabIndex = 1;
+            buttonRefreshAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchAccountingsOfWorkingHours
+            // 
+            textBoxSearchAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchAccountingsOfWorkingHours.Location = new Point(699, 37);
+            textBoxSearchAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchAccountingsOfWorkingHours.Name = "textBoxSearchAccountingsOfWorkingHours";
+            textBoxSearchAccountingsOfWorkingHours.Size = new Size(173, 33);
+            textBoxSearchAccountingsOfWorkingHours.TabIndex = 2;
+            // 
+            // dataGridViewAccountingsOfWorkingHours
+            // 
+            dataGridViewAccountingsOfWorkingHours.AllowUserToAddRows = false;
+            dataGridViewAccountingsOfWorkingHours.AllowUserToDeleteRows = false;
+            dataGridViewAccountingsOfWorkingHours.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewAccountingsOfWorkingHours.Location = new Point(9, 91);
+            dataGridViewAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewAccountingsOfWorkingHours.Name = "dataGridViewAccountingsOfWorkingHours";
+            dataGridViewAccountingsOfWorkingHours.ReadOnly = true;
+            dataGridViewAccountingsOfWorkingHours.RowHeadersWidth = 62;
+            dataGridViewAccountingsOfWorkingHours.Size = new Size(867, 352);
+            dataGridViewAccountingsOfWorkingHours.TabIndex = 0;
+            // 
+            // panelRecordAccountingsOfWorkingHours
+            // 
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label29);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label30);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox17);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label31);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox18);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label32);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox19);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label33);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(dateTimePicker7);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label34);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(dateTimePicker8);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(checkBox4);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(label35);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox20);
+            panelRecordAccountingsOfWorkingHours.Location = new Point(9, 450);
+            panelRecordAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            panelRecordAccountingsOfWorkingHours.Name = "panelRecordAccountingsOfWorkingHours";
+            panelRecordAccountingsOfWorkingHours.Size = new Size(611, 552);
+            panelRecordAccountingsOfWorkingHours.TabIndex = 1;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label29.ForeColor = Color.WhiteSmoke;
+            label29.Location = new Point(4, 10);
+            label29.Margin = new Padding(4, 0, 4, 0);
+            label29.Name = "label29";
+            label29.Size = new Size(142, 47);
+            label29.TabIndex = 7;
+            label29.Text = "Запись:";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.ForeColor = Color.WhiteSmoke;
+            label30.Location = new Point(93, 82);
+            label30.Margin = new Padding(4, 0, 4, 0);
+            label30.Name = "label30";
+            label30.Size = new Size(48, 15);
+            label30.TabIndex = 8;
+            label30.Text = "Номер:";
+            // 
+            // textBox17
+            // 
+            textBox17.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox17.Location = new Point(152, 68);
+            textBox17.Margin = new Padding(4, 3, 4, 3);
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(455, 33);
+            textBox17.TabIndex = 0;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.ForeColor = Color.WhiteSmoke;
+            label31.Location = new Point(24, 124);
+            label31.Margin = new Padding(4, 0, 4, 0);
+            label31.Name = "label31";
+            label31.Size = new Size(122, 15);
+            label31.TabIndex = 9;
+            label31.Text = "Логин пользователя:";
+            // 
+            // textBox18
+            // 
+            textBox18.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox18.Location = new Point(152, 113);
+            textBox18.Margin = new Padding(4, 3, 4, 3);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(455, 33);
+            textBox18.TabIndex = 1;
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.ForeColor = Color.WhiteSmoke;
+            label32.Location = new Point(58, 169);
+            label32.Margin = new Padding(4, 0, 4, 0);
+            label32.Name = "label32";
+            label32.Size = new Size(83, 15);
+            label32.TabIndex = 10;
+            label32.Text = "Номер книги:";
+            // 
+            // textBox19
+            // 
+            textBox19.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox19.Location = new Point(152, 158);
+            textBox19.Margin = new Padding(4, 3, 4, 3);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(455, 33);
+            textBox19.TabIndex = 2;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.ForeColor = Color.WhiteSmoke;
+            label33.Location = new Point(62, 217);
+            label33.Margin = new Padding(4, 0, 4, 0);
+            label33.Name = "label33";
+            label33.Size = new Size(79, 15);
+            label33.TabIndex = 11;
+            label33.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker7
+            // 
+            dateTimePicker7.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker7.Location = new Point(152, 203);
+            dateTimePicker7.Name = "dateTimePicker7";
+            dateTimePicker7.Size = new Size(455, 33);
+            dateTimePicker7.TabIndex = 3;
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.ForeColor = Color.WhiteSmoke;
+            label34.Location = new Point(55, 259);
+            label34.Margin = new Padding(4, 0, 4, 0);
+            label34.Name = "label34";
+            label34.Size = new Size(86, 15);
+            label34.TabIndex = 12;
+            label34.Text = "Дата возврата:";
+            // 
+            // dateTimePicker8
+            // 
+            dateTimePicker8.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker8.Location = new Point(152, 245);
+            dateTimePicker8.Name = "dateTimePicker8";
+            dateTimePicker8.Size = new Size(244, 33);
+            dateTimePicker8.TabIndex = 4;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.Font = new Font("Segoe UI", 14.25F);
+            checkBox4.Location = new Point(402, 250);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(205, 29);
+            checkBox4.TabIndex = 5;
+            checkBox4.Text = "Еще не возвращена";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.ForeColor = Color.WhiteSmoke;
+            label35.Location = new Point(95, 304);
+            label35.Margin = new Padding(4, 0, 4, 0);
+            label35.Name = "label35";
+            label35.Size = new Size(46, 15);
+            label35.TabIndex = 13;
+            label35.Text = "Статус:";
+            // 
+            // textBox20
+            // 
+            textBox20.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox20.Location = new Point(152, 293);
+            textBox20.Margin = new Padding(4, 3, 4, 3);
+            textBox20.Name = "textBox20";
+            textBox20.ReadOnly = true;
+            textBox20.Size = new Size(455, 33);
+            textBox20.TabIndex = 6;
+            // 
+            // labelControlAccountingsOfWorkingHours
+            // 
+            labelControlAccountingsOfWorkingHours.AutoSize = true;
+            labelControlAccountingsOfWorkingHours.BackColor = Color.Transparent;
+            labelControlAccountingsOfWorkingHours.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlAccountingsOfWorkingHours.ForeColor = Color.Black;
+            labelControlAccountingsOfWorkingHours.Location = new Point(636, 456);
+            labelControlAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelControlAccountingsOfWorkingHours.Name = "labelControlAccountingsOfWorkingHours";
+            labelControlAccountingsOfWorkingHours.Size = new Size(213, 25);
+            labelControlAccountingsOfWorkingHours.TabIndex = 4;
+            labelControlAccountingsOfWorkingHours.Text = "Управление записями:";
+            // 
+            // panelControlAccountingsOfWorkingHours
+            // 
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonNewAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonDeleteAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonChangeAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonSaveAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonWordAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonExcelAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Controls.Add(buttonTXTAccountingOfWorkingHours);
+            panelControlAccountingsOfWorkingHours.Location = new Point(634, 482);
+            panelControlAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            panelControlAccountingsOfWorkingHours.Name = "panelControlAccountingsOfWorkingHours";
+            panelControlAccountingsOfWorkingHours.Size = new Size(243, 520);
+            panelControlAccountingsOfWorkingHours.TabIndex = 2;
+            // 
+            // buttonNewAccountingOfWorkingHours
+            // 
+            buttonNewAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonNewAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonNewAccountingOfWorkingHours.Location = new Point(4, 3);
+            buttonNewAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonNewAccountingOfWorkingHours.Name = "buttonNewAccountingOfWorkingHours";
+            buttonNewAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonNewAccountingOfWorkingHours.TabIndex = 0;
+            buttonNewAccountingOfWorkingHours.Text = "Новая запись";
+            buttonNewAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteAccountingOfWorkingHours
+            // 
+            buttonDeleteAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonDeleteAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonDeleteAccountingOfWorkingHours.Location = new Point(4, 78);
+            buttonDeleteAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteAccountingOfWorkingHours.Name = "buttonDeleteAccountingOfWorkingHours";
+            buttonDeleteAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonDeleteAccountingOfWorkingHours.TabIndex = 1;
+            buttonDeleteAccountingOfWorkingHours.Text = "Удалить";
+            buttonDeleteAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeAccountingOfWorkingHours
+            // 
+            buttonChangeAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonChangeAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonChangeAccountingOfWorkingHours.Location = new Point(4, 152);
+            buttonChangeAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeAccountingOfWorkingHours.Name = "buttonChangeAccountingOfWorkingHours";
+            buttonChangeAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonChangeAccountingOfWorkingHours.TabIndex = 2;
+            buttonChangeAccountingOfWorkingHours.Text = "Изменить";
+            buttonChangeAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveAccountingOfWorkingHours
+            // 
+            buttonSaveAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonSaveAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonSaveAccountingOfWorkingHours.Location = new Point(4, 226);
+            buttonSaveAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveAccountingOfWorkingHours.Name = "buttonSaveAccountingOfWorkingHours";
+            buttonSaveAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonSaveAccountingOfWorkingHours.TabIndex = 3;
+            buttonSaveAccountingOfWorkingHours.Text = "Сохранить";
+            buttonSaveAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordAccountingOfWorkingHours
+            // 
+            buttonWordAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonWordAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonWordAccountingOfWorkingHours.Location = new Point(4, 301);
+            buttonWordAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonWordAccountingOfWorkingHours.Name = "buttonWordAccountingOfWorkingHours";
+            buttonWordAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonWordAccountingOfWorkingHours.TabIndex = 4;
+            buttonWordAccountingOfWorkingHours.Text = "Вывод в Word";
+            buttonWordAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelAccountingOfWorkingHours
+            // 
+            buttonExcelAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonExcelAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonExcelAccountingOfWorkingHours.Location = new Point(4, 375);
+            buttonExcelAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelAccountingOfWorkingHours.Name = "buttonExcelAccountingOfWorkingHours";
+            buttonExcelAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonExcelAccountingOfWorkingHours.TabIndex = 5;
+            buttonExcelAccountingOfWorkingHours.Text = "Вывод в Excel";
+            buttonExcelAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTAccountingOfWorkingHours
+            // 
+            buttonTXTAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonTXTAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonTXTAccountingOfWorkingHours.Location = new Point(4, 449);
+            buttonTXTAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTAccountingOfWorkingHours.Name = "buttonTXTAccountingOfWorkingHours";
+            buttonTXTAccountingOfWorkingHours.Size = new Size(236, 67);
+            buttonTXTAccountingOfWorkingHours.TabIndex = 6;
+            buttonTXTAccountingOfWorkingHours.Text = "Вывод в TXT";
+            buttonTXTAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            // 
+            // tabPageVacationPay
+            // 
+            tabPageVacationPay.BackgroundImage = (Image)resources.GetObject("tabPageVacationPay.BackgroundImage");
+            tabPageVacationPay.Controls.Add(panelTitleVacationPay);
+            tabPageVacationPay.Controls.Add(dataGridViewVacationPay);
+            tabPageVacationPay.Controls.Add(panelRecordVacationPay);
+            tabPageVacationPay.Controls.Add(labelControlVacationPay);
+            tabPageVacationPay.Controls.Add(panelControlVacationPay);
+            tabPageVacationPay.Location = new Point(4, 24);
+            tabPageVacationPay.Margin = new Padding(4, 3, 4, 3);
+            tabPageVacationPay.Name = "tabPageVacationPay";
+            tabPageVacationPay.Padding = new Padding(4, 3, 4, 3);
+            tabPageVacationPay.Size = new Size(889, 1010);
+            tabPageVacationPay.TabIndex = 6;
+            tabPageVacationPay.Text = "Рассчет отпускных";
+            tabPageVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleVacationPay
+            // 
+            panelTitleVacationPay.Controls.Add(labelTitleVacationPay);
+            panelTitleVacationPay.Controls.Add(buttonClearVacationPay);
+            panelTitleVacationPay.Controls.Add(buttonRefreshVacationPay);
+            panelTitleVacationPay.Controls.Add(textBoxSearchVacationPay);
+            panelTitleVacationPay.Location = new Point(0, 0);
+            panelTitleVacationPay.Margin = new Padding(4, 3, 4, 3);
+            panelTitleVacationPay.Name = "panelTitleVacationPay";
+            panelTitleVacationPay.Size = new Size(876, 84);
+            panelTitleVacationPay.TabIndex = 3;
+            // 
+            // labelTitleVacationPay
+            // 
+            labelTitleVacationPay.AutoSize = true;
+            labelTitleVacationPay.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleVacationPay.ForeColor = Color.WhiteSmoke;
+            labelTitleVacationPay.Location = new Point(4, 3);
+            labelTitleVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelTitleVacationPay.Name = "labelTitleVacationPay";
+            labelTitleVacationPay.Size = new Size(437, 65);
+            labelTitleVacationPay.TabIndex = 4;
+            labelTitleVacationPay.Text = "Рассчет отпускных";
+            // 
+            // buttonClearVacationPay
+            // 
+            buttonClearVacationPay.BackgroundImage = (Image)resources.GetObject("buttonClearVacationPay.BackgroundImage");
+            buttonClearVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonClearVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearVacationPay.Location = new Point(528, 3);
+            buttonClearVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonClearVacationPay.Name = "buttonClearVacationPay";
+            buttonClearVacationPay.Size = new Size(78, 77);
+            buttonClearVacationPay.TabIndex = 0;
+            buttonClearVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshVacationPay
+            // 
+            buttonRefreshVacationPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshVacationPay.BackgroundImage");
+            buttonRefreshVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonRefreshVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshVacationPay.Location = new Point(614, 3);
+            buttonRefreshVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshVacationPay.Name = "buttonRefreshVacationPay";
+            buttonRefreshVacationPay.Size = new Size(78, 77);
+            buttonRefreshVacationPay.TabIndex = 1;
+            buttonRefreshVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchVacationPay
+            // 
+            textBoxSearchVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchVacationPay.Location = new Point(699, 37);
+            textBoxSearchVacationPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchVacationPay.Name = "textBoxSearchVacationPay";
+            textBoxSearchVacationPay.Size = new Size(173, 33);
+            textBoxSearchVacationPay.TabIndex = 2;
+            // 
+            // dataGridViewVacationPay
+            // 
+            dataGridViewVacationPay.AllowUserToAddRows = false;
+            dataGridViewVacationPay.AllowUserToDeleteRows = false;
+            dataGridViewVacationPay.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewVacationPay.Location = new Point(9, 91);
+            dataGridViewVacationPay.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewVacationPay.Name = "dataGridViewVacationPay";
+            dataGridViewVacationPay.ReadOnly = true;
+            dataGridViewVacationPay.RowHeadersWidth = 62;
+            dataGridViewVacationPay.Size = new Size(867, 352);
+            dataGridViewVacationPay.TabIndex = 0;
+            // 
+            // panelRecordVacationPay
+            // 
+            panelRecordVacationPay.Controls.Add(label38);
+            panelRecordVacationPay.Controls.Add(label39);
+            panelRecordVacationPay.Controls.Add(textBox22);
+            panelRecordVacationPay.Controls.Add(label40);
+            panelRecordVacationPay.Controls.Add(textBox23);
+            panelRecordVacationPay.Controls.Add(label41);
+            panelRecordVacationPay.Controls.Add(textBox24);
+            panelRecordVacationPay.Controls.Add(label42);
+            panelRecordVacationPay.Controls.Add(dateTimePicker9);
+            panelRecordVacationPay.Controls.Add(label43);
+            panelRecordVacationPay.Controls.Add(dateTimePicker10);
+            panelRecordVacationPay.Controls.Add(checkBox5);
+            panelRecordVacationPay.Controls.Add(label44);
+            panelRecordVacationPay.Controls.Add(textBox25);
+            panelRecordVacationPay.Location = new Point(9, 450);
+            panelRecordVacationPay.Margin = new Padding(4, 3, 4, 3);
+            panelRecordVacationPay.Name = "panelRecordVacationPay";
+            panelRecordVacationPay.Size = new Size(611, 552);
+            panelRecordVacationPay.TabIndex = 1;
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label38.ForeColor = Color.WhiteSmoke;
+            label38.Location = new Point(4, 10);
+            label38.Margin = new Padding(4, 0, 4, 0);
+            label38.Name = "label38";
+            label38.Size = new Size(142, 47);
+            label38.TabIndex = 7;
+            label38.Text = "Запись:";
+            // 
+            // label39
+            // 
+            label39.AutoSize = true;
+            label39.ForeColor = Color.WhiteSmoke;
+            label39.Location = new Point(93, 82);
+            label39.Margin = new Padding(4, 0, 4, 0);
+            label39.Name = "label39";
+            label39.Size = new Size(48, 15);
+            label39.TabIndex = 8;
+            label39.Text = "Номер:";
+            // 
+            // textBox22
+            // 
+            textBox22.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox22.Location = new Point(152, 68);
+            textBox22.Margin = new Padding(4, 3, 4, 3);
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(455, 33);
+            textBox22.TabIndex = 0;
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.ForeColor = Color.WhiteSmoke;
+            label40.Location = new Point(24, 124);
+            label40.Margin = new Padding(4, 0, 4, 0);
+            label40.Name = "label40";
+            label40.Size = new Size(122, 15);
+            label40.TabIndex = 9;
+            label40.Text = "Логин пользователя:";
+            // 
+            // textBox23
+            // 
+            textBox23.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox23.Location = new Point(152, 113);
+            textBox23.Margin = new Padding(4, 3, 4, 3);
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(455, 33);
+            textBox23.TabIndex = 1;
+            // 
+            // label41
+            // 
+            label41.AutoSize = true;
+            label41.ForeColor = Color.WhiteSmoke;
+            label41.Location = new Point(58, 169);
+            label41.Margin = new Padding(4, 0, 4, 0);
+            label41.Name = "label41";
+            label41.Size = new Size(83, 15);
+            label41.TabIndex = 10;
+            label41.Text = "Номер книги:";
+            // 
+            // textBox24
+            // 
+            textBox24.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox24.Location = new Point(152, 158);
+            textBox24.Margin = new Padding(4, 3, 4, 3);
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(455, 33);
+            textBox24.TabIndex = 2;
+            // 
+            // label42
+            // 
+            label42.AutoSize = true;
+            label42.ForeColor = Color.WhiteSmoke;
+            label42.Location = new Point(62, 217);
+            label42.Margin = new Padding(4, 0, 4, 0);
+            label42.Name = "label42";
+            label42.Size = new Size(79, 15);
+            label42.TabIndex = 11;
+            label42.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker9
+            // 
+            dateTimePicker9.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker9.Location = new Point(152, 203);
+            dateTimePicker9.Name = "dateTimePicker9";
+            dateTimePicker9.Size = new Size(455, 33);
+            dateTimePicker9.TabIndex = 3;
+            // 
+            // label43
+            // 
+            label43.AutoSize = true;
+            label43.ForeColor = Color.WhiteSmoke;
+            label43.Location = new Point(55, 259);
+            label43.Margin = new Padding(4, 0, 4, 0);
+            label43.Name = "label43";
+            label43.Size = new Size(86, 15);
+            label43.TabIndex = 12;
+            label43.Text = "Дата возврата:";
+            // 
+            // dateTimePicker10
+            // 
+            dateTimePicker10.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker10.Location = new Point(152, 245);
+            dateTimePicker10.Name = "dateTimePicker10";
+            dateTimePicker10.Size = new Size(244, 33);
+            dateTimePicker10.TabIndex = 4;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.Font = new Font("Segoe UI", 14.25F);
+            checkBox5.Location = new Point(402, 250);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(205, 29);
+            checkBox5.TabIndex = 5;
+            checkBox5.Text = "Еще не возвращена";
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // label44
+            // 
+            label44.AutoSize = true;
+            label44.ForeColor = Color.WhiteSmoke;
+            label44.Location = new Point(95, 304);
+            label44.Margin = new Padding(4, 0, 4, 0);
+            label44.Name = "label44";
+            label44.Size = new Size(46, 15);
+            label44.TabIndex = 13;
+            label44.Text = "Статус:";
+            // 
+            // textBox25
+            // 
+            textBox25.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox25.Location = new Point(152, 293);
+            textBox25.Margin = new Padding(4, 3, 4, 3);
+            textBox25.Name = "textBox25";
+            textBox25.ReadOnly = true;
+            textBox25.Size = new Size(455, 33);
+            textBox25.TabIndex = 6;
+            // 
+            // labelControlVacationPay
+            // 
+            labelControlVacationPay.AutoSize = true;
+            labelControlVacationPay.BackColor = Color.Transparent;
+            labelControlVacationPay.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlVacationPay.ForeColor = Color.Black;
+            labelControlVacationPay.Location = new Point(636, 456);
+            labelControlVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelControlVacationPay.Name = "labelControlVacationPay";
+            labelControlVacationPay.Size = new Size(213, 25);
+            labelControlVacationPay.TabIndex = 4;
+            labelControlVacationPay.Text = "Управление записями:";
+            // 
+            // panelControlVacationPay
+            // 
+            panelControlVacationPay.Controls.Add(buttonNewVacationPay);
+            panelControlVacationPay.Controls.Add(buttonDeleteVacationPay);
+            panelControlVacationPay.Controls.Add(buttonChangeVacationPay);
+            panelControlVacationPay.Controls.Add(buttonSaveVacationPay);
+            panelControlVacationPay.Controls.Add(buttonWordVacationPay);
+            panelControlVacationPay.Controls.Add(buttonExcelVacationPay);
+            panelControlVacationPay.Controls.Add(buttonTXTVacationPay);
+            panelControlVacationPay.Location = new Point(634, 482);
+            panelControlVacationPay.Margin = new Padding(4, 3, 4, 3);
+            panelControlVacationPay.Name = "panelControlVacationPay";
+            panelControlVacationPay.Size = new Size(243, 520);
+            panelControlVacationPay.TabIndex = 2;
+            // 
+            // buttonNewVacationPay
+            // 
+            buttonNewVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonNewVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonNewVacationPay.Location = new Point(4, 3);
+            buttonNewVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonNewVacationPay.Name = "buttonNewVacationPay";
+            buttonNewVacationPay.Size = new Size(236, 67);
+            buttonNewVacationPay.TabIndex = 0;
+            buttonNewVacationPay.Text = "Новая запись";
+            buttonNewVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteVacationPay
+            // 
+            buttonDeleteVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonDeleteVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonDeleteVacationPay.Location = new Point(4, 78);
+            buttonDeleteVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteVacationPay.Name = "buttonDeleteVacationPay";
+            buttonDeleteVacationPay.Size = new Size(236, 67);
+            buttonDeleteVacationPay.TabIndex = 1;
+            buttonDeleteVacationPay.Text = "Удалить";
+            buttonDeleteVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeVacationPay
+            // 
+            buttonChangeVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonChangeVacationPay.ForeColor = Color.Black;
+            buttonChangeVacationPay.Location = new Point(4, 152);
+            buttonChangeVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeVacationPay.Name = "buttonChangeVacationPay";
+            buttonChangeVacationPay.Size = new Size(236, 67);
+            buttonChangeVacationPay.TabIndex = 2;
+            buttonChangeVacationPay.Text = "Изменить";
+            buttonChangeVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveVacationPay
+            // 
+            buttonSaveVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonSaveVacationPay.ForeColor = Color.Black;
+            buttonSaveVacationPay.Location = new Point(4, 226);
+            buttonSaveVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveVacationPay.Name = "buttonSaveVacationPay";
+            buttonSaveVacationPay.Size = new Size(236, 67);
+            buttonSaveVacationPay.TabIndex = 3;
+            buttonSaveVacationPay.Text = "Сохранить";
+            buttonSaveVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordVacationPay
+            // 
+            buttonWordVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonWordVacationPay.ForeColor = Color.Black;
+            buttonWordVacationPay.Location = new Point(4, 301);
+            buttonWordVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonWordVacationPay.Name = "buttonWordVacationPay";
+            buttonWordVacationPay.Size = new Size(236, 67);
+            buttonWordVacationPay.TabIndex = 4;
+            buttonWordVacationPay.Text = "Вывод в Word";
+            buttonWordVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelVacationPay
+            // 
+            buttonExcelVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonExcelVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonExcelVacationPay.Location = new Point(4, 375);
+            buttonExcelVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelVacationPay.Name = "buttonExcelVacationPay";
+            buttonExcelVacationPay.Size = new Size(236, 67);
+            buttonExcelVacationPay.TabIndex = 5;
+            buttonExcelVacationPay.Text = "Вывод в Excel";
+            buttonExcelVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTVacationPay
+            // 
+            buttonTXTVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonTXTVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonTXTVacationPay.Location = new Point(4, 449);
+            buttonTXTVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTVacationPay.Name = "buttonTXTVacationPay";
+            buttonTXTVacationPay.Size = new Size(236, 67);
+            buttonTXTVacationPay.TabIndex = 6;
+            buttonTXTVacationPay.Text = "Вывод в TXT";
+            buttonTXTVacationPay.UseVisualStyleBackColor = true;
+            // 
+            // tabPageSickPay
+            // 
+            tabPageSickPay.BackgroundImage = (Image)resources.GetObject("tabPageSickPay.BackgroundImage");
+            tabPageSickPay.Controls.Add(panelTitleSickPay);
+            tabPageSickPay.Controls.Add(dataGridViewSickPay);
+            tabPageSickPay.Controls.Add(panelRecordSickPay);
+            tabPageSickPay.Controls.Add(labelControlSickPay);
+            tabPageSickPay.Controls.Add(panelControlSickPay);
+            tabPageSickPay.Location = new Point(4, 24);
+            tabPageSickPay.Margin = new Padding(4, 3, 4, 3);
+            tabPageSickPay.Name = "tabPageSickPay";
+            tabPageSickPay.Padding = new Padding(4, 3, 4, 3);
+            tabPageSickPay.Size = new Size(889, 1010);
+            tabPageSickPay.TabIndex = 7;
+            tabPageSickPay.Text = "Рассчет больничного";
+            tabPageSickPay.UseVisualStyleBackColor = true;
+            // 
+            // panelTitleSickPay
+            // 
+            panelTitleSickPay.Controls.Add(labelTitleSickPay);
+            panelTitleSickPay.Controls.Add(buttonClearSickPay);
+            panelTitleSickPay.Controls.Add(buttonRefreshSickPay);
+            panelTitleSickPay.Controls.Add(textBoxSearchSickPay);
+            panelTitleSickPay.Location = new Point(0, 0);
+            panelTitleSickPay.Margin = new Padding(4, 3, 4, 3);
+            panelTitleSickPay.Name = "panelTitleSickPay";
+            panelTitleSickPay.Size = new Size(876, 84);
+            panelTitleSickPay.TabIndex = 3;
+            // 
+            // labelTitleSickPay
+            // 
+            labelTitleSickPay.AutoSize = true;
+            labelTitleSickPay.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            labelTitleSickPay.ForeColor = Color.WhiteSmoke;
+            labelTitleSickPay.Location = new Point(4, 3);
+            labelTitleSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelTitleSickPay.Name = "labelTitleSickPay";
+            labelTitleSickPay.Size = new Size(498, 65);
+            labelTitleSickPay.TabIndex = 4;
+            labelTitleSickPay.Text = "Рассчет больничного";
+            // 
+            // buttonClearSickPay
+            // 
+            buttonClearSickPay.BackgroundImage = (Image)resources.GetObject("buttonClearSickPay.BackgroundImage");
+            buttonClearSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonClearSickPay.FlatStyle = FlatStyle.Flat;
+            buttonClearSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonClearSickPay.Location = new Point(528, 3);
+            buttonClearSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonClearSickPay.Name = "buttonClearSickPay";
+            buttonClearSickPay.Size = new Size(78, 77);
+            buttonClearSickPay.TabIndex = 0;
+            buttonClearSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonRefreshSickPay
+            // 
+            buttonRefreshSickPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshSickPay.BackgroundImage");
+            buttonRefreshSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSickPay.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSickPay.Location = new Point(614, 3);
+            buttonRefreshSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSickPay.Name = "buttonRefreshSickPay";
+            buttonRefreshSickPay.Size = new Size(78, 77);
+            buttonRefreshSickPay.TabIndex = 1;
+            buttonRefreshSickPay.UseVisualStyleBackColor = true;
+            // 
+            // textBoxSearchSickPay
+            // 
+            textBoxSearchSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSearchSickPay.Location = new Point(699, 37);
+            textBoxSearchSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxSearchSickPay.Name = "textBoxSearchSickPay";
+            textBoxSearchSickPay.Size = new Size(173, 33);
+            textBoxSearchSickPay.TabIndex = 2;
+            // 
+            // dataGridViewSickPay
+            // 
+            dataGridViewSickPay.AllowUserToAddRows = false;
+            dataGridViewSickPay.AllowUserToDeleteRows = false;
+            dataGridViewSickPay.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSickPay.Location = new Point(9, 91);
+            dataGridViewSickPay.Margin = new Padding(4, 3, 4, 3);
+            dataGridViewSickPay.Name = "dataGridViewSickPay";
+            dataGridViewSickPay.ReadOnly = true;
+            dataGridViewSickPay.RowHeadersWidth = 62;
+            dataGridViewSickPay.Size = new Size(867, 352);
+            dataGridViewSickPay.TabIndex = 0;
+            // 
+            // panelRecordSickPay
+            // 
+            panelRecordSickPay.Controls.Add(label47);
+            panelRecordSickPay.Controls.Add(label48);
+            panelRecordSickPay.Controls.Add(textBox27);
+            panelRecordSickPay.Controls.Add(label49);
+            panelRecordSickPay.Controls.Add(textBox28);
+            panelRecordSickPay.Controls.Add(label50);
+            panelRecordSickPay.Controls.Add(textBox29);
+            panelRecordSickPay.Controls.Add(label51);
+            panelRecordSickPay.Controls.Add(dateTimePicker11);
+            panelRecordSickPay.Controls.Add(label52);
+            panelRecordSickPay.Controls.Add(dateTimePicker12);
+            panelRecordSickPay.Controls.Add(checkBox6);
+            panelRecordSickPay.Controls.Add(label53);
+            panelRecordSickPay.Controls.Add(textBox30);
+            panelRecordSickPay.Location = new Point(9, 450);
+            panelRecordSickPay.Margin = new Padding(4, 3, 4, 3);
+            panelRecordSickPay.Name = "panelRecordSickPay";
+            panelRecordSickPay.Size = new Size(611, 552);
+            panelRecordSickPay.TabIndex = 1;
+            // 
+            // label47
+            // 
+            label47.AutoSize = true;
+            label47.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label47.ForeColor = Color.WhiteSmoke;
+            label47.Location = new Point(4, 10);
+            label47.Margin = new Padding(4, 0, 4, 0);
+            label47.Name = "label47";
+            label47.Size = new Size(142, 47);
+            label47.TabIndex = 7;
+            label47.Text = "Запись:";
+            // 
+            // label48
+            // 
+            label48.AutoSize = true;
+            label48.ForeColor = Color.WhiteSmoke;
+            label48.Location = new Point(93, 82);
+            label48.Margin = new Padding(4, 0, 4, 0);
+            label48.Name = "label48";
+            label48.Size = new Size(48, 15);
+            label48.TabIndex = 8;
+            label48.Text = "Номер:";
+            // 
+            // textBox27
+            // 
+            textBox27.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox27.Location = new Point(152, 68);
+            textBox27.Margin = new Padding(4, 3, 4, 3);
+            textBox27.Name = "textBox27";
+            textBox27.Size = new Size(455, 33);
+            textBox27.TabIndex = 0;
+            // 
+            // label49
+            // 
+            label49.AutoSize = true;
+            label49.ForeColor = Color.WhiteSmoke;
+            label49.Location = new Point(24, 124);
+            label49.Margin = new Padding(4, 0, 4, 0);
+            label49.Name = "label49";
+            label49.Size = new Size(122, 15);
+            label49.TabIndex = 9;
+            label49.Text = "Логин пользователя:";
+            // 
+            // textBox28
+            // 
+            textBox28.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox28.Location = new Point(152, 113);
+            textBox28.Margin = new Padding(4, 3, 4, 3);
+            textBox28.Name = "textBox28";
+            textBox28.Size = new Size(455, 33);
+            textBox28.TabIndex = 1;
+            // 
+            // label50
+            // 
+            label50.AutoSize = true;
+            label50.ForeColor = Color.WhiteSmoke;
+            label50.Location = new Point(58, 169);
+            label50.Margin = new Padding(4, 0, 4, 0);
+            label50.Name = "label50";
+            label50.Size = new Size(83, 15);
+            label50.TabIndex = 10;
+            label50.Text = "Номер книги:";
+            // 
+            // textBox29
+            // 
+            textBox29.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox29.Location = new Point(152, 158);
+            textBox29.Margin = new Padding(4, 3, 4, 3);
+            textBox29.Name = "textBox29";
+            textBox29.Size = new Size(455, 33);
+            textBox29.TabIndex = 2;
+            // 
+            // label51
+            // 
+            label51.AutoSize = true;
+            label51.ForeColor = Color.WhiteSmoke;
+            label51.Location = new Point(62, 217);
+            label51.Margin = new Padding(4, 0, 4, 0);
+            label51.Name = "label51";
+            label51.Size = new Size(79, 15);
+            label51.TabIndex = 11;
+            label51.Text = "Дата выдачи:";
+            // 
+            // dateTimePicker11
+            // 
+            dateTimePicker11.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker11.Location = new Point(152, 203);
+            dateTimePicker11.Name = "dateTimePicker11";
+            dateTimePicker11.Size = new Size(455, 33);
+            dateTimePicker11.TabIndex = 3;
+            // 
+            // label52
+            // 
+            label52.AutoSize = true;
+            label52.ForeColor = Color.WhiteSmoke;
+            label52.Location = new Point(55, 259);
+            label52.Margin = new Padding(4, 0, 4, 0);
+            label52.Name = "label52";
+            label52.Size = new Size(86, 15);
+            label52.TabIndex = 12;
+            label52.Text = "Дата возврата:";
+            // 
+            // dateTimePicker12
+            // 
+            dateTimePicker12.Font = new Font("Segoe UI", 14.25F);
+            dateTimePicker12.Location = new Point(152, 245);
+            dateTimePicker12.Name = "dateTimePicker12";
+            dateTimePicker12.Size = new Size(244, 33);
+            dateTimePicker12.TabIndex = 4;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.Font = new Font("Segoe UI", 14.25F);
+            checkBox6.Location = new Point(402, 250);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(205, 29);
+            checkBox6.TabIndex = 5;
+            checkBox6.Text = "Еще не возвращена";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // label53
+            // 
+            label53.AutoSize = true;
+            label53.ForeColor = Color.WhiteSmoke;
+            label53.Location = new Point(95, 304);
+            label53.Margin = new Padding(4, 0, 4, 0);
+            label53.Name = "label53";
+            label53.Size = new Size(46, 15);
+            label53.TabIndex = 13;
+            label53.Text = "Статус:";
+            // 
+            // textBox30
+            // 
+            textBox30.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBox30.Location = new Point(152, 293);
+            textBox30.Margin = new Padding(4, 3, 4, 3);
+            textBox30.Name = "textBox30";
+            textBox30.ReadOnly = true;
+            textBox30.Size = new Size(455, 33);
+            textBox30.TabIndex = 6;
+            // 
+            // labelControlSickPay
+            // 
+            labelControlSickPay.AutoSize = true;
+            labelControlSickPay.BackColor = Color.Transparent;
+            labelControlSickPay.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelControlSickPay.ForeColor = Color.Black;
+            labelControlSickPay.Location = new Point(636, 456);
+            labelControlSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelControlSickPay.Name = "labelControlSickPay";
+            labelControlSickPay.Size = new Size(213, 25);
+            labelControlSickPay.TabIndex = 4;
+            labelControlSickPay.Text = "Управление записями:";
+            // 
+            // panelControlSickPay
+            // 
+            panelControlSickPay.Controls.Add(buttonNewSickPay);
+            panelControlSickPay.Controls.Add(buttonDeleteSickPay);
+            panelControlSickPay.Controls.Add(buttonChangeSickPay);
+            panelControlSickPay.Controls.Add(buttonSaveSickPay);
+            panelControlSickPay.Controls.Add(buttonWordSickPay);
+            panelControlSickPay.Controls.Add(buttonExcelSickPay);
+            panelControlSickPay.Controls.Add(buttonTXTSickPay);
+            panelControlSickPay.Location = new Point(634, 482);
+            panelControlSickPay.Margin = new Padding(4, 3, 4, 3);
+            panelControlSickPay.Name = "panelControlSickPay";
+            panelControlSickPay.Size = new Size(243, 520);
+            panelControlSickPay.TabIndex = 2;
+            // 
+            // buttonNewSickPay
+            // 
+            buttonNewSickPay.FlatStyle = FlatStyle.Flat;
+            buttonNewSickPay.ForeColor = Color.WhiteSmoke;
+            buttonNewSickPay.Location = new Point(4, 3);
+            buttonNewSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSickPay.Name = "buttonNewSickPay";
+            buttonNewSickPay.Size = new Size(236, 67);
+            buttonNewSickPay.TabIndex = 0;
+            buttonNewSickPay.Text = "Новая запись";
+            buttonNewSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonDeleteSickPay
+            // 
+            buttonDeleteSickPay.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSickPay.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSickPay.Location = new Point(4, 78);
+            buttonDeleteSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSickPay.Name = "buttonDeleteSickPay";
+            buttonDeleteSickPay.Size = new Size(236, 67);
+            buttonDeleteSickPay.TabIndex = 1;
+            buttonDeleteSickPay.Text = "Удалить";
+            buttonDeleteSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonChangeSickPay
+            // 
+            buttonChangeSickPay.FlatStyle = FlatStyle.Flat;
+            buttonChangeSickPay.ForeColor = Color.Black;
+            buttonChangeSickPay.Location = new Point(4, 152);
+            buttonChangeSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSickPay.Name = "buttonChangeSickPay";
+            buttonChangeSickPay.Size = new Size(236, 67);
+            buttonChangeSickPay.TabIndex = 2;
+            buttonChangeSickPay.Text = "Изменить";
+            buttonChangeSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonSaveSickPay
+            // 
+            buttonSaveSickPay.FlatStyle = FlatStyle.Flat;
+            buttonSaveSickPay.ForeColor = Color.Black;
+            buttonSaveSickPay.Location = new Point(4, 226);
+            buttonSaveSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSickPay.Name = "buttonSaveSickPay";
+            buttonSaveSickPay.Size = new Size(236, 67);
+            buttonSaveSickPay.TabIndex = 3;
+            buttonSaveSickPay.Text = "Сохранить";
+            buttonSaveSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonWordSickPay
+            // 
+            buttonWordSickPay.FlatStyle = FlatStyle.Flat;
+            buttonWordSickPay.ForeColor = Color.Black;
+            buttonWordSickPay.Location = new Point(4, 301);
+            buttonWordSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSickPay.Name = "buttonWordSickPay";
+            buttonWordSickPay.Size = new Size(236, 67);
+            buttonWordSickPay.TabIndex = 4;
+            buttonWordSickPay.Text = "Вывод в Word";
+            buttonWordSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcelSickPay
+            // 
+            buttonExcelSickPay.FlatStyle = FlatStyle.Flat;
+            buttonExcelSickPay.ForeColor = Color.WhiteSmoke;
+            buttonExcelSickPay.Location = new Point(4, 375);
+            buttonExcelSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSickPay.Name = "buttonExcelSickPay";
+            buttonExcelSickPay.Size = new Size(236, 67);
+            buttonExcelSickPay.TabIndex = 5;
+            buttonExcelSickPay.Text = "Вывод в Excel";
+            buttonExcelSickPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonTXTSickPay
+            // 
+            buttonTXTSickPay.FlatStyle = FlatStyle.Flat;
+            buttonTXTSickPay.ForeColor = Color.WhiteSmoke;
+            buttonTXTSickPay.Location = new Point(4, 449);
+            buttonTXTSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonTXTSickPay.Name = "buttonTXTSickPay";
+            buttonTXTSickPay.Size = new Size(236, 67);
+            buttonTXTSickPay.TabIndex = 6;
+            buttonTXTSickPay.Text = "Вывод в TXT";
+            buttonTXTSickPay.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -889,25 +2871,65 @@
             Margin = new Padding(4, 3, 4, 3);
             MinimizeBox = false;
             Name = "Form1";
-            Text = "Учёт библиотеки";
+            Text = "РусМитКонсерв";
             Load += Form1_Load;
-            tabPageBooks.ResumeLayout(false);
-            tabPageBooks.PerformLayout();
-            panelTitleBooks.ResumeLayout(false);
-            panelTitleBooks.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewBooks).EndInit();
-            panelRecordBooks.ResumeLayout(false);
-            panelRecordBooks.PerformLayout();
-            panelControlBooks.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
-            tabPageLoans.ResumeLayout(false);
-            tabPageLoans.PerformLayout();
-            panelTitleLoans.ResumeLayout(false);
-            panelTitleLoans.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLoans).EndInit();
-            panelRecordLoans.ResumeLayout(false);
-            panelRecordLoans.PerformLayout();
-            panelControlLoans.ResumeLayout(false);
+            tabPageProjects.ResumeLayout(false);
+            tabPageProjects.PerformLayout();
+            panelTitleProjects.ResumeLayout(false);
+            panelTitleProjects.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProjects).EndInit();
+            panelRecordProjects.ResumeLayout(false);
+            panelRecordProjects.PerformLayout();
+            panelControlProjects.ResumeLayout(false);
+            tabPageEmployees.ResumeLayout(false);
+            tabPageEmployees.PerformLayout();
+            panelTitleEmployees.ResumeLayout(false);
+            panelTitleEmployees.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewEmployees).EndInit();
+            panelRecordEmployees.ResumeLayout(false);
+            panelRecordEmployees.PerformLayout();
+            panelControlEmployees.ResumeLayout(false);
+            tabPageSalaryAccruals.ResumeLayout(false);
+            tabPageSalaryAccruals.PerformLayout();
+            panelTitleSalaryAccruals.ResumeLayout(false);
+            panelTitleSalaryAccruals.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSalaryAccruals).EndInit();
+            panelRecordSalaryAccruals.ResumeLayout(false);
+            panelRecordSalaryAccruals.PerformLayout();
+            panelControlSalaryAccruals.ResumeLayout(false);
+            tabPageSalary.ResumeLayout(false);
+            tabPageSalary.PerformLayout();
+            panelTitleSalary.ResumeLayout(false);
+            panelTitleSalary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSalary).EndInit();
+            panelRecordSalary.ResumeLayout(false);
+            panelRecordSalary.PerformLayout();
+            panelControlSalary.ResumeLayout(false);
+            tabPageAccountingsOfWorkingHours.ResumeLayout(false);
+            tabPageAccountingsOfWorkingHours.PerformLayout();
+            panelTitleAccountingsOfWorkingHours.ResumeLayout(false);
+            panelTitleAccountingsOfWorkingHours.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewAccountingsOfWorkingHours).EndInit();
+            panelRecordAccountingsOfWorkingHours.ResumeLayout(false);
+            panelRecordAccountingsOfWorkingHours.PerformLayout();
+            panelControlAccountingsOfWorkingHours.ResumeLayout(false);
+            tabPageVacationPay.ResumeLayout(false);
+            tabPageVacationPay.PerformLayout();
+            panelTitleVacationPay.ResumeLayout(false);
+            panelTitleVacationPay.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVacationPay).EndInit();
+            panelRecordVacationPay.ResumeLayout(false);
+            panelRecordVacationPay.PerformLayout();
+            panelControlVacationPay.ResumeLayout(false);
+            tabPageSickPay.ResumeLayout(false);
+            tabPageSickPay.PerformLayout();
+            panelTitleSickPay.ResumeLayout(false);
+            panelTitleSickPay.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSickPay).EndInit();
+            panelRecordSickPay.ResumeLayout(false);
+            panelRecordSickPay.PerformLayout();
+            panelControlSickPay.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -942,14 +2964,14 @@
         private Label labelTitle;
         private TabControl tabControl1;
         private Label labelCopiesAvailableBooks;
-        private TabPage tabPageLoans;
-        private Panel panelTitleLoans;
-        private Label labelTitleLoans;
-        private Button buttonClearLoans;
-        private Button buttonRefreshLoans;
-        private TextBox textBoxSearchLoans;
-        private DataGridView dataGridViewLoans;
-        private Panel panelRecordLoans;
+        private TabPage tabPageProjects;
+        private Panel panelTitleProjects;
+        private Label labelTitleProjects;
+        private Button buttonClearProjects;
+        private Button buttonRefreshProjects;
+        private TextBox textBoxSearchProjects;
+        private DataGridView dataGridViewProjects;
+        private Panel panelRecordProjects;
         private Label labelRecordLoans;
         private Label labelLoanID;
         private TextBox textBoxLoanID;
@@ -961,20 +2983,208 @@
         private Label labelReturnDateLoans;
         private Label labelIsReturnedLoans;
         private TextBox textBoxIsReturnedLoans;
-        private Label labelControlLoans;
-        private Panel panelControlLoans;
-        private Button buttonNewLoan;
-        private Button buttonDeleteLoan;
-        private Button buttonChangeLoan;
-        private Button buttonSaveLoan;
-        private Button buttonWordLoan;
-        private Button buttonExcelLoan;
-        private Button buttonTXTLoan;
+        private Label labelControlProjects;
+        private Panel panelControlProjects;
+        private Button buttonNewProject;
+        private Button buttonDeleteProject;
+        private Button buttonChangeProject;
+        private Button buttonSaveProject;
+        private Button buttonWordProject;
+        private Button buttonExcelProject;
+        private Button buttonTXTProject;
         private TextBox textBoxCopiesAvailableBooks;
         private TextBox textBoxPublishedYearBooks;
         private TextBox textBoxGenreBooks;
         private DateTimePicker dateTimePickerLoanDateLoans;
         private DateTimePicker dateTimePickerReturnDateLoans;
         private CheckBox checkBoxReturnDateLoans;
+        private TabPage tabPageSickPay;
+        private Panel panelTitleSickPay;
+        private Label labelTitleSickPay;
+        private Button buttonClearSickPay;
+        private Button buttonRefreshSickPay;
+        private TextBox textBoxSearchSickPay;
+        private DataGridView dataGridViewSickPay;
+        private Panel panelRecordSickPay;
+        private Label label47;
+        private Label label48;
+        private TextBox textBox27;
+        private Label label49;
+        private TextBox textBox28;
+        private Label label50;
+        private TextBox textBox29;
+        private Label label51;
+        private DateTimePicker dateTimePicker11;
+        private Label label52;
+        private DateTimePicker dateTimePicker12;
+        private CheckBox checkBox6;
+        private Label label53;
+        private TextBox textBox30;
+        private Label labelControlSickPay;
+        private Panel panelControlSickPay;
+        private Button buttonNewSickPay;
+        private Button buttonDeleteSickPay;
+        private Button buttonChangeSickPay;
+        private Button buttonSaveSickPay;
+        private Button buttonWordSickPay;
+        private Button buttonExcelSickPay;
+        private Button buttonTXTSickPay;
+        private TabPage tabPageVacationPay;
+        private Panel panelTitleVacationPay;
+        private Label labelTitleVacationPay;
+        private Button buttonClearVacationPay;
+        private Button buttonRefreshVacationPay;
+        private TextBox textBoxSearchVacationPay;
+        private DataGridView dataGridViewVacationPay;
+        private Panel panelRecordVacationPay;
+        private Label label38;
+        private Label label39;
+        private TextBox textBox22;
+        private Label label40;
+        private TextBox textBox23;
+        private Label label41;
+        private TextBox textBox24;
+        private Label label42;
+        private DateTimePicker dateTimePicker9;
+        private Label label43;
+        private DateTimePicker dateTimePicker10;
+        private CheckBox checkBox5;
+        private Label label44;
+        private TextBox textBox25;
+        private Label labelControlVacationPay;
+        private Panel panelControlVacationPay;
+        private Button buttonNewVacationPay;
+        private Button buttonDeleteVacationPay;
+        private Button buttonChangeVacationPay;
+        private Button buttonSaveVacationPay;
+        private Button buttonWordVacationPay;
+        private Button buttonExcelVacationPay;
+        private Button buttonTXTVacationPay;
+        private TabPage tabPageAccountingsOfWorkingHours;
+        private Panel panelTitleAccountingsOfWorkingHours;
+        private Label labelTitleAccountingsOfWorkingHours;
+        private Button buttonClearAccountingsOfWorkingHours;
+        private Button buttonRefreshAccountingsOfWorkingHours;
+        private TextBox textBoxSearchAccountingsOfWorkingHours;
+        private DataGridView dataGridViewAccountingsOfWorkingHours;
+        private Panel panelRecordAccountingsOfWorkingHours;
+        private Label label29;
+        private Label label30;
+        private TextBox textBox17;
+        private Label label31;
+        private TextBox textBox18;
+        private Label label32;
+        private TextBox textBox19;
+        private Label label33;
+        private DateTimePicker dateTimePicker7;
+        private Label label34;
+        private DateTimePicker dateTimePicker8;
+        private CheckBox checkBox4;
+        private Label label35;
+        private TextBox textBox20;
+        private Label labelControlAccountingsOfWorkingHours;
+        private Panel panelControlAccountingsOfWorkingHours;
+        private Button buttonNewAccountingOfWorkingHours;
+        private Button buttonDeleteAccountingOfWorkingHours;
+        private Button buttonChangeAccountingOfWorkingHours;
+        private Button button33;
+        private Button buttonWordAccountingOfWorkingHours;
+        private Button buttonExcelAccountingOfWorkingHours;
+        private Button buttonTXTAccountingOfWorkingHours;
+        private TabPage tabPageSalary;
+        private Panel panelTitleSalary;
+        private Label labelTitleSalary;
+        private Button buttonClearSalary;
+        private Button buttonRefreshSalary;
+        private TextBox textBoxSearchSalary;
+        private DataGridView dataGridViewSalary;
+        private Panel panelRecordSalary;
+        private Label label20;
+        private Label label21;
+        private TextBox textBox12;
+        private Label label22;
+        private TextBox textBox13;
+        private Label label23;
+        private TextBox textBox14;
+        private Label label24;
+        private DateTimePicker dateTimePicker5;
+        private Label label25;
+        private DateTimePicker dateTimePicker6;
+        private CheckBox checkBox3;
+        private Label label26;
+        private TextBox textBox15;
+        private Label labelControlSalary;
+        private Panel panelControlSalary;
+        private Button buttonNewSalary;
+        private Button buttonDeleteSalary;
+        private Button buttonChangeSalary;
+        private Button buttonSaveSalary;
+        private Button buttonWordSalary;
+        private Button button26;
+        private Button buttonTXTSalary;
+        private TabPage tabPageSalaryAccruals;
+        private Panel panelTitleSalaryAccruals;
+        private Label labelTitleSalaryAccruals;
+        private Button buttonClearSalaryAccruals;
+        private Button buttonRefreshSalaryAccruals;
+        private TextBox textBoxSearchSalaryAccruals;
+        private DataGridView dataGridViewSalaryAccruals;
+        private Panel panelRecordSalaryAccruals;
+        private Label label11;
+        private Label label12;
+        private TextBox textBox7;
+        private Label label13;
+        private TextBox textBox8;
+        private Label label14;
+        private TextBox textBox9;
+        private Label label15;
+        private DateTimePicker dateTimePicker3;
+        private Label label16;
+        private DateTimePicker dateTimePicker4;
+        private CheckBox checkBox2;
+        private Label label17;
+        private TextBox textBox10;
+        private Label labelControlSalaryAccruals;
+        private Panel panelControlSalaryAccruals;
+        private Button buttonNewSalaryAccrual;
+        private Button buttonDeleteSalaryAccrual;
+        private Button buttonChangeSalaryAccrual;
+        private Button buttonSaveSalaryAccrual;
+        private Button buttonWordSalaryAccrual;
+        private Button buttonExcelSalaryAccrual;
+        private Button buttonTXTSalaryAccrual;
+        private TabPage tabPageEmployees;
+        private Panel panelTitleEmployees;
+        private Label labelTitleEmployees;
+        private Button buttonClearEmployees;
+        private Button buttonRefreshEmployees;
+        private TextBox textBoxSearchEmployees;
+        private DataGridView dataGridViewEmployees;
+        private Panel panelRecordEmployees;
+        private Label label2;
+        private Label label3;
+        private TextBox textBox2;
+        private Label label4;
+        private TextBox textBox3;
+        private Label label5;
+        private TextBox textBox4;
+        private Label label6;
+        private DateTimePicker dateTimePicker1;
+        private Label label7;
+        private DateTimePicker dateTimePicker2;
+        private CheckBox checkBox1;
+        private Label label8;
+        private TextBox textBox5;
+        private Label labelControlEmployees;
+        private Panel panelControlEmployees;
+        private Button buttonNewEmployee;
+        private Button buttonDeleteEmployee;
+        private Button buttonChangeEmployee;
+        private Button buttonSaveEmployee;
+        private Button buttonWordEmployee;
+        private Button buttonExcelEmployee;
+        private Button buttonTXTEmployee;
+        private Button buttonExcelSalary;
+        private Button buttonSaveAccountingOfWorkingHours;
     }
 }

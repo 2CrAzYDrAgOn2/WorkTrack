@@ -1,14 +1,106 @@
-CREATE DATABASE LibraryDB;
-USE LibraryDB;
+CREATE DATABASE WorkTrack;
+USE WorkTrack;
 
-CREATE TABLE Books (
-    BookID INT PRIMARY KEY IDENTITY(1,1),
-    Title NVARCHAR(255) NOT NULL,
-    Author NVARCHAR(255),
-    Genre NVARCHAR(50),
-    PublishedYear INT,
-    ISBN NVARCHAR(20) UNIQUE,
-    CopiesAvailable INT DEFAULT 1 CHECK (CopiesAvailable >= 0)
+CREATE TABLE Genders(
+	GenderID INT PRIMARY KEY IDENTITY(1,1),
+	Gender NVARCHAR(150) NOT NULL
+);
+
+CREATE TABLE Posts(
+	PostID INT PRIMARY KEY IDENTITY(1,1),
+	Post NVARCHAR(150) NOT NULL
+);
+
+CREATE TABLE TypesOfRemuneration(
+	TypeOfRemunerationID INT PRIMARY KEY IDENTITY(1,1),
+	TypeOfRemuneration NVARCHAR(150) NOT NULL
+);
+
+CREATE TABLE Months(
+	MonthID INT PRIMARY KEY IDENTITY(1,1),
+	MonthName NVARCHAR(150) NOT NULL,
+	WorkingHours INT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE Projects(
+	ProjectID INT PRIMARY KEY IDENTITY(1,1),
+	ProjectName NVARCHAR(150) NOT NULL,
+	Hourly FLOAT NOT NULL,
+	PieceWork FLOAT NOT NULL
+);
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY IDENTITY(1,1),
+    FullName NVARCHAR(150) NOT NULL,
+	BirthDate DATE,
+	BirthPlace NVARCHAR(150),
+	PassportSeries NVARCHAR(4) CHECK (PassportSeries LIKE '[0-9][0-9][0-9][0-9]'),
+	PassportNumber NVARCHAR(6) CHECK (PassportNumber LIKE '[0-9][0-9][0-9][0-9][0-9][0-9]'),
+    Phone NVARCHAR(18) UNIQUE NOT NULL,
+    Email NVARCHAR(100) UNIQUE,
+	INN NVARCHAR(12) UNIQUE,
+	PostID INT DEFAULT 0,
+	GenderID INT DEFAULT 0,
+	FOREIGN KEY (GenderID) REFERENCES Genders(GenderID),
+	FOREIGN KEY (PostID) REFERENCES Posts(PostID)
+);
+
+CREATE TABLE SalaryAccruals (
+	SalaryAccrualID INT PRIMARY KEY IDENTITY(1,1),
+	Year INT,
+	MonthID INT,
+	ProjectID INT,
+	FOREIGN KEY (MonthID) REFERENCES Months(MonthID) ON DELETE CASCADE,
+	FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID) ON DELETE CASCADE
+);
+
+CREATE TABLE Salary(
+	SalaryID INT PRIMARY KEY IDENTITY(1,1),
+	SalaryAccrualID INT,
+	EmployeeID INT,
+	AllDays INT,
+	AllHours INT,
+	PieceworkCharges FLOAT,
+	HourlyCharges FLOAT,
+	VacationPay FLOAT,
+	SickPay FLOAT,
+	PersonalIncomeTax FLOAT,
+	Contributions FLOAT,
+	Total FLOAT,
+	FOREIGN KEY (SalaryAccrualID) REFERENCES SalaryAccruals(SalaryAccrualID) ON DELETE CASCADE,
+	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
+);
+
+CREATE TABLE AccountingsOfWorkingHours(
+	AccountingOfWorkingHoursID INT PRIMARY KEY IDENTITY(1,1),
+	EmployeeID INT,
+	ProjectID INT,
+	TypeOfRemunerationID INT,
+	HoursOfWork INT,
+	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE,
+	FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID),
+	FOREIGN KEY (TypeOfRemunerationID) REFERENCES TypesOfRemuneration(TypeOfRemunerationID)
+);
+
+CREATE TABLE VacationPay(
+	VacationPayID INT PRIMARY KEY IDENTITY(1,1),
+	EmployeeID INT,
+	VacationStartDate DATETIME,
+	VacationEndDate DATETIME DEFAULT GETDATE(),
+	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0),
+	Total FLOAT,
+	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
+);
+
+CREATE TABLE SickPay(
+	SickPayID INT PRIMARY KEY IDENTITY(1,1),
+	EmployeeID INT,
+	SickStartDate DATETIME,
+	SickEndDate DATETIME DEFAULT GETDATE(),
+	Experience INT,
+	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0),
+	Total FLOAT,
+	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
 );
 
 CREATE TABLE Registration (
@@ -18,58 +110,77 @@ CREATE TABLE Registration (
 	IsAdmin BIT DEFAULT 0
 );
 
-CREATE TABLE Loans (
-    LoanID INT PRIMARY KEY IDENTITY(1,1),
-    RegistrationID INT NOT NULL FOREIGN KEY REFERENCES Registration(RegistrationID),
-    BookID INT NOT NULL FOREIGN KEY REFERENCES Books(BookID),
-    LoanDate DATE DEFAULT GETDATE(),
-    ReturnDate DATE NULL,
-    IsReturned BIT DEFAULT 0
-);
+INSERT INTO Genders (Gender) VALUES
+('Мужской'),
+('Женский');
 
+INSERT INTO Posts (Post) VALUES
+('Менеджер'),
+('Инженер'),
+('Оператор'),
+('Бухгалтер'),
+('Директор');
 
-INSERT INTO Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable)
-VALUES 
-('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960, '978-0-06-112008-4', 3),
-('1984', 'George Orwell', 'Dystopian', 1949, '978-0-452-28423-4', 5),
-('The Great Gatsby', 'F. Scott Fitzgerald', 'Classic', 1925, '978-0-7432-7356-5', 2),
-('Moby Dick', 'Herman Melville', 'Adventure', 1851, '978-0-14-243724-7', 1),
-('Pride and Prejudice', 'Jane Austen', 'Romance', 1813, '978-0-19-953556-9', 4);
+INSERT INTO TypesOfRemuneration (TypeOfRemuneration) VALUES
+('Почасовая оплата'),
+('Сдельная оплата');
+
+INSERT INTO Months (MonthName, WorkingHours) VALUES
+('Январь', 160),
+('Февраль', 160),
+('Март', 160),
+('Апрель', 160),
+('Май', 160),
+('Июнь', 160);
+
+INSERT INTO Projects (ProjectName, Hourly, PieceWork) VALUES
+('Проект 1', 500, 1000),
+('Проект 2', 600, 1200),
+('Проект 3', 550, 1100);
+
+INSERT INTO Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) VALUES
+('Иван Иванов', '1985-04-15', 'Москва', '1234', '123456', '+7 999 111 2233', 'ivanov@mail.ru', '123456789012', 1, 1),
+('Анна Смирнова', '1990-08-22', 'Санкт-Петербург', '5678', '654321', '+7 999 222 3344', 'smirnova@mail.ru', '234567890123', 2, 2),
+('Петр Петров', '1987-02-10', 'Воронеж', '9101', '987654', '+7 999 333 4455', 'petrov@mail.ru', '345678901234', 3, 1);
+
+INSERT INTO SalaryAccruals (Year, MonthID, ProjectID) VALUES
+(2025, 1, 1),
+(2025, 2, 2),
+(2025, 3, 3);
+
+INSERT INTO Salary (SalaryAccrualID, EmployeeID, AllDays, AllHours, PieceworkCharges, HourlyCharges, VacationPay, SickPay, PersonalIncomeTax, Contributions, Total) VALUES
+(1, 1, 20, 160, 2000, 8000, 500, 200, 1000, 500, 14000),
+(2, 2, 18, 160, 2500, 9600, 600, 150, 1200, 600, 17000),
+(3, 3, 22, 160, 3000, 8800, 700, 250, 1400, 700, 18500);
+
+INSERT INTO AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) VALUES
+(1, 1, 1, 160),
+(2, 2, 2, 160),
+(3, 3, 2, 160);
+
+INSERT INTO VacationPay (EmployeeID, VacationStartDate, VacationEndDate, AverageDailyEarnings, Total) VALUES
+(1, '2025-06-01', '2025-06-10', 500, 5000),
+(2, '2025-07-01', '2025-07-10', 600, 6000);
+
+INSERT INTO SickPay (EmployeeID, SickStartDate, SickEndDate, Experience, AverageDailyEarnings, Total) VALUES
+(1, '2025-03-01', '2025-03-05', 5, 400, 2000),
+(3, '2025-03-08', '2025-03-09', 7, 350, 350);
 
 INSERT INTO Registration (UserLogin, UserPassword, IsAdmin) VALUES
 ('admin', 'admin', 1),
 ('user', 'user', 0);
 
-INSERT INTO Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned)
-VALUES 
-(1, 1, '2023-11-01', '2023-11-10', 1),
-(1, 2, '2023-11-03', NULL, 0),
-(1, 3, '2023-10-15', '2023-10-25', 1),
-(1, 4, '2023-11-04', NULL, 0),
-(1, 5, '2023-09-20', '2023-09-30', 1);
-
-CREATE TRIGGER trg_UpdateCopiesAvailable
-ON Loans
-AFTER UPDATE
-AS
-BEGIN
-    IF UPDATE(IsReturned)
-    BEGIN
-        UPDATE Books
-        SET CopiesAvailable = CASE 
-            WHEN l.IsReturned = 1 AND i.IsReturned = 0 THEN CopiesAvailable + 1  -- Книга возвращена
-            WHEN l.IsReturned = 0 AND i.IsReturned = 1 THEN CopiesAvailable - 1  -- Книга выдана
-            ELSE CopiesAvailable 
-        END
-        FROM Books b
-        INNER JOIN Inserted i ON i.BookID = b.BookID
-        INNER JOIN Deleted l ON l.LoanID = i.LoanID
-        WHERE i.BookID = b.BookID;
-    END
-END;
-
-SELECT * FROM Books;
-SELECT * FROM Loans;
+SELECT * FROM Genders;
+SELECT * FROM Posts;
+SELECT * FROM TypesOfRemuneration;
+SELECT * FROM Months;
+SELECT * FROM Projects;
+SELECT * FROM Employees;
+SELECT * FROM SalaryAccruals;
+SELECT * FROM Salary;
+SELECT * FROM AccountingsOfWorkingHours;
+SELECT * FROM VacationPay;
+SELECT * FROM SickPay;
 SELECT * FROM Registration;
 
-DROP DATABASE LibraryDB;
+DROP DATABASE WorkTrack;

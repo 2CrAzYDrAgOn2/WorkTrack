@@ -71,7 +71,7 @@ namespace WorkTrack
                 dataGridViewSalaryAccruals.Columns.Add("ProjectID", "Проект");
                 dataGridViewSalaryAccruals.Columns.Add("IsNew", String.Empty);
                 dataGridViewSalary.Columns.Add("SalaryID", "Номер");
-                dataGridViewSalary.Columns.Add("SalaryAccrualID", "Номер начисления зарплаты");
+                dataGridViewSalary.Columns.Add("SalaryAccrualID", "Номер зарплаты");
                 dataGridViewSalary.Columns.Add("EmployeeID", "Номер сотрудника");
                 dataGridViewSalary.Columns.Add("AllDays", "Дней отработано");
                 dataGridViewSalary.Columns.Add("AllHours", "Часов отработано");
@@ -842,18 +842,6 @@ namespace WorkTrack
         //    }
         //}
 
-        private void ButtonWordBook_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToWord(dataGridViewBooks);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void ButtonWordLoan_Click(object sender, EventArgs e)
         {
             try
@@ -866,35 +854,11 @@ namespace WorkTrack
             }
         }
 
-        private void ButtonExcelBook_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToExcel(dataGridViewBooks);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void ButtonExcelLoan_Click(object sender, EventArgs e)
         {
             try
             {
                 ExportToExcel(dataGridViewProjects);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void ButtonTXTBook_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewBooks);
             }
             catch (Exception ex)
             {

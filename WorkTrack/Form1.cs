@@ -655,10 +655,6 @@ namespace WorkTrack
             string text = "";
             switch (dataGridView.Name)
             {
-                case "dataGridViewBooks":
-                    text += "Данные книг\n\n";
-                    break;
-
                 case "dataGridViewProjects":
                     text += "Данные проектов\n\n";
                     break;
@@ -842,7 +838,23 @@ namespace WorkTrack
         //    }
         //}
 
-        private void ButtonWordLoan_Click(object sender, EventArgs e)
+        private void ButtonNewProject_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ButtonDeleteProject_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ButtonChangeProject_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ButtonSaveProject_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ButtonWordProject_Click(object sender, EventArgs e)
         {
             try
             {
@@ -854,7 +866,7 @@ namespace WorkTrack
             }
         }
 
-        private void ButtonExcelLoan_Click(object sender, EventArgs e)
+        private void ButtonExcelProject_Click(object sender, EventArgs e)
         {
             try
             {
@@ -866,7 +878,7 @@ namespace WorkTrack
             }
         }
 
-        private void ButtonTXTLoan_Click(object sender, EventArgs e)
+        private void ButtonTXTProject_Click(object sender, EventArgs e)
         {
             try
             {

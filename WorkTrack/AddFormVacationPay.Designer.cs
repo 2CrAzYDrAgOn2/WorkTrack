@@ -57,9 +57,9 @@
             label1.Location = new Point(243, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(71, 21);
+            label1.Size = new Size(97, 21);
             label1.TabIndex = 12;
-            label1.Text = "Выдача";
+            label1.Text = "Отпускные";
             // 
             // textBoxRegistrationIDLoans
             // 
@@ -88,14 +88,17 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
             Controls.Add(textBoxRegistrationIDLoans);
             Controls.Add(buttonSave);
+            DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddFormVacationPay";
-            Text = "AddFormVacationPay";
+            Text = "Добавить отпускные";
             ResumeLayout(false);
             PerformLayout();
         }

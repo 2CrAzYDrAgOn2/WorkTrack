@@ -31,8 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormAccountingsOfWorkingHours));
             labelTitle = new Label();
             label1 = new Label();
-            textBoxRegistrationIDLoans = new TextBox();
             buttonSave = new Button();
+            labelAccountingsOfWorkingHoursID = new Label();
+            textBoxAccountingsOfWorkingHoursID = new TextBox();
+            labelEmployeeIDAccountingsOfWorkingHours = new Label();
+            textBoxEmployeeIDAccountingsOfWorkingHours = new TextBox();
+            labelProjectIDAccountingsOfWorkingHours = new Label();
+            textBoxProjectIDAccountingsOfWorkingHours = new TextBox();
+            labelTypeOfRemunerationID = new Label();
+            comboBoxTypeOfRemunerationID = new ComboBox();
+            labelHoursOfWork = new Label();
+            textBoxHoursOfWork = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -40,7 +49,7 @@
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
             labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
-            labelTitle.ForeColor = Color.Black;
+            labelTitle.ForeColor = Color.WhiteSmoke;
             labelTitle.Location = new Point(241, 9);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
@@ -53,22 +62,13 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.WhiteSmoke;
             label1.Location = new Point(242, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(71, 21);
+            label1.Size = new Size(119, 21);
             label1.TabIndex = 12;
-            label1.Text = "Выдача";
-            // 
-            // textBoxRegistrationIDLoans
-            // 
-            textBoxRegistrationIDLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxRegistrationIDLoans.Location = new Point(290, 447);
-            textBoxRegistrationIDLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxRegistrationIDLoans.Name = "textBoxRegistrationIDLoans";
-            textBoxRegistrationIDLoans.Size = new Size(455, 33);
-            textBoxRegistrationIDLoans.TabIndex = 9;
+            label1.Text = "Учет времени";
             // 
             // buttonSave
             // 
@@ -84,18 +84,137 @@
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
             // 
+            // labelAccountingsOfWorkingHoursID
+            // 
+            labelAccountingsOfWorkingHoursID.AutoSize = true;
+            labelAccountingsOfWorkingHoursID.BackColor = Color.Transparent;
+            labelAccountingsOfWorkingHoursID.ForeColor = Color.Black;
+            labelAccountingsOfWorkingHoursID.Location = new Point(231, 461);
+            labelAccountingsOfWorkingHoursID.Margin = new Padding(4, 0, 4, 0);
+            labelAccountingsOfWorkingHoursID.Name = "labelAccountingsOfWorkingHoursID";
+            labelAccountingsOfWorkingHoursID.Size = new Size(48, 15);
+            labelAccountingsOfWorkingHoursID.TabIndex = 18;
+            labelAccountingsOfWorkingHoursID.Text = "Номер:";
+            // 
+            // textBoxAccountingsOfWorkingHoursID
+            // 
+            textBoxAccountingsOfWorkingHoursID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAccountingsOfWorkingHoursID.Location = new Point(290, 447);
+            textBoxAccountingsOfWorkingHoursID.Margin = new Padding(4, 3, 4, 3);
+            textBoxAccountingsOfWorkingHoursID.Name = "textBoxAccountingsOfWorkingHoursID";
+            textBoxAccountingsOfWorkingHoursID.Size = new Size(455, 33);
+            textBoxAccountingsOfWorkingHoursID.TabIndex = 13;
+            // 
+            // labelEmployeeIDAccountingsOfWorkingHours
+            // 
+            labelEmployeeIDAccountingsOfWorkingHours.AutoSize = true;
+            labelEmployeeIDAccountingsOfWorkingHours.BackColor = Color.Transparent;
+            labelEmployeeIDAccountingsOfWorkingHours.ForeColor = Color.Black;
+            labelEmployeeIDAccountingsOfWorkingHours.Location = new Point(170, 503);
+            labelEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDAccountingsOfWorkingHours.Name = "labelEmployeeIDAccountingsOfWorkingHours";
+            labelEmployeeIDAccountingsOfWorkingHours.Size = new Size(114, 15);
+            labelEmployeeIDAccountingsOfWorkingHours.TabIndex = 19;
+            labelEmployeeIDAccountingsOfWorkingHours.Text = "Номер сотрудника:";
+            // 
+            // textBoxEmployeeIDAccountingsOfWorkingHours
+            // 
+            textBoxEmployeeIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Location = new Point(290, 492);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Name = "textBoxEmployeeIDAccountingsOfWorkingHours";
+            textBoxEmployeeIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            textBoxEmployeeIDAccountingsOfWorkingHours.TabIndex = 14;
+            // 
+            // labelProjectIDAccountingsOfWorkingHours
+            // 
+            labelProjectIDAccountingsOfWorkingHours.AutoSize = true;
+            labelProjectIDAccountingsOfWorkingHours.BackColor = Color.Transparent;
+            labelProjectIDAccountingsOfWorkingHours.ForeColor = Color.Black;
+            labelProjectIDAccountingsOfWorkingHours.Location = new Point(229, 548);
+            labelProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelProjectIDAccountingsOfWorkingHours.Name = "labelProjectIDAccountingsOfWorkingHours";
+            labelProjectIDAccountingsOfWorkingHours.Size = new Size(50, 15);
+            labelProjectIDAccountingsOfWorkingHours.TabIndex = 20;
+            labelProjectIDAccountingsOfWorkingHours.Text = "Проект:";
+            // 
+            // textBoxProjectIDAccountingsOfWorkingHours
+            // 
+            textBoxProjectIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectIDAccountingsOfWorkingHours.Location = new Point(290, 537);
+            textBoxProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectIDAccountingsOfWorkingHours.Name = "textBoxProjectIDAccountingsOfWorkingHours";
+            textBoxProjectIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            textBoxProjectIDAccountingsOfWorkingHours.TabIndex = 15;
+            // 
+            // labelTypeOfRemunerationID
+            // 
+            labelTypeOfRemunerationID.AutoSize = true;
+            labelTypeOfRemunerationID.BackColor = Color.Transparent;
+            labelTypeOfRemunerationID.ForeColor = Color.Black;
+            labelTypeOfRemunerationID.Location = new Point(205, 593);
+            labelTypeOfRemunerationID.Margin = new Padding(4, 0, 4, 0);
+            labelTypeOfRemunerationID.Name = "labelTypeOfRemunerationID";
+            labelTypeOfRemunerationID.Size = new Size(74, 15);
+            labelTypeOfRemunerationID.TabIndex = 21;
+            labelTypeOfRemunerationID.Text = "Тип работы:";
+            // 
+            // comboBoxTypeOfRemunerationID
+            // 
+            comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxTypeOfRemunerationID.FormattingEnabled = true;
+            comboBoxTypeOfRemunerationID.Location = new Point(291, 582);
+            comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
+            comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
+            comboBoxTypeOfRemunerationID.TabIndex = 16;
+            // 
+            // labelHoursOfWork
+            // 
+            labelHoursOfWork.AutoSize = true;
+            labelHoursOfWork.BackColor = Color.Transparent;
+            labelHoursOfWork.ForeColor = Color.Black;
+            labelHoursOfWork.Location = new Point(204, 638);
+            labelHoursOfWork.Margin = new Padding(4, 0, 4, 0);
+            labelHoursOfWork.Name = "labelHoursOfWork";
+            labelHoursOfWork.Size = new Size(75, 15);
+            labelHoursOfWork.TabIndex = 22;
+            labelHoursOfWork.Text = "Количество:";
+            // 
+            // textBoxHoursOfWork
+            // 
+            textBoxHoursOfWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHoursOfWork.Location = new Point(290, 627);
+            textBoxHoursOfWork.Margin = new Padding(4, 3, 4, 3);
+            textBoxHoursOfWork.Name = "textBoxHoursOfWork";
+            textBoxHoursOfWork.ReadOnly = true;
+            textBoxHoursOfWork.Size = new Size(455, 33);
+            textBoxHoursOfWork.TabIndex = 17;
+            // 
             // AddFormAccountingsOfWorkingHours
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(textBoxRegistrationIDLoans);
+            Controls.Add(labelAccountingsOfWorkingHoursID);
+            Controls.Add(textBoxAccountingsOfWorkingHoursID);
+            Controls.Add(labelEmployeeIDAccountingsOfWorkingHours);
+            Controls.Add(textBoxEmployeeIDAccountingsOfWorkingHours);
+            Controls.Add(labelProjectIDAccountingsOfWorkingHours);
+            Controls.Add(textBoxProjectIDAccountingsOfWorkingHours);
+            Controls.Add(labelTypeOfRemunerationID);
+            Controls.Add(comboBoxTypeOfRemunerationID);
+            Controls.Add(labelHoursOfWork);
+            Controls.Add(textBoxHoursOfWork);
             Controls.Add(buttonSave);
+            DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddFormAccountingsOfWorkingHours";
-            Text = "AddFormAccountingsOfWorkingHours";
+            Text = "Добавить учет времени";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,7 +223,16 @@
 
         private Label labelTitle;
         private Label label1;
-        private TextBox textBoxRegistrationIDLoans;
         private Button buttonSave;
+        private Label labelAccountingsOfWorkingHoursID;
+        private TextBox textBoxAccountingsOfWorkingHoursID;
+        private Label labelEmployeeIDAccountingsOfWorkingHours;
+        private TextBox textBoxEmployeeIDAccountingsOfWorkingHours;
+        private Label labelProjectIDAccountingsOfWorkingHours;
+        private TextBox textBoxProjectIDAccountingsOfWorkingHours;
+        private Label labelTypeOfRemunerationID;
+        private ComboBox comboBoxTypeOfRemunerationID;
+        private Label labelHoursOfWork;
+        private TextBox textBoxHoursOfWork;
     }
 }

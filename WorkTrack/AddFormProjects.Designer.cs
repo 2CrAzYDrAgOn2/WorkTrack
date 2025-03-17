@@ -32,14 +32,21 @@
             buttonSave = new Button();
             labelTitle = new Label();
             label1 = new Label();
-            textBoxRegistrationIDLoans = new TextBox();
+            labelProjectID = new Label();
+            textBoxProjectID = new TextBox();
+            labelProjectName = new Label();
+            textBoxProjectName = new TextBox();
+            labelHourly = new Label();
+            textBoxHourly = new TextBox();
+            labePieceWork = new Label();
+            textBoxPieceWork = new TextBox();
             SuspendLayout();
             // 
             // buttonSave
             // 
             buttonSave.BackColor = Color.Transparent;
             buttonSave.FlatStyle = FlatStyle.Flat;
-            buttonSave.ForeColor = Color.Black;
+            buttonSave.ForeColor = Color.WhiteSmoke;
             buttonSave.Location = new Point(330, 763);
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
@@ -54,7 +61,7 @@
             labelTitle.AutoSize = true;
             labelTitle.BackColor = Color.Transparent;
             labelTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
-            labelTitle.ForeColor = Color.Black;
+            labelTitle.ForeColor = Color.WhiteSmoke;
             labelTitle.Location = new Point(243, 10);
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
@@ -67,32 +74,116 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.WhiteSmoke;
             label1.Location = new Point(244, 39);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(71, 21);
+            label1.Size = new Size(67, 21);
             label1.TabIndex = 8;
-            label1.Text = "Выдача";
+            label1.Text = "Проект";
             // 
-            // textBoxRegistrationIDLoans
+            // labelProjectID
             // 
-            textBoxRegistrationIDLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxRegistrationIDLoans.Location = new Point(292, 448);
-            textBoxRegistrationIDLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxRegistrationIDLoans.Name = "textBoxRegistrationIDLoans";
-            textBoxRegistrationIDLoans.Size = new Size(455, 33);
-            textBoxRegistrationIDLoans.TabIndex = 0;
+            labelProjectID.AutoSize = true;
+            labelProjectID.BackColor = Color.Transparent;
+            labelProjectID.ForeColor = Color.Black;
+            labelProjectID.Location = new Point(233, 462);
+            labelProjectID.Margin = new Padding(4, 0, 4, 0);
+            labelProjectID.Name = "labelProjectID";
+            labelProjectID.Size = new Size(48, 15);
+            labelProjectID.TabIndex = 13;
+            labelProjectID.Text = "Номер:";
+            // 
+            // textBoxProjectID
+            // 
+            textBoxProjectID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectID.Location = new Point(292, 448);
+            textBoxProjectID.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectID.Name = "textBoxProjectID";
+            textBoxProjectID.Size = new Size(455, 33);
+            textBoxProjectID.TabIndex = 9;
+            // 
+            // labelProjectName
+            // 
+            labelProjectName.AutoSize = true;
+            labelProjectName.BackColor = Color.Transparent;
+            labelProjectName.ForeColor = Color.Black;
+            labelProjectName.Location = new Point(172, 504);
+            labelProjectName.Margin = new Padding(4, 0, 4, 0);
+            labelProjectName.Name = "labelProjectName";
+            labelProjectName.Size = new Size(109, 15);
+            labelProjectName.TabIndex = 14;
+            labelProjectName.Text = "Название проекта:";
+            // 
+            // textBoxProjectName
+            // 
+            textBoxProjectName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectName.Location = new Point(292, 493);
+            textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectName.Name = "textBoxProjectName";
+            textBoxProjectName.Size = new Size(455, 33);
+            textBoxProjectName.TabIndex = 10;
+            // 
+            // labelHourly
+            // 
+            labelHourly.AutoSize = true;
+            labelHourly.BackColor = Color.Transparent;
+            labelHourly.ForeColor = Color.Black;
+            labelHourly.Location = new Point(175, 549);
+            labelHourly.Margin = new Padding(4, 0, 4, 0);
+            labelHourly.Name = "labelHourly";
+            labelHourly.Size = new Size(111, 15);
+            labelHourly.TabIndex = 15;
+            labelHourly.Text = "Почасовая оплата:";
+            // 
+            // textBoxHourly
+            // 
+            textBoxHourly.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHourly.Location = new Point(292, 538);
+            textBoxHourly.Margin = new Padding(4, 3, 4, 3);
+            textBoxHourly.Name = "textBoxHourly";
+            textBoxHourly.Size = new Size(455, 33);
+            textBoxHourly.TabIndex = 11;
+            // 
+            // labePieceWork
+            // 
+            labePieceWork.AutoSize = true;
+            labePieceWork.BackColor = Color.Transparent;
+            labePieceWork.ForeColor = Color.Black;
+            labePieceWork.Location = new Point(183, 594);
+            labePieceWork.Margin = new Padding(4, 0, 4, 0);
+            labePieceWork.Name = "labePieceWork";
+            labePieceWork.Size = new Size(103, 15);
+            labePieceWork.TabIndex = 16;
+            labePieceWork.Text = "Сдельная оплата:";
+            // 
+            // textBoxPieceWork
+            // 
+            textBoxPieceWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPieceWork.Location = new Point(292, 583);
+            textBoxPieceWork.Margin = new Padding(4, 3, 4, 3);
+            textBoxPieceWork.Name = "textBoxPieceWork";
+            textBoxPieceWork.ReadOnly = true;
+            textBoxPieceWork.Size = new Size(455, 33);
+            textBoxPieceWork.TabIndex = 12;
             // 
             // AddFormProjects
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(textBoxRegistrationIDLoans);
+            Controls.Add(labelProjectID);
+            Controls.Add(textBoxProjectID);
+            Controls.Add(labelProjectName);
+            Controls.Add(textBoxProjectName);
+            Controls.Add(labelHourly);
+            Controls.Add(textBoxHourly);
+            Controls.Add(labePieceWork);
+            Controls.Add(textBoxPieceWork);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -101,7 +192,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "AddFormProjects";
-            Text = "Добавить выдачу";
+            Text = "Добавить проект";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -110,6 +201,13 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label1;
-        private TextBox textBoxRegistrationIDLoans;
+        private Label labelProjectID;
+        private TextBox textBoxProjectID;
+        private Label labelProjectName;
+        private TextBox textBoxProjectName;
+        private Label labelHourly;
+        private TextBox textBoxHourly;
+        private Label labePieceWork;
+        private TextBox textBoxPieceWork;
     }
 }

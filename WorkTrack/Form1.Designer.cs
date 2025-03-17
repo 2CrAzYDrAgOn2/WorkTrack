@@ -37,21 +37,21 @@
             textBoxSearchSickPay = new TextBox();
             dataGridViewSickPay = new DataGridView();
             panelRecordSickPay = new Panel();
-            label37 = new Label();
-            textBox35 = new TextBox();
-            label47 = new Label();
-            label48 = new Label();
-            textBox27 = new TextBox();
-            label49 = new Label();
-            textBox28 = new TextBox();
-            label50 = new Label();
-            textBox29 = new TextBox();
-            label51 = new Label();
-            dateTimePicker11 = new DateTimePicker();
-            label52 = new Label();
-            dateTimePicker12 = new DateTimePicker();
-            label53 = new Label();
-            textBox30 = new TextBox();
+            labelTotalSickPay = new Label();
+            textBoxTotalSickPay = new TextBox();
+            labelRecordSickPay = new Label();
+            labelSickPayID = new Label();
+            textBoxSickPayID = new TextBox();
+            labelEmployeeIDSickPay = new Label();
+            textBoxEmployeeIDSickPay = new TextBox();
+            labelExperience = new Label();
+            textBoxExperience = new TextBox();
+            labelSickStartDate = new Label();
+            dateTimePickerSickStartDate = new DateTimePicker();
+            labelSickEndDate = new Label();
+            dateTimePickerSickEndDate = new DateTimePicker();
+            labelAverageDailyEarningsSickPay = new Label();
+            textBoxAverageDailyEarningsSickPay = new TextBox();
             labelControlSickPay = new Label();
             panelControlSickPay = new Panel();
             buttonNewSickPay = new Button();
@@ -69,19 +69,19 @@
             textBoxSearchVacationPay = new TextBox();
             dataGridViewVacationPay = new DataGridView();
             panelRecordVacationPay = new Panel();
-            label38 = new Label();
-            label39 = new Label();
-            textBox22 = new TextBox();
-            label40 = new Label();
-            textBox23 = new TextBox();
-            label41 = new Label();
-            textBox24 = new TextBox();
-            label42 = new Label();
-            dateTimePicker9 = new DateTimePicker();
-            label43 = new Label();
-            dateTimePicker10 = new DateTimePicker();
-            label44 = new Label();
-            textBox25 = new TextBox();
+            labelRecordVacationPay = new Label();
+            labelVacationPayID = new Label();
+            textBoxVacationPayID = new TextBox();
+            labelEmployeeIDVacationPay = new Label();
+            textBoxEmployeeIDVacationPay = new TextBox();
+            labelAverageDailyEarnings = new Label();
+            textBoxAverageDailyEarnings = new TextBox();
+            labelVacationStartDate = new Label();
+            dateTimePickerVacationStartDate = new DateTimePicker();
+            labelVacationEndDate = new Label();
+            dateTimePickerVacationEndDate = new DateTimePicker();
+            labelTotalVacationPay = new Label();
+            textBoxTotalVacationPay = new TextBox();
             labelControlVacationPay = new Label();
             panelControlVacationPay = new Panel();
             buttonNewVacationPay = new Button();
@@ -99,17 +99,17 @@
             textBoxSearchAccountingsOfWorkingHours = new TextBox();
             dataGridViewAccountingsOfWorkingHours = new DataGridView();
             panelRecordAccountingsOfWorkingHours = new Panel();
-            label36 = new Label();
-            comboBox4 = new ComboBox();
-            label29 = new Label();
-            label30 = new Label();
-            textBox17 = new TextBox();
-            label31 = new Label();
-            textBox18 = new TextBox();
-            label32 = new Label();
-            textBox19 = new TextBox();
-            label35 = new Label();
-            textBox20 = new TextBox();
+            labelHoursOfWork = new Label();
+            comboBoxTypeOfRemunerationID = new ComboBox();
+            labelRecordAccountingsOfWorkingHours = new Label();
+            labelAccountingsOfWorkingHoursID = new Label();
+            textBoxAccountingsOfWorkingHoursID = new TextBox();
+            labelEmployeeIDAccountingsOfWorkingHours = new Label();
+            textBoxEmployeeIDAccountingsOfWorkingHours = new TextBox();
+            labelProjectIDAccountingsOfWorkingHours = new Label();
+            textBoxProjectIDAccountingsOfWorkingHours = new TextBox();
+            labelTypeOfRemunerationID = new Label();
+            textBoxHoursOfWork = new TextBox();
             labelControlAccountingsOfWorkingHours = new Label();
             panelControlAccountingsOfWorkingHours = new Panel();
             buttonNewAccountingOfWorkingHours = new Button();
@@ -127,31 +127,31 @@
             textBoxSearchSalary = new TextBox();
             dataGridViewSalary = new DataGridView();
             panelRecordSalary = new Panel();
-            label34 = new Label();
-            textBox31 = new TextBox();
-            textBox32 = new TextBox();
-            textBox33 = new TextBox();
-            textBox34 = new TextBox();
-            label18 = new Label();
-            label19 = new Label();
-            label24 = new Label();
-            textBox6 = new TextBox();
-            label25 = new Label();
-            label27 = new Label();
-            textBox9 = new TextBox();
-            label28 = new Label();
-            textBox21 = new TextBox();
-            label33 = new Label();
-            textBox26 = new TextBox();
-            label20 = new Label();
-            label21 = new Label();
-            textBox12 = new TextBox();
-            label22 = new Label();
-            textBox13 = new TextBox();
-            label23 = new Label();
-            textBox14 = new TextBox();
-            label26 = new Label();
-            textBox15 = new TextBox();
+            labelAllHours = new Label();
+            textBoxPersonalIncomeTax = new TextBox();
+            textBoxContributions = new TextBox();
+            textBoxTotal = new TextBox();
+            textBoxSickPay = new TextBox();
+            labelTotal = new Label();
+            labelContributions = new Label();
+            labelHourlyCharges = new Label();
+            textBoxPieceworkCharges = new TextBox();
+            labelVacationPay = new Label();
+            labelSickPay = new Label();
+            textBoxHourlyCharges = new TextBox();
+            labelPersonalIncomeTax = new Label();
+            textBoxVacationPay = new TextBox();
+            labelPieceworkCharges = new Label();
+            textBoxAllHours = new TextBox();
+            labelRecordSalary = new Label();
+            labelSalaryID = new Label();
+            textBoxSalaryID = new TextBox();
+            labelSalaryAccrualIDSalary = new Label();
+            textBoxSalaryAccrualIDSalary = new TextBox();
+            labelEmployeeIDSalary = new Label();
+            textBoxEmployeeIDSalary = new TextBox();
+            labelAllDays = new Label();
+            textBoxAllDays = new TextBox();
             labelControlSalary = new Label();
             panelControlSalary = new Panel();
             buttonNewSalary = new Button();
@@ -169,15 +169,15 @@
             textBoxSearchSalaryAccruals = new TextBox();
             dataGridViewSalaryAccruals = new DataGridView();
             panelRecordSalaryAccruals = new Panel();
-            comboBox3 = new ComboBox();
-            label11 = new Label();
-            label12 = new Label();
-            textBox7 = new TextBox();
-            label13 = new Label();
-            textBox8 = new TextBox();
-            label14 = new Label();
-            label17 = new Label();
-            textBox10 = new TextBox();
+            comboBoxMonthID = new ComboBox();
+            labelRecordSalaryAccruals = new Label();
+            labelSalaryAccrualID = new Label();
+            textBoxSalaryAccrualID = new TextBox();
+            labelYear = new Label();
+            textBoxYear = new TextBox();
+            labelMonthID = new Label();
+            labelProjectIDSalaryAccruals = new Label();
+            textBoxProjectIDSalaryAccruals = new TextBox();
             labelControlSalaryAccruals = new Label();
             panelControlSalaryAccruals = new Panel();
             buttonNewSalaryAccrual = new Button();
@@ -195,29 +195,29 @@
             textBoxSearchEmployees = new TextBox();
             dataGridViewEmployees = new DataGridView();
             panelRecordEmployees = new Panel();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            maskedTextBox1 = new MaskedTextBox();
-            label16 = new Label();
-            label15 = new Label();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            label7 = new Label();
-            label9 = new Label();
-            textBox11 = new TextBox();
-            label10 = new Label();
-            textBox16 = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            textBox4 = new TextBox();
-            label6 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label8 = new Label();
-            textBox5 = new TextBox();
+            comboBoxGenderID = new ComboBox();
+            comboBoxPostID = new ComboBox();
+            maskedTextBoxPhone = new MaskedTextBox();
+            labelGenderID = new Label();
+            labelPostID = new Label();
+            labelPassportNumber = new Label();
+            textBoxPassportNumber = new TextBox();
+            labelPhone = new Label();
+            labelEmail = new Label();
+            textBoxEmail = new TextBox();
+            labelINN = new Label();
+            textBoxINN = new TextBox();
+            labelRecordEmployees = new Label();
+            labelEmployeeID = new Label();
+            textBoxEmployeeID = new TextBox();
+            labelFullName = new Label();
+            textBoxFullName = new TextBox();
+            labelBirthPlace = new Label();
+            textBoxBirthPlace = new TextBox();
+            labelBirthDate = new Label();
+            dateTimePickerBirthDate = new DateTimePicker();
+            labelPassportSeries = new Label();
+            textBoxPassportSeries = new TextBox();
             labelControlEmployees = new Label();
             panelControlEmployees = new Panel();
             buttonNewEmployee = new Button();
@@ -235,15 +235,15 @@
             textBoxSearchProjects = new TextBox();
             dataGridViewProjects = new DataGridView();
             panelRecordProjects = new Panel();
-            labelRecordLoans = new Label();
-            labelLoanID = new Label();
-            textBoxLoanID = new TextBox();
-            labelRegistrationIDLoans = new Label();
-            textBoxRegistrationIDLoans = new TextBox();
-            labelBookIDLoans = new Label();
-            textBoxBookIDLoans = new TextBox();
-            labelIsReturnedLoans = new Label();
-            textBoxIsReturnedLoans = new TextBox();
+            labelRecordProjects = new Label();
+            labelProjectID = new Label();
+            textBoxProjectID = new TextBox();
+            labelProjectName = new Label();
+            textBoxProjectName = new TextBox();
+            labelHourly = new Label();
+            textBoxHourly = new TextBox();
+            labePieceWork = new Label();
+            textBoxPieceWork = new TextBox();
             labelControlProjects = new Label();
             panelControlProjects = new Panel();
             buttonNewProject = new Button();
@@ -383,178 +383,178 @@
             // 
             // panelRecordSickPay
             // 
-            panelRecordSickPay.Controls.Add(label37);
-            panelRecordSickPay.Controls.Add(textBox35);
-            panelRecordSickPay.Controls.Add(label47);
-            panelRecordSickPay.Controls.Add(label48);
-            panelRecordSickPay.Controls.Add(textBox27);
-            panelRecordSickPay.Controls.Add(label49);
-            panelRecordSickPay.Controls.Add(textBox28);
-            panelRecordSickPay.Controls.Add(label50);
-            panelRecordSickPay.Controls.Add(textBox29);
-            panelRecordSickPay.Controls.Add(label51);
-            panelRecordSickPay.Controls.Add(dateTimePicker11);
-            panelRecordSickPay.Controls.Add(label52);
-            panelRecordSickPay.Controls.Add(dateTimePicker12);
-            panelRecordSickPay.Controls.Add(label53);
-            panelRecordSickPay.Controls.Add(textBox30);
+            panelRecordSickPay.Controls.Add(labelRecordSickPay);
+            panelRecordSickPay.Controls.Add(labelSickPayID);
+            panelRecordSickPay.Controls.Add(textBoxSickPayID);
+            panelRecordSickPay.Controls.Add(labelEmployeeIDSickPay);
+            panelRecordSickPay.Controls.Add(textBoxEmployeeIDSickPay);
+            panelRecordSickPay.Controls.Add(labelSickStartDate);
+            panelRecordSickPay.Controls.Add(dateTimePickerSickStartDate);
+            panelRecordSickPay.Controls.Add(labelSickEndDate);
+            panelRecordSickPay.Controls.Add(dateTimePickerSickEndDate);
+            panelRecordSickPay.Controls.Add(labelExperience);
+            panelRecordSickPay.Controls.Add(textBoxExperience);
+            panelRecordSickPay.Controls.Add(labelAverageDailyEarningsSickPay);
+            panelRecordSickPay.Controls.Add(textBoxAverageDailyEarningsSickPay);
+            panelRecordSickPay.Controls.Add(labelTotalSickPay);
+            panelRecordSickPay.Controls.Add(textBoxTotalSickPay);
             panelRecordSickPay.Location = new Point(9, 450);
             panelRecordSickPay.Margin = new Padding(4, 3, 4, 3);
             panelRecordSickPay.Name = "panelRecordSickPay";
             panelRecordSickPay.Size = new Size(611, 552);
             panelRecordSickPay.TabIndex = 1;
             // 
-            // label37
+            // labelTotalSickPay
             // 
-            label37.AutoSize = true;
-            label37.ForeColor = Color.WhiteSmoke;
-            label37.Location = new Point(98, 349);
-            label37.Margin = new Padding(4, 0, 4, 0);
-            label37.Name = "label37";
-            label37.Size = new Size(43, 15);
-            label37.TabIndex = 15;
-            label37.Text = "Итого:";
+            labelTotalSickPay.AutoSize = true;
+            labelTotalSickPay.ForeColor = Color.WhiteSmoke;
+            labelTotalSickPay.Location = new Point(98, 349);
+            labelTotalSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelTotalSickPay.Name = "labelTotalSickPay";
+            labelTotalSickPay.Size = new Size(43, 15);
+            labelTotalSickPay.TabIndex = 14;
+            labelTotalSickPay.Text = "Итого:";
             // 
-            // textBox35
+            // textBoxTotalSickPay
             // 
-            textBox35.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox35.Location = new Point(152, 338);
-            textBox35.Margin = new Padding(4, 3, 4, 3);
-            textBox35.Name = "textBox35";
-            textBox35.ReadOnly = true;
-            textBox35.Size = new Size(455, 33);
-            textBox35.TabIndex = 14;
+            textBoxTotalSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotalSickPay.Location = new Point(152, 338);
+            textBoxTotalSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotalSickPay.Name = "textBoxTotalSickPay";
+            textBoxTotalSickPay.ReadOnly = true;
+            textBoxTotalSickPay.Size = new Size(455, 33);
+            textBoxTotalSickPay.TabIndex = 6;
             // 
-            // label47
+            // labelRecordSickPay
             // 
-            label47.AutoSize = true;
-            label47.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label47.ForeColor = Color.WhiteSmoke;
-            label47.Location = new Point(4, 10);
-            label47.Margin = new Padding(4, 0, 4, 0);
-            label47.Name = "label47";
-            label47.Size = new Size(142, 47);
-            label47.TabIndex = 7;
-            label47.Text = "Запись:";
+            labelRecordSickPay.AutoSize = true;
+            labelRecordSickPay.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordSickPay.ForeColor = Color.WhiteSmoke;
+            labelRecordSickPay.Location = new Point(4, 10);
+            labelRecordSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelRecordSickPay.Name = "labelRecordSickPay";
+            labelRecordSickPay.Size = new Size(142, 47);
+            labelRecordSickPay.TabIndex = 7;
+            labelRecordSickPay.Text = "Запись:";
             // 
-            // label48
+            // labelSickPayID
             // 
-            label48.AutoSize = true;
-            label48.ForeColor = Color.WhiteSmoke;
-            label48.Location = new Point(93, 82);
-            label48.Margin = new Padding(4, 0, 4, 0);
-            label48.Name = "label48";
-            label48.Size = new Size(48, 15);
-            label48.TabIndex = 8;
-            label48.Text = "Номер:";
+            labelSickPayID.AutoSize = true;
+            labelSickPayID.ForeColor = Color.WhiteSmoke;
+            labelSickPayID.Location = new Point(93, 82);
+            labelSickPayID.Margin = new Padding(4, 0, 4, 0);
+            labelSickPayID.Name = "labelSickPayID";
+            labelSickPayID.Size = new Size(48, 15);
+            labelSickPayID.TabIndex = 8;
+            labelSickPayID.Text = "Номер:";
             // 
-            // textBox27
+            // textBoxSickPayID
             // 
-            textBox27.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox27.Location = new Point(152, 68);
-            textBox27.Margin = new Padding(4, 3, 4, 3);
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(455, 33);
-            textBox27.TabIndex = 0;
+            textBoxSickPayID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSickPayID.Location = new Point(152, 68);
+            textBoxSickPayID.Margin = new Padding(4, 3, 4, 3);
+            textBoxSickPayID.Name = "textBoxSickPayID";
+            textBoxSickPayID.Size = new Size(455, 33);
+            textBoxSickPayID.TabIndex = 0;
             // 
-            // label49
+            // labelEmployeeIDSickPay
             // 
-            label49.AutoSize = true;
-            label49.ForeColor = Color.WhiteSmoke;
-            label49.Location = new Point(32, 124);
-            label49.Margin = new Padding(4, 0, 4, 0);
-            label49.Name = "label49";
-            label49.Size = new Size(114, 15);
-            label49.TabIndex = 9;
-            label49.Text = "Номер сотрудника:";
+            labelEmployeeIDSickPay.AutoSize = true;
+            labelEmployeeIDSickPay.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDSickPay.Location = new Point(32, 124);
+            labelEmployeeIDSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDSickPay.Name = "labelEmployeeIDSickPay";
+            labelEmployeeIDSickPay.Size = new Size(114, 15);
+            labelEmployeeIDSickPay.TabIndex = 9;
+            labelEmployeeIDSickPay.Text = "Номер сотрудника:";
             // 
-            // textBox28
+            // textBoxEmployeeIDSickPay
             // 
-            textBox28.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox28.Location = new Point(152, 113);
-            textBox28.Margin = new Padding(4, 3, 4, 3);
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(455, 33);
-            textBox28.TabIndex = 1;
+            textBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDSickPay.Location = new Point(152, 113);
+            textBoxEmployeeIDSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDSickPay.Name = "textBoxEmployeeIDSickPay";
+            textBoxEmployeeIDSickPay.Size = new Size(455, 33);
+            textBoxEmployeeIDSickPay.TabIndex = 1;
             // 
-            // label50
+            // labelExperience
             // 
-            label50.AutoSize = true;
-            label50.ForeColor = Color.WhiteSmoke;
-            label50.Location = new Point(59, 259);
-            label50.Margin = new Padding(4, 0, 4, 0);
-            label50.Name = "label50";
-            label50.Size = new Size(82, 15);
-            label50.TabIndex = 10;
-            label50.Text = "Стаж работы:";
+            labelExperience.AutoSize = true;
+            labelExperience.ForeColor = Color.WhiteSmoke;
+            labelExperience.Location = new Point(59, 259);
+            labelExperience.Margin = new Padding(4, 0, 4, 0);
+            labelExperience.Name = "labelExperience";
+            labelExperience.Size = new Size(82, 15);
+            labelExperience.TabIndex = 12;
+            labelExperience.Text = "Стаж работы:";
             // 
-            // textBox29
+            // textBoxExperience
             // 
-            textBox29.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox29.Location = new Point(152, 248);
-            textBox29.Margin = new Padding(4, 3, 4, 3);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(455, 33);
-            textBox29.TabIndex = 2;
+            textBoxExperience.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxExperience.Location = new Point(152, 248);
+            textBoxExperience.Margin = new Padding(4, 3, 4, 3);
+            textBoxExperience.Name = "textBoxExperience";
+            textBoxExperience.Size = new Size(455, 33);
+            textBoxExperience.TabIndex = 4;
             // 
-            // label51
+            // labelSickStartDate
             // 
-            label51.AutoSize = true;
-            label51.ForeColor = Color.WhiteSmoke;
-            label51.Location = new Point(-8, 176);
-            label51.Margin = new Padding(4, 0, 4, 0);
-            label51.Name = "label51";
-            label51.Size = new Size(154, 15);
-            label51.TabIndex = 11;
-            label51.Text = "Дата начала больничного:";
+            labelSickStartDate.AutoSize = true;
+            labelSickStartDate.ForeColor = Color.WhiteSmoke;
+            labelSickStartDate.Location = new Point(-8, 176);
+            labelSickStartDate.Margin = new Padding(4, 0, 4, 0);
+            labelSickStartDate.Name = "labelSickStartDate";
+            labelSickStartDate.Size = new Size(154, 15);
+            labelSickStartDate.TabIndex = 10;
+            labelSickStartDate.Text = "Дата начала больничного:";
             // 
-            // dateTimePicker11
+            // dateTimePickerSickStartDate
             // 
-            dateTimePicker11.Font = new Font("Segoe UI", 14.25F);
-            dateTimePicker11.Location = new Point(152, 162);
-            dateTimePicker11.Name = "dateTimePicker11";
-            dateTimePicker11.Size = new Size(455, 33);
-            dateTimePicker11.TabIndex = 3;
+            dateTimePickerSickStartDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerSickStartDate.Location = new Point(152, 162);
+            dateTimePickerSickStartDate.Name = "dateTimePickerSickStartDate";
+            dateTimePickerSickStartDate.Size = new Size(455, 33);
+            dateTimePickerSickStartDate.TabIndex = 2;
             // 
-            // label52
+            // labelSickEndDate
             // 
-            label52.AutoSize = true;
-            label52.ForeColor = Color.WhiteSmoke;
-            label52.Location = new Point(-7, 210);
-            label52.Margin = new Padding(4, 0, 4, 0);
-            label52.Name = "label52";
-            label52.Size = new Size(148, 15);
-            label52.TabIndex = 12;
-            label52.Text = "Дата конца больничного:";
+            labelSickEndDate.AutoSize = true;
+            labelSickEndDate.ForeColor = Color.WhiteSmoke;
+            labelSickEndDate.Location = new Point(-7, 210);
+            labelSickEndDate.Margin = new Padding(4, 0, 4, 0);
+            labelSickEndDate.Name = "labelSickEndDate";
+            labelSickEndDate.Size = new Size(148, 15);
+            labelSickEndDate.TabIndex = 11;
+            labelSickEndDate.Text = "Дата конца больничного:";
             // 
-            // dateTimePicker12
+            // dateTimePickerSickEndDate
             // 
-            dateTimePicker12.Font = new Font("Segoe UI", 14.25F);
-            dateTimePicker12.Location = new Point(152, 204);
-            dateTimePicker12.Name = "dateTimePicker12";
-            dateTimePicker12.Size = new Size(455, 33);
-            dateTimePicker12.TabIndex = 4;
+            dateTimePickerSickEndDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerSickEndDate.Location = new Point(152, 204);
+            dateTimePickerSickEndDate.Name = "dateTimePickerSickEndDate";
+            dateTimePickerSickEndDate.Size = new Size(455, 33);
+            dateTimePickerSickEndDate.TabIndex = 3;
             // 
-            // label53
+            // labelAverageDailyEarningsSickPay
             // 
-            label53.AutoSize = true;
-            label53.ForeColor = Color.WhiteSmoke;
-            label53.Location = new Point(-20, 304);
-            label53.Margin = new Padding(4, 0, 4, 0);
-            label53.Name = "label53";
-            label53.Size = new Size(166, 15);
-            label53.TabIndex = 13;
-            label53.Text = "Средний дневной заработок:";
+            labelAverageDailyEarningsSickPay.AutoSize = true;
+            labelAverageDailyEarningsSickPay.ForeColor = Color.WhiteSmoke;
+            labelAverageDailyEarningsSickPay.Location = new Point(-20, 304);
+            labelAverageDailyEarningsSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelAverageDailyEarningsSickPay.Name = "labelAverageDailyEarningsSickPay";
+            labelAverageDailyEarningsSickPay.Size = new Size(166, 15);
+            labelAverageDailyEarningsSickPay.TabIndex = 13;
+            labelAverageDailyEarningsSickPay.Text = "Средний дневной заработок:";
             // 
-            // textBox30
+            // textBoxAverageDailyEarningsSickPay
             // 
-            textBox30.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox30.Location = new Point(152, 293);
-            textBox30.Margin = new Padding(4, 3, 4, 3);
-            textBox30.Name = "textBox30";
-            textBox30.ReadOnly = true;
-            textBox30.Size = new Size(455, 33);
-            textBox30.TabIndex = 6;
+            textBoxAverageDailyEarningsSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAverageDailyEarningsSickPay.Location = new Point(152, 293);
+            textBoxAverageDailyEarningsSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxAverageDailyEarningsSickPay.Name = "textBoxAverageDailyEarningsSickPay";
+            textBoxAverageDailyEarningsSickPay.ReadOnly = true;
+            textBoxAverageDailyEarningsSickPay.Size = new Size(455, 33);
+            textBoxAverageDailyEarningsSickPay.TabIndex = 5;
             // 
             // labelControlSickPay
             // 
@@ -759,155 +759,155 @@
             // 
             // panelRecordVacationPay
             // 
-            panelRecordVacationPay.Controls.Add(label38);
-            panelRecordVacationPay.Controls.Add(label39);
-            panelRecordVacationPay.Controls.Add(textBox22);
-            panelRecordVacationPay.Controls.Add(label40);
-            panelRecordVacationPay.Controls.Add(textBox23);
-            panelRecordVacationPay.Controls.Add(label41);
-            panelRecordVacationPay.Controls.Add(textBox24);
-            panelRecordVacationPay.Controls.Add(label42);
-            panelRecordVacationPay.Controls.Add(dateTimePicker9);
-            panelRecordVacationPay.Controls.Add(label43);
-            panelRecordVacationPay.Controls.Add(dateTimePicker10);
-            panelRecordVacationPay.Controls.Add(label44);
-            panelRecordVacationPay.Controls.Add(textBox25);
+            panelRecordVacationPay.Controls.Add(labelRecordVacationPay);
+            panelRecordVacationPay.Controls.Add(labelVacationPayID);
+            panelRecordVacationPay.Controls.Add(textBoxVacationPayID);
+            panelRecordVacationPay.Controls.Add(labelEmployeeIDVacationPay);
+            panelRecordVacationPay.Controls.Add(textBoxEmployeeIDVacationPay);
+            panelRecordVacationPay.Controls.Add(labelVacationStartDate);
+            panelRecordVacationPay.Controls.Add(dateTimePickerVacationStartDate);
+            panelRecordVacationPay.Controls.Add(labelVacationEndDate);
+            panelRecordVacationPay.Controls.Add(dateTimePickerVacationEndDate);
+            panelRecordVacationPay.Controls.Add(labelAverageDailyEarnings);
+            panelRecordVacationPay.Controls.Add(textBoxAverageDailyEarnings);
+            panelRecordVacationPay.Controls.Add(labelTotalVacationPay);
+            panelRecordVacationPay.Controls.Add(textBoxTotalVacationPay);
             panelRecordVacationPay.Location = new Point(9, 450);
             panelRecordVacationPay.Margin = new Padding(4, 3, 4, 3);
             panelRecordVacationPay.Name = "panelRecordVacationPay";
             panelRecordVacationPay.Size = new Size(611, 552);
             panelRecordVacationPay.TabIndex = 1;
             // 
-            // label38
+            // labelRecordVacationPay
             // 
-            label38.AutoSize = true;
-            label38.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label38.ForeColor = Color.WhiteSmoke;
-            label38.Location = new Point(4, 10);
-            label38.Margin = new Padding(4, 0, 4, 0);
-            label38.Name = "label38";
-            label38.Size = new Size(142, 47);
-            label38.TabIndex = 7;
-            label38.Text = "Запись:";
+            labelRecordVacationPay.AutoSize = true;
+            labelRecordVacationPay.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordVacationPay.ForeColor = Color.WhiteSmoke;
+            labelRecordVacationPay.Location = new Point(4, 10);
+            labelRecordVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelRecordVacationPay.Name = "labelRecordVacationPay";
+            labelRecordVacationPay.Size = new Size(142, 47);
+            labelRecordVacationPay.TabIndex = 6;
+            labelRecordVacationPay.Text = "Запись:";
             // 
-            // label39
+            // labelVacationPayID
             // 
-            label39.AutoSize = true;
-            label39.ForeColor = Color.WhiteSmoke;
-            label39.Location = new Point(93, 82);
-            label39.Margin = new Padding(4, 0, 4, 0);
-            label39.Name = "label39";
-            label39.Size = new Size(48, 15);
-            label39.TabIndex = 8;
-            label39.Text = "Номер:";
+            labelVacationPayID.AutoSize = true;
+            labelVacationPayID.ForeColor = Color.WhiteSmoke;
+            labelVacationPayID.Location = new Point(93, 82);
+            labelVacationPayID.Margin = new Padding(4, 0, 4, 0);
+            labelVacationPayID.Name = "labelVacationPayID";
+            labelVacationPayID.Size = new Size(48, 15);
+            labelVacationPayID.TabIndex = 7;
+            labelVacationPayID.Text = "Номер:";
             // 
-            // textBox22
+            // textBoxVacationPayID
             // 
-            textBox22.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox22.Location = new Point(152, 68);
-            textBox22.Margin = new Padding(4, 3, 4, 3);
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(455, 33);
-            textBox22.TabIndex = 0;
+            textBoxVacationPayID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxVacationPayID.Location = new Point(152, 68);
+            textBoxVacationPayID.Margin = new Padding(4, 3, 4, 3);
+            textBoxVacationPayID.Name = "textBoxVacationPayID";
+            textBoxVacationPayID.Size = new Size(455, 33);
+            textBoxVacationPayID.TabIndex = 0;
             // 
-            // label40
+            // labelEmployeeIDVacationPay
             // 
-            label40.AutoSize = true;
-            label40.ForeColor = Color.WhiteSmoke;
-            label40.Location = new Point(27, 124);
-            label40.Margin = new Padding(4, 0, 4, 0);
-            label40.Name = "label40";
-            label40.Size = new Size(114, 15);
-            label40.TabIndex = 9;
-            label40.Text = "Номер сотрудника:";
+            labelEmployeeIDVacationPay.AutoSize = true;
+            labelEmployeeIDVacationPay.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDVacationPay.Location = new Point(27, 124);
+            labelEmployeeIDVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDVacationPay.Name = "labelEmployeeIDVacationPay";
+            labelEmployeeIDVacationPay.Size = new Size(114, 15);
+            labelEmployeeIDVacationPay.TabIndex = 8;
+            labelEmployeeIDVacationPay.Text = "Номер сотрудника:";
             // 
-            // textBox23
+            // textBoxEmployeeIDVacationPay
             // 
-            textBox23.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox23.Location = new Point(152, 113);
-            textBox23.Margin = new Padding(4, 3, 4, 3);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(455, 33);
-            textBox23.TabIndex = 1;
+            textBoxEmployeeIDVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDVacationPay.Location = new Point(152, 113);
+            textBoxEmployeeIDVacationPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDVacationPay.Name = "textBoxEmployeeIDVacationPay";
+            textBoxEmployeeIDVacationPay.Size = new Size(455, 33);
+            textBoxEmployeeIDVacationPay.TabIndex = 1;
             // 
-            // label41
+            // labelAverageDailyEarnings
             // 
-            label41.AutoSize = true;
-            label41.ForeColor = Color.WhiteSmoke;
-            label41.Location = new Point(-25, 259);
-            label41.Margin = new Padding(4, 0, 4, 0);
-            label41.Name = "label41";
-            label41.Size = new Size(166, 15);
-            label41.TabIndex = 10;
-            label41.Text = "Средний дневной заработок:";
+            labelAverageDailyEarnings.AutoSize = true;
+            labelAverageDailyEarnings.ForeColor = Color.WhiteSmoke;
+            labelAverageDailyEarnings.Location = new Point(-25, 259);
+            labelAverageDailyEarnings.Margin = new Padding(4, 0, 4, 0);
+            labelAverageDailyEarnings.Name = "labelAverageDailyEarnings";
+            labelAverageDailyEarnings.Size = new Size(166, 15);
+            labelAverageDailyEarnings.TabIndex = 11;
+            labelAverageDailyEarnings.Text = "Средний дневной заработок:";
             // 
-            // textBox24
+            // textBoxAverageDailyEarnings
             // 
-            textBox24.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox24.Location = new Point(152, 248);
-            textBox24.Margin = new Padding(4, 3, 4, 3);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(455, 33);
-            textBox24.TabIndex = 2;
+            textBoxAverageDailyEarnings.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAverageDailyEarnings.Location = new Point(152, 248);
+            textBoxAverageDailyEarnings.Margin = new Padding(4, 3, 4, 3);
+            textBoxAverageDailyEarnings.Name = "textBoxAverageDailyEarnings";
+            textBoxAverageDailyEarnings.Size = new Size(455, 33);
+            textBoxAverageDailyEarnings.TabIndex = 4;
             // 
-            // label42
+            // labelVacationStartDate
             // 
-            label42.AutoSize = true;
-            label42.ForeColor = Color.WhiteSmoke;
-            label42.Location = new Point(18, 175);
-            label42.Margin = new Padding(4, 0, 4, 0);
-            label42.Name = "label42";
-            label42.Size = new Size(123, 15);
-            label42.TabIndex = 11;
-            label42.Text = "Дата начала отпуска:";
+            labelVacationStartDate.AutoSize = true;
+            labelVacationStartDate.ForeColor = Color.WhiteSmoke;
+            labelVacationStartDate.Location = new Point(18, 175);
+            labelVacationStartDate.Margin = new Padding(4, 0, 4, 0);
+            labelVacationStartDate.Name = "labelVacationStartDate";
+            labelVacationStartDate.Size = new Size(123, 15);
+            labelVacationStartDate.TabIndex = 9;
+            labelVacationStartDate.Text = "Дата начала отпуска:";
             // 
-            // dateTimePicker9
+            // dateTimePickerVacationStartDate
             // 
-            dateTimePicker9.Font = new Font("Segoe UI", 14.25F);
-            dateTimePicker9.Location = new Point(152, 161);
-            dateTimePicker9.Name = "dateTimePicker9";
-            dateTimePicker9.Size = new Size(455, 33);
-            dateTimePicker9.TabIndex = 3;
+            dateTimePickerVacationStartDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerVacationStartDate.Location = new Point(152, 161);
+            dateTimePickerVacationStartDate.Name = "dateTimePickerVacationStartDate";
+            dateTimePickerVacationStartDate.Size = new Size(455, 33);
+            dateTimePickerVacationStartDate.TabIndex = 2;
             // 
-            // label43
+            // labelVacationEndDate
             // 
-            label43.AutoSize = true;
-            label43.ForeColor = Color.WhiteSmoke;
-            label43.Location = new Point(24, 217);
-            label43.Margin = new Padding(4, 0, 4, 0);
-            label43.Name = "label43";
-            label43.Size = new Size(117, 15);
-            label43.TabIndex = 12;
-            label43.Text = "Дата конца отпуска:";
+            labelVacationEndDate.AutoSize = true;
+            labelVacationEndDate.ForeColor = Color.WhiteSmoke;
+            labelVacationEndDate.Location = new Point(24, 217);
+            labelVacationEndDate.Margin = new Padding(4, 0, 4, 0);
+            labelVacationEndDate.Name = "labelVacationEndDate";
+            labelVacationEndDate.Size = new Size(117, 15);
+            labelVacationEndDate.TabIndex = 10;
+            labelVacationEndDate.Text = "Дата конца отпуска:";
             // 
-            // dateTimePicker10
+            // dateTimePickerVacationEndDate
             // 
-            dateTimePicker10.Font = new Font("Segoe UI", 14.25F);
-            dateTimePicker10.Location = new Point(152, 203);
-            dateTimePicker10.Name = "dateTimePicker10";
-            dateTimePicker10.Size = new Size(455, 33);
-            dateTimePicker10.TabIndex = 4;
+            dateTimePickerVacationEndDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerVacationEndDate.Location = new Point(152, 203);
+            dateTimePickerVacationEndDate.Name = "dateTimePickerVacationEndDate";
+            dateTimePickerVacationEndDate.Size = new Size(455, 33);
+            dateTimePickerVacationEndDate.TabIndex = 3;
             // 
-            // label44
+            // labelTotalVacationPay
             // 
-            label44.AutoSize = true;
-            label44.ForeColor = Color.WhiteSmoke;
-            label44.Location = new Point(98, 304);
-            label44.Margin = new Padding(4, 0, 4, 0);
-            label44.Name = "label44";
-            label44.Size = new Size(43, 15);
-            label44.TabIndex = 13;
-            label44.Text = "Итого:";
+            labelTotalVacationPay.AutoSize = true;
+            labelTotalVacationPay.ForeColor = Color.WhiteSmoke;
+            labelTotalVacationPay.Location = new Point(98, 304);
+            labelTotalVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelTotalVacationPay.Name = "labelTotalVacationPay";
+            labelTotalVacationPay.Size = new Size(43, 15);
+            labelTotalVacationPay.TabIndex = 12;
+            labelTotalVacationPay.Text = "Итого:";
             // 
-            // textBox25
+            // textBoxTotalVacationPay
             // 
-            textBox25.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox25.Location = new Point(152, 293);
-            textBox25.Margin = new Padding(4, 3, 4, 3);
-            textBox25.Name = "textBox25";
-            textBox25.ReadOnly = true;
-            textBox25.Size = new Size(455, 33);
-            textBox25.TabIndex = 6;
+            textBoxTotalVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotalVacationPay.Location = new Point(152, 293);
+            textBoxTotalVacationPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotalVacationPay.Name = "textBoxTotalVacationPay";
+            textBoxTotalVacationPay.ReadOnly = true;
+            textBoxTotalVacationPay.Size = new Size(455, 33);
+            textBoxTotalVacationPay.TabIndex = 5;
             // 
             // labelControlVacationPay
             // 
@@ -1112,136 +1112,136 @@
             // 
             // panelRecordAccountingsOfWorkingHours
             // 
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label36);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(comboBox4);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label29);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label30);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox17);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label31);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox18);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label32);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox19);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(label35);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBox20);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelRecordAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelAccountingsOfWorkingHoursID);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxAccountingsOfWorkingHoursID);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelEmployeeIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxEmployeeIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelProjectIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxProjectIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelTypeOfRemunerationID);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(comboBoxTypeOfRemunerationID);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(labelHoursOfWork);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxHoursOfWork);
             panelRecordAccountingsOfWorkingHours.Location = new Point(9, 450);
             panelRecordAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
             panelRecordAccountingsOfWorkingHours.Name = "panelRecordAccountingsOfWorkingHours";
             panelRecordAccountingsOfWorkingHours.Size = new Size(611, 552);
             panelRecordAccountingsOfWorkingHours.TabIndex = 1;
             // 
-            // label36
+            // labelHoursOfWork
             // 
-            label36.AutoSize = true;
-            label36.ForeColor = Color.WhiteSmoke;
-            label36.Location = new Point(66, 259);
-            label36.Margin = new Padding(4, 0, 4, 0);
-            label36.Name = "label36";
-            label36.Size = new Size(75, 15);
-            label36.TabIndex = 30;
-            label36.Text = "Количество:";
+            labelHoursOfWork.AutoSize = true;
+            labelHoursOfWork.ForeColor = Color.WhiteSmoke;
+            labelHoursOfWork.Location = new Point(66, 259);
+            labelHoursOfWork.Margin = new Padding(4, 0, 4, 0);
+            labelHoursOfWork.Name = "labelHoursOfWork";
+            labelHoursOfWork.Size = new Size(75, 15);
+            labelHoursOfWork.TabIndex = 10;
+            labelHoursOfWork.Text = "Количество:";
             // 
-            // comboBox4
+            // comboBoxTypeOfRemunerationID
             // 
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.Font = new Font("Segoe UI", 14.25F);
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(153, 203);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(455, 33);
-            comboBox4.TabIndex = 29;
+            comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxTypeOfRemunerationID.FormattingEnabled = true;
+            comboBoxTypeOfRemunerationID.Location = new Point(153, 203);
+            comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
+            comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
+            comboBoxTypeOfRemunerationID.TabIndex = 3;
             // 
-            // label29
+            // labelRecordAccountingsOfWorkingHours
             // 
-            label29.AutoSize = true;
-            label29.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label29.ForeColor = Color.WhiteSmoke;
-            label29.Location = new Point(4, 10);
-            label29.Margin = new Padding(4, 0, 4, 0);
-            label29.Name = "label29";
-            label29.Size = new Size(142, 47);
-            label29.TabIndex = 7;
-            label29.Text = "Запись:";
+            labelRecordAccountingsOfWorkingHours.AutoSize = true;
+            labelRecordAccountingsOfWorkingHours.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelRecordAccountingsOfWorkingHours.Location = new Point(4, 10);
+            labelRecordAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelRecordAccountingsOfWorkingHours.Name = "labelRecordAccountingsOfWorkingHours";
+            labelRecordAccountingsOfWorkingHours.Size = new Size(142, 47);
+            labelRecordAccountingsOfWorkingHours.TabIndex = 5;
+            labelRecordAccountingsOfWorkingHours.Text = "Запись:";
             // 
-            // label30
+            // labelAccountingsOfWorkingHoursID
             // 
-            label30.AutoSize = true;
-            label30.ForeColor = Color.WhiteSmoke;
-            label30.Location = new Point(93, 82);
-            label30.Margin = new Padding(4, 0, 4, 0);
-            label30.Name = "label30";
-            label30.Size = new Size(48, 15);
-            label30.TabIndex = 8;
-            label30.Text = "Номер:";
+            labelAccountingsOfWorkingHoursID.AutoSize = true;
+            labelAccountingsOfWorkingHoursID.ForeColor = Color.WhiteSmoke;
+            labelAccountingsOfWorkingHoursID.Location = new Point(93, 82);
+            labelAccountingsOfWorkingHoursID.Margin = new Padding(4, 0, 4, 0);
+            labelAccountingsOfWorkingHoursID.Name = "labelAccountingsOfWorkingHoursID";
+            labelAccountingsOfWorkingHoursID.Size = new Size(48, 15);
+            labelAccountingsOfWorkingHoursID.TabIndex = 6;
+            labelAccountingsOfWorkingHoursID.Text = "Номер:";
             // 
-            // textBox17
+            // textBoxAccountingsOfWorkingHoursID
             // 
-            textBox17.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox17.Location = new Point(152, 68);
-            textBox17.Margin = new Padding(4, 3, 4, 3);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(455, 33);
-            textBox17.TabIndex = 0;
+            textBoxAccountingsOfWorkingHoursID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAccountingsOfWorkingHoursID.Location = new Point(152, 68);
+            textBoxAccountingsOfWorkingHoursID.Margin = new Padding(4, 3, 4, 3);
+            textBoxAccountingsOfWorkingHoursID.Name = "textBoxAccountingsOfWorkingHoursID";
+            textBoxAccountingsOfWorkingHoursID.Size = new Size(455, 33);
+            textBoxAccountingsOfWorkingHoursID.TabIndex = 0;
             // 
-            // label31
+            // labelEmployeeIDAccountingsOfWorkingHours
             // 
-            label31.AutoSize = true;
-            label31.ForeColor = Color.WhiteSmoke;
-            label31.Location = new Point(32, 124);
-            label31.Margin = new Padding(4, 0, 4, 0);
-            label31.Name = "label31";
-            label31.Size = new Size(114, 15);
-            label31.TabIndex = 9;
-            label31.Text = "Номер сотрудника:";
+            labelEmployeeIDAccountingsOfWorkingHours.AutoSize = true;
+            labelEmployeeIDAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDAccountingsOfWorkingHours.Location = new Point(32, 124);
+            labelEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDAccountingsOfWorkingHours.Name = "labelEmployeeIDAccountingsOfWorkingHours";
+            labelEmployeeIDAccountingsOfWorkingHours.Size = new Size(114, 15);
+            labelEmployeeIDAccountingsOfWorkingHours.TabIndex = 7;
+            labelEmployeeIDAccountingsOfWorkingHours.Text = "Номер сотрудника:";
             // 
-            // textBox18
+            // textBoxEmployeeIDAccountingsOfWorkingHours
             // 
-            textBox18.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox18.Location = new Point(152, 113);
-            textBox18.Margin = new Padding(4, 3, 4, 3);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(455, 33);
-            textBox18.TabIndex = 1;
+            textBoxEmployeeIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Location = new Point(152, 113);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDAccountingsOfWorkingHours.Name = "textBoxEmployeeIDAccountingsOfWorkingHours";
+            textBoxEmployeeIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            textBoxEmployeeIDAccountingsOfWorkingHours.TabIndex = 1;
             // 
-            // label32
+            // labelProjectIDAccountingsOfWorkingHours
             // 
-            label32.AutoSize = true;
-            label32.ForeColor = Color.WhiteSmoke;
-            label32.Location = new Point(91, 169);
-            label32.Margin = new Padding(4, 0, 4, 0);
-            label32.Name = "label32";
-            label32.Size = new Size(50, 15);
-            label32.TabIndex = 10;
-            label32.Text = "Проект:";
+            labelProjectIDAccountingsOfWorkingHours.AutoSize = true;
+            labelProjectIDAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelProjectIDAccountingsOfWorkingHours.Location = new Point(91, 169);
+            labelProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
+            labelProjectIDAccountingsOfWorkingHours.Name = "labelProjectIDAccountingsOfWorkingHours";
+            labelProjectIDAccountingsOfWorkingHours.Size = new Size(50, 15);
+            labelProjectIDAccountingsOfWorkingHours.TabIndex = 8;
+            labelProjectIDAccountingsOfWorkingHours.Text = "Проект:";
             // 
-            // textBox19
+            // textBoxProjectIDAccountingsOfWorkingHours
             // 
-            textBox19.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox19.Location = new Point(152, 158);
-            textBox19.Margin = new Padding(4, 3, 4, 3);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(455, 33);
-            textBox19.TabIndex = 2;
+            textBoxProjectIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectIDAccountingsOfWorkingHours.Location = new Point(152, 158);
+            textBoxProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectIDAccountingsOfWorkingHours.Name = "textBoxProjectIDAccountingsOfWorkingHours";
+            textBoxProjectIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            textBoxProjectIDAccountingsOfWorkingHours.TabIndex = 2;
             // 
-            // label35
+            // labelTypeOfRemunerationID
             // 
-            label35.AutoSize = true;
-            label35.ForeColor = Color.WhiteSmoke;
-            label35.Location = new Point(67, 214);
-            label35.Margin = new Padding(4, 0, 4, 0);
-            label35.Name = "label35";
-            label35.Size = new Size(74, 15);
-            label35.TabIndex = 13;
-            label35.Text = "Тип работы:";
+            labelTypeOfRemunerationID.AutoSize = true;
+            labelTypeOfRemunerationID.ForeColor = Color.WhiteSmoke;
+            labelTypeOfRemunerationID.Location = new Point(67, 214);
+            labelTypeOfRemunerationID.Margin = new Padding(4, 0, 4, 0);
+            labelTypeOfRemunerationID.Name = "labelTypeOfRemunerationID";
+            labelTypeOfRemunerationID.Size = new Size(74, 15);
+            labelTypeOfRemunerationID.TabIndex = 9;
+            labelTypeOfRemunerationID.Text = "Тип работы:";
             // 
-            // textBox20
+            // textBoxHoursOfWork
             // 
-            textBox20.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox20.Location = new Point(152, 248);
-            textBox20.Margin = new Padding(4, 3, 4, 3);
-            textBox20.Name = "textBox20";
-            textBox20.ReadOnly = true;
-            textBox20.Size = new Size(455, 33);
-            textBox20.TabIndex = 6;
+            textBoxHoursOfWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHoursOfWork.Location = new Point(152, 248);
+            textBoxHoursOfWork.Margin = new Padding(4, 3, 4, 3);
+            textBoxHoursOfWork.Name = "textBoxHoursOfWork";
+            textBoxHoursOfWork.ReadOnly = true;
+            textBoxHoursOfWork.Size = new Size(455, 33);
+            textBoxHoursOfWork.TabIndex = 4;
             // 
             // labelControlAccountingsOfWorkingHours
             // 
@@ -1446,293 +1446,293 @@
             // 
             // panelRecordSalary
             // 
-            panelRecordSalary.Controls.Add(label34);
-            panelRecordSalary.Controls.Add(textBox31);
-            panelRecordSalary.Controls.Add(textBox32);
-            panelRecordSalary.Controls.Add(textBox33);
-            panelRecordSalary.Controls.Add(textBox34);
-            panelRecordSalary.Controls.Add(label18);
-            panelRecordSalary.Controls.Add(label19);
-            panelRecordSalary.Controls.Add(label24);
-            panelRecordSalary.Controls.Add(textBox6);
-            panelRecordSalary.Controls.Add(label25);
-            panelRecordSalary.Controls.Add(label27);
-            panelRecordSalary.Controls.Add(textBox9);
-            panelRecordSalary.Controls.Add(label28);
-            panelRecordSalary.Controls.Add(textBox21);
-            panelRecordSalary.Controls.Add(label33);
-            panelRecordSalary.Controls.Add(textBox26);
-            panelRecordSalary.Controls.Add(label20);
-            panelRecordSalary.Controls.Add(label21);
-            panelRecordSalary.Controls.Add(textBox12);
-            panelRecordSalary.Controls.Add(label22);
-            panelRecordSalary.Controls.Add(textBox13);
-            panelRecordSalary.Controls.Add(label23);
-            panelRecordSalary.Controls.Add(textBox14);
-            panelRecordSalary.Controls.Add(label26);
-            panelRecordSalary.Controls.Add(textBox15);
+            panelRecordSalary.Controls.Add(labelRecordSalary);
+            panelRecordSalary.Controls.Add(labelSalaryID);
+            panelRecordSalary.Controls.Add(textBoxSalaryID);
+            panelRecordSalary.Controls.Add(labelSalaryAccrualIDSalary);
+            panelRecordSalary.Controls.Add(textBoxSalaryAccrualIDSalary);
+            panelRecordSalary.Controls.Add(labelEmployeeIDSalary);
+            panelRecordSalary.Controls.Add(textBoxEmployeeIDSalary);
+            panelRecordSalary.Controls.Add(labelAllDays);
+            panelRecordSalary.Controls.Add(textBoxAllDays);
+            panelRecordSalary.Controls.Add(labelAllHours);
+            panelRecordSalary.Controls.Add(textBoxAllHours);
+            panelRecordSalary.Controls.Add(labelPieceworkCharges);
+            panelRecordSalary.Controls.Add(textBoxPieceworkCharges);
+            panelRecordSalary.Controls.Add(labelHourlyCharges);
+            panelRecordSalary.Controls.Add(textBoxHourlyCharges);
+            panelRecordSalary.Controls.Add(labelVacationPay);
+            panelRecordSalary.Controls.Add(textBoxVacationPay);
+            panelRecordSalary.Controls.Add(labelSickPay);
+            panelRecordSalary.Controls.Add(textBoxSickPay);
+            panelRecordSalary.Controls.Add(labelPersonalIncomeTax);
+            panelRecordSalary.Controls.Add(textBoxPersonalIncomeTax);
+            panelRecordSalary.Controls.Add(labelContributions);
+            panelRecordSalary.Controls.Add(textBoxContributions);
+            panelRecordSalary.Controls.Add(labelTotal);
+            panelRecordSalary.Controls.Add(textBoxTotal);
             panelRecordSalary.Location = new Point(9, 450);
             panelRecordSalary.Margin = new Padding(4, 3, 4, 3);
             panelRecordSalary.Name = "panelRecordSalary";
             panelRecordSalary.Size = new Size(611, 552);
             panelRecordSalary.TabIndex = 1;
             // 
-            // label34
+            // labelAllHours
             // 
-            label34.AutoSize = true;
-            label34.ForeColor = Color.WhiteSmoke;
-            label34.Location = new Point(36, 233);
-            label34.Margin = new Padding(4, 0, 4, 0);
-            label34.Name = "label34";
-            label34.Size = new Size(110, 15);
-            label34.TabIndex = 44;
-            label34.Text = "Часов отработано:";
+            labelAllHours.AutoSize = true;
+            labelAllHours.ForeColor = Color.WhiteSmoke;
+            labelAllHours.Location = new Point(36, 233);
+            labelAllHours.Margin = new Padding(4, 0, 4, 0);
+            labelAllHours.Name = "labelAllHours";
+            labelAllHours.Size = new Size(110, 15);
+            labelAllHours.TabIndex = 17;
+            labelAllHours.Text = "Часов отработано:";
             // 
-            // textBox31
+            // textBoxPersonalIncomeTax
             // 
-            textBox31.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox31.Location = new Point(152, 417);
-            textBox31.Margin = new Padding(4, 3, 4, 3);
-            textBox31.Name = "textBox31";
-            textBox31.Size = new Size(455, 33);
-            textBox31.TabIndex = 41;
+            textBoxPersonalIncomeTax.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPersonalIncomeTax.Location = new Point(152, 417);
+            textBoxPersonalIncomeTax.Margin = new Padding(4, 3, 4, 3);
+            textBoxPersonalIncomeTax.Name = "textBoxPersonalIncomeTax";
+            textBoxPersonalIncomeTax.Size = new Size(455, 33);
+            textBoxPersonalIncomeTax.TabIndex = 9;
             // 
-            // textBox32
+            // textBoxContributions
             // 
-            textBox32.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox32.Location = new Point(152, 456);
-            textBox32.Margin = new Padding(4, 3, 4, 3);
-            textBox32.Name = "textBox32";
-            textBox32.Size = new Size(455, 33);
-            textBox32.TabIndex = 42;
+            textBoxContributions.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxContributions.Location = new Point(152, 456);
+            textBoxContributions.Margin = new Padding(4, 3, 4, 3);
+            textBoxContributions.Name = "textBoxContributions";
+            textBoxContributions.Size = new Size(455, 33);
+            textBoxContributions.TabIndex = 10;
             // 
-            // textBox33
+            // textBoxTotal
             // 
-            textBox33.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox33.Location = new Point(152, 495);
-            textBox33.Margin = new Padding(4, 3, 4, 3);
-            textBox33.Name = "textBox33";
-            textBox33.ReadOnly = true;
-            textBox33.Size = new Size(455, 33);
-            textBox33.TabIndex = 43;
+            textBoxTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotal.Location = new Point(152, 495);
+            textBoxTotal.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotal.Name = "textBoxTotal";
+            textBoxTotal.ReadOnly = true;
+            textBoxTotal.Size = new Size(455, 33);
+            textBoxTotal.TabIndex = 11;
             // 
-            // textBox34
+            // textBoxSickPay
             // 
-            textBox34.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox34.Location = new Point(152, 378);
-            textBox34.Margin = new Padding(4, 3, 4, 3);
-            textBox34.Name = "textBox34";
-            textBox34.ReadOnly = true;
-            textBox34.Size = new Size(455, 33);
-            textBox34.TabIndex = 40;
+            textBoxSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSickPay.Location = new Point(152, 378);
+            textBoxSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxSickPay.Name = "textBoxSickPay";
+            textBoxSickPay.ReadOnly = true;
+            textBoxSickPay.Size = new Size(455, 33);
+            textBoxSickPay.TabIndex = 8;
             // 
-            // label18
+            // labelTotal
             // 
-            label18.AutoSize = true;
-            label18.ForeColor = Color.WhiteSmoke;
-            label18.Location = new Point(98, 506);
-            label18.Margin = new Padding(4, 0, 4, 0);
-            label18.Name = "label18";
-            label18.Size = new Size(43, 15);
-            label18.TabIndex = 39;
-            label18.Text = "Итого:";
+            labelTotal.AutoSize = true;
+            labelTotal.ForeColor = Color.WhiteSmoke;
+            labelTotal.Location = new Point(98, 506);
+            labelTotal.Margin = new Padding(4, 0, 4, 0);
+            labelTotal.Name = "labelTotal";
+            labelTotal.Size = new Size(43, 15);
+            labelTotal.TabIndex = 24;
+            labelTotal.Text = "Итого:";
             // 
-            // label19
+            // labelContributions
             // 
-            label19.AutoSize = true;
-            label19.ForeColor = Color.WhiteSmoke;
-            label19.Location = new Point(93, 467);
-            label19.Margin = new Padding(4, 0, 4, 0);
-            label19.Name = "label19";
-            label19.Size = new Size(48, 15);
-            label19.TabIndex = 38;
-            label19.Text = "Сборы:";
+            labelContributions.AutoSize = true;
+            labelContributions.ForeColor = Color.WhiteSmoke;
+            labelContributions.Location = new Point(93, 467);
+            labelContributions.Margin = new Padding(4, 0, 4, 0);
+            labelContributions.Name = "labelContributions";
+            labelContributions.Size = new Size(48, 15);
+            labelContributions.TabIndex = 23;
+            labelContributions.Text = "Сборы:";
             // 
-            // label24
+            // labelHourlyCharges
             // 
-            label24.AutoSize = true;
-            label24.ForeColor = Color.WhiteSmoke;
-            label24.Location = new Point(24, 310);
-            label24.Margin = new Padding(4, 0, 4, 0);
-            label24.Name = "label24";
-            label24.Size = new Size(122, 15);
-            label24.TabIndex = 34;
-            label24.Text = "Почасовая зарплата:";
+            labelHourlyCharges.AutoSize = true;
+            labelHourlyCharges.ForeColor = Color.WhiteSmoke;
+            labelHourlyCharges.Location = new Point(24, 310);
+            labelHourlyCharges.Margin = new Padding(4, 0, 4, 0);
+            labelHourlyCharges.Name = "labelHourlyCharges";
+            labelHourlyCharges.Size = new Size(122, 15);
+            labelHourlyCharges.TabIndex = 19;
+            labelHourlyCharges.Text = "Почасовая зарплата:";
             // 
-            // textBox6
+            // textBoxPieceworkCharges
             // 
-            textBox6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox6.Location = new Point(152, 261);
-            textBox6.Margin = new Padding(4, 3, 4, 3);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(455, 33);
-            textBox6.TabIndex = 31;
+            textBoxPieceworkCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPieceworkCharges.Location = new Point(152, 261);
+            textBoxPieceworkCharges.Margin = new Padding(4, 3, 4, 3);
+            textBoxPieceworkCharges.Name = "textBoxPieceworkCharges";
+            textBoxPieceworkCharges.Size = new Size(455, 33);
+            textBoxPieceworkCharges.TabIndex = 5;
             // 
-            // label25
+            // labelVacationPay
             // 
-            label25.AutoSize = true;
-            label25.ForeColor = Color.WhiteSmoke;
-            label25.Location = new Point(70, 350);
-            label25.Margin = new Padding(4, 0, 4, 0);
-            label25.Name = "label25";
-            label25.Size = new Size(71, 15);
-            label25.TabIndex = 35;
-            label25.Text = "Отпускные:";
+            labelVacationPay.AutoSize = true;
+            labelVacationPay.ForeColor = Color.WhiteSmoke;
+            labelVacationPay.Location = new Point(70, 350);
+            labelVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelVacationPay.Name = "labelVacationPay";
+            labelVacationPay.Size = new Size(71, 15);
+            labelVacationPay.TabIndex = 20;
+            labelVacationPay.Text = "Отпускные:";
             // 
-            // label27
+            // labelSickPay
             // 
-            label27.AutoSize = true;
-            label27.ForeColor = Color.WhiteSmoke;
-            label27.Location = new Point(66, 389);
-            label27.Margin = new Padding(4, 0, 4, 0);
-            label27.Name = "label27";
-            label27.Size = new Size(80, 15);
-            label27.TabIndex = 36;
-            label27.Text = "Больничные:";
+            labelSickPay.AutoSize = true;
+            labelSickPay.ForeColor = Color.WhiteSmoke;
+            labelSickPay.Location = new Point(66, 389);
+            labelSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelSickPay.Name = "labelSickPay";
+            labelSickPay.Size = new Size(80, 15);
+            labelSickPay.TabIndex = 21;
+            labelSickPay.Text = "Больничные:";
             // 
-            // textBox9
+            // textBoxHourlyCharges
             // 
-            textBox9.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox9.Location = new Point(152, 300);
-            textBox9.Margin = new Padding(4, 3, 4, 3);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(455, 33);
-            textBox9.TabIndex = 32;
+            textBoxHourlyCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHourlyCharges.Location = new Point(152, 300);
+            textBoxHourlyCharges.Margin = new Padding(4, 3, 4, 3);
+            textBoxHourlyCharges.Name = "textBoxHourlyCharges";
+            textBoxHourlyCharges.Size = new Size(455, 33);
+            textBoxHourlyCharges.TabIndex = 6;
             // 
-            // label28
+            // labelPersonalIncomeTax
             // 
-            label28.AutoSize = true;
-            label28.ForeColor = Color.WhiteSmoke;
-            label28.Location = new Point(97, 428);
-            label28.Margin = new Padding(4, 0, 4, 0);
-            label28.Name = "label28";
-            label28.Size = new Size(44, 15);
-            label28.TabIndex = 37;
-            label28.Text = "НДФЛ:";
+            labelPersonalIncomeTax.AutoSize = true;
+            labelPersonalIncomeTax.ForeColor = Color.WhiteSmoke;
+            labelPersonalIncomeTax.Location = new Point(97, 428);
+            labelPersonalIncomeTax.Margin = new Padding(4, 0, 4, 0);
+            labelPersonalIncomeTax.Name = "labelPersonalIncomeTax";
+            labelPersonalIncomeTax.Size = new Size(44, 15);
+            labelPersonalIncomeTax.TabIndex = 22;
+            labelPersonalIncomeTax.Text = "НДФЛ:";
             // 
-            // textBox21
+            // textBoxVacationPay
             // 
-            textBox21.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox21.Location = new Point(152, 339);
-            textBox21.Margin = new Padding(4, 3, 4, 3);
-            textBox21.Name = "textBox21";
-            textBox21.ReadOnly = true;
-            textBox21.Size = new Size(455, 33);
-            textBox21.TabIndex = 33;
+            textBoxVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxVacationPay.Location = new Point(152, 339);
+            textBoxVacationPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxVacationPay.Name = "textBoxVacationPay";
+            textBoxVacationPay.ReadOnly = true;
+            textBoxVacationPay.Size = new Size(455, 33);
+            textBoxVacationPay.TabIndex = 7;
             // 
-            // label33
+            // labelPieceworkCharges
             // 
-            label33.AutoSize = true;
-            label33.ForeColor = Color.WhiteSmoke;
-            label33.Location = new Point(27, 272);
-            label33.Margin = new Padding(4, 0, 4, 0);
-            label33.Name = "label33";
-            label33.Size = new Size(114, 15);
-            label33.TabIndex = 30;
-            label33.Text = "Сдельная зарплата:";
+            labelPieceworkCharges.AutoSize = true;
+            labelPieceworkCharges.ForeColor = Color.WhiteSmoke;
+            labelPieceworkCharges.Location = new Point(27, 272);
+            labelPieceworkCharges.Margin = new Padding(4, 0, 4, 0);
+            labelPieceworkCharges.Name = "labelPieceworkCharges";
+            labelPieceworkCharges.Size = new Size(114, 15);
+            labelPieceworkCharges.TabIndex = 18;
+            labelPieceworkCharges.Text = "Сдельная зарплата:";
             // 
-            // textBox26
+            // textBoxAllHours
             // 
-            textBox26.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox26.Location = new Point(152, 222);
-            textBox26.Margin = new Padding(4, 3, 4, 3);
-            textBox26.Name = "textBox26";
-            textBox26.ReadOnly = true;
-            textBox26.Size = new Size(455, 33);
-            textBox26.TabIndex = 29;
+            textBoxAllHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAllHours.Location = new Point(152, 222);
+            textBoxAllHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxAllHours.Name = "textBoxAllHours";
+            textBoxAllHours.ReadOnly = true;
+            textBoxAllHours.Size = new Size(455, 33);
+            textBoxAllHours.TabIndex = 4;
             // 
-            // label20
+            // labelRecordSalary
             // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label20.ForeColor = Color.WhiteSmoke;
-            label20.Location = new Point(4, 10);
-            label20.Margin = new Padding(4, 0, 4, 0);
-            label20.Name = "label20";
-            label20.Size = new Size(142, 47);
-            label20.TabIndex = 7;
-            label20.Text = "Запись:";
+            labelRecordSalary.AutoSize = true;
+            labelRecordSalary.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordSalary.ForeColor = Color.WhiteSmoke;
+            labelRecordSalary.Location = new Point(4, 10);
+            labelRecordSalary.Margin = new Padding(4, 0, 4, 0);
+            labelRecordSalary.Name = "labelRecordSalary";
+            labelRecordSalary.Size = new Size(142, 47);
+            labelRecordSalary.TabIndex = 12;
+            labelRecordSalary.Text = "Запись:";
             // 
-            // label21
+            // labelSalaryID
             // 
-            label21.AutoSize = true;
-            label21.ForeColor = Color.WhiteSmoke;
-            label21.Location = new Point(93, 82);
-            label21.Margin = new Padding(4, 0, 4, 0);
-            label21.Name = "label21";
-            label21.Size = new Size(48, 15);
-            label21.TabIndex = 8;
-            label21.Text = "Номер:";
+            labelSalaryID.AutoSize = true;
+            labelSalaryID.ForeColor = Color.WhiteSmoke;
+            labelSalaryID.Location = new Point(93, 82);
+            labelSalaryID.Margin = new Padding(4, 0, 4, 0);
+            labelSalaryID.Name = "labelSalaryID";
+            labelSalaryID.Size = new Size(48, 15);
+            labelSalaryID.TabIndex = 13;
+            labelSalaryID.Text = "Номер:";
             // 
-            // textBox12
+            // textBoxSalaryID
             // 
-            textBox12.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox12.Location = new Point(152, 68);
-            textBox12.Margin = new Padding(4, 3, 4, 3);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(455, 33);
-            textBox12.TabIndex = 0;
+            textBoxSalaryID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSalaryID.Location = new Point(152, 68);
+            textBoxSalaryID.Margin = new Padding(4, 3, 4, 3);
+            textBoxSalaryID.Name = "textBoxSalaryID";
+            textBoxSalaryID.Size = new Size(455, 33);
+            textBoxSalaryID.TabIndex = 0;
             // 
-            // label22
+            // labelSalaryAccrualIDSalary
             // 
-            label22.AutoSize = true;
-            label22.ForeColor = Color.WhiteSmoke;
-            label22.Location = new Point(43, 117);
-            label22.Margin = new Padding(4, 0, 4, 0);
-            label22.Name = "label22";
-            label22.Size = new Size(103, 15);
-            label22.TabIndex = 9;
-            label22.Text = "Номер зарплаты:";
+            labelSalaryAccrualIDSalary.AutoSize = true;
+            labelSalaryAccrualIDSalary.ForeColor = Color.WhiteSmoke;
+            labelSalaryAccrualIDSalary.Location = new Point(43, 117);
+            labelSalaryAccrualIDSalary.Margin = new Padding(4, 0, 4, 0);
+            labelSalaryAccrualIDSalary.Name = "labelSalaryAccrualIDSalary";
+            labelSalaryAccrualIDSalary.Size = new Size(103, 15);
+            labelSalaryAccrualIDSalary.TabIndex = 14;
+            labelSalaryAccrualIDSalary.Text = "Номер зарплаты:";
             // 
-            // textBox13
+            // textBoxSalaryAccrualIDSalary
             // 
-            textBox13.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox13.Location = new Point(152, 106);
-            textBox13.Margin = new Padding(4, 3, 4, 3);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(455, 33);
-            textBox13.TabIndex = 1;
+            textBoxSalaryAccrualIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSalaryAccrualIDSalary.Location = new Point(152, 106);
+            textBoxSalaryAccrualIDSalary.Margin = new Padding(4, 3, 4, 3);
+            textBoxSalaryAccrualIDSalary.Name = "textBoxSalaryAccrualIDSalary";
+            textBoxSalaryAccrualIDSalary.Size = new Size(455, 33);
+            textBoxSalaryAccrualIDSalary.TabIndex = 1;
             // 
-            // label23
+            // labelEmployeeIDSalary
             // 
-            label23.AutoSize = true;
-            label23.ForeColor = Color.WhiteSmoke;
-            label23.Location = new Point(32, 155);
-            label23.Margin = new Padding(4, 0, 4, 0);
-            label23.Name = "label23";
-            label23.Size = new Size(114, 15);
-            label23.TabIndex = 10;
-            label23.Text = "Номер сотрудника:";
+            labelEmployeeIDSalary.AutoSize = true;
+            labelEmployeeIDSalary.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDSalary.Location = new Point(32, 155);
+            labelEmployeeIDSalary.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDSalary.Name = "labelEmployeeIDSalary";
+            labelEmployeeIDSalary.Size = new Size(114, 15);
+            labelEmployeeIDSalary.TabIndex = 15;
+            labelEmployeeIDSalary.Text = "Номер сотрудника:";
             // 
-            // textBox14
+            // textBoxEmployeeIDSalary
             // 
-            textBox14.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox14.Location = new Point(152, 144);
-            textBox14.Margin = new Padding(4, 3, 4, 3);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(455, 33);
-            textBox14.TabIndex = 2;
+            textBoxEmployeeIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDSalary.Location = new Point(152, 144);
+            textBoxEmployeeIDSalary.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDSalary.Name = "textBoxEmployeeIDSalary";
+            textBoxEmployeeIDSalary.Size = new Size(455, 33);
+            textBoxEmployeeIDSalary.TabIndex = 2;
             // 
-            // label26
+            // labelAllDays
             // 
-            label26.AutoSize = true;
-            label26.ForeColor = Color.WhiteSmoke;
-            label26.Location = new Point(43, 194);
-            label26.Margin = new Padding(4, 0, 4, 0);
-            label26.Name = "label26";
-            label26.Size = new Size(105, 15);
-            label26.TabIndex = 13;
-            label26.Text = "Дней отработано:";
+            labelAllDays.AutoSize = true;
+            labelAllDays.ForeColor = Color.WhiteSmoke;
+            labelAllDays.Location = new Point(43, 194);
+            labelAllDays.Margin = new Padding(4, 0, 4, 0);
+            labelAllDays.Name = "labelAllDays";
+            labelAllDays.Size = new Size(105, 15);
+            labelAllDays.TabIndex = 16;
+            labelAllDays.Text = "Дней отработано:";
             // 
-            // textBox15
+            // textBoxAllDays
             // 
-            textBox15.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox15.Location = new Point(152, 183);
-            textBox15.Margin = new Padding(4, 3, 4, 3);
-            textBox15.Name = "textBox15";
-            textBox15.ReadOnly = true;
-            textBox15.Size = new Size(455, 33);
-            textBox15.TabIndex = 6;
+            textBoxAllDays.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAllDays.Location = new Point(152, 183);
+            textBoxAllDays.Margin = new Padding(4, 3, 4, 3);
+            textBoxAllDays.Name = "textBoxAllDays";
+            textBoxAllDays.ReadOnly = true;
+            textBoxAllDays.Size = new Size(455, 33);
+            textBoxAllDays.TabIndex = 3;
             // 
             // labelControlSalary
             // 
@@ -1937,114 +1937,114 @@
             // 
             // panelRecordSalaryAccruals
             // 
-            panelRecordSalaryAccruals.Controls.Add(comboBox3);
-            panelRecordSalaryAccruals.Controls.Add(label11);
-            panelRecordSalaryAccruals.Controls.Add(label12);
-            panelRecordSalaryAccruals.Controls.Add(textBox7);
-            panelRecordSalaryAccruals.Controls.Add(label13);
-            panelRecordSalaryAccruals.Controls.Add(textBox8);
-            panelRecordSalaryAccruals.Controls.Add(label14);
-            panelRecordSalaryAccruals.Controls.Add(label17);
-            panelRecordSalaryAccruals.Controls.Add(textBox10);
+            panelRecordSalaryAccruals.Controls.Add(labelRecordSalaryAccruals);
+            panelRecordSalaryAccruals.Controls.Add(labelSalaryAccrualID);
+            panelRecordSalaryAccruals.Controls.Add(textBoxSalaryAccrualID);
+            panelRecordSalaryAccruals.Controls.Add(labelYear);
+            panelRecordSalaryAccruals.Controls.Add(textBoxYear);
+            panelRecordSalaryAccruals.Controls.Add(labelMonthID);
+            panelRecordSalaryAccruals.Controls.Add(comboBoxMonthID);
+            panelRecordSalaryAccruals.Controls.Add(labelProjectIDSalaryAccruals);
+            panelRecordSalaryAccruals.Controls.Add(textBoxProjectIDSalaryAccruals);
             panelRecordSalaryAccruals.Location = new Point(9, 450);
             panelRecordSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
             panelRecordSalaryAccruals.Name = "panelRecordSalaryAccruals";
             panelRecordSalaryAccruals.Size = new Size(611, 552);
             panelRecordSalaryAccruals.TabIndex = 1;
             // 
-            // comboBox3
+            // comboBoxMonthID
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.Font = new Font("Segoe UI", 14.25F);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(152, 158);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(455, 33);
-            comboBox3.TabIndex = 28;
+            comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxMonthID.FormattingEnabled = true;
+            comboBoxMonthID.Location = new Point(152, 158);
+            comboBoxMonthID.Name = "comboBoxMonthID";
+            comboBoxMonthID.Size = new Size(455, 33);
+            comboBoxMonthID.TabIndex = 2;
             // 
-            // label11
+            // labelRecordSalaryAccruals
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label11.ForeColor = Color.WhiteSmoke;
-            label11.Location = new Point(4, 10);
-            label11.Margin = new Padding(4, 0, 4, 0);
-            label11.Name = "label11";
-            label11.Size = new Size(142, 47);
-            label11.TabIndex = 7;
-            label11.Text = "Запись:";
+            labelRecordSalaryAccruals.AutoSize = true;
+            labelRecordSalaryAccruals.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelRecordSalaryAccruals.Location = new Point(4, 10);
+            labelRecordSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
+            labelRecordSalaryAccruals.Name = "labelRecordSalaryAccruals";
+            labelRecordSalaryAccruals.Size = new Size(142, 47);
+            labelRecordSalaryAccruals.TabIndex = 4;
+            labelRecordSalaryAccruals.Text = "Запись:";
             // 
-            // label12
+            // labelSalaryAccrualID
             // 
-            label12.AutoSize = true;
-            label12.ForeColor = Color.WhiteSmoke;
-            label12.Location = new Point(93, 82);
-            label12.Margin = new Padding(4, 0, 4, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(48, 15);
-            label12.TabIndex = 8;
-            label12.Text = "Номер:";
+            labelSalaryAccrualID.AutoSize = true;
+            labelSalaryAccrualID.ForeColor = Color.WhiteSmoke;
+            labelSalaryAccrualID.Location = new Point(93, 82);
+            labelSalaryAccrualID.Margin = new Padding(4, 0, 4, 0);
+            labelSalaryAccrualID.Name = "labelSalaryAccrualID";
+            labelSalaryAccrualID.Size = new Size(48, 15);
+            labelSalaryAccrualID.TabIndex = 5;
+            labelSalaryAccrualID.Text = "Номер:";
             // 
-            // textBox7
+            // textBoxSalaryAccrualID
             // 
-            textBox7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox7.Location = new Point(152, 68);
-            textBox7.Margin = new Padding(4, 3, 4, 3);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(455, 33);
-            textBox7.TabIndex = 0;
+            textBoxSalaryAccrualID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSalaryAccrualID.Location = new Point(152, 68);
+            textBoxSalaryAccrualID.Margin = new Padding(4, 3, 4, 3);
+            textBoxSalaryAccrualID.Name = "textBoxSalaryAccrualID";
+            textBoxSalaryAccrualID.Size = new Size(455, 33);
+            textBoxSalaryAccrualID.TabIndex = 0;
             // 
-            // label13
+            // labelYear
             // 
-            label13.AutoSize = true;
-            label13.ForeColor = Color.WhiteSmoke;
-            label13.Location = new Point(112, 124);
-            label13.Margin = new Padding(4, 0, 4, 0);
-            label13.Name = "label13";
-            label13.Size = new Size(29, 15);
-            label13.TabIndex = 9;
-            label13.Text = "Год:";
+            labelYear.AutoSize = true;
+            labelYear.ForeColor = Color.WhiteSmoke;
+            labelYear.Location = new Point(112, 124);
+            labelYear.Margin = new Padding(4, 0, 4, 0);
+            labelYear.Name = "labelYear";
+            labelYear.Size = new Size(29, 15);
+            labelYear.TabIndex = 6;
+            labelYear.Text = "Год:";
             // 
-            // textBox8
+            // textBoxYear
             // 
-            textBox8.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox8.Location = new Point(152, 113);
-            textBox8.Margin = new Padding(4, 3, 4, 3);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(455, 33);
-            textBox8.TabIndex = 1;
+            textBoxYear.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxYear.Location = new Point(152, 113);
+            textBoxYear.Margin = new Padding(4, 3, 4, 3);
+            textBoxYear.Name = "textBoxYear";
+            textBoxYear.Size = new Size(455, 33);
+            textBoxYear.TabIndex = 1;
             // 
-            // label14
+            // labelMonthID
             // 
-            label14.AutoSize = true;
-            label14.ForeColor = Color.WhiteSmoke;
-            label14.Location = new Point(95, 169);
-            label14.Margin = new Padding(4, 0, 4, 0);
-            label14.Name = "label14";
-            label14.Size = new Size(46, 15);
-            label14.TabIndex = 10;
-            label14.Text = "Месяц:";
+            labelMonthID.AutoSize = true;
+            labelMonthID.ForeColor = Color.WhiteSmoke;
+            labelMonthID.Location = new Point(95, 169);
+            labelMonthID.Margin = new Padding(4, 0, 4, 0);
+            labelMonthID.Name = "labelMonthID";
+            labelMonthID.Size = new Size(46, 15);
+            labelMonthID.TabIndex = 7;
+            labelMonthID.Text = "Месяц:";
             // 
-            // label17
+            // labelProjectIDSalaryAccruals
             // 
-            label17.AutoSize = true;
-            label17.ForeColor = Color.WhiteSmoke;
-            label17.Location = new Point(91, 214);
-            label17.Margin = new Padding(4, 0, 4, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(50, 15);
-            label17.TabIndex = 13;
-            label17.Text = "Проект:";
+            labelProjectIDSalaryAccruals.AutoSize = true;
+            labelProjectIDSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelProjectIDSalaryAccruals.Location = new Point(91, 214);
+            labelProjectIDSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
+            labelProjectIDSalaryAccruals.Name = "labelProjectIDSalaryAccruals";
+            labelProjectIDSalaryAccruals.Size = new Size(50, 15);
+            labelProjectIDSalaryAccruals.TabIndex = 8;
+            labelProjectIDSalaryAccruals.Text = "Проект:";
             // 
-            // textBox10
+            // textBoxProjectIDSalaryAccruals
             // 
-            textBox10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox10.Location = new Point(152, 203);
-            textBox10.Margin = new Padding(4, 3, 4, 3);
-            textBox10.Name = "textBox10";
-            textBox10.ReadOnly = true;
-            textBox10.Size = new Size(455, 33);
-            textBox10.TabIndex = 6;
+            textBoxProjectIDSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectIDSalaryAccruals.Location = new Point(152, 203);
+            textBoxProjectIDSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectIDSalaryAccruals.Name = "textBoxProjectIDSalaryAccruals";
+            textBoxProjectIDSalaryAccruals.ReadOnly = true;
+            textBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
+            textBoxProjectIDSalaryAccruals.TabIndex = 3;
             // 
             // labelControlSalaryAccruals
             // 
@@ -2249,269 +2249,269 @@
             // 
             // panelRecordEmployees
             // 
-            panelRecordEmployees.Controls.Add(comboBox2);
-            panelRecordEmployees.Controls.Add(comboBox1);
-            panelRecordEmployees.Controls.Add(maskedTextBox1);
-            panelRecordEmployees.Controls.Add(label16);
-            panelRecordEmployees.Controls.Add(label15);
-            panelRecordEmployees.Controls.Add(label1);
-            panelRecordEmployees.Controls.Add(textBox1);
-            panelRecordEmployees.Controls.Add(label7);
-            panelRecordEmployees.Controls.Add(label9);
-            panelRecordEmployees.Controls.Add(textBox11);
-            panelRecordEmployees.Controls.Add(label10);
-            panelRecordEmployees.Controls.Add(textBox16);
-            panelRecordEmployees.Controls.Add(label2);
-            panelRecordEmployees.Controls.Add(label3);
-            panelRecordEmployees.Controls.Add(textBox2);
-            panelRecordEmployees.Controls.Add(label4);
-            panelRecordEmployees.Controls.Add(textBox3);
-            panelRecordEmployees.Controls.Add(label5);
-            panelRecordEmployees.Controls.Add(textBox4);
-            panelRecordEmployees.Controls.Add(label6);
-            panelRecordEmployees.Controls.Add(dateTimePicker1);
-            panelRecordEmployees.Controls.Add(label8);
-            panelRecordEmployees.Controls.Add(textBox5);
+            panelRecordEmployees.Controls.Add(labelRecordEmployees);
+            panelRecordEmployees.Controls.Add(labelEmployeeID);
+            panelRecordEmployees.Controls.Add(textBoxEmployeeID);
+            panelRecordEmployees.Controls.Add(labelFullName);
+            panelRecordEmployees.Controls.Add(textBoxFullName);
+            panelRecordEmployees.Controls.Add(labelBirthDate);
+            panelRecordEmployees.Controls.Add(dateTimePickerBirthDate);
+            panelRecordEmployees.Controls.Add(labelBirthPlace);
+            panelRecordEmployees.Controls.Add(textBoxBirthPlace);
+            panelRecordEmployees.Controls.Add(labelPassportSeries);
+            panelRecordEmployees.Controls.Add(textBoxPassportSeries);
+            panelRecordEmployees.Controls.Add(labelPassportNumber);
+            panelRecordEmployees.Controls.Add(textBoxPassportNumber);
+            panelRecordEmployees.Controls.Add(labelPhone);
+            panelRecordEmployees.Controls.Add(maskedTextBoxPhone);
+            panelRecordEmployees.Controls.Add(labelEmail);
+            panelRecordEmployees.Controls.Add(textBoxEmail);
+            panelRecordEmployees.Controls.Add(labelINN);
+            panelRecordEmployees.Controls.Add(textBoxINN);
+            panelRecordEmployees.Controls.Add(labelPostID);
+            panelRecordEmployees.Controls.Add(comboBoxPostID);
+            panelRecordEmployees.Controls.Add(labelGenderID);
+            panelRecordEmployees.Controls.Add(comboBoxGenderID);
             panelRecordEmployees.Location = new Point(9, 450);
             panelRecordEmployees.Margin = new Padding(4, 3, 4, 3);
             panelRecordEmployees.Name = "panelRecordEmployees";
             panelRecordEmployees.Size = new Size(611, 552);
             panelRecordEmployees.TabIndex = 1;
             // 
-            // comboBox2
+            // comboBoxGenderID
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.Font = new Font("Segoe UI", 14.25F);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(152, 518);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(455, 33);
-            comboBox2.TabIndex = 28;
+            comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxGenderID.FormattingEnabled = true;
+            comboBoxGenderID.Location = new Point(152, 518);
+            comboBoxGenderID.Name = "comboBoxGenderID";
+            comboBoxGenderID.Size = new Size(455, 33);
+            comboBoxGenderID.TabIndex = 10;
             // 
-            // comboBox1
+            // comboBoxPostID
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Font = new Font("Segoe UI", 14.25F);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(152, 473);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(455, 33);
-            comboBox1.TabIndex = 27;
+            comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxPostID.FormattingEnabled = true;
+            comboBoxPostID.Location = new Point(152, 473);
+            comboBoxPostID.Name = "comboBoxPostID";
+            comboBoxPostID.Size = new Size(455, 33);
+            comboBoxPostID.TabIndex = 9;
             // 
-            // maskedTextBox1
+            // maskedTextBoxPhone
             // 
-            maskedTextBox1.Font = new Font("Segoe UI", 14.25F);
-            maskedTextBox1.Location = new Point(152, 337);
-            maskedTextBox1.Mask = "+7 (999) 999-99-99";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(455, 33);
-            maskedTextBox1.TabIndex = 26;
+            maskedTextBoxPhone.Font = new Font("Segoe UI", 14.25F);
+            maskedTextBoxPhone.Location = new Point(152, 337);
+            maskedTextBoxPhone.Mask = "+7 (999) 999-99-99";
+            maskedTextBoxPhone.Name = "maskedTextBoxPhone";
+            maskedTextBoxPhone.Size = new Size(455, 33);
+            maskedTextBoxPhone.TabIndex = 6;
             // 
-            // label16
+            // labelGenderID
             // 
-            label16.AutoSize = true;
-            label16.ForeColor = Color.WhiteSmoke;
-            label16.Location = new Point(108, 529);
-            label16.Margin = new Padding(4, 0, 4, 0);
-            label16.Name = "label16";
-            label16.Size = new Size(33, 15);
-            label16.TabIndex = 25;
-            label16.Text = "Пол:";
+            labelGenderID.AutoSize = true;
+            labelGenderID.ForeColor = Color.WhiteSmoke;
+            labelGenderID.Location = new Point(108, 529);
+            labelGenderID.Margin = new Padding(4, 0, 4, 0);
+            labelGenderID.Name = "labelGenderID";
+            labelGenderID.Size = new Size(33, 15);
+            labelGenderID.TabIndex = 22;
+            labelGenderID.Text = "Пол:";
             // 
-            // label15
+            // labelPostID
             // 
-            label15.AutoSize = true;
-            label15.ForeColor = Color.WhiteSmoke;
-            label15.Location = new Point(69, 484);
-            label15.Margin = new Padding(4, 0, 4, 0);
-            label15.Name = "label15";
-            label15.Size = new Size(72, 15);
-            label15.TabIndex = 23;
-            label15.Text = "Должность:";
+            labelPostID.AutoSize = true;
+            labelPostID.ForeColor = Color.WhiteSmoke;
+            labelPostID.Location = new Point(69, 484);
+            labelPostID.Margin = new Padding(4, 0, 4, 0);
+            labelPostID.Name = "labelPostID";
+            labelPostID.Size = new Size(72, 15);
+            labelPostID.TabIndex = 21;
+            labelPostID.Text = "Должность:";
             // 
-            // label1
+            // labelPassportNumber
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(39, 303);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(102, 15);
-            label1.TabIndex = 18;
-            label1.Text = "Номер паспорта:";
+            labelPassportNumber.AutoSize = true;
+            labelPassportNumber.ForeColor = Color.WhiteSmoke;
+            labelPassportNumber.Location = new Point(39, 303);
+            labelPassportNumber.Margin = new Padding(4, 0, 4, 0);
+            labelPassportNumber.Name = "labelPassportNumber";
+            labelPassportNumber.Size = new Size(102, 15);
+            labelPassportNumber.TabIndex = 17;
+            labelPassportNumber.Text = "Номер паспорта:";
             // 
-            // textBox1
+            // textBoxPassportNumber
             // 
-            textBox1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.Location = new Point(152, 292);
-            textBox1.Margin = new Padding(4, 3, 4, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(455, 33);
-            textBox1.TabIndex = 14;
+            textBoxPassportNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPassportNumber.Location = new Point(152, 292);
+            textBoxPassportNumber.Margin = new Padding(4, 3, 4, 3);
+            textBoxPassportNumber.Name = "textBoxPassportNumber";
+            textBoxPassportNumber.Size = new Size(455, 33);
+            textBoxPassportNumber.TabIndex = 5;
             // 
-            // label7
+            // labelPhone
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(83, 348);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(58, 15);
-            label7.TabIndex = 19;
-            label7.Text = "Телефон:";
+            labelPhone.AutoSize = true;
+            labelPhone.ForeColor = Color.WhiteSmoke;
+            labelPhone.Location = new Point(83, 348);
+            labelPhone.Margin = new Padding(4, 0, 4, 0);
+            labelPhone.Name = "labelPhone";
+            labelPhone.Size = new Size(58, 15);
+            labelPhone.TabIndex = 18;
+            labelPhone.Text = "Телефон:";
             // 
-            // label9
+            // labelEmail
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.WhiteSmoke;
-            label9.Location = new Point(93, 393);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(44, 15);
-            label9.TabIndex = 20;
-            label9.Text = "Почта:";
+            labelEmail.AutoSize = true;
+            labelEmail.ForeColor = Color.WhiteSmoke;
+            labelEmail.Location = new Point(93, 393);
+            labelEmail.Margin = new Padding(4, 0, 4, 0);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(44, 15);
+            labelEmail.TabIndex = 19;
+            labelEmail.Text = "Почта:";
             // 
-            // textBox11
+            // textBoxEmail
             // 
-            textBox11.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox11.Location = new Point(152, 382);
-            textBox11.Margin = new Padding(4, 3, 4, 3);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(455, 33);
-            textBox11.TabIndex = 16;
+            textBoxEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmail.Location = new Point(152, 382);
+            textBoxEmail.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(455, 33);
+            textBoxEmail.TabIndex = 7;
             // 
-            // label10
+            // labelINN
             // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.WhiteSmoke;
-            label10.Location = new Point(104, 438);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(37, 15);
-            label10.TabIndex = 21;
-            label10.Text = "ИНН:";
+            labelINN.AutoSize = true;
+            labelINN.ForeColor = Color.WhiteSmoke;
+            labelINN.Location = new Point(104, 438);
+            labelINN.Margin = new Padding(4, 0, 4, 0);
+            labelINN.Name = "labelINN";
+            labelINN.Size = new Size(37, 15);
+            labelINN.TabIndex = 20;
+            labelINN.Text = "ИНН:";
             // 
-            // textBox16
+            // textBoxINN
             // 
-            textBox16.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox16.Location = new Point(152, 427);
-            textBox16.Margin = new Padding(4, 3, 4, 3);
-            textBox16.Name = "textBox16";
-            textBox16.ReadOnly = true;
-            textBox16.Size = new Size(455, 33);
-            textBox16.TabIndex = 17;
+            textBoxINN.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxINN.Location = new Point(152, 427);
+            textBoxINN.Margin = new Padding(4, 3, 4, 3);
+            textBoxINN.Name = "textBoxINN";
+            textBoxINN.ReadOnly = true;
+            textBoxINN.Size = new Size(455, 33);
+            textBoxINN.TabIndex = 8;
             // 
-            // label2
+            // labelRecordEmployees
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.ForeColor = Color.WhiteSmoke;
-            label2.Location = new Point(4, 10);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(142, 47);
-            label2.TabIndex = 7;
-            label2.Text = "Запись:";
+            labelRecordEmployees.AutoSize = true;
+            labelRecordEmployees.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordEmployees.ForeColor = Color.WhiteSmoke;
+            labelRecordEmployees.Location = new Point(4, 10);
+            labelRecordEmployees.Margin = new Padding(4, 0, 4, 0);
+            labelRecordEmployees.Name = "labelRecordEmployees";
+            labelRecordEmployees.Size = new Size(142, 47);
+            labelRecordEmployees.TabIndex = 11;
+            labelRecordEmployees.Text = "Запись:";
             // 
-            // label3
+            // labelEmployeeID
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(93, 82);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(48, 15);
-            label3.TabIndex = 8;
-            label3.Text = "Номер:";
+            labelEmployeeID.AutoSize = true;
+            labelEmployeeID.ForeColor = Color.WhiteSmoke;
+            labelEmployeeID.Location = new Point(93, 82);
+            labelEmployeeID.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeID.Name = "labelEmployeeID";
+            labelEmployeeID.Size = new Size(48, 15);
+            labelEmployeeID.TabIndex = 12;
+            labelEmployeeID.Text = "Номер:";
             // 
-            // textBox2
+            // textBoxEmployeeID
             // 
-            textBox2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox2.Location = new Point(152, 68);
-            textBox2.Margin = new Padding(4, 3, 4, 3);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(455, 33);
-            textBox2.TabIndex = 0;
+            textBoxEmployeeID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeID.Location = new Point(152, 68);
+            textBoxEmployeeID.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeID.Name = "textBoxEmployeeID";
+            textBoxEmployeeID.Size = new Size(455, 33);
+            textBoxEmployeeID.TabIndex = 0;
             // 
-            // label4
+            // labelFullName
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(43, 124);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(103, 15);
-            label4.TabIndex = 9;
-            label4.Text = "ФИО сотрудника:";
+            labelFullName.AutoSize = true;
+            labelFullName.ForeColor = Color.WhiteSmoke;
+            labelFullName.Location = new Point(43, 124);
+            labelFullName.Margin = new Padding(4, 0, 4, 0);
+            labelFullName.Name = "labelFullName";
+            labelFullName.Size = new Size(103, 15);
+            labelFullName.TabIndex = 13;
+            labelFullName.Text = "ФИО сотрудника:";
             // 
-            // textBox3
+            // textBoxFullName
             // 
-            textBox3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox3.Location = new Point(152, 113);
-            textBox3.Margin = new Padding(4, 3, 4, 3);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(455, 33);
-            textBox3.TabIndex = 1;
+            textBoxFullName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxFullName.Location = new Point(152, 113);
+            textBoxFullName.Margin = new Padding(4, 3, 4, 3);
+            textBoxFullName.Name = "textBoxFullName";
+            textBoxFullName.Size = new Size(455, 33);
+            textBoxFullName.TabIndex = 1;
             // 
-            // label5
+            // labelBirthPlace
             // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(38, 214);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(103, 15);
-            label5.TabIndex = 10;
-            label5.Text = "Место рождения:";
+            labelBirthPlace.AutoSize = true;
+            labelBirthPlace.ForeColor = Color.WhiteSmoke;
+            labelBirthPlace.Location = new Point(38, 214);
+            labelBirthPlace.Margin = new Padding(4, 0, 4, 0);
+            labelBirthPlace.Name = "labelBirthPlace";
+            labelBirthPlace.Size = new Size(103, 15);
+            labelBirthPlace.TabIndex = 15;
+            labelBirthPlace.Text = "Место рождения:";
             // 
-            // textBox4
+            // textBoxBirthPlace
             // 
-            textBox4.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox4.Location = new Point(152, 203);
-            textBox4.Margin = new Padding(4, 3, 4, 3);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(455, 33);
-            textBox4.TabIndex = 2;
+            textBoxBirthPlace.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxBirthPlace.Location = new Point(152, 203);
+            textBoxBirthPlace.Margin = new Padding(4, 3, 4, 3);
+            textBoxBirthPlace.Name = "textBoxBirthPlace";
+            textBoxBirthPlace.Size = new Size(455, 33);
+            textBoxBirthPlace.TabIndex = 3;
             // 
-            // label6
+            // labelBirthDate
             // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(53, 172);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(93, 15);
-            label6.TabIndex = 11;
-            label6.Text = "Дата рождения:";
+            labelBirthDate.AutoSize = true;
+            labelBirthDate.ForeColor = Color.WhiteSmoke;
+            labelBirthDate.Location = new Point(53, 172);
+            labelBirthDate.Margin = new Padding(4, 0, 4, 0);
+            labelBirthDate.Name = "labelBirthDate";
+            labelBirthDate.Size = new Size(93, 15);
+            labelBirthDate.TabIndex = 14;
+            labelBirthDate.Text = "Дата рождения:";
             // 
-            // dateTimePicker1
+            // dateTimePickerBirthDate
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 14.25F);
-            dateTimePicker1.Location = new Point(152, 158);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(455, 33);
-            dateTimePicker1.TabIndex = 3;
+            dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerBirthDate.Location = new Point(152, 158);
+            dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
+            dateTimePickerBirthDate.Size = new Size(455, 33);
+            dateTimePickerBirthDate.TabIndex = 2;
             // 
-            // label8
+            // labelPassportSeries
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(43, 259);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(98, 15);
-            label8.TabIndex = 13;
-            label8.Text = "Серия паспорта:";
+            labelPassportSeries.AutoSize = true;
+            labelPassportSeries.ForeColor = Color.WhiteSmoke;
+            labelPassportSeries.Location = new Point(43, 259);
+            labelPassportSeries.Margin = new Padding(4, 0, 4, 0);
+            labelPassportSeries.Name = "labelPassportSeries";
+            labelPassportSeries.Size = new Size(98, 15);
+            labelPassportSeries.TabIndex = 16;
+            labelPassportSeries.Text = "Серия паспорта:";
             // 
-            // textBox5
+            // textBoxPassportSeries
             // 
-            textBox5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox5.Location = new Point(152, 248);
-            textBox5.Margin = new Padding(4, 3, 4, 3);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(455, 33);
-            textBox5.TabIndex = 6;
+            textBoxPassportSeries.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPassportSeries.Location = new Point(152, 248);
+            textBoxPassportSeries.Margin = new Padding(4, 3, 4, 3);
+            textBoxPassportSeries.Name = "textBoxPassportSeries";
+            textBoxPassportSeries.ReadOnly = true;
+            textBoxPassportSeries.Size = new Size(455, 33);
+            textBoxPassportSeries.TabIndex = 4;
             // 
             // labelControlEmployees
             // 
@@ -2716,113 +2716,113 @@
             // 
             // panelRecordProjects
             // 
-            panelRecordProjects.Controls.Add(labelRecordLoans);
-            panelRecordProjects.Controls.Add(labelLoanID);
-            panelRecordProjects.Controls.Add(textBoxLoanID);
-            panelRecordProjects.Controls.Add(labelRegistrationIDLoans);
-            panelRecordProjects.Controls.Add(textBoxRegistrationIDLoans);
-            panelRecordProjects.Controls.Add(labelBookIDLoans);
-            panelRecordProjects.Controls.Add(textBoxBookIDLoans);
-            panelRecordProjects.Controls.Add(labelIsReturnedLoans);
-            panelRecordProjects.Controls.Add(textBoxIsReturnedLoans);
+            panelRecordProjects.Controls.Add(labelRecordProjects);
+            panelRecordProjects.Controls.Add(labelProjectID);
+            panelRecordProjects.Controls.Add(textBoxProjectID);
+            panelRecordProjects.Controls.Add(labelProjectName);
+            panelRecordProjects.Controls.Add(textBoxProjectName);
+            panelRecordProjects.Controls.Add(labelHourly);
+            panelRecordProjects.Controls.Add(textBoxHourly);
+            panelRecordProjects.Controls.Add(labePieceWork);
+            panelRecordProjects.Controls.Add(textBoxPieceWork);
             panelRecordProjects.Location = new Point(9, 450);
             panelRecordProjects.Margin = new Padding(4, 3, 4, 3);
             panelRecordProjects.Name = "panelRecordProjects";
             panelRecordProjects.Size = new Size(611, 552);
             panelRecordProjects.TabIndex = 1;
             // 
-            // labelRecordLoans
+            // labelRecordProjects
             // 
-            labelRecordLoans.AutoSize = true;
-            labelRecordLoans.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordLoans.ForeColor = Color.WhiteSmoke;
-            labelRecordLoans.Location = new Point(4, 10);
-            labelRecordLoans.Margin = new Padding(4, 0, 4, 0);
-            labelRecordLoans.Name = "labelRecordLoans";
-            labelRecordLoans.Size = new Size(142, 47);
-            labelRecordLoans.TabIndex = 7;
-            labelRecordLoans.Text = "Запись:";
+            labelRecordProjects.AutoSize = true;
+            labelRecordProjects.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelRecordProjects.ForeColor = Color.WhiteSmoke;
+            labelRecordProjects.Location = new Point(4, 10);
+            labelRecordProjects.Margin = new Padding(4, 0, 4, 0);
+            labelRecordProjects.Name = "labelRecordProjects";
+            labelRecordProjects.Size = new Size(142, 47);
+            labelRecordProjects.TabIndex = 4;
+            labelRecordProjects.Text = "Запись:";
             // 
-            // labelLoanID
+            // labelProjectID
             // 
-            labelLoanID.AutoSize = true;
-            labelLoanID.ForeColor = Color.WhiteSmoke;
-            labelLoanID.Location = new Point(93, 82);
-            labelLoanID.Margin = new Padding(4, 0, 4, 0);
-            labelLoanID.Name = "labelLoanID";
-            labelLoanID.Size = new Size(48, 15);
-            labelLoanID.TabIndex = 8;
-            labelLoanID.Text = "Номер:";
+            labelProjectID.AutoSize = true;
+            labelProjectID.ForeColor = Color.WhiteSmoke;
+            labelProjectID.Location = new Point(93, 82);
+            labelProjectID.Margin = new Padding(4, 0, 4, 0);
+            labelProjectID.Name = "labelProjectID";
+            labelProjectID.Size = new Size(48, 15);
+            labelProjectID.TabIndex = 5;
+            labelProjectID.Text = "Номер:";
             // 
-            // textBoxLoanID
+            // textBoxProjectID
             // 
-            textBoxLoanID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxLoanID.Location = new Point(152, 68);
-            textBoxLoanID.Margin = new Padding(4, 3, 4, 3);
-            textBoxLoanID.Name = "textBoxLoanID";
-            textBoxLoanID.Size = new Size(455, 33);
-            textBoxLoanID.TabIndex = 0;
+            textBoxProjectID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectID.Location = new Point(152, 68);
+            textBoxProjectID.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectID.Name = "textBoxProjectID";
+            textBoxProjectID.Size = new Size(455, 33);
+            textBoxProjectID.TabIndex = 0;
             // 
-            // labelRegistrationIDLoans
+            // labelProjectName
             // 
-            labelRegistrationIDLoans.AutoSize = true;
-            labelRegistrationIDLoans.ForeColor = Color.WhiteSmoke;
-            labelRegistrationIDLoans.Location = new Point(32, 124);
-            labelRegistrationIDLoans.Margin = new Padding(4, 0, 4, 0);
-            labelRegistrationIDLoans.Name = "labelRegistrationIDLoans";
-            labelRegistrationIDLoans.Size = new Size(109, 15);
-            labelRegistrationIDLoans.TabIndex = 9;
-            labelRegistrationIDLoans.Text = "Название проекта:";
+            labelProjectName.AutoSize = true;
+            labelProjectName.ForeColor = Color.WhiteSmoke;
+            labelProjectName.Location = new Point(32, 124);
+            labelProjectName.Margin = new Padding(4, 0, 4, 0);
+            labelProjectName.Name = "labelProjectName";
+            labelProjectName.Size = new Size(109, 15);
+            labelProjectName.TabIndex = 6;
+            labelProjectName.Text = "Название проекта:";
             // 
-            // textBoxRegistrationIDLoans
+            // textBoxProjectName
             // 
-            textBoxRegistrationIDLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxRegistrationIDLoans.Location = new Point(152, 113);
-            textBoxRegistrationIDLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxRegistrationIDLoans.Name = "textBoxRegistrationIDLoans";
-            textBoxRegistrationIDLoans.Size = new Size(455, 33);
-            textBoxRegistrationIDLoans.TabIndex = 1;
+            textBoxProjectName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectName.Location = new Point(152, 113);
+            textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectName.Name = "textBoxProjectName";
+            textBoxProjectName.Size = new Size(455, 33);
+            textBoxProjectName.TabIndex = 1;
             // 
-            // labelBookIDLoans
+            // labelHourly
             // 
-            labelBookIDLoans.AutoSize = true;
-            labelBookIDLoans.ForeColor = Color.WhiteSmoke;
-            labelBookIDLoans.Location = new Point(35, 169);
-            labelBookIDLoans.Margin = new Padding(4, 0, 4, 0);
-            labelBookIDLoans.Name = "labelBookIDLoans";
-            labelBookIDLoans.Size = new Size(111, 15);
-            labelBookIDLoans.TabIndex = 10;
-            labelBookIDLoans.Text = "Почасовая оплата:";
+            labelHourly.AutoSize = true;
+            labelHourly.ForeColor = Color.WhiteSmoke;
+            labelHourly.Location = new Point(35, 169);
+            labelHourly.Margin = new Padding(4, 0, 4, 0);
+            labelHourly.Name = "labelHourly";
+            labelHourly.Size = new Size(111, 15);
+            labelHourly.TabIndex = 7;
+            labelHourly.Text = "Почасовая оплата:";
             // 
-            // textBoxBookIDLoans
+            // textBoxHourly
             // 
-            textBoxBookIDLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxBookIDLoans.Location = new Point(152, 158);
-            textBoxBookIDLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxBookIDLoans.Name = "textBoxBookIDLoans";
-            textBoxBookIDLoans.Size = new Size(455, 33);
-            textBoxBookIDLoans.TabIndex = 2;
+            textBoxHourly.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHourly.Location = new Point(152, 158);
+            textBoxHourly.Margin = new Padding(4, 3, 4, 3);
+            textBoxHourly.Name = "textBoxHourly";
+            textBoxHourly.Size = new Size(455, 33);
+            textBoxHourly.TabIndex = 2;
             // 
-            // labelIsReturnedLoans
+            // labePieceWork
             // 
-            labelIsReturnedLoans.AutoSize = true;
-            labelIsReturnedLoans.ForeColor = Color.WhiteSmoke;
-            labelIsReturnedLoans.Location = new Point(43, 214);
-            labelIsReturnedLoans.Margin = new Padding(4, 0, 4, 0);
-            labelIsReturnedLoans.Name = "labelIsReturnedLoans";
-            labelIsReturnedLoans.Size = new Size(103, 15);
-            labelIsReturnedLoans.TabIndex = 13;
-            labelIsReturnedLoans.Text = "Сдельная оплата:";
+            labePieceWork.AutoSize = true;
+            labePieceWork.ForeColor = Color.WhiteSmoke;
+            labePieceWork.Location = new Point(43, 214);
+            labePieceWork.Margin = new Padding(4, 0, 4, 0);
+            labePieceWork.Name = "labePieceWork";
+            labePieceWork.Size = new Size(103, 15);
+            labePieceWork.TabIndex = 8;
+            labePieceWork.Text = "Сдельная оплата:";
             // 
-            // textBoxIsReturnedLoans
+            // textBoxPieceWork
             // 
-            textBoxIsReturnedLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxIsReturnedLoans.Location = new Point(152, 203);
-            textBoxIsReturnedLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxIsReturnedLoans.Name = "textBoxIsReturnedLoans";
-            textBoxIsReturnedLoans.ReadOnly = true;
-            textBoxIsReturnedLoans.Size = new Size(455, 33);
-            textBoxIsReturnedLoans.TabIndex = 6;
+            textBoxPieceWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPieceWork.Location = new Point(152, 203);
+            textBoxPieceWork.Margin = new Padding(4, 3, 4, 3);
+            textBoxPieceWork.Name = "textBoxPieceWork";
+            textBoxPieceWork.ReadOnly = true;
+            textBoxPieceWork.Size = new Size(455, 33);
+            textBoxPieceWork.TabIndex = 3;
             // 
             // labelControlProjects
             // 
@@ -3076,19 +3076,19 @@
         private TextBox textBoxSearchSickPay;
         private DataGridView dataGridViewSickPay;
         private Panel panelRecordSickPay;
-        private Label label47;
-        private Label label48;
-        private TextBox textBox27;
-        private Label label49;
-        private TextBox textBox28;
-        private Label label50;
-        private TextBox textBox29;
-        private Label label51;
-        private DateTimePicker dateTimePicker11;
-        private Label label52;
-        private DateTimePicker dateTimePicker12;
-        private Label label53;
-        private TextBox textBox30;
+        private Label labelRecordSickPay;
+        private Label labelSickPayID;
+        private TextBox textBoxSickPayID;
+        private Label labelEmployeeIDSickPay;
+        private TextBox textBoxEmployeeIDSickPay;
+        private Label labelExperience;
+        private TextBox textBoxExperience;
+        private Label labelSickStartDate;
+        private DateTimePicker dateTimePickerSickStartDate;
+        private Label labelSickEndDate;
+        private DateTimePicker dateTimePickerSickEndDate;
+        private Label labelAverageDailyEarningsSickPay;
+        private TextBox textBoxAverageDailyEarningsSickPay;
         private Label labelControlSickPay;
         private Panel panelControlSickPay;
         private Button buttonNewSickPay;
@@ -3106,19 +3106,19 @@
         private TextBox textBoxSearchVacationPay;
         private DataGridView dataGridViewVacationPay;
         private Panel panelRecordVacationPay;
-        private Label label38;
-        private Label label39;
-        private TextBox textBox22;
-        private Label label40;
-        private TextBox textBox23;
-        private Label label41;
-        private TextBox textBox24;
-        private Label label42;
-        private DateTimePicker dateTimePicker9;
-        private Label label43;
-        private DateTimePicker dateTimePicker10;
-        private Label label44;
-        private TextBox textBox25;
+        private Label labelRecordVacationPay;
+        private Label labelVacationPayID;
+        private TextBox textBoxVacationPayID;
+        private Label labelEmployeeIDVacationPay;
+        private TextBox textBoxEmployeeIDVacationPay;
+        private Label labelAverageDailyEarnings;
+        private TextBox textBoxAverageDailyEarnings;
+        private Label labelVacationStartDate;
+        private DateTimePicker dateTimePickerVacationStartDate;
+        private Label labelVacationEndDate;
+        private DateTimePicker dateTimePickerVacationEndDate;
+        private Label labelTotalVacationPay;
+        private TextBox textBoxTotalVacationPay;
         private Label labelControlVacationPay;
         private Panel panelControlVacationPay;
         private Button buttonNewVacationPay;
@@ -3136,15 +3136,15 @@
         private TextBox textBoxSearchAccountingsOfWorkingHours;
         private DataGridView dataGridViewAccountingsOfWorkingHours;
         private Panel panelRecordAccountingsOfWorkingHours;
-        private Label label29;
-        private Label label30;
-        private TextBox textBox17;
-        private Label label31;
-        private TextBox textBox18;
-        private Label label32;
-        private TextBox textBox19;
-        private Label label35;
-        private TextBox textBox20;
+        private Label labelRecordAccountingsOfWorkingHours;
+        private Label labelAccountingsOfWorkingHoursID;
+        private TextBox textBoxAccountingsOfWorkingHoursID;
+        private Label labelEmployeeIDAccountingsOfWorkingHours;
+        private TextBox textBoxEmployeeIDAccountingsOfWorkingHours;
+        private Label labelProjectIDAccountingsOfWorkingHours;
+        private TextBox textBoxProjectIDAccountingsOfWorkingHours;
+        private Label labelTypeOfRemunerationID;
+        private TextBox textBoxHoursOfWork;
         private Label labelControlAccountingsOfWorkingHours;
         private Panel panelControlAccountingsOfWorkingHours;
         private Button buttonNewAccountingOfWorkingHours;
@@ -3162,15 +3162,15 @@
         private TextBox textBoxSearchSalary;
         private DataGridView dataGridViewSalary;
         private Panel panelRecordSalary;
-        private Label label20;
-        private Label label21;
-        private TextBox textBox12;
-        private Label label22;
-        private TextBox textBox13;
-        private Label label23;
-        private TextBox textBox14;
-        private Label label26;
-        private TextBox textBox15;
+        private Label labelRecordSalary;
+        private Label labelSalaryID;
+        private TextBox textBoxSalaryID;
+        private Label labelSalaryAccrualIDSalary;
+        private TextBox textBoxSalaryAccrualIDSalary;
+        private Label labelEmployeeIDSalary;
+        private TextBox textBoxEmployeeIDSalary;
+        private Label labelAllDays;
+        private TextBox textBoxAllDays;
         private Label labelControlSalary;
         private Panel panelControlSalary;
         private Button buttonNewSalary;
@@ -3188,14 +3188,14 @@
         private TextBox textBoxSearchSalaryAccruals;
         private DataGridView dataGridViewSalaryAccruals;
         private Panel panelRecordSalaryAccruals;
-        private Label label11;
-        private Label label12;
-        private TextBox textBox7;
-        private Label label13;
-        private TextBox textBox8;
-        private Label label14;
-        private Label label17;
-        private TextBox textBox10;
+        private Label labelRecordSalaryAccruals;
+        private Label labelSalaryAccrualID;
+        private TextBox textBoxSalaryAccrualID;
+        private Label labelYear;
+        private TextBox textBoxYear;
+        private Label labelMonthID;
+        private Label labelProjectIDSalaryAccruals;
+        private TextBox textBoxProjectIDSalaryAccruals;
         private Label labelControlSalaryAccruals;
         private Panel panelControlSalaryAccruals;
         private Button buttonNewSalaryAccrual;
@@ -3213,17 +3213,17 @@
         private TextBox textBoxSearchEmployees;
         private DataGridView dataGridViewEmployees;
         private Panel panelRecordEmployees;
-        private Label label2;
-        private Label label3;
-        private TextBox textBox2;
-        private Label label4;
-        private TextBox textBox3;
-        private Label label5;
-        private TextBox textBox4;
-        private Label label6;
-        private DateTimePicker dateTimePicker1;
-        private Label label8;
-        private TextBox textBox5;
+        private Label labelRecordEmployees;
+        private Label labelEmployeeID;
+        private TextBox textBoxEmployeeID;
+        private Label labelFullName;
+        private TextBox textBoxFullName;
+        private Label labelBirthPlace;
+        private TextBox textBoxBirthPlace;
+        private Label labelBirthDate;
+        private DateTimePicker dateTimePickerBirthDate;
+        private Label labelPassportSeries;
+        private TextBox textBoxPassportSeries;
         private Label labelControlEmployees;
         private Panel panelControlEmployees;
         private Button buttonNewEmployee;
@@ -3241,15 +3241,15 @@
         private TextBox textBoxSearchProjects;
         private DataGridView dataGridViewProjects;
         private Panel panelRecordProjects;
-        private Label labelRecordLoans;
-        private Label labelLoanID;
-        private TextBox textBoxLoanID;
-        private Label labelRegistrationIDLoans;
-        private TextBox textBoxRegistrationIDLoans;
-        private Label labelBookIDLoans;
-        private TextBox textBoxBookIDLoans;
-        private Label labelIsReturnedLoans;
-        private TextBox textBoxIsReturnedLoans;
+        private Label labelRecordProjects;
+        private Label labelProjectID;
+        private TextBox textBoxProjectID;
+        private Label labelProjectName;
+        private TextBox textBoxProjectName;
+        private Label labelHourly;
+        private TextBox textBoxHourly;
+        private Label labePieceWork;
+        private TextBox textBoxPieceWork;
         private Label labelControlProjects;
         private Panel panelControlProjects;
         private Button buttonNewProject;
@@ -3260,38 +3260,38 @@
         private Button buttonExcelProject;
         private Button buttonTXTProject;
         private TabControl tabControl1;
-        private Label label15;
-        private Label label1;
-        private TextBox textBox1;
-        private Label label7;
-        private Label label9;
-        private TextBox textBox11;
-        private Label label10;
-        private TextBox textBox16;
-        private Label label16;
-        private ComboBox comboBox1;
-        private MaskedTextBox maskedTextBox1;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private Label label18;
-        private Label label19;
-        private Label label24;
-        private TextBox textBox6;
-        private Label label25;
-        private Label label27;
-        private TextBox textBox9;
-        private Label label28;
-        private TextBox textBox21;
-        private Label label33;
-        private TextBox textBox26;
-        private Label label34;
-        private TextBox textBox31;
-        private TextBox textBox32;
-        private TextBox textBox33;
-        private TextBox textBox34;
-        private Label label36;
-        private ComboBox comboBox4;
-        private Label label37;
-        private TextBox textBox35;
+        private Label labelPostID;
+        private Label labelPassportNumber;
+        private TextBox textBoxPassportNumber;
+        private Label labelPhone;
+        private Label labelEmail;
+        private TextBox textBoxEmail;
+        private Label labelINN;
+        private TextBox textBoxINN;
+        private Label labelGenderID;
+        private ComboBox comboBoxPostID;
+        private MaskedTextBox maskedTextBoxPhone;
+        private ComboBox comboBoxMonthID;
+        private ComboBox comboBoxGenderID;
+        private Label labelTotal;
+        private Label labelContributions;
+        private Label labelHourlyCharges;
+        private TextBox textBoxPieceworkCharges;
+        private Label labelVacationPay;
+        private Label labelSickPay;
+        private TextBox textBoxHourlyCharges;
+        private Label labelPersonalIncomeTax;
+        private TextBox textBoxVacationPay;
+        private Label labelPieceworkCharges;
+        private TextBox textBoxAllHours;
+        private Label labelAllHours;
+        private TextBox textBoxPersonalIncomeTax;
+        private TextBox textBoxContributions;
+        private TextBox textBoxTotal;
+        private TextBox textBoxSickPay;
+        private Label labelHoursOfWork;
+        private ComboBox comboBoxTypeOfRemunerationID;
+        private Label labelTotalSickPay;
+        private TextBox textBoxTotalSickPay;
     }
 }

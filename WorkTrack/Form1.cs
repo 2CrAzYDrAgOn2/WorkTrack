@@ -594,72 +594,70 @@ namespace WorkTrack
                     switch (dataGridView.Name)
                     {
                         case "dataGridViewProjects":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateProjects = (RowState)dataGridView.Rows[index].Cells[4].Value;
+                            if (rowStateProjects == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateProjects == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from Projects where ProjectID = '{bookID}'";
+                                var projectID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from Projects where ProjectID = '{projectID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateProjects == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var projectID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}' where BookID = '{projectID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateProjects == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var newQuery = $"insert into Books (Title, Author, Genre) values ('{title}', '{author}', '{genre}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             break;
 
                         case "dataGridViewEmployees":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateEmployees = (RowState)dataGridView.Rows[index].Cells[11].Value;
+                            if (rowStateEmployees == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateEmployees == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from Employees where EmployeeID = '{bookID}'";
+                                var employeeID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from Employees where EmployeeID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateEmployees == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var employeeID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
                                 var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateEmployees == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
@@ -667,6 +665,10 @@ namespace WorkTrack
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
                                 var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
                                 var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
@@ -674,72 +676,71 @@ namespace WorkTrack
                             break;
 
                         case "dataGridViewSalaryAccruals":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateSalaryAccruals = (RowState)dataGridView.Rows[index].Cells[4].Value;
+                            if (rowStateSalaryAccruals == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateSalaryAccruals == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from SalaryAccruals where SalaryAccrualID = '{bookID}'";
+                                var salaryAccrualID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from SalaryAccruals where SalaryAccrualID = '{salaryAccrualID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateSalaryAccruals == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var salaryAccrualID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}' where BookID = '{salaryAccrualID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateSalaryAccruals == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var newQuery = $"insert into Books (Title, Author, Genre) values ('{title}', '{author}', '{genre}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             break;
 
                         case "dataGridViewSalary":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateSalary = (RowState)dataGridView.Rows[index].Cells[12].Value;
+                            if (rowStateSalary == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateSalary == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from Salary where SalaryID = '{bookID}'";
+                                var salaryID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from Salary where SalaryID = '{salaryID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateSalary == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var salaryID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
                                 var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[11].Value.ToString();
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{salaryID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateSalary == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
@@ -747,6 +748,11 @@ namespace WorkTrack
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
                                 var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var copiesAvailable = dataGridView.Rows[index].Cells[11].Value.ToString();
                                 var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
@@ -754,112 +760,106 @@ namespace WorkTrack
                             break;
 
                         case "dataGridViewAccountingsOfWorkingHours":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateAccountingsOfWorkingHours = (RowState)dataGridView.Rows[index].Cells[5].Value;
+                            if (rowStateAccountingsOfWorkingHours == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateAccountingsOfWorkingHours == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from AccountingsOfWorkingHours where AccountingOfWorkingHoursID = '{bookID}'";
+                                var accountingOfWorkingHoursID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from AccountingsOfWorkingHours where AccountingOfWorkingHoursID = '{accountingOfWorkingHoursID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateAccountingsOfWorkingHours == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var accountingOfWorkingHoursID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}' where BookID = '{accountingOfWorkingHoursID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateAccountingsOfWorkingHours == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             break;
 
                         case "dataGridViewVacationPay":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateVacationPay = (RowState)dataGridView.Rows[index].Cells[6].Value;
+                            if (rowStateVacationPay == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateVacationPay == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from VacationPay where VacationPayID = '{bookID}'";
+                                var vacationPayID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from VacationPay where VacationPayID = '{vacationPayID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateVacationPay == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var vacationPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}' where BookID = '{vacationPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateVacationPay == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             break;
 
                         case "dataGridViewSickPay":
-                            var rowStateBooks = (RowState)dataGridView.Rows[index].Cells[7].Value;
-                            if (rowStateBooks == RowState.Existed)
+                            var rowStateSickPay = (RowState)dataGridView.Rows[index].Cells[7].Value;
+                            if (rowStateSickPay == RowState.Existed)
                             {
                                 continue;
                             }
-                            if (rowStateBooks == RowState.Deleted)
+                            if (rowStateSickPay == RowState.Deleted)
                             {
-                                var bookID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
-                                var deleteQuery = $"delete from SickPay where SickPayID = '{bookID}'";
+                                var sickPayID = Convert.ToInt32(dataGridView.Rows[index].Cells[0].Value);
+                                var deleteQuery = $"delete from SickPay where SickPayID = '{sickPayID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.Modified)
+                            if (rowStateSickPay == RowState.Modified)
                             {
-                                var bookID = dataGridView.Rows[index].Cells[0].Value.ToString();
+                                var sickPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
                                 var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
                                 var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
                                 var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{bookID}'";
+                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{sickPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
-                            if (rowStateBooks == RowState.New)
+                            if (rowStateSickPay == RowState.New)
                             {
                                 var title = dataGridView.Rows[index].Cells[1].Value.ToString();
                                 var author = dataGridView.Rows[index].Cells[2].Value.ToString();

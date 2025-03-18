@@ -32,8 +32,6 @@
             buttonSave = new Button();
             labelTitle = new Label();
             label1 = new Label();
-            labelProjectID = new Label();
-            textBoxProjectID = new TextBox();
             labelProjectName = new Label();
             textBoxProjectName = new TextBox();
             labelHourly = new Label();
@@ -51,7 +49,7 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 6;
+            buttonSave.TabIndex = 3;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
@@ -66,7 +64,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 7;
+            labelTitle.TabIndex = 4;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -79,29 +77,8 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(67, 21);
-            label1.TabIndex = 8;
+            label1.TabIndex = 5;
             label1.Text = "Проект";
-            // 
-            // labelProjectID
-            // 
-            labelProjectID.AutoSize = true;
-            labelProjectID.BackColor = Color.Transparent;
-            labelProjectID.ForeColor = Color.Black;
-            labelProjectID.Location = new Point(233, 462);
-            labelProjectID.Margin = new Padding(4, 0, 4, 0);
-            labelProjectID.Name = "labelProjectID";
-            labelProjectID.Size = new Size(48, 15);
-            labelProjectID.TabIndex = 13;
-            labelProjectID.Text = "Номер:";
-            // 
-            // textBoxProjectID
-            // 
-            textBoxProjectID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectID.Location = new Point(292, 448);
-            textBoxProjectID.Margin = new Padding(4, 3, 4, 3);
-            textBoxProjectID.Name = "textBoxProjectID";
-            textBoxProjectID.Size = new Size(455, 33);
-            textBoxProjectID.TabIndex = 9;
             // 
             // labelProjectName
             // 
@@ -112,7 +89,7 @@
             labelProjectName.Margin = new Padding(4, 0, 4, 0);
             labelProjectName.Name = "labelProjectName";
             labelProjectName.Size = new Size(109, 15);
-            labelProjectName.TabIndex = 14;
+            labelProjectName.TabIndex = 6;
             labelProjectName.Text = "Название проекта:";
             // 
             // textBoxProjectName
@@ -122,7 +99,7 @@
             textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
             textBoxProjectName.Name = "textBoxProjectName";
             textBoxProjectName.Size = new Size(455, 33);
-            textBoxProjectName.TabIndex = 10;
+            textBoxProjectName.TabIndex = 0;
             // 
             // labelHourly
             // 
@@ -133,7 +110,7 @@
             labelHourly.Margin = new Padding(4, 0, 4, 0);
             labelHourly.Name = "labelHourly";
             labelHourly.Size = new Size(111, 15);
-            labelHourly.TabIndex = 15;
+            labelHourly.TabIndex = 7;
             labelHourly.Text = "Почасовая оплата:";
             // 
             // textBoxHourly
@@ -143,7 +120,7 @@
             textBoxHourly.Margin = new Padding(4, 3, 4, 3);
             textBoxHourly.Name = "textBoxHourly";
             textBoxHourly.Size = new Size(455, 33);
-            textBoxHourly.TabIndex = 11;
+            textBoxHourly.TabIndex = 1;
             // 
             // labePieceWork
             // 
@@ -154,7 +131,7 @@
             labePieceWork.Margin = new Padding(4, 0, 4, 0);
             labePieceWork.Name = "labePieceWork";
             labePieceWork.Size = new Size(103, 15);
-            labePieceWork.TabIndex = 16;
+            labePieceWork.TabIndex = 8;
             labePieceWork.Text = "Сдельная оплата:";
             // 
             // textBoxPieceWork
@@ -165,7 +142,7 @@
             textBoxPieceWork.Name = "textBoxPieceWork";
             textBoxPieceWork.ReadOnly = true;
             textBoxPieceWork.Size = new Size(455, 33);
-            textBoxPieceWork.TabIndex = 12;
+            textBoxPieceWork.TabIndex = 2;
             // 
             // AddFormProjects
             // 
@@ -176,8 +153,6 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelProjectID);
-            Controls.Add(textBoxProjectID);
             Controls.Add(labelProjectName);
             Controls.Add(textBoxProjectName);
             Controls.Add(labelHourly);
@@ -201,8 +176,6 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label1;
-        private Label labelProjectID;
-        private TextBox textBoxProjectID;
         private Label labelProjectName;
         private TextBox textBoxProjectName;
         private Label labelHourly;

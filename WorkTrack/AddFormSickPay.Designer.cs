@@ -31,8 +31,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormSickPay));
             labelTitle = new Label();
             label1 = new Label();
-            textBoxRegistrationIDLoans = new TextBox();
             buttonSave = new Button();
+            labelEmployeeIDSickPay = new Label();
+            textBoxEmployeeIDSickPay = new TextBox();
+            labelSickStartDate = new Label();
+            dateTimePickerSickStartDate = new DateTimePicker();
+            labelSickEndDate = new Label();
+            dateTimePickerSickEndDate = new DateTimePicker();
+            labelExperience = new Label();
+            textBoxExperience = new TextBox();
+            labelAverageDailyEarningsSickPay = new Label();
+            textBoxAverageDailyEarningsSickPay = new TextBox();
+            labelTotalSickPay = new Label();
+            textBoxTotalSickPay = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -45,7 +56,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 11;
+            labelTitle.TabIndex = 7;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -58,17 +69,8 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(112, 21);
-            label1.TabIndex = 12;
+            label1.TabIndex = 8;
             label1.Text = "Больничный";
-            // 
-            // textBoxRegistrationIDLoans
-            // 
-            textBoxRegistrationIDLoans.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxRegistrationIDLoans.Location = new Point(292, 447);
-            textBoxRegistrationIDLoans.Margin = new Padding(4, 3, 4, 3);
-            textBoxRegistrationIDLoans.Name = "textBoxRegistrationIDLoans";
-            textBoxRegistrationIDLoans.Size = new Size(455, 33);
-            textBoxRegistrationIDLoans.TabIndex = 9;
             // 
             // buttonSave
             // 
@@ -79,10 +81,136 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 10;
+            buttonSave.TabIndex = 6;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
+            // 
+            // labelEmployeeIDSickPay
+            // 
+            labelEmployeeIDSickPay.AutoSize = true;
+            labelEmployeeIDSickPay.BackColor = Color.Transparent;
+            labelEmployeeIDSickPay.ForeColor = Color.Black;
+            labelEmployeeIDSickPay.Location = new Point(172, 458);
+            labelEmployeeIDSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelEmployeeIDSickPay.Name = "labelEmployeeIDSickPay";
+            labelEmployeeIDSickPay.Size = new Size(114, 15);
+            labelEmployeeIDSickPay.TabIndex = 9;
+            labelEmployeeIDSickPay.Text = "Номер сотрудника:";
+            // 
+            // textBoxEmployeeIDSickPay
+            // 
+            textBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmployeeIDSickPay.Location = new Point(292, 447);
+            textBoxEmployeeIDSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmployeeIDSickPay.Name = "textBoxEmployeeIDSickPay";
+            textBoxEmployeeIDSickPay.Size = new Size(455, 33);
+            textBoxEmployeeIDSickPay.TabIndex = 0;
+            // 
+            // labelSickStartDate
+            // 
+            labelSickStartDate.AutoSize = true;
+            labelSickStartDate.BackColor = Color.Transparent;
+            labelSickStartDate.ForeColor = Color.Black;
+            labelSickStartDate.Location = new Point(132, 510);
+            labelSickStartDate.Margin = new Padding(4, 0, 4, 0);
+            labelSickStartDate.Name = "labelSickStartDate";
+            labelSickStartDate.Size = new Size(154, 15);
+            labelSickStartDate.TabIndex = 10;
+            labelSickStartDate.Text = "Дата начала больничного:";
+            // 
+            // dateTimePickerSickStartDate
+            // 
+            dateTimePickerSickStartDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerSickStartDate.Location = new Point(292, 496);
+            dateTimePickerSickStartDate.Name = "dateTimePickerSickStartDate";
+            dateTimePickerSickStartDate.Size = new Size(455, 33);
+            dateTimePickerSickStartDate.TabIndex = 1;
+            // 
+            // labelSickEndDate
+            // 
+            labelSickEndDate.AutoSize = true;
+            labelSickEndDate.BackColor = Color.Transparent;
+            labelSickEndDate.ForeColor = Color.Black;
+            labelSickEndDate.Location = new Point(133, 544);
+            labelSickEndDate.Margin = new Padding(4, 0, 4, 0);
+            labelSickEndDate.Name = "labelSickEndDate";
+            labelSickEndDate.Size = new Size(148, 15);
+            labelSickEndDate.TabIndex = 11;
+            labelSickEndDate.Text = "Дата конца больничного:";
+            // 
+            // dateTimePickerSickEndDate
+            // 
+            dateTimePickerSickEndDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerSickEndDate.Location = new Point(292, 538);
+            dateTimePickerSickEndDate.Name = "dateTimePickerSickEndDate";
+            dateTimePickerSickEndDate.Size = new Size(455, 33);
+            dateTimePickerSickEndDate.TabIndex = 2;
+            // 
+            // labelExperience
+            // 
+            labelExperience.AutoSize = true;
+            labelExperience.BackColor = Color.Transparent;
+            labelExperience.ForeColor = Color.Black;
+            labelExperience.Location = new Point(199, 593);
+            labelExperience.Margin = new Padding(4, 0, 4, 0);
+            labelExperience.Name = "labelExperience";
+            labelExperience.Size = new Size(82, 15);
+            labelExperience.TabIndex = 12;
+            labelExperience.Text = "Стаж работы:";
+            // 
+            // textBoxExperience
+            // 
+            textBoxExperience.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxExperience.Location = new Point(292, 582);
+            textBoxExperience.Margin = new Padding(4, 3, 4, 3);
+            textBoxExperience.Name = "textBoxExperience";
+            textBoxExperience.Size = new Size(455, 33);
+            textBoxExperience.TabIndex = 3;
+            // 
+            // labelAverageDailyEarningsSickPay
+            // 
+            labelAverageDailyEarningsSickPay.AutoSize = true;
+            labelAverageDailyEarningsSickPay.BackColor = Color.Transparent;
+            labelAverageDailyEarningsSickPay.ForeColor = Color.Black;
+            labelAverageDailyEarningsSickPay.Location = new Point(120, 638);
+            labelAverageDailyEarningsSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelAverageDailyEarningsSickPay.Name = "labelAverageDailyEarningsSickPay";
+            labelAverageDailyEarningsSickPay.Size = new Size(166, 15);
+            labelAverageDailyEarningsSickPay.TabIndex = 13;
+            labelAverageDailyEarningsSickPay.Text = "Средний дневной заработок:";
+            // 
+            // textBoxAverageDailyEarningsSickPay
+            // 
+            textBoxAverageDailyEarningsSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAverageDailyEarningsSickPay.Location = new Point(292, 627);
+            textBoxAverageDailyEarningsSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxAverageDailyEarningsSickPay.Name = "textBoxAverageDailyEarningsSickPay";
+            textBoxAverageDailyEarningsSickPay.ReadOnly = true;
+            textBoxAverageDailyEarningsSickPay.Size = new Size(455, 33);
+            textBoxAverageDailyEarningsSickPay.TabIndex = 4;
+            // 
+            // labelTotalSickPay
+            // 
+            labelTotalSickPay.AutoSize = true;
+            labelTotalSickPay.BackColor = Color.Transparent;
+            labelTotalSickPay.ForeColor = Color.Black;
+            labelTotalSickPay.Location = new Point(238, 683);
+            labelTotalSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelTotalSickPay.Name = "labelTotalSickPay";
+            labelTotalSickPay.Size = new Size(43, 15);
+            labelTotalSickPay.TabIndex = 14;
+            labelTotalSickPay.Text = "Итого:";
+            // 
+            // textBoxTotalSickPay
+            // 
+            textBoxTotalSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotalSickPay.Location = new Point(292, 672);
+            textBoxTotalSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotalSickPay.Name = "textBoxTotalSickPay";
+            textBoxTotalSickPay.ReadOnly = true;
+            textBoxTotalSickPay.Size = new Size(455, 33);
+            textBoxTotalSickPay.TabIndex = 5;
             // 
             // AddFormSickPay
             // 
@@ -93,10 +221,24 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(textBoxRegistrationIDLoans);
+            Controls.Add(labelEmployeeIDSickPay);
+            Controls.Add(textBoxEmployeeIDSickPay);
+            Controls.Add(labelSickStartDate);
+            Controls.Add(dateTimePickerSickStartDate);
+            Controls.Add(labelSickEndDate);
+            Controls.Add(dateTimePickerSickEndDate);
+            Controls.Add(labelExperience);
+            Controls.Add(textBoxExperience);
+            Controls.Add(labelAverageDailyEarningsSickPay);
+            Controls.Add(textBoxAverageDailyEarningsSickPay);
+            Controls.Add(labelTotalSickPay);
+            Controls.Add(textBoxTotalSickPay);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormSickPay";
             Text = "Добавить больничный";
             ResumeLayout(false);
@@ -107,7 +249,18 @@
 
         private Label labelTitle;
         private Label label1;
-        private TextBox textBoxRegistrationIDLoans;
         private Button buttonSave;
+        private Label labelEmployeeIDSickPay;
+        private TextBox textBoxEmployeeIDSickPay;
+        private Label labelSickStartDate;
+        private DateTimePicker dateTimePickerSickStartDate;
+        private Label labelSickEndDate;
+        private DateTimePicker dateTimePickerSickEndDate;
+        private Label labelExperience;
+        private TextBox textBoxExperience;
+        private Label labelAverageDailyEarningsSickPay;
+        private TextBox textBoxAverageDailyEarningsSickPay;
+        private Label labelTotalSickPay;
+        private TextBox textBoxTotalSickPay;
     }
 }

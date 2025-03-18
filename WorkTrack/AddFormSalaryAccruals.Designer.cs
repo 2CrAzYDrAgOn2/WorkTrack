@@ -32,8 +32,6 @@
             labelTitle = new Label();
             label1 = new Label();
             buttonSave = new Button();
-            labelSalaryAccrualID = new Label();
-            textBoxSalaryAccrualID = new TextBox();
             labelYear = new Label();
             textBoxYear = new TextBox();
             labelMonthID = new Label();
@@ -52,7 +50,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 11;
+            labelTitle.TabIndex = 4;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -65,7 +63,7 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(83, 21);
-            label1.TabIndex = 12;
+            label1.TabIndex = 5;
             label1.Text = "Зарплата";
             // 
             // buttonSave
@@ -77,31 +75,10 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 10;
+            buttonSave.TabIndex = 3;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
-            // 
-            // labelSalaryAccrualID
-            // 
-            labelSalaryAccrualID.AutoSize = true;
-            labelSalaryAccrualID.BackColor = Color.Transparent;
-            labelSalaryAccrualID.ForeColor = Color.Black;
-            labelSalaryAccrualID.Location = new Point(231, 461);
-            labelSalaryAccrualID.Margin = new Padding(4, 0, 4, 0);
-            labelSalaryAccrualID.Name = "labelSalaryAccrualID";
-            labelSalaryAccrualID.Size = new Size(48, 15);
-            labelSalaryAccrualID.TabIndex = 17;
-            labelSalaryAccrualID.Text = "Номер:";
-            // 
-            // textBoxSalaryAccrualID
-            // 
-            textBoxSalaryAccrualID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSalaryAccrualID.Location = new Point(290, 447);
-            textBoxSalaryAccrualID.Margin = new Padding(4, 3, 4, 3);
-            textBoxSalaryAccrualID.Name = "textBoxSalaryAccrualID";
-            textBoxSalaryAccrualID.Size = new Size(455, 33);
-            textBoxSalaryAccrualID.TabIndex = 13;
             // 
             // labelYear
             // 
@@ -112,7 +89,7 @@
             labelYear.Margin = new Padding(4, 0, 4, 0);
             labelYear.Name = "labelYear";
             labelYear.Size = new Size(29, 15);
-            labelYear.TabIndex = 18;
+            labelYear.TabIndex = 6;
             labelYear.Text = "Год:";
             // 
             // textBoxYear
@@ -122,7 +99,7 @@
             textBoxYear.Margin = new Padding(4, 3, 4, 3);
             textBoxYear.Name = "textBoxYear";
             textBoxYear.Size = new Size(455, 33);
-            textBoxYear.TabIndex = 14;
+            textBoxYear.TabIndex = 0;
             // 
             // labelMonthID
             // 
@@ -133,7 +110,7 @@
             labelMonthID.Margin = new Padding(4, 0, 4, 0);
             labelMonthID.Name = "labelMonthID";
             labelMonthID.Size = new Size(46, 15);
-            labelMonthID.TabIndex = 19;
+            labelMonthID.TabIndex = 7;
             labelMonthID.Text = "Месяц:";
             // 
             // comboBoxMonthID
@@ -144,7 +121,7 @@
             comboBoxMonthID.Location = new Point(290, 537);
             comboBoxMonthID.Name = "comboBoxMonthID";
             comboBoxMonthID.Size = new Size(455, 33);
-            comboBoxMonthID.TabIndex = 15;
+            comboBoxMonthID.TabIndex = 1;
             // 
             // labelProjectIDSalaryAccruals
             // 
@@ -155,7 +132,7 @@
             labelProjectIDSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
             labelProjectIDSalaryAccruals.Name = "labelProjectIDSalaryAccruals";
             labelProjectIDSalaryAccruals.Size = new Size(50, 15);
-            labelProjectIDSalaryAccruals.TabIndex = 20;
+            labelProjectIDSalaryAccruals.TabIndex = 8;
             labelProjectIDSalaryAccruals.Text = "Проект:";
             // 
             // textBoxProjectIDSalaryAccruals
@@ -166,7 +143,7 @@
             textBoxProjectIDSalaryAccruals.Name = "textBoxProjectIDSalaryAccruals";
             textBoxProjectIDSalaryAccruals.ReadOnly = true;
             textBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
-            textBoxProjectIDSalaryAccruals.TabIndex = 16;
+            textBoxProjectIDSalaryAccruals.TabIndex = 2;
             // 
             // AddFormSalaryAccruals
             // 
@@ -177,8 +154,6 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelSalaryAccrualID);
-            Controls.Add(textBoxSalaryAccrualID);
             Controls.Add(labelYear);
             Controls.Add(textBoxYear);
             Controls.Add(labelMonthID);
@@ -187,7 +162,10 @@
             Controls.Add(textBoxProjectIDSalaryAccruals);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormSalaryAccruals";
             Text = "Добавить зарплату";
             ResumeLayout(false);
@@ -199,8 +177,6 @@
         private Label labelTitle;
         private Label label1;
         private Button buttonSave;
-        private Label labelSalaryAccrualID;
-        private TextBox textBoxSalaryAccrualID;
         private Label labelYear;
         private TextBox textBoxYear;
         private Label labelMonthID;

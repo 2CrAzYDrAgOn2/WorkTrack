@@ -37,21 +37,21 @@
             textBoxSearchSickPay = new TextBox();
             dataGridViewSickPay = new DataGridView();
             panelRecordSickPay = new Panel();
-            labelTotalSickPay = new Label();
-            textBoxTotalSickPay = new TextBox();
             labelRecordSickPay = new Label();
             labelSickPayID = new Label();
             textBoxSickPayID = new TextBox();
             labelEmployeeIDSickPay = new Label();
             textBoxEmployeeIDSickPay = new TextBox();
-            labelExperience = new Label();
-            textBoxExperience = new TextBox();
             labelSickStartDate = new Label();
             dateTimePickerSickStartDate = new DateTimePicker();
             labelSickEndDate = new Label();
             dateTimePickerSickEndDate = new DateTimePicker();
+            labelExperience = new Label();
+            textBoxExperience = new TextBox();
             labelAverageDailyEarningsSickPay = new Label();
             textBoxAverageDailyEarningsSickPay = new TextBox();
+            labelTotalSickPay = new Label();
+            textBoxTotalSickPay = new TextBox();
             labelControlSickPay = new Label();
             panelControlSickPay = new Panel();
             buttonNewSickPay = new Button();
@@ -74,12 +74,12 @@
             textBoxVacationPayID = new TextBox();
             labelEmployeeIDVacationPay = new Label();
             textBoxEmployeeIDVacationPay = new TextBox();
-            labelAverageDailyEarnings = new Label();
-            textBoxAverageDailyEarnings = new TextBox();
             labelVacationStartDate = new Label();
             dateTimePickerVacationStartDate = new DateTimePicker();
             labelVacationEndDate = new Label();
             dateTimePickerVacationEndDate = new DateTimePicker();
+            labelAverageDailyEarnings = new Label();
+            textBoxAverageDailyEarnings = new TextBox();
             labelTotalVacationPay = new Label();
             textBoxTotalVacationPay = new TextBox();
             labelControlVacationPay = new Label();
@@ -99,8 +99,6 @@
             textBoxSearchAccountingsOfWorkingHours = new TextBox();
             dataGridViewAccountingsOfWorkingHours = new DataGridView();
             panelRecordAccountingsOfWorkingHours = new Panel();
-            labelHoursOfWork = new Label();
-            comboBoxTypeOfRemunerationID = new ComboBox();
             labelRecordAccountingsOfWorkingHours = new Label();
             labelAccountingsOfWorkingHoursID = new Label();
             textBoxAccountingsOfWorkingHoursID = new TextBox();
@@ -109,6 +107,8 @@
             labelProjectIDAccountingsOfWorkingHours = new Label();
             textBoxProjectIDAccountingsOfWorkingHours = new TextBox();
             labelTypeOfRemunerationID = new Label();
+            comboBoxTypeOfRemunerationID = new ComboBox();
+            labelHoursOfWork = new Label();
             textBoxHoursOfWork = new TextBox();
             labelControlAccountingsOfWorkingHours = new Label();
             panelControlAccountingsOfWorkingHours = new Panel();
@@ -127,22 +127,6 @@
             textBoxSearchSalary = new TextBox();
             dataGridViewSalary = new DataGridView();
             panelRecordSalary = new Panel();
-            labelAllHours = new Label();
-            textBoxPersonalIncomeTax = new TextBox();
-            textBoxContributions = new TextBox();
-            textBoxTotal = new TextBox();
-            textBoxSickPay = new TextBox();
-            labelTotal = new Label();
-            labelContributions = new Label();
-            labelHourlyCharges = new Label();
-            textBoxPieceworkCharges = new TextBox();
-            labelVacationPay = new Label();
-            labelSickPay = new Label();
-            textBoxHourlyCharges = new TextBox();
-            labelPersonalIncomeTax = new Label();
-            textBoxVacationPay = new TextBox();
-            labelPieceworkCharges = new Label();
-            textBoxAllHours = new TextBox();
             labelRecordSalary = new Label();
             labelSalaryID = new Label();
             textBoxSalaryID = new TextBox();
@@ -152,6 +136,22 @@
             textBoxEmployeeIDSalary = new TextBox();
             labelAllDays = new Label();
             textBoxAllDays = new TextBox();
+            labelAllHours = new Label();
+            textBoxAllHours = new TextBox();
+            labelPieceworkCharges = new Label();
+            textBoxPieceworkCharges = new TextBox();
+            labelHourlyCharges = new Label();
+            textBoxHourlyCharges = new TextBox();
+            labelVacationPay = new Label();
+            textBoxVacationPay = new TextBox();
+            labelSickPay = new Label();
+            textBoxSickPay = new TextBox();
+            labelPersonalIncomeTax = new Label();
+            textBoxPersonalIncomeTax = new TextBox();
+            labelContributions = new Label();
+            textBoxContributions = new TextBox();
+            labelTotal = new Label();
+            textBoxTotal = new TextBox();
             labelControlSalary = new Label();
             panelControlSalary = new Panel();
             buttonNewSalary = new Button();
@@ -169,13 +169,13 @@
             textBoxSearchSalaryAccruals = new TextBox();
             dataGridViewSalaryAccruals = new DataGridView();
             panelRecordSalaryAccruals = new Panel();
-            comboBoxMonthID = new ComboBox();
             labelRecordSalaryAccruals = new Label();
             labelSalaryAccrualID = new Label();
             textBoxSalaryAccrualID = new TextBox();
             labelYear = new Label();
             textBoxYear = new TextBox();
             labelMonthID = new Label();
+            comboBoxMonthID = new ComboBox();
             labelProjectIDSalaryAccruals = new Label();
             textBoxProjectIDSalaryAccruals = new TextBox();
             labelControlSalaryAccruals = new Label();
@@ -195,29 +195,29 @@
             textBoxSearchEmployees = new TextBox();
             dataGridViewEmployees = new DataGridView();
             panelRecordEmployees = new Panel();
-            comboBoxGenderID = new ComboBox();
-            comboBoxPostID = new ComboBox();
-            maskedTextBoxPhone = new MaskedTextBox();
-            labelGenderID = new Label();
-            labelPostID = new Label();
-            labelPassportNumber = new Label();
-            textBoxPassportNumber = new TextBox();
-            labelPhone = new Label();
-            labelEmail = new Label();
-            textBoxEmail = new TextBox();
-            labelINN = new Label();
-            textBoxINN = new TextBox();
             labelRecordEmployees = new Label();
             labelEmployeeID = new Label();
             textBoxEmployeeID = new TextBox();
             labelFullName = new Label();
             textBoxFullName = new TextBox();
-            labelBirthPlace = new Label();
-            textBoxBirthPlace = new TextBox();
             labelBirthDate = new Label();
             dateTimePickerBirthDate = new DateTimePicker();
+            labelBirthPlace = new Label();
+            textBoxBirthPlace = new TextBox();
             labelPassportSeries = new Label();
             textBoxPassportSeries = new TextBox();
+            labelPassportNumber = new Label();
+            textBoxPassportNumber = new TextBox();
+            labelPhone = new Label();
+            maskedTextBoxPhone = new MaskedTextBox();
+            labelEmail = new Label();
+            textBoxEmail = new TextBox();
+            labelINN = new Label();
+            textBoxINN = new TextBox();
+            labelPostID = new Label();
+            comboBoxPostID = new ComboBox();
+            labelGenderID = new Label();
+            comboBoxGenderID = new ComboBox();
             labelControlEmployees = new Label();
             panelControlEmployees = new Panel();
             buttonNewEmployee = new Button();
@@ -294,7 +294,6 @@
             // 
             // tabPageSickPay
             // 
-            tabPageSickPay.BackgroundImage = (Image)resources.GetObject("tabPageSickPay.BackgroundImage");
             tabPageSickPay.Controls.Add(panelTitleSickPay);
             tabPageSickPay.Controls.Add(dataGridViewSickPay);
             tabPageSickPay.Controls.Add(panelRecordSickPay);
@@ -325,7 +324,7 @@
             // 
             labelTitleSickPay.AutoSize = true;
             labelTitleSickPay.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleSickPay.ForeColor = Color.WhiteSmoke;
+            labelTitleSickPay.ForeColor = Color.Black;
             labelTitleSickPay.Location = new Point(4, 3);
             labelTitleSickPay.Margin = new Padding(4, 0, 4, 0);
             labelTitleSickPay.Name = "labelTitleSickPay";
@@ -345,6 +344,7 @@
             buttonClearSickPay.Size = new Size(78, 77);
             buttonClearSickPay.TabIndex = 0;
             buttonClearSickPay.UseVisualStyleBackColor = true;
+            buttonClearSickPay.Click += ButtonClear_Click;
             // 
             // buttonRefreshSickPay
             // 
@@ -358,6 +358,7 @@
             buttonRefreshSickPay.Size = new Size(78, 77);
             buttonRefreshSickPay.TabIndex = 1;
             buttonRefreshSickPay.UseVisualStyleBackColor = true;
+            buttonRefreshSickPay.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchSickPay
             // 
@@ -367,6 +368,7 @@
             textBoxSearchSickPay.Name = "textBoxSearchSickPay";
             textBoxSearchSickPay.Size = new Size(173, 33);
             textBoxSearchSickPay.TabIndex = 2;
+            textBoxSearchSickPay.TextChanged += TextBoxSearchSickPay_TextChanged;
             // 
             // dataGridViewSickPay
             // 
@@ -380,6 +382,7 @@
             dataGridViewSickPay.RowHeadersWidth = 62;
             dataGridViewSickPay.Size = new Size(867, 352);
             dataGridViewSickPay.TabIndex = 0;
+            dataGridViewSickPay.CellClick += DataGridViewSickPay_CellClick;
             // 
             // panelRecordSickPay
             // 
@@ -404,32 +407,11 @@
             panelRecordSickPay.Size = new Size(611, 552);
             panelRecordSickPay.TabIndex = 1;
             // 
-            // labelTotalSickPay
-            // 
-            labelTotalSickPay.AutoSize = true;
-            labelTotalSickPay.ForeColor = Color.WhiteSmoke;
-            labelTotalSickPay.Location = new Point(98, 349);
-            labelTotalSickPay.Margin = new Padding(4, 0, 4, 0);
-            labelTotalSickPay.Name = "labelTotalSickPay";
-            labelTotalSickPay.Size = new Size(43, 15);
-            labelTotalSickPay.TabIndex = 14;
-            labelTotalSickPay.Text = "Итого:";
-            // 
-            // textBoxTotalSickPay
-            // 
-            textBoxTotalSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTotalSickPay.Location = new Point(152, 338);
-            textBoxTotalSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxTotalSickPay.Name = "textBoxTotalSickPay";
-            textBoxTotalSickPay.ReadOnly = true;
-            textBoxTotalSickPay.Size = new Size(455, 33);
-            textBoxTotalSickPay.TabIndex = 6;
-            // 
             // labelRecordSickPay
             // 
             labelRecordSickPay.AutoSize = true;
             labelRecordSickPay.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordSickPay.ForeColor = Color.WhiteSmoke;
+            labelRecordSickPay.ForeColor = Color.Black;
             labelRecordSickPay.Location = new Point(4, 10);
             labelRecordSickPay.Margin = new Padding(4, 0, 4, 0);
             labelRecordSickPay.Name = "labelRecordSickPay";
@@ -440,7 +422,7 @@
             // labelSickPayID
             // 
             labelSickPayID.AutoSize = true;
-            labelSickPayID.ForeColor = Color.WhiteSmoke;
+            labelSickPayID.ForeColor = Color.Black;
             labelSickPayID.Location = new Point(93, 82);
             labelSickPayID.Margin = new Padding(4, 0, 4, 0);
             labelSickPayID.Name = "labelSickPayID";
@@ -460,7 +442,7 @@
             // labelEmployeeIDSickPay
             // 
             labelEmployeeIDSickPay.AutoSize = true;
-            labelEmployeeIDSickPay.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDSickPay.ForeColor = Color.Black;
             labelEmployeeIDSickPay.Location = new Point(32, 124);
             labelEmployeeIDSickPay.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDSickPay.Name = "labelEmployeeIDSickPay";
@@ -477,30 +459,10 @@
             textBoxEmployeeIDSickPay.Size = new Size(455, 33);
             textBoxEmployeeIDSickPay.TabIndex = 1;
             // 
-            // labelExperience
-            // 
-            labelExperience.AutoSize = true;
-            labelExperience.ForeColor = Color.WhiteSmoke;
-            labelExperience.Location = new Point(59, 259);
-            labelExperience.Margin = new Padding(4, 0, 4, 0);
-            labelExperience.Name = "labelExperience";
-            labelExperience.Size = new Size(82, 15);
-            labelExperience.TabIndex = 12;
-            labelExperience.Text = "Стаж работы:";
-            // 
-            // textBoxExperience
-            // 
-            textBoxExperience.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxExperience.Location = new Point(152, 248);
-            textBoxExperience.Margin = new Padding(4, 3, 4, 3);
-            textBoxExperience.Name = "textBoxExperience";
-            textBoxExperience.Size = new Size(455, 33);
-            textBoxExperience.TabIndex = 4;
-            // 
             // labelSickStartDate
             // 
             labelSickStartDate.AutoSize = true;
-            labelSickStartDate.ForeColor = Color.WhiteSmoke;
+            labelSickStartDate.ForeColor = Color.Black;
             labelSickStartDate.Location = new Point(-8, 176);
             labelSickStartDate.Margin = new Padding(4, 0, 4, 0);
             labelSickStartDate.Name = "labelSickStartDate";
@@ -519,7 +481,7 @@
             // labelSickEndDate
             // 
             labelSickEndDate.AutoSize = true;
-            labelSickEndDate.ForeColor = Color.WhiteSmoke;
+            labelSickEndDate.ForeColor = Color.Black;
             labelSickEndDate.Location = new Point(-7, 210);
             labelSickEndDate.Margin = new Padding(4, 0, 4, 0);
             labelSickEndDate.Name = "labelSickEndDate";
@@ -535,10 +497,31 @@
             dateTimePickerSickEndDate.Size = new Size(455, 33);
             dateTimePickerSickEndDate.TabIndex = 3;
             // 
+            // labelExperience
+            // 
+            labelExperience.AutoSize = true;
+            labelExperience.ForeColor = Color.Black;
+            labelExperience.Location = new Point(59, 259);
+            labelExperience.Margin = new Padding(4, 0, 4, 0);
+            labelExperience.Name = "labelExperience";
+            labelExperience.Size = new Size(82, 15);
+            labelExperience.TabIndex = 12;
+            labelExperience.Text = "Стаж работы:";
+            // 
+            // textBoxExperience
+            // 
+            textBoxExperience.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxExperience.Location = new Point(152, 248);
+            textBoxExperience.Margin = new Padding(4, 3, 4, 3);
+            textBoxExperience.Name = "textBoxExperience";
+            textBoxExperience.ReadOnly = true;
+            textBoxExperience.Size = new Size(455, 33);
+            textBoxExperience.TabIndex = 4;
+            // 
             // labelAverageDailyEarningsSickPay
             // 
             labelAverageDailyEarningsSickPay.AutoSize = true;
-            labelAverageDailyEarningsSickPay.ForeColor = Color.WhiteSmoke;
+            labelAverageDailyEarningsSickPay.ForeColor = Color.Black;
             labelAverageDailyEarningsSickPay.Location = new Point(-20, 304);
             labelAverageDailyEarningsSickPay.Margin = new Padding(4, 0, 4, 0);
             labelAverageDailyEarningsSickPay.Name = "labelAverageDailyEarningsSickPay";
@@ -555,6 +538,27 @@
             textBoxAverageDailyEarningsSickPay.ReadOnly = true;
             textBoxAverageDailyEarningsSickPay.Size = new Size(455, 33);
             textBoxAverageDailyEarningsSickPay.TabIndex = 5;
+            // 
+            // labelTotalSickPay
+            // 
+            labelTotalSickPay.AutoSize = true;
+            labelTotalSickPay.ForeColor = Color.Black;
+            labelTotalSickPay.Location = new Point(98, 349);
+            labelTotalSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelTotalSickPay.Name = "labelTotalSickPay";
+            labelTotalSickPay.Size = new Size(43, 15);
+            labelTotalSickPay.TabIndex = 14;
+            labelTotalSickPay.Text = "Итого:";
+            // 
+            // textBoxTotalSickPay
+            // 
+            textBoxTotalSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotalSickPay.Location = new Point(152, 338);
+            textBoxTotalSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotalSickPay.Name = "textBoxTotalSickPay";
+            textBoxTotalSickPay.ReadOnly = true;
+            textBoxTotalSickPay.Size = new Size(455, 33);
+            textBoxTotalSickPay.TabIndex = 6;
             // 
             // labelControlSickPay
             // 
@@ -587,7 +591,7 @@
             // buttonNewSickPay
             // 
             buttonNewSickPay.FlatStyle = FlatStyle.Flat;
-            buttonNewSickPay.ForeColor = Color.WhiteSmoke;
+            buttonNewSickPay.ForeColor = Color.Black;
             buttonNewSickPay.Location = new Point(4, 3);
             buttonNewSickPay.Margin = new Padding(4, 3, 4, 3);
             buttonNewSickPay.Name = "buttonNewSickPay";
@@ -595,11 +599,12 @@
             buttonNewSickPay.TabIndex = 0;
             buttonNewSickPay.Text = "Новая запись";
             buttonNewSickPay.UseVisualStyleBackColor = true;
+            buttonNewSickPay.Click += ButtonNewSickPay_Click;
             // 
             // buttonDeleteSickPay
             // 
             buttonDeleteSickPay.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSickPay.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSickPay.ForeColor = Color.Black;
             buttonDeleteSickPay.Location = new Point(4, 78);
             buttonDeleteSickPay.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteSickPay.Name = "buttonDeleteSickPay";
@@ -607,6 +612,7 @@
             buttonDeleteSickPay.TabIndex = 1;
             buttonDeleteSickPay.Text = "Удалить";
             buttonDeleteSickPay.UseVisualStyleBackColor = true;
+            buttonDeleteSickPay.Click += ButtonDeleteSickPay_Click;
             // 
             // buttonChangeSickPay
             // 
@@ -619,6 +625,7 @@
             buttonChangeSickPay.TabIndex = 2;
             buttonChangeSickPay.Text = "Изменить";
             buttonChangeSickPay.UseVisualStyleBackColor = true;
+            buttonChangeSickPay.Click += ButtonChangeSickPay_Click;
             // 
             // buttonSaveSickPay
             // 
@@ -631,6 +638,7 @@
             buttonSaveSickPay.TabIndex = 3;
             buttonSaveSickPay.Text = "Сохранить";
             buttonSaveSickPay.UseVisualStyleBackColor = true;
+            buttonSaveSickPay.Click += ButtonSaveSickPay_Click;
             // 
             // buttonWordSickPay
             // 
@@ -643,11 +651,12 @@
             buttonWordSickPay.TabIndex = 4;
             buttonWordSickPay.Text = "Вывод в Word";
             buttonWordSickPay.UseVisualStyleBackColor = true;
+            buttonWordSickPay.Click += ButtonWordSickPay_Click;
             // 
             // buttonExcelSickPay
             // 
             buttonExcelSickPay.FlatStyle = FlatStyle.Flat;
-            buttonExcelSickPay.ForeColor = Color.WhiteSmoke;
+            buttonExcelSickPay.ForeColor = Color.Black;
             buttonExcelSickPay.Location = new Point(4, 375);
             buttonExcelSickPay.Margin = new Padding(4, 3, 4, 3);
             buttonExcelSickPay.Name = "buttonExcelSickPay";
@@ -655,11 +664,12 @@
             buttonExcelSickPay.TabIndex = 5;
             buttonExcelSickPay.Text = "Вывод в Excel";
             buttonExcelSickPay.UseVisualStyleBackColor = true;
+            buttonExcelSickPay.Click += ButtonExcelSickPay_Click;
             // 
             // buttonTXTSickPay
             // 
             buttonTXTSickPay.FlatStyle = FlatStyle.Flat;
-            buttonTXTSickPay.ForeColor = Color.WhiteSmoke;
+            buttonTXTSickPay.ForeColor = Color.Black;
             buttonTXTSickPay.Location = new Point(4, 449);
             buttonTXTSickPay.Margin = new Padding(4, 3, 4, 3);
             buttonTXTSickPay.Name = "buttonTXTSickPay";
@@ -667,10 +677,10 @@
             buttonTXTSickPay.TabIndex = 6;
             buttonTXTSickPay.Text = "Вывод в TXT";
             buttonTXTSickPay.UseVisualStyleBackColor = true;
+            buttonTXTSickPay.Click += ButtonTXTSickPay_Click;
             // 
             // tabPageVacationPay
             // 
-            tabPageVacationPay.BackgroundImage = (Image)resources.GetObject("tabPageVacationPay.BackgroundImage");
             tabPageVacationPay.Controls.Add(panelTitleVacationPay);
             tabPageVacationPay.Controls.Add(dataGridViewVacationPay);
             tabPageVacationPay.Controls.Add(panelRecordVacationPay);
@@ -701,7 +711,7 @@
             // 
             labelTitleVacationPay.AutoSize = true;
             labelTitleVacationPay.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleVacationPay.ForeColor = Color.WhiteSmoke;
+            labelTitleVacationPay.ForeColor = Color.Black;
             labelTitleVacationPay.Location = new Point(4, 3);
             labelTitleVacationPay.Margin = new Padding(4, 0, 4, 0);
             labelTitleVacationPay.Name = "labelTitleVacationPay";
@@ -721,6 +731,7 @@
             buttonClearVacationPay.Size = new Size(78, 77);
             buttonClearVacationPay.TabIndex = 0;
             buttonClearVacationPay.UseVisualStyleBackColor = true;
+            buttonClearVacationPay.Click += ButtonClear_Click;
             // 
             // buttonRefreshVacationPay
             // 
@@ -734,6 +745,7 @@
             buttonRefreshVacationPay.Size = new Size(78, 77);
             buttonRefreshVacationPay.TabIndex = 1;
             buttonRefreshVacationPay.UseVisualStyleBackColor = true;
+            buttonRefreshVacationPay.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchVacationPay
             // 
@@ -743,6 +755,7 @@
             textBoxSearchVacationPay.Name = "textBoxSearchVacationPay";
             textBoxSearchVacationPay.Size = new Size(173, 33);
             textBoxSearchVacationPay.TabIndex = 2;
+            textBoxSearchVacationPay.TextChanged += TextBoxSearchVacationPay_TextChanged;
             // 
             // dataGridViewVacationPay
             // 
@@ -756,6 +769,7 @@
             dataGridViewVacationPay.RowHeadersWidth = 62;
             dataGridViewVacationPay.Size = new Size(867, 352);
             dataGridViewVacationPay.TabIndex = 0;
+            dataGridViewVacationPay.CellClick += DataGridViewVacationPay_CellClick;
             // 
             // panelRecordVacationPay
             // 
@@ -782,7 +796,7 @@
             // 
             labelRecordVacationPay.AutoSize = true;
             labelRecordVacationPay.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordVacationPay.ForeColor = Color.WhiteSmoke;
+            labelRecordVacationPay.ForeColor = Color.Black;
             labelRecordVacationPay.Location = new Point(4, 10);
             labelRecordVacationPay.Margin = new Padding(4, 0, 4, 0);
             labelRecordVacationPay.Name = "labelRecordVacationPay";
@@ -793,7 +807,7 @@
             // labelVacationPayID
             // 
             labelVacationPayID.AutoSize = true;
-            labelVacationPayID.ForeColor = Color.WhiteSmoke;
+            labelVacationPayID.ForeColor = Color.Black;
             labelVacationPayID.Location = new Point(93, 82);
             labelVacationPayID.Margin = new Padding(4, 0, 4, 0);
             labelVacationPayID.Name = "labelVacationPayID";
@@ -813,13 +827,13 @@
             // labelEmployeeIDVacationPay
             // 
             labelEmployeeIDVacationPay.AutoSize = true;
-            labelEmployeeIDVacationPay.ForeColor = Color.WhiteSmoke;
+            labelEmployeeIDVacationPay.ForeColor = Color.Black;
             labelEmployeeIDVacationPay.Location = new Point(27, 124);
             labelEmployeeIDVacationPay.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDVacationPay.Name = "labelEmployeeIDVacationPay";
-            labelEmployeeIDVacationPay.Size = new Size(114, 15);
+            labelEmployeeIDVacationPay.Size = new Size(103, 15);
             labelEmployeeIDVacationPay.TabIndex = 8;
-            labelEmployeeIDVacationPay.Text = "Номер сотрудника:";
+            labelEmployeeIDVacationPay.Text = "ФИО сотрудника:";
             // 
             // textBoxEmployeeIDVacationPay
             // 
@@ -830,30 +844,10 @@
             textBoxEmployeeIDVacationPay.Size = new Size(455, 33);
             textBoxEmployeeIDVacationPay.TabIndex = 1;
             // 
-            // labelAverageDailyEarnings
-            // 
-            labelAverageDailyEarnings.AutoSize = true;
-            labelAverageDailyEarnings.ForeColor = Color.WhiteSmoke;
-            labelAverageDailyEarnings.Location = new Point(-25, 259);
-            labelAverageDailyEarnings.Margin = new Padding(4, 0, 4, 0);
-            labelAverageDailyEarnings.Name = "labelAverageDailyEarnings";
-            labelAverageDailyEarnings.Size = new Size(166, 15);
-            labelAverageDailyEarnings.TabIndex = 11;
-            labelAverageDailyEarnings.Text = "Средний дневной заработок:";
-            // 
-            // textBoxAverageDailyEarnings
-            // 
-            textBoxAverageDailyEarnings.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxAverageDailyEarnings.Location = new Point(152, 248);
-            textBoxAverageDailyEarnings.Margin = new Padding(4, 3, 4, 3);
-            textBoxAverageDailyEarnings.Name = "textBoxAverageDailyEarnings";
-            textBoxAverageDailyEarnings.Size = new Size(455, 33);
-            textBoxAverageDailyEarnings.TabIndex = 4;
-            // 
             // labelVacationStartDate
             // 
             labelVacationStartDate.AutoSize = true;
-            labelVacationStartDate.ForeColor = Color.WhiteSmoke;
+            labelVacationStartDate.ForeColor = Color.Black;
             labelVacationStartDate.Location = new Point(18, 175);
             labelVacationStartDate.Margin = new Padding(4, 0, 4, 0);
             labelVacationStartDate.Name = "labelVacationStartDate";
@@ -872,7 +866,7 @@
             // labelVacationEndDate
             // 
             labelVacationEndDate.AutoSize = true;
-            labelVacationEndDate.ForeColor = Color.WhiteSmoke;
+            labelVacationEndDate.ForeColor = Color.Black;
             labelVacationEndDate.Location = new Point(24, 217);
             labelVacationEndDate.Margin = new Padding(4, 0, 4, 0);
             labelVacationEndDate.Name = "labelVacationEndDate";
@@ -888,10 +882,31 @@
             dateTimePickerVacationEndDate.Size = new Size(455, 33);
             dateTimePickerVacationEndDate.TabIndex = 3;
             // 
+            // labelAverageDailyEarnings
+            // 
+            labelAverageDailyEarnings.AutoSize = true;
+            labelAverageDailyEarnings.ForeColor = Color.Black;
+            labelAverageDailyEarnings.Location = new Point(-25, 259);
+            labelAverageDailyEarnings.Margin = new Padding(4, 0, 4, 0);
+            labelAverageDailyEarnings.Name = "labelAverageDailyEarnings";
+            labelAverageDailyEarnings.Size = new Size(166, 15);
+            labelAverageDailyEarnings.TabIndex = 11;
+            labelAverageDailyEarnings.Text = "Средний дневной заработок:";
+            // 
+            // textBoxAverageDailyEarnings
+            // 
+            textBoxAverageDailyEarnings.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAverageDailyEarnings.Location = new Point(152, 248);
+            textBoxAverageDailyEarnings.Margin = new Padding(4, 3, 4, 3);
+            textBoxAverageDailyEarnings.Name = "textBoxAverageDailyEarnings";
+            textBoxAverageDailyEarnings.ReadOnly = true;
+            textBoxAverageDailyEarnings.Size = new Size(455, 33);
+            textBoxAverageDailyEarnings.TabIndex = 4;
+            // 
             // labelTotalVacationPay
             // 
             labelTotalVacationPay.AutoSize = true;
-            labelTotalVacationPay.ForeColor = Color.WhiteSmoke;
+            labelTotalVacationPay.ForeColor = Color.Black;
             labelTotalVacationPay.Location = new Point(98, 304);
             labelTotalVacationPay.Margin = new Padding(4, 0, 4, 0);
             labelTotalVacationPay.Name = "labelTotalVacationPay";
@@ -940,7 +955,7 @@
             // buttonNewVacationPay
             // 
             buttonNewVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonNewVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonNewVacationPay.ForeColor = Color.Black;
             buttonNewVacationPay.Location = new Point(4, 3);
             buttonNewVacationPay.Margin = new Padding(4, 3, 4, 3);
             buttonNewVacationPay.Name = "buttonNewVacationPay";
@@ -948,11 +963,12 @@
             buttonNewVacationPay.TabIndex = 0;
             buttonNewVacationPay.Text = "Новая запись";
             buttonNewVacationPay.UseVisualStyleBackColor = true;
+            buttonNewVacationPay.Click += ButtonNewVacationPay_Click;
             // 
             // buttonDeleteVacationPay
             // 
             buttonDeleteVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonDeleteVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonDeleteVacationPay.ForeColor = Color.Black;
             buttonDeleteVacationPay.Location = new Point(4, 78);
             buttonDeleteVacationPay.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteVacationPay.Name = "buttonDeleteVacationPay";
@@ -960,6 +976,7 @@
             buttonDeleteVacationPay.TabIndex = 1;
             buttonDeleteVacationPay.Text = "Удалить";
             buttonDeleteVacationPay.UseVisualStyleBackColor = true;
+            buttonDeleteVacationPay.Click += ButtonDeleteVacationPay_Click;
             // 
             // buttonChangeVacationPay
             // 
@@ -972,6 +989,7 @@
             buttonChangeVacationPay.TabIndex = 2;
             buttonChangeVacationPay.Text = "Изменить";
             buttonChangeVacationPay.UseVisualStyleBackColor = true;
+            buttonChangeVacationPay.Click += ButtonChangeVacationPay_Click;
             // 
             // buttonSaveVacationPay
             // 
@@ -984,6 +1002,7 @@
             buttonSaveVacationPay.TabIndex = 3;
             buttonSaveVacationPay.Text = "Сохранить";
             buttonSaveVacationPay.UseVisualStyleBackColor = true;
+            buttonSaveVacationPay.Click += ButtonSaveVacationPay_Click;
             // 
             // buttonWordVacationPay
             // 
@@ -996,11 +1015,12 @@
             buttonWordVacationPay.TabIndex = 4;
             buttonWordVacationPay.Text = "Вывод в Word";
             buttonWordVacationPay.UseVisualStyleBackColor = true;
+            buttonWordVacationPay.Click += ButtonWordVacationPay_Click;
             // 
             // buttonExcelVacationPay
             // 
             buttonExcelVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonExcelVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonExcelVacationPay.ForeColor = Color.Black;
             buttonExcelVacationPay.Location = new Point(4, 375);
             buttonExcelVacationPay.Margin = new Padding(4, 3, 4, 3);
             buttonExcelVacationPay.Name = "buttonExcelVacationPay";
@@ -1008,11 +1028,12 @@
             buttonExcelVacationPay.TabIndex = 5;
             buttonExcelVacationPay.Text = "Вывод в Excel";
             buttonExcelVacationPay.UseVisualStyleBackColor = true;
+            buttonExcelVacationPay.Click += ButtonExcelVacationPay_Click;
             // 
             // buttonTXTVacationPay
             // 
             buttonTXTVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonTXTVacationPay.ForeColor = Color.WhiteSmoke;
+            buttonTXTVacationPay.ForeColor = Color.Black;
             buttonTXTVacationPay.Location = new Point(4, 449);
             buttonTXTVacationPay.Margin = new Padding(4, 3, 4, 3);
             buttonTXTVacationPay.Name = "buttonTXTVacationPay";
@@ -1020,10 +1041,10 @@
             buttonTXTVacationPay.TabIndex = 6;
             buttonTXTVacationPay.Text = "Вывод в TXT";
             buttonTXTVacationPay.UseVisualStyleBackColor = true;
+            buttonTXTVacationPay.Click += ButtonTXTVacationPay_Click;
             // 
             // tabPageAccountingsOfWorkingHours
             // 
-            tabPageAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("tabPageAccountingsOfWorkingHours.BackgroundImage");
             tabPageAccountingsOfWorkingHours.Controls.Add(panelTitleAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Controls.Add(dataGridViewAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Controls.Add(panelRecordAccountingsOfWorkingHours);
@@ -1054,7 +1075,7 @@
             // 
             labelTitleAccountingsOfWorkingHours.AutoSize = true;
             labelTitleAccountingsOfWorkingHours.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelTitleAccountingsOfWorkingHours.ForeColor = Color.Black;
             labelTitleAccountingsOfWorkingHours.Location = new Point(4, 3);
             labelTitleAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
             labelTitleAccountingsOfWorkingHours.Name = "labelTitleAccountingsOfWorkingHours";
@@ -1074,6 +1095,7 @@
             buttonClearAccountingsOfWorkingHours.Size = new Size(78, 77);
             buttonClearAccountingsOfWorkingHours.TabIndex = 0;
             buttonClearAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonClearAccountingsOfWorkingHours.Click += ButtonClear_Click;
             // 
             // buttonRefreshAccountingsOfWorkingHours
             // 
@@ -1087,6 +1109,7 @@
             buttonRefreshAccountingsOfWorkingHours.Size = new Size(78, 77);
             buttonRefreshAccountingsOfWorkingHours.TabIndex = 1;
             buttonRefreshAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonRefreshAccountingsOfWorkingHours.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchAccountingsOfWorkingHours
             // 
@@ -1096,6 +1119,7 @@
             textBoxSearchAccountingsOfWorkingHours.Name = "textBoxSearchAccountingsOfWorkingHours";
             textBoxSearchAccountingsOfWorkingHours.Size = new Size(173, 33);
             textBoxSearchAccountingsOfWorkingHours.TabIndex = 2;
+            textBoxSearchAccountingsOfWorkingHours.TextChanged += TextBoxSearchAccountingsOfWorkingHours_TextChanged;
             // 
             // dataGridViewAccountingsOfWorkingHours
             // 
@@ -1109,6 +1133,7 @@
             dataGridViewAccountingsOfWorkingHours.RowHeadersWidth = 62;
             dataGridViewAccountingsOfWorkingHours.Size = new Size(867, 352);
             dataGridViewAccountingsOfWorkingHours.TabIndex = 0;
+            dataGridViewAccountingsOfWorkingHours.CellClick += DataGridViewAccountingsOfWorkingHours_CellClick;
             // 
             // panelRecordAccountingsOfWorkingHours
             // 
@@ -1129,32 +1154,11 @@
             panelRecordAccountingsOfWorkingHours.Size = new Size(611, 552);
             panelRecordAccountingsOfWorkingHours.TabIndex = 1;
             // 
-            // labelHoursOfWork
-            // 
-            labelHoursOfWork.AutoSize = true;
-            labelHoursOfWork.ForeColor = Color.WhiteSmoke;
-            labelHoursOfWork.Location = new Point(66, 259);
-            labelHoursOfWork.Margin = new Padding(4, 0, 4, 0);
-            labelHoursOfWork.Name = "labelHoursOfWork";
-            labelHoursOfWork.Size = new Size(75, 15);
-            labelHoursOfWork.TabIndex = 10;
-            labelHoursOfWork.Text = "Количество:";
-            // 
-            // comboBoxTypeOfRemunerationID
-            // 
-            comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
-            comboBoxTypeOfRemunerationID.FormattingEnabled = true;
-            comboBoxTypeOfRemunerationID.Location = new Point(153, 203);
-            comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
-            comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
-            comboBoxTypeOfRemunerationID.TabIndex = 3;
-            // 
             // labelRecordAccountingsOfWorkingHours
             // 
             labelRecordAccountingsOfWorkingHours.AutoSize = true;
             labelRecordAccountingsOfWorkingHours.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelRecordAccountingsOfWorkingHours.ForeColor = Color.Black;
             labelRecordAccountingsOfWorkingHours.Location = new Point(4, 10);
             labelRecordAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
             labelRecordAccountingsOfWorkingHours.Name = "labelRecordAccountingsOfWorkingHours";
@@ -1165,7 +1169,7 @@
             // labelAccountingsOfWorkingHoursID
             // 
             labelAccountingsOfWorkingHoursID.AutoSize = true;
-            labelAccountingsOfWorkingHoursID.ForeColor = Color.WhiteSmoke;
+            labelAccountingsOfWorkingHoursID.ForeColor = Color.Black;
             labelAccountingsOfWorkingHoursID.Location = new Point(93, 82);
             labelAccountingsOfWorkingHoursID.Margin = new Padding(4, 0, 4, 0);
             labelAccountingsOfWorkingHoursID.Name = "labelAccountingsOfWorkingHoursID";
@@ -1185,13 +1189,13 @@
             // labelEmployeeIDAccountingsOfWorkingHours
             // 
             labelEmployeeIDAccountingsOfWorkingHours.AutoSize = true;
-            labelEmployeeIDAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
-            labelEmployeeIDAccountingsOfWorkingHours.Location = new Point(32, 124);
+            labelEmployeeIDAccountingsOfWorkingHours.ForeColor = Color.Black;
+            labelEmployeeIDAccountingsOfWorkingHours.Location = new Point(38, 124);
             labelEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDAccountingsOfWorkingHours.Name = "labelEmployeeIDAccountingsOfWorkingHours";
-            labelEmployeeIDAccountingsOfWorkingHours.Size = new Size(114, 15);
+            labelEmployeeIDAccountingsOfWorkingHours.Size = new Size(103, 15);
             labelEmployeeIDAccountingsOfWorkingHours.TabIndex = 7;
-            labelEmployeeIDAccountingsOfWorkingHours.Text = "Номер сотрудника:";
+            labelEmployeeIDAccountingsOfWorkingHours.Text = "ФИО сотрудника:";
             // 
             // textBoxEmployeeIDAccountingsOfWorkingHours
             // 
@@ -1205,7 +1209,7 @@
             // labelProjectIDAccountingsOfWorkingHours
             // 
             labelProjectIDAccountingsOfWorkingHours.AutoSize = true;
-            labelProjectIDAccountingsOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            labelProjectIDAccountingsOfWorkingHours.ForeColor = Color.Black;
             labelProjectIDAccountingsOfWorkingHours.Location = new Point(91, 169);
             labelProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 0, 4, 0);
             labelProjectIDAccountingsOfWorkingHours.Name = "labelProjectIDAccountingsOfWorkingHours";
@@ -1225,7 +1229,7 @@
             // labelTypeOfRemunerationID
             // 
             labelTypeOfRemunerationID.AutoSize = true;
-            labelTypeOfRemunerationID.ForeColor = Color.WhiteSmoke;
+            labelTypeOfRemunerationID.ForeColor = Color.Black;
             labelTypeOfRemunerationID.Location = new Point(67, 214);
             labelTypeOfRemunerationID.Margin = new Padding(4, 0, 4, 0);
             labelTypeOfRemunerationID.Name = "labelTypeOfRemunerationID";
@@ -1233,13 +1237,33 @@
             labelTypeOfRemunerationID.TabIndex = 9;
             labelTypeOfRemunerationID.Text = "Тип работы:";
             // 
+            // comboBoxTypeOfRemunerationID
+            // 
+            comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxTypeOfRemunerationID.FormattingEnabled = true;
+            comboBoxTypeOfRemunerationID.Location = new Point(153, 203);
+            comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
+            comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
+            comboBoxTypeOfRemunerationID.TabIndex = 3;
+            // 
+            // labelHoursOfWork
+            // 
+            labelHoursOfWork.AutoSize = true;
+            labelHoursOfWork.ForeColor = Color.Black;
+            labelHoursOfWork.Location = new Point(66, 259);
+            labelHoursOfWork.Margin = new Padding(4, 0, 4, 0);
+            labelHoursOfWork.Name = "labelHoursOfWork";
+            labelHoursOfWork.Size = new Size(75, 15);
+            labelHoursOfWork.TabIndex = 10;
+            labelHoursOfWork.Text = "Количество:";
+            // 
             // textBoxHoursOfWork
             // 
             textBoxHoursOfWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBoxHoursOfWork.Location = new Point(152, 248);
             textBoxHoursOfWork.Margin = new Padding(4, 3, 4, 3);
             textBoxHoursOfWork.Name = "textBoxHoursOfWork";
-            textBoxHoursOfWork.ReadOnly = true;
             textBoxHoursOfWork.Size = new Size(455, 33);
             textBoxHoursOfWork.TabIndex = 4;
             // 
@@ -1274,7 +1298,7 @@
             // buttonNewAccountingOfWorkingHours
             // 
             buttonNewAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonNewAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonNewAccountingOfWorkingHours.ForeColor = Color.Black;
             buttonNewAccountingOfWorkingHours.Location = new Point(4, 3);
             buttonNewAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
             buttonNewAccountingOfWorkingHours.Name = "buttonNewAccountingOfWorkingHours";
@@ -1282,11 +1306,12 @@
             buttonNewAccountingOfWorkingHours.TabIndex = 0;
             buttonNewAccountingOfWorkingHours.Text = "Новая запись";
             buttonNewAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonNewAccountingOfWorkingHours.Click += ButtonNewAccountingOfWorkingHours_Click;
             // 
             // buttonDeleteAccountingOfWorkingHours
             // 
             buttonDeleteAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonDeleteAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonDeleteAccountingOfWorkingHours.ForeColor = Color.Black;
             buttonDeleteAccountingOfWorkingHours.Location = new Point(4, 78);
             buttonDeleteAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteAccountingOfWorkingHours.Name = "buttonDeleteAccountingOfWorkingHours";
@@ -1294,6 +1319,7 @@
             buttonDeleteAccountingOfWorkingHours.TabIndex = 1;
             buttonDeleteAccountingOfWorkingHours.Text = "Удалить";
             buttonDeleteAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonDeleteAccountingOfWorkingHours.Click += ButtonDeleteAccountingOfWorkingHours_Click;
             // 
             // buttonChangeAccountingOfWorkingHours
             // 
@@ -1306,6 +1332,7 @@
             buttonChangeAccountingOfWorkingHours.TabIndex = 2;
             buttonChangeAccountingOfWorkingHours.Text = "Изменить";
             buttonChangeAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonChangeAccountingOfWorkingHours.Click += ButtonChangeAccountingOfWorkingHours_Click;
             // 
             // buttonSaveAccountingOfWorkingHours
             // 
@@ -1318,6 +1345,7 @@
             buttonSaveAccountingOfWorkingHours.TabIndex = 3;
             buttonSaveAccountingOfWorkingHours.Text = "Сохранить";
             buttonSaveAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonSaveAccountingOfWorkingHours.Click += ButtonSaveAccountingOfWorkingHours_Click;
             // 
             // buttonWordAccountingOfWorkingHours
             // 
@@ -1330,11 +1358,12 @@
             buttonWordAccountingOfWorkingHours.TabIndex = 4;
             buttonWordAccountingOfWorkingHours.Text = "Вывод в Word";
             buttonWordAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonWordAccountingOfWorkingHours.Click += ButtonWordAccountingOfWorkingHours_Click;
             // 
             // buttonExcelAccountingOfWorkingHours
             // 
             buttonExcelAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonExcelAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonExcelAccountingOfWorkingHours.ForeColor = Color.Black;
             buttonExcelAccountingOfWorkingHours.Location = new Point(4, 375);
             buttonExcelAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
             buttonExcelAccountingOfWorkingHours.Name = "buttonExcelAccountingOfWorkingHours";
@@ -1342,11 +1371,12 @@
             buttonExcelAccountingOfWorkingHours.TabIndex = 5;
             buttonExcelAccountingOfWorkingHours.Text = "Вывод в Excel";
             buttonExcelAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonExcelAccountingOfWorkingHours.Click += ButtonExcelAccountingOfWorkingHours_Click;
             // 
             // buttonTXTAccountingOfWorkingHours
             // 
             buttonTXTAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonTXTAccountingOfWorkingHours.ForeColor = Color.WhiteSmoke;
+            buttonTXTAccountingOfWorkingHours.ForeColor = Color.Black;
             buttonTXTAccountingOfWorkingHours.Location = new Point(4, 449);
             buttonTXTAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
             buttonTXTAccountingOfWorkingHours.Name = "buttonTXTAccountingOfWorkingHours";
@@ -1354,10 +1384,10 @@
             buttonTXTAccountingOfWorkingHours.TabIndex = 6;
             buttonTXTAccountingOfWorkingHours.Text = "Вывод в TXT";
             buttonTXTAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonTXTAccountingOfWorkingHours.Click += ButtonTXTAccountingOfWorkingHours_Click;
             // 
             // tabPageSalary
             // 
-            tabPageSalary.BackgroundImage = (Image)resources.GetObject("tabPageSalary.BackgroundImage");
             tabPageSalary.Controls.Add(panelTitleSalary);
             tabPageSalary.Controls.Add(dataGridViewSalary);
             tabPageSalary.Controls.Add(panelRecordSalary);
@@ -1388,7 +1418,7 @@
             // 
             labelTitleSalary.AutoSize = true;
             labelTitleSalary.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleSalary.ForeColor = Color.WhiteSmoke;
+            labelTitleSalary.ForeColor = Color.Black;
             labelTitleSalary.Location = new Point(4, 3);
             labelTitleSalary.Margin = new Padding(4, 0, 4, 0);
             labelTitleSalary.Name = "labelTitleSalary";
@@ -1408,6 +1438,7 @@
             buttonClearSalary.Size = new Size(78, 77);
             buttonClearSalary.TabIndex = 0;
             buttonClearSalary.UseVisualStyleBackColor = true;
+            buttonClearSalary.Click += ButtonClear_Click;
             // 
             // buttonRefreshSalary
             // 
@@ -1421,6 +1452,7 @@
             buttonRefreshSalary.Size = new Size(78, 77);
             buttonRefreshSalary.TabIndex = 1;
             buttonRefreshSalary.UseVisualStyleBackColor = true;
+            buttonRefreshSalary.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchSalary
             // 
@@ -1430,6 +1462,7 @@
             textBoxSearchSalary.Name = "textBoxSearchSalary";
             textBoxSearchSalary.Size = new Size(173, 33);
             textBoxSearchSalary.TabIndex = 2;
+            textBoxSearchSalary.TextChanged += TextBoxSearchSalary_TextChanged;
             // 
             // dataGridViewSalary
             // 
@@ -1443,6 +1476,7 @@
             dataGridViewSalary.RowHeadersWidth = 62;
             dataGridViewSalary.Size = new Size(867, 352);
             dataGridViewSalary.TabIndex = 0;
+            dataGridViewSalary.CellClick += DataGridViewSalary_CellClick;
             // 
             // panelRecordSalary
             // 
@@ -1477,175 +1511,11 @@
             panelRecordSalary.Size = new Size(611, 552);
             panelRecordSalary.TabIndex = 1;
             // 
-            // labelAllHours
-            // 
-            labelAllHours.AutoSize = true;
-            labelAllHours.ForeColor = Color.WhiteSmoke;
-            labelAllHours.Location = new Point(36, 233);
-            labelAllHours.Margin = new Padding(4, 0, 4, 0);
-            labelAllHours.Name = "labelAllHours";
-            labelAllHours.Size = new Size(110, 15);
-            labelAllHours.TabIndex = 17;
-            labelAllHours.Text = "Часов отработано:";
-            // 
-            // textBoxPersonalIncomeTax
-            // 
-            textBoxPersonalIncomeTax.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPersonalIncomeTax.Location = new Point(152, 417);
-            textBoxPersonalIncomeTax.Margin = new Padding(4, 3, 4, 3);
-            textBoxPersonalIncomeTax.Name = "textBoxPersonalIncomeTax";
-            textBoxPersonalIncomeTax.Size = new Size(455, 33);
-            textBoxPersonalIncomeTax.TabIndex = 9;
-            // 
-            // textBoxContributions
-            // 
-            textBoxContributions.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxContributions.Location = new Point(152, 456);
-            textBoxContributions.Margin = new Padding(4, 3, 4, 3);
-            textBoxContributions.Name = "textBoxContributions";
-            textBoxContributions.Size = new Size(455, 33);
-            textBoxContributions.TabIndex = 10;
-            // 
-            // textBoxTotal
-            // 
-            textBoxTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTotal.Location = new Point(152, 495);
-            textBoxTotal.Margin = new Padding(4, 3, 4, 3);
-            textBoxTotal.Name = "textBoxTotal";
-            textBoxTotal.ReadOnly = true;
-            textBoxTotal.Size = new Size(455, 33);
-            textBoxTotal.TabIndex = 11;
-            // 
-            // textBoxSickPay
-            // 
-            textBoxSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSickPay.Location = new Point(152, 378);
-            textBoxSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxSickPay.Name = "textBoxSickPay";
-            textBoxSickPay.ReadOnly = true;
-            textBoxSickPay.Size = new Size(455, 33);
-            textBoxSickPay.TabIndex = 8;
-            // 
-            // labelTotal
-            // 
-            labelTotal.AutoSize = true;
-            labelTotal.ForeColor = Color.WhiteSmoke;
-            labelTotal.Location = new Point(98, 506);
-            labelTotal.Margin = new Padding(4, 0, 4, 0);
-            labelTotal.Name = "labelTotal";
-            labelTotal.Size = new Size(43, 15);
-            labelTotal.TabIndex = 24;
-            labelTotal.Text = "Итого:";
-            // 
-            // labelContributions
-            // 
-            labelContributions.AutoSize = true;
-            labelContributions.ForeColor = Color.WhiteSmoke;
-            labelContributions.Location = new Point(93, 467);
-            labelContributions.Margin = new Padding(4, 0, 4, 0);
-            labelContributions.Name = "labelContributions";
-            labelContributions.Size = new Size(48, 15);
-            labelContributions.TabIndex = 23;
-            labelContributions.Text = "Сборы:";
-            // 
-            // labelHourlyCharges
-            // 
-            labelHourlyCharges.AutoSize = true;
-            labelHourlyCharges.ForeColor = Color.WhiteSmoke;
-            labelHourlyCharges.Location = new Point(24, 310);
-            labelHourlyCharges.Margin = new Padding(4, 0, 4, 0);
-            labelHourlyCharges.Name = "labelHourlyCharges";
-            labelHourlyCharges.Size = new Size(122, 15);
-            labelHourlyCharges.TabIndex = 19;
-            labelHourlyCharges.Text = "Почасовая зарплата:";
-            // 
-            // textBoxPieceworkCharges
-            // 
-            textBoxPieceworkCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPieceworkCharges.Location = new Point(152, 261);
-            textBoxPieceworkCharges.Margin = new Padding(4, 3, 4, 3);
-            textBoxPieceworkCharges.Name = "textBoxPieceworkCharges";
-            textBoxPieceworkCharges.Size = new Size(455, 33);
-            textBoxPieceworkCharges.TabIndex = 5;
-            // 
-            // labelVacationPay
-            // 
-            labelVacationPay.AutoSize = true;
-            labelVacationPay.ForeColor = Color.WhiteSmoke;
-            labelVacationPay.Location = new Point(70, 350);
-            labelVacationPay.Margin = new Padding(4, 0, 4, 0);
-            labelVacationPay.Name = "labelVacationPay";
-            labelVacationPay.Size = new Size(71, 15);
-            labelVacationPay.TabIndex = 20;
-            labelVacationPay.Text = "Отпускные:";
-            // 
-            // labelSickPay
-            // 
-            labelSickPay.AutoSize = true;
-            labelSickPay.ForeColor = Color.WhiteSmoke;
-            labelSickPay.Location = new Point(66, 389);
-            labelSickPay.Margin = new Padding(4, 0, 4, 0);
-            labelSickPay.Name = "labelSickPay";
-            labelSickPay.Size = new Size(80, 15);
-            labelSickPay.TabIndex = 21;
-            labelSickPay.Text = "Больничные:";
-            // 
-            // textBoxHourlyCharges
-            // 
-            textBoxHourlyCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxHourlyCharges.Location = new Point(152, 300);
-            textBoxHourlyCharges.Margin = new Padding(4, 3, 4, 3);
-            textBoxHourlyCharges.Name = "textBoxHourlyCharges";
-            textBoxHourlyCharges.Size = new Size(455, 33);
-            textBoxHourlyCharges.TabIndex = 6;
-            // 
-            // labelPersonalIncomeTax
-            // 
-            labelPersonalIncomeTax.AutoSize = true;
-            labelPersonalIncomeTax.ForeColor = Color.WhiteSmoke;
-            labelPersonalIncomeTax.Location = new Point(97, 428);
-            labelPersonalIncomeTax.Margin = new Padding(4, 0, 4, 0);
-            labelPersonalIncomeTax.Name = "labelPersonalIncomeTax";
-            labelPersonalIncomeTax.Size = new Size(44, 15);
-            labelPersonalIncomeTax.TabIndex = 22;
-            labelPersonalIncomeTax.Text = "НДФЛ:";
-            // 
-            // textBoxVacationPay
-            // 
-            textBoxVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxVacationPay.Location = new Point(152, 339);
-            textBoxVacationPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxVacationPay.Name = "textBoxVacationPay";
-            textBoxVacationPay.ReadOnly = true;
-            textBoxVacationPay.Size = new Size(455, 33);
-            textBoxVacationPay.TabIndex = 7;
-            // 
-            // labelPieceworkCharges
-            // 
-            labelPieceworkCharges.AutoSize = true;
-            labelPieceworkCharges.ForeColor = Color.WhiteSmoke;
-            labelPieceworkCharges.Location = new Point(27, 272);
-            labelPieceworkCharges.Margin = new Padding(4, 0, 4, 0);
-            labelPieceworkCharges.Name = "labelPieceworkCharges";
-            labelPieceworkCharges.Size = new Size(114, 15);
-            labelPieceworkCharges.TabIndex = 18;
-            labelPieceworkCharges.Text = "Сдельная зарплата:";
-            // 
-            // textBoxAllHours
-            // 
-            textBoxAllHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxAllHours.Location = new Point(152, 222);
-            textBoxAllHours.Margin = new Padding(4, 3, 4, 3);
-            textBoxAllHours.Name = "textBoxAllHours";
-            textBoxAllHours.ReadOnly = true;
-            textBoxAllHours.Size = new Size(455, 33);
-            textBoxAllHours.TabIndex = 4;
-            // 
             // labelRecordSalary
             // 
             labelRecordSalary.AutoSize = true;
             labelRecordSalary.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordSalary.ForeColor = Color.WhiteSmoke;
+            labelRecordSalary.ForeColor = Color.Black;
             labelRecordSalary.Location = new Point(4, 10);
             labelRecordSalary.Margin = new Padding(4, 0, 4, 0);
             labelRecordSalary.Name = "labelRecordSalary";
@@ -1656,7 +1526,7 @@
             // labelSalaryID
             // 
             labelSalaryID.AutoSize = true;
-            labelSalaryID.ForeColor = Color.WhiteSmoke;
+            labelSalaryID.ForeColor = Color.Black;
             labelSalaryID.Location = new Point(93, 82);
             labelSalaryID.Margin = new Padding(4, 0, 4, 0);
             labelSalaryID.Name = "labelSalaryID";
@@ -1676,7 +1546,7 @@
             // labelSalaryAccrualIDSalary
             // 
             labelSalaryAccrualIDSalary.AutoSize = true;
-            labelSalaryAccrualIDSalary.ForeColor = Color.WhiteSmoke;
+            labelSalaryAccrualIDSalary.ForeColor = Color.Black;
             labelSalaryAccrualIDSalary.Location = new Point(43, 117);
             labelSalaryAccrualIDSalary.Margin = new Padding(4, 0, 4, 0);
             labelSalaryAccrualIDSalary.Name = "labelSalaryAccrualIDSalary";
@@ -1696,13 +1566,13 @@
             // labelEmployeeIDSalary
             // 
             labelEmployeeIDSalary.AutoSize = true;
-            labelEmployeeIDSalary.ForeColor = Color.WhiteSmoke;
-            labelEmployeeIDSalary.Location = new Point(32, 155);
+            labelEmployeeIDSalary.ForeColor = Color.Black;
+            labelEmployeeIDSalary.Location = new Point(43, 155);
             labelEmployeeIDSalary.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDSalary.Name = "labelEmployeeIDSalary";
-            labelEmployeeIDSalary.Size = new Size(114, 15);
+            labelEmployeeIDSalary.Size = new Size(103, 15);
             labelEmployeeIDSalary.TabIndex = 15;
-            labelEmployeeIDSalary.Text = "Номер сотрудника:";
+            labelEmployeeIDSalary.Text = "ФИО сотрудника:";
             // 
             // textBoxEmployeeIDSalary
             // 
@@ -1716,7 +1586,7 @@
             // labelAllDays
             // 
             labelAllDays.AutoSize = true;
-            labelAllDays.ForeColor = Color.WhiteSmoke;
+            labelAllDays.ForeColor = Color.Black;
             labelAllDays.Location = new Point(43, 194);
             labelAllDays.Margin = new Padding(4, 0, 4, 0);
             labelAllDays.Name = "labelAllDays";
@@ -1733,6 +1603,174 @@
             textBoxAllDays.ReadOnly = true;
             textBoxAllDays.Size = new Size(455, 33);
             textBoxAllDays.TabIndex = 3;
+            // 
+            // labelAllHours
+            // 
+            labelAllHours.AutoSize = true;
+            labelAllHours.ForeColor = Color.Black;
+            labelAllHours.Location = new Point(36, 233);
+            labelAllHours.Margin = new Padding(4, 0, 4, 0);
+            labelAllHours.Name = "labelAllHours";
+            labelAllHours.Size = new Size(110, 15);
+            labelAllHours.TabIndex = 17;
+            labelAllHours.Text = "Часов отработано:";
+            // 
+            // textBoxAllHours
+            // 
+            textBoxAllHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxAllHours.Location = new Point(152, 222);
+            textBoxAllHours.Margin = new Padding(4, 3, 4, 3);
+            textBoxAllHours.Name = "textBoxAllHours";
+            textBoxAllHours.ReadOnly = true;
+            textBoxAllHours.Size = new Size(455, 33);
+            textBoxAllHours.TabIndex = 4;
+            // 
+            // labelPieceworkCharges
+            // 
+            labelPieceworkCharges.AutoSize = true;
+            labelPieceworkCharges.ForeColor = Color.Black;
+            labelPieceworkCharges.Location = new Point(27, 272);
+            labelPieceworkCharges.Margin = new Padding(4, 0, 4, 0);
+            labelPieceworkCharges.Name = "labelPieceworkCharges";
+            labelPieceworkCharges.Size = new Size(114, 15);
+            labelPieceworkCharges.TabIndex = 18;
+            labelPieceworkCharges.Text = "Сдельная зарплата:";
+            // 
+            // textBoxPieceworkCharges
+            // 
+            textBoxPieceworkCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPieceworkCharges.Location = new Point(152, 261);
+            textBoxPieceworkCharges.Margin = new Padding(4, 3, 4, 3);
+            textBoxPieceworkCharges.Name = "textBoxPieceworkCharges";
+            textBoxPieceworkCharges.ReadOnly = true;
+            textBoxPieceworkCharges.Size = new Size(455, 33);
+            textBoxPieceworkCharges.TabIndex = 5;
+            // 
+            // labelHourlyCharges
+            // 
+            labelHourlyCharges.AutoSize = true;
+            labelHourlyCharges.ForeColor = Color.Black;
+            labelHourlyCharges.Location = new Point(24, 310);
+            labelHourlyCharges.Margin = new Padding(4, 0, 4, 0);
+            labelHourlyCharges.Name = "labelHourlyCharges";
+            labelHourlyCharges.Size = new Size(122, 15);
+            labelHourlyCharges.TabIndex = 19;
+            labelHourlyCharges.Text = "Почасовая зарплата:";
+            // 
+            // textBoxHourlyCharges
+            // 
+            textBoxHourlyCharges.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxHourlyCharges.Location = new Point(152, 300);
+            textBoxHourlyCharges.Margin = new Padding(4, 3, 4, 3);
+            textBoxHourlyCharges.Name = "textBoxHourlyCharges";
+            textBoxHourlyCharges.ReadOnly = true;
+            textBoxHourlyCharges.Size = new Size(455, 33);
+            textBoxHourlyCharges.TabIndex = 6;
+            // 
+            // labelVacationPay
+            // 
+            labelVacationPay.AutoSize = true;
+            labelVacationPay.ForeColor = Color.Black;
+            labelVacationPay.Location = new Point(70, 350);
+            labelVacationPay.Margin = new Padding(4, 0, 4, 0);
+            labelVacationPay.Name = "labelVacationPay";
+            labelVacationPay.Size = new Size(71, 15);
+            labelVacationPay.TabIndex = 20;
+            labelVacationPay.Text = "Отпускные:";
+            // 
+            // textBoxVacationPay
+            // 
+            textBoxVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxVacationPay.Location = new Point(152, 339);
+            textBoxVacationPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxVacationPay.Name = "textBoxVacationPay";
+            textBoxVacationPay.ReadOnly = true;
+            textBoxVacationPay.Size = new Size(455, 33);
+            textBoxVacationPay.TabIndex = 7;
+            // 
+            // labelSickPay
+            // 
+            labelSickPay.AutoSize = true;
+            labelSickPay.ForeColor = Color.Black;
+            labelSickPay.Location = new Point(66, 389);
+            labelSickPay.Margin = new Padding(4, 0, 4, 0);
+            labelSickPay.Name = "labelSickPay";
+            labelSickPay.Size = new Size(80, 15);
+            labelSickPay.TabIndex = 21;
+            labelSickPay.Text = "Больничные:";
+            // 
+            // textBoxSickPay
+            // 
+            textBoxSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxSickPay.Location = new Point(152, 378);
+            textBoxSickPay.Margin = new Padding(4, 3, 4, 3);
+            textBoxSickPay.Name = "textBoxSickPay";
+            textBoxSickPay.ReadOnly = true;
+            textBoxSickPay.Size = new Size(455, 33);
+            textBoxSickPay.TabIndex = 8;
+            // 
+            // labelPersonalIncomeTax
+            // 
+            labelPersonalIncomeTax.AutoSize = true;
+            labelPersonalIncomeTax.ForeColor = Color.Black;
+            labelPersonalIncomeTax.Location = new Point(97, 428);
+            labelPersonalIncomeTax.Margin = new Padding(4, 0, 4, 0);
+            labelPersonalIncomeTax.Name = "labelPersonalIncomeTax";
+            labelPersonalIncomeTax.Size = new Size(44, 15);
+            labelPersonalIncomeTax.TabIndex = 22;
+            labelPersonalIncomeTax.Text = "НДФЛ:";
+            // 
+            // textBoxPersonalIncomeTax
+            // 
+            textBoxPersonalIncomeTax.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPersonalIncomeTax.Location = new Point(152, 417);
+            textBoxPersonalIncomeTax.Margin = new Padding(4, 3, 4, 3);
+            textBoxPersonalIncomeTax.Name = "textBoxPersonalIncomeTax";
+            textBoxPersonalIncomeTax.ReadOnly = true;
+            textBoxPersonalIncomeTax.Size = new Size(455, 33);
+            textBoxPersonalIncomeTax.TabIndex = 9;
+            // 
+            // labelContributions
+            // 
+            labelContributions.AutoSize = true;
+            labelContributions.ForeColor = Color.Black;
+            labelContributions.Location = new Point(93, 467);
+            labelContributions.Margin = new Padding(4, 0, 4, 0);
+            labelContributions.Name = "labelContributions";
+            labelContributions.Size = new Size(48, 15);
+            labelContributions.TabIndex = 23;
+            labelContributions.Text = "Сборы:";
+            // 
+            // textBoxContributions
+            // 
+            textBoxContributions.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxContributions.Location = new Point(152, 456);
+            textBoxContributions.Margin = new Padding(4, 3, 4, 3);
+            textBoxContributions.Name = "textBoxContributions";
+            textBoxContributions.ReadOnly = true;
+            textBoxContributions.Size = new Size(455, 33);
+            textBoxContributions.TabIndex = 10;
+            // 
+            // labelTotal
+            // 
+            labelTotal.AutoSize = true;
+            labelTotal.ForeColor = Color.Black;
+            labelTotal.Location = new Point(98, 506);
+            labelTotal.Margin = new Padding(4, 0, 4, 0);
+            labelTotal.Name = "labelTotal";
+            labelTotal.Size = new Size(43, 15);
+            labelTotal.TabIndex = 24;
+            labelTotal.Text = "Итого:";
+            // 
+            // textBoxTotal
+            // 
+            textBoxTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxTotal.Location = new Point(152, 495);
+            textBoxTotal.Margin = new Padding(4, 3, 4, 3);
+            textBoxTotal.Name = "textBoxTotal";
+            textBoxTotal.ReadOnly = true;
+            textBoxTotal.Size = new Size(455, 33);
+            textBoxTotal.TabIndex = 11;
             // 
             // labelControlSalary
             // 
@@ -1765,7 +1803,7 @@
             // buttonNewSalary
             // 
             buttonNewSalary.FlatStyle = FlatStyle.Flat;
-            buttonNewSalary.ForeColor = Color.WhiteSmoke;
+            buttonNewSalary.ForeColor = Color.Black;
             buttonNewSalary.Location = new Point(4, 3);
             buttonNewSalary.Margin = new Padding(4, 3, 4, 3);
             buttonNewSalary.Name = "buttonNewSalary";
@@ -1773,11 +1811,12 @@
             buttonNewSalary.TabIndex = 0;
             buttonNewSalary.Text = "Новая запись";
             buttonNewSalary.UseVisualStyleBackColor = true;
+            buttonNewSalary.Click += ButtonNewSalary_Click;
             // 
             // buttonDeleteSalary
             // 
             buttonDeleteSalary.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSalary.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSalary.ForeColor = Color.Black;
             buttonDeleteSalary.Location = new Point(4, 78);
             buttonDeleteSalary.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteSalary.Name = "buttonDeleteSalary";
@@ -1785,6 +1824,7 @@
             buttonDeleteSalary.TabIndex = 1;
             buttonDeleteSalary.Text = "Удалить";
             buttonDeleteSalary.UseVisualStyleBackColor = true;
+            buttonDeleteSalary.Click += ButtonDeleteSalary_Click;
             // 
             // buttonChangeSalary
             // 
@@ -1797,6 +1837,7 @@
             buttonChangeSalary.TabIndex = 2;
             buttonChangeSalary.Text = "Изменить";
             buttonChangeSalary.UseVisualStyleBackColor = true;
+            buttonChangeSalary.Click += ButtonChangeSalary_Click;
             // 
             // buttonSaveSalary
             // 
@@ -1809,6 +1850,7 @@
             buttonSaveSalary.TabIndex = 3;
             buttonSaveSalary.Text = "Сохранить";
             buttonSaveSalary.UseVisualStyleBackColor = true;
+            buttonSaveSalary.Click += ButtonSaveSalary_Click;
             // 
             // buttonWordSalary
             // 
@@ -1821,11 +1863,12 @@
             buttonWordSalary.TabIndex = 4;
             buttonWordSalary.Text = "Вывод в Word";
             buttonWordSalary.UseVisualStyleBackColor = true;
+            buttonWordSalary.Click += ButtonWordSalary_Click;
             // 
             // buttonExcelSalary
             // 
             buttonExcelSalary.FlatStyle = FlatStyle.Flat;
-            buttonExcelSalary.ForeColor = Color.WhiteSmoke;
+            buttonExcelSalary.ForeColor = Color.Black;
             buttonExcelSalary.Location = new Point(4, 375);
             buttonExcelSalary.Margin = new Padding(4, 3, 4, 3);
             buttonExcelSalary.Name = "buttonExcelSalary";
@@ -1833,11 +1876,12 @@
             buttonExcelSalary.TabIndex = 5;
             buttonExcelSalary.Text = "Вывод в Excel";
             buttonExcelSalary.UseVisualStyleBackColor = true;
+            buttonExcelSalary.Click += ButtonExcelSalary_Click;
             // 
             // buttonTXTSalary
             // 
             buttonTXTSalary.FlatStyle = FlatStyle.Flat;
-            buttonTXTSalary.ForeColor = Color.WhiteSmoke;
+            buttonTXTSalary.ForeColor = Color.Black;
             buttonTXTSalary.Location = new Point(4, 449);
             buttonTXTSalary.Margin = new Padding(4, 3, 4, 3);
             buttonTXTSalary.Name = "buttonTXTSalary";
@@ -1845,10 +1889,10 @@
             buttonTXTSalary.TabIndex = 6;
             buttonTXTSalary.Text = "Вывод в TXT";
             buttonTXTSalary.UseVisualStyleBackColor = true;
+            buttonTXTSalary.Click += ButtonTXTSalary_Click;
             // 
             // tabPageSalaryAccruals
             // 
-            tabPageSalaryAccruals.BackgroundImage = (Image)resources.GetObject("tabPageSalaryAccruals.BackgroundImage");
             tabPageSalaryAccruals.Controls.Add(panelTitleSalaryAccruals);
             tabPageSalaryAccruals.Controls.Add(dataGridViewSalaryAccruals);
             tabPageSalaryAccruals.Controls.Add(panelRecordSalaryAccruals);
@@ -1879,7 +1923,7 @@
             // 
             labelTitleSalaryAccruals.AutoSize = true;
             labelTitleSalaryAccruals.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelTitleSalaryAccruals.ForeColor = Color.Black;
             labelTitleSalaryAccruals.Location = new Point(4, 3);
             labelTitleSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
             labelTitleSalaryAccruals.Name = "labelTitleSalaryAccruals";
@@ -1899,6 +1943,7 @@
             buttonClearSalaryAccruals.Size = new Size(78, 77);
             buttonClearSalaryAccruals.TabIndex = 0;
             buttonClearSalaryAccruals.UseVisualStyleBackColor = true;
+            buttonClearSalaryAccruals.Click += ButtonClear_Click;
             // 
             // buttonRefreshSalaryAccruals
             // 
@@ -1912,6 +1957,7 @@
             buttonRefreshSalaryAccruals.Size = new Size(78, 77);
             buttonRefreshSalaryAccruals.TabIndex = 1;
             buttonRefreshSalaryAccruals.UseVisualStyleBackColor = true;
+            buttonRefreshSalaryAccruals.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchSalaryAccruals
             // 
@@ -1921,6 +1967,7 @@
             textBoxSearchSalaryAccruals.Name = "textBoxSearchSalaryAccruals";
             textBoxSearchSalaryAccruals.Size = new Size(173, 33);
             textBoxSearchSalaryAccruals.TabIndex = 2;
+            textBoxSearchSalaryAccruals.TextChanged += TextBoxSearchSalaryAccruals_TextChanged;
             // 
             // dataGridViewSalaryAccruals
             // 
@@ -1934,6 +1981,7 @@
             dataGridViewSalaryAccruals.RowHeadersWidth = 62;
             dataGridViewSalaryAccruals.Size = new Size(867, 352);
             dataGridViewSalaryAccruals.TabIndex = 0;
+            dataGridViewSalaryAccruals.CellClick += DataGridViewSalaryAccruals_CellClick;
             // 
             // panelRecordSalaryAccruals
             // 
@@ -1952,21 +2000,11 @@
             panelRecordSalaryAccruals.Size = new Size(611, 552);
             panelRecordSalaryAccruals.TabIndex = 1;
             // 
-            // comboBoxMonthID
-            // 
-            comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
-            comboBoxMonthID.FormattingEnabled = true;
-            comboBoxMonthID.Location = new Point(152, 158);
-            comboBoxMonthID.Name = "comboBoxMonthID";
-            comboBoxMonthID.Size = new Size(455, 33);
-            comboBoxMonthID.TabIndex = 2;
-            // 
             // labelRecordSalaryAccruals
             // 
             labelRecordSalaryAccruals.AutoSize = true;
             labelRecordSalaryAccruals.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelRecordSalaryAccruals.ForeColor = Color.Black;
             labelRecordSalaryAccruals.Location = new Point(4, 10);
             labelRecordSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
             labelRecordSalaryAccruals.Name = "labelRecordSalaryAccruals";
@@ -1977,7 +2015,7 @@
             // labelSalaryAccrualID
             // 
             labelSalaryAccrualID.AutoSize = true;
-            labelSalaryAccrualID.ForeColor = Color.WhiteSmoke;
+            labelSalaryAccrualID.ForeColor = Color.Black;
             labelSalaryAccrualID.Location = new Point(93, 82);
             labelSalaryAccrualID.Margin = new Padding(4, 0, 4, 0);
             labelSalaryAccrualID.Name = "labelSalaryAccrualID";
@@ -1997,7 +2035,7 @@
             // labelYear
             // 
             labelYear.AutoSize = true;
-            labelYear.ForeColor = Color.WhiteSmoke;
+            labelYear.ForeColor = Color.Black;
             labelYear.Location = new Point(112, 124);
             labelYear.Margin = new Padding(4, 0, 4, 0);
             labelYear.Name = "labelYear";
@@ -2017,7 +2055,7 @@
             // labelMonthID
             // 
             labelMonthID.AutoSize = true;
-            labelMonthID.ForeColor = Color.WhiteSmoke;
+            labelMonthID.ForeColor = Color.Black;
             labelMonthID.Location = new Point(95, 169);
             labelMonthID.Margin = new Padding(4, 0, 4, 0);
             labelMonthID.Name = "labelMonthID";
@@ -2025,10 +2063,20 @@
             labelMonthID.TabIndex = 7;
             labelMonthID.Text = "Месяц:";
             // 
+            // comboBoxMonthID
+            // 
+            comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxMonthID.FormattingEnabled = true;
+            comboBoxMonthID.Location = new Point(152, 158);
+            comboBoxMonthID.Name = "comboBoxMonthID";
+            comboBoxMonthID.Size = new Size(455, 33);
+            comboBoxMonthID.TabIndex = 2;
+            // 
             // labelProjectIDSalaryAccruals
             // 
             labelProjectIDSalaryAccruals.AutoSize = true;
-            labelProjectIDSalaryAccruals.ForeColor = Color.WhiteSmoke;
+            labelProjectIDSalaryAccruals.ForeColor = Color.Black;
             labelProjectIDSalaryAccruals.Location = new Point(91, 214);
             labelProjectIDSalaryAccruals.Margin = new Padding(4, 0, 4, 0);
             labelProjectIDSalaryAccruals.Name = "labelProjectIDSalaryAccruals";
@@ -2042,7 +2090,6 @@
             textBoxProjectIDSalaryAccruals.Location = new Point(152, 203);
             textBoxProjectIDSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
             textBoxProjectIDSalaryAccruals.Name = "textBoxProjectIDSalaryAccruals";
-            textBoxProjectIDSalaryAccruals.ReadOnly = true;
             textBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
             textBoxProjectIDSalaryAccruals.TabIndex = 3;
             // 
@@ -2077,7 +2124,7 @@
             // buttonNewSalaryAccrual
             // 
             buttonNewSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonNewSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonNewSalaryAccrual.ForeColor = Color.Black;
             buttonNewSalaryAccrual.Location = new Point(4, 3);
             buttonNewSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
             buttonNewSalaryAccrual.Name = "buttonNewSalaryAccrual";
@@ -2085,11 +2132,12 @@
             buttonNewSalaryAccrual.TabIndex = 0;
             buttonNewSalaryAccrual.Text = "Новая запись";
             buttonNewSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonNewSalaryAccrual.Click += ButtonNewSalaryAccrual_Click;
             // 
             // buttonDeleteSalaryAccrual
             // 
             buttonDeleteSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonDeleteSalaryAccrual.ForeColor = Color.Black;
             buttonDeleteSalaryAccrual.Location = new Point(4, 78);
             buttonDeleteSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteSalaryAccrual.Name = "buttonDeleteSalaryAccrual";
@@ -2097,6 +2145,7 @@
             buttonDeleteSalaryAccrual.TabIndex = 1;
             buttonDeleteSalaryAccrual.Text = "Удалить";
             buttonDeleteSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonDeleteSalaryAccrual.Click += ButtonDeleteSalaryAccrual_Click;
             // 
             // buttonChangeSalaryAccrual
             // 
@@ -2109,6 +2158,7 @@
             buttonChangeSalaryAccrual.TabIndex = 2;
             buttonChangeSalaryAccrual.Text = "Изменить";
             buttonChangeSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonChangeSalaryAccrual.Click += ButtonChangeSalaryAccrual_Click;
             // 
             // buttonSaveSalaryAccrual
             // 
@@ -2121,6 +2171,7 @@
             buttonSaveSalaryAccrual.TabIndex = 3;
             buttonSaveSalaryAccrual.Text = "Сохранить";
             buttonSaveSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonSaveSalaryAccrual.Click += ButtonSaveSalaryAccrual_Click;
             // 
             // buttonWordSalaryAccrual
             // 
@@ -2133,11 +2184,12 @@
             buttonWordSalaryAccrual.TabIndex = 4;
             buttonWordSalaryAccrual.Text = "Вывод в Word";
             buttonWordSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonWordSalaryAccrual.Click += ButtonWordSalaryAccrual_Click;
             // 
             // buttonExcelSalaryAccrual
             // 
             buttonExcelSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonExcelSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonExcelSalaryAccrual.ForeColor = Color.Black;
             buttonExcelSalaryAccrual.Location = new Point(4, 375);
             buttonExcelSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
             buttonExcelSalaryAccrual.Name = "buttonExcelSalaryAccrual";
@@ -2145,11 +2197,12 @@
             buttonExcelSalaryAccrual.TabIndex = 5;
             buttonExcelSalaryAccrual.Text = "Вывод в Excel";
             buttonExcelSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonExcelSalaryAccrual.Click += ButtonExcelSalaryAccrual_Click;
             // 
             // buttonTXTSalaryAccrual
             // 
             buttonTXTSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonTXTSalaryAccrual.ForeColor = Color.WhiteSmoke;
+            buttonTXTSalaryAccrual.ForeColor = Color.Black;
             buttonTXTSalaryAccrual.Location = new Point(4, 449);
             buttonTXTSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
             buttonTXTSalaryAccrual.Name = "buttonTXTSalaryAccrual";
@@ -2157,10 +2210,10 @@
             buttonTXTSalaryAccrual.TabIndex = 6;
             buttonTXTSalaryAccrual.Text = "Вывод в TXT";
             buttonTXTSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonTXTSalaryAccrual.Click += ButtonTXTSalaryAccrual_Click;
             // 
             // tabPageEmployees
             // 
-            tabPageEmployees.BackgroundImage = (Image)resources.GetObject("tabPageEmployees.BackgroundImage");
             tabPageEmployees.Controls.Add(panelTitleEmployees);
             tabPageEmployees.Controls.Add(dataGridViewEmployees);
             tabPageEmployees.Controls.Add(panelRecordEmployees);
@@ -2191,7 +2244,7 @@
             // 
             labelTitleEmployees.AutoSize = true;
             labelTitleEmployees.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleEmployees.ForeColor = Color.WhiteSmoke;
+            labelTitleEmployees.ForeColor = Color.Black;
             labelTitleEmployees.Location = new Point(4, 3);
             labelTitleEmployees.Margin = new Padding(4, 0, 4, 0);
             labelTitleEmployees.Name = "labelTitleEmployees";
@@ -2211,6 +2264,7 @@
             buttonClearEmployees.Size = new Size(78, 77);
             buttonClearEmployees.TabIndex = 0;
             buttonClearEmployees.UseVisualStyleBackColor = true;
+            buttonClearEmployees.Click += ButtonClear_Click;
             // 
             // buttonRefreshEmployees
             // 
@@ -2224,6 +2278,7 @@
             buttonRefreshEmployees.Size = new Size(78, 77);
             buttonRefreshEmployees.TabIndex = 1;
             buttonRefreshEmployees.UseVisualStyleBackColor = true;
+            buttonRefreshEmployees.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchEmployees
             // 
@@ -2233,6 +2288,7 @@
             textBoxSearchEmployees.Name = "textBoxSearchEmployees";
             textBoxSearchEmployees.Size = new Size(173, 33);
             textBoxSearchEmployees.TabIndex = 2;
+            textBoxSearchEmployees.TextChanged += TextBoxSearchEmployees_TextChanged;
             // 
             // dataGridViewEmployees
             // 
@@ -2246,6 +2302,7 @@
             dataGridViewEmployees.RowHeadersWidth = 62;
             dataGridViewEmployees.Size = new Size(867, 352);
             dataGridViewEmployees.TabIndex = 0;
+            dataGridViewEmployees.CellClick += DataGridViewEmployees_CellClick;
             // 
             // panelRecordEmployees
             // 
@@ -2278,134 +2335,11 @@
             panelRecordEmployees.Size = new Size(611, 552);
             panelRecordEmployees.TabIndex = 1;
             // 
-            // comboBoxGenderID
-            // 
-            comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
-            comboBoxGenderID.FormattingEnabled = true;
-            comboBoxGenderID.Location = new Point(152, 518);
-            comboBoxGenderID.Name = "comboBoxGenderID";
-            comboBoxGenderID.Size = new Size(455, 33);
-            comboBoxGenderID.TabIndex = 10;
-            // 
-            // comboBoxPostID
-            // 
-            comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
-            comboBoxPostID.FormattingEnabled = true;
-            comboBoxPostID.Location = new Point(152, 473);
-            comboBoxPostID.Name = "comboBoxPostID";
-            comboBoxPostID.Size = new Size(455, 33);
-            comboBoxPostID.TabIndex = 9;
-            // 
-            // maskedTextBoxPhone
-            // 
-            maskedTextBoxPhone.Font = new Font("Segoe UI", 14.25F);
-            maskedTextBoxPhone.Location = new Point(152, 337);
-            maskedTextBoxPhone.Mask = "+7 (999) 999-99-99";
-            maskedTextBoxPhone.Name = "maskedTextBoxPhone";
-            maskedTextBoxPhone.Size = new Size(455, 33);
-            maskedTextBoxPhone.TabIndex = 6;
-            // 
-            // labelGenderID
-            // 
-            labelGenderID.AutoSize = true;
-            labelGenderID.ForeColor = Color.WhiteSmoke;
-            labelGenderID.Location = new Point(108, 529);
-            labelGenderID.Margin = new Padding(4, 0, 4, 0);
-            labelGenderID.Name = "labelGenderID";
-            labelGenderID.Size = new Size(33, 15);
-            labelGenderID.TabIndex = 22;
-            labelGenderID.Text = "Пол:";
-            // 
-            // labelPostID
-            // 
-            labelPostID.AutoSize = true;
-            labelPostID.ForeColor = Color.WhiteSmoke;
-            labelPostID.Location = new Point(69, 484);
-            labelPostID.Margin = new Padding(4, 0, 4, 0);
-            labelPostID.Name = "labelPostID";
-            labelPostID.Size = new Size(72, 15);
-            labelPostID.TabIndex = 21;
-            labelPostID.Text = "Должность:";
-            // 
-            // labelPassportNumber
-            // 
-            labelPassportNumber.AutoSize = true;
-            labelPassportNumber.ForeColor = Color.WhiteSmoke;
-            labelPassportNumber.Location = new Point(39, 303);
-            labelPassportNumber.Margin = new Padding(4, 0, 4, 0);
-            labelPassportNumber.Name = "labelPassportNumber";
-            labelPassportNumber.Size = new Size(102, 15);
-            labelPassportNumber.TabIndex = 17;
-            labelPassportNumber.Text = "Номер паспорта:";
-            // 
-            // textBoxPassportNumber
-            // 
-            textBoxPassportNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPassportNumber.Location = new Point(152, 292);
-            textBoxPassportNumber.Margin = new Padding(4, 3, 4, 3);
-            textBoxPassportNumber.Name = "textBoxPassportNumber";
-            textBoxPassportNumber.Size = new Size(455, 33);
-            textBoxPassportNumber.TabIndex = 5;
-            // 
-            // labelPhone
-            // 
-            labelPhone.AutoSize = true;
-            labelPhone.ForeColor = Color.WhiteSmoke;
-            labelPhone.Location = new Point(83, 348);
-            labelPhone.Margin = new Padding(4, 0, 4, 0);
-            labelPhone.Name = "labelPhone";
-            labelPhone.Size = new Size(58, 15);
-            labelPhone.TabIndex = 18;
-            labelPhone.Text = "Телефон:";
-            // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.ForeColor = Color.WhiteSmoke;
-            labelEmail.Location = new Point(93, 393);
-            labelEmail.Margin = new Padding(4, 0, 4, 0);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(44, 15);
-            labelEmail.TabIndex = 19;
-            labelEmail.Text = "Почта:";
-            // 
-            // textBoxEmail
-            // 
-            textBoxEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmail.Location = new Point(152, 382);
-            textBoxEmail.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(455, 33);
-            textBoxEmail.TabIndex = 7;
-            // 
-            // labelINN
-            // 
-            labelINN.AutoSize = true;
-            labelINN.ForeColor = Color.WhiteSmoke;
-            labelINN.Location = new Point(104, 438);
-            labelINN.Margin = new Padding(4, 0, 4, 0);
-            labelINN.Name = "labelINN";
-            labelINN.Size = new Size(37, 15);
-            labelINN.TabIndex = 20;
-            labelINN.Text = "ИНН:";
-            // 
-            // textBoxINN
-            // 
-            textBoxINN.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxINN.Location = new Point(152, 427);
-            textBoxINN.Margin = new Padding(4, 3, 4, 3);
-            textBoxINN.Name = "textBoxINN";
-            textBoxINN.ReadOnly = true;
-            textBoxINN.Size = new Size(455, 33);
-            textBoxINN.TabIndex = 8;
-            // 
             // labelRecordEmployees
             // 
             labelRecordEmployees.AutoSize = true;
             labelRecordEmployees.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordEmployees.ForeColor = Color.WhiteSmoke;
+            labelRecordEmployees.ForeColor = Color.Black;
             labelRecordEmployees.Location = new Point(4, 10);
             labelRecordEmployees.Margin = new Padding(4, 0, 4, 0);
             labelRecordEmployees.Name = "labelRecordEmployees";
@@ -2416,7 +2350,7 @@
             // labelEmployeeID
             // 
             labelEmployeeID.AutoSize = true;
-            labelEmployeeID.ForeColor = Color.WhiteSmoke;
+            labelEmployeeID.ForeColor = Color.Black;
             labelEmployeeID.Location = new Point(93, 82);
             labelEmployeeID.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeID.Name = "labelEmployeeID";
@@ -2436,7 +2370,7 @@
             // labelFullName
             // 
             labelFullName.AutoSize = true;
-            labelFullName.ForeColor = Color.WhiteSmoke;
+            labelFullName.ForeColor = Color.Black;
             labelFullName.Location = new Point(43, 124);
             labelFullName.Margin = new Padding(4, 0, 4, 0);
             labelFullName.Name = "labelFullName";
@@ -2453,10 +2387,29 @@
             textBoxFullName.Size = new Size(455, 33);
             textBoxFullName.TabIndex = 1;
             // 
+            // labelBirthDate
+            // 
+            labelBirthDate.AutoSize = true;
+            labelBirthDate.ForeColor = Color.Black;
+            labelBirthDate.Location = new Point(53, 172);
+            labelBirthDate.Margin = new Padding(4, 0, 4, 0);
+            labelBirthDate.Name = "labelBirthDate";
+            labelBirthDate.Size = new Size(93, 15);
+            labelBirthDate.TabIndex = 14;
+            labelBirthDate.Text = "Дата рождения:";
+            // 
+            // dateTimePickerBirthDate
+            // 
+            dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerBirthDate.Location = new Point(152, 158);
+            dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
+            dateTimePickerBirthDate.Size = new Size(455, 33);
+            dateTimePickerBirthDate.TabIndex = 2;
+            // 
             // labelBirthPlace
             // 
             labelBirthPlace.AutoSize = true;
-            labelBirthPlace.ForeColor = Color.WhiteSmoke;
+            labelBirthPlace.ForeColor = Color.Black;
             labelBirthPlace.Location = new Point(38, 214);
             labelBirthPlace.Margin = new Padding(4, 0, 4, 0);
             labelBirthPlace.Name = "labelBirthPlace";
@@ -2473,29 +2426,10 @@
             textBoxBirthPlace.Size = new Size(455, 33);
             textBoxBirthPlace.TabIndex = 3;
             // 
-            // labelBirthDate
-            // 
-            labelBirthDate.AutoSize = true;
-            labelBirthDate.ForeColor = Color.WhiteSmoke;
-            labelBirthDate.Location = new Point(53, 172);
-            labelBirthDate.Margin = new Padding(4, 0, 4, 0);
-            labelBirthDate.Name = "labelBirthDate";
-            labelBirthDate.Size = new Size(93, 15);
-            labelBirthDate.TabIndex = 14;
-            labelBirthDate.Text = "Дата рождения:";
-            // 
-            // dateTimePickerBirthDate
-            // 
-            dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerBirthDate.Location = new Point(152, 158);
-            dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
-            dateTimePickerBirthDate.Size = new Size(455, 33);
-            dateTimePickerBirthDate.TabIndex = 2;
-            // 
             // labelPassportSeries
             // 
             labelPassportSeries.AutoSize = true;
-            labelPassportSeries.ForeColor = Color.WhiteSmoke;
+            labelPassportSeries.ForeColor = Color.Black;
             labelPassportSeries.Location = new Point(43, 259);
             labelPassportSeries.Margin = new Padding(4, 0, 4, 0);
             labelPassportSeries.Name = "labelPassportSeries";
@@ -2509,9 +2443,130 @@
             textBoxPassportSeries.Location = new Point(152, 248);
             textBoxPassportSeries.Margin = new Padding(4, 3, 4, 3);
             textBoxPassportSeries.Name = "textBoxPassportSeries";
-            textBoxPassportSeries.ReadOnly = true;
             textBoxPassportSeries.Size = new Size(455, 33);
             textBoxPassportSeries.TabIndex = 4;
+            // 
+            // labelPassportNumber
+            // 
+            labelPassportNumber.AutoSize = true;
+            labelPassportNumber.ForeColor = Color.Black;
+            labelPassportNumber.Location = new Point(39, 303);
+            labelPassportNumber.Margin = new Padding(4, 0, 4, 0);
+            labelPassportNumber.Name = "labelPassportNumber";
+            labelPassportNumber.Size = new Size(102, 15);
+            labelPassportNumber.TabIndex = 17;
+            labelPassportNumber.Text = "Номер паспорта:";
+            // 
+            // textBoxPassportNumber
+            // 
+            textBoxPassportNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPassportNumber.Location = new Point(152, 292);
+            textBoxPassportNumber.Margin = new Padding(4, 3, 4, 3);
+            textBoxPassportNumber.Name = "textBoxPassportNumber";
+            textBoxPassportNumber.Size = new Size(455, 33);
+            textBoxPassportNumber.TabIndex = 5;
+            // 
+            // labelPhone
+            // 
+            labelPhone.AutoSize = true;
+            labelPhone.ForeColor = Color.Black;
+            labelPhone.Location = new Point(83, 348);
+            labelPhone.Margin = new Padding(4, 0, 4, 0);
+            labelPhone.Name = "labelPhone";
+            labelPhone.Size = new Size(58, 15);
+            labelPhone.TabIndex = 18;
+            labelPhone.Text = "Телефон:";
+            // 
+            // maskedTextBoxPhone
+            // 
+            maskedTextBoxPhone.Font = new Font("Segoe UI", 14.25F);
+            maskedTextBoxPhone.Location = new Point(152, 337);
+            maskedTextBoxPhone.Mask = "+7 (999) 999-99-99";
+            maskedTextBoxPhone.Name = "maskedTextBoxPhone";
+            maskedTextBoxPhone.Size = new Size(455, 33);
+            maskedTextBoxPhone.TabIndex = 6;
+            // 
+            // labelEmail
+            // 
+            labelEmail.AutoSize = true;
+            labelEmail.ForeColor = Color.Black;
+            labelEmail.Location = new Point(93, 393);
+            labelEmail.Margin = new Padding(4, 0, 4, 0);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(44, 15);
+            labelEmail.TabIndex = 19;
+            labelEmail.Text = "Почта:";
+            // 
+            // textBoxEmail
+            // 
+            textBoxEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxEmail.Location = new Point(152, 382);
+            textBoxEmail.Margin = new Padding(4, 3, 4, 3);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(455, 33);
+            textBoxEmail.TabIndex = 7;
+            // 
+            // labelINN
+            // 
+            labelINN.AutoSize = true;
+            labelINN.ForeColor = Color.Black;
+            labelINN.Location = new Point(104, 438);
+            labelINN.Margin = new Padding(4, 0, 4, 0);
+            labelINN.Name = "labelINN";
+            labelINN.Size = new Size(37, 15);
+            labelINN.TabIndex = 20;
+            labelINN.Text = "ИНН:";
+            // 
+            // textBoxINN
+            // 
+            textBoxINN.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxINN.Location = new Point(152, 427);
+            textBoxINN.Margin = new Padding(4, 3, 4, 3);
+            textBoxINN.Name = "textBoxINN";
+            textBoxINN.Size = new Size(455, 33);
+            textBoxINN.TabIndex = 8;
+            // 
+            // labelPostID
+            // 
+            labelPostID.AutoSize = true;
+            labelPostID.ForeColor = Color.Black;
+            labelPostID.Location = new Point(69, 484);
+            labelPostID.Margin = new Padding(4, 0, 4, 0);
+            labelPostID.Name = "labelPostID";
+            labelPostID.Size = new Size(72, 15);
+            labelPostID.TabIndex = 21;
+            labelPostID.Text = "Должность:";
+            // 
+            // comboBoxPostID
+            // 
+            comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxPostID.FormattingEnabled = true;
+            comboBoxPostID.Location = new Point(152, 473);
+            comboBoxPostID.Name = "comboBoxPostID";
+            comboBoxPostID.Size = new Size(455, 33);
+            comboBoxPostID.TabIndex = 9;
+            // 
+            // labelGenderID
+            // 
+            labelGenderID.AutoSize = true;
+            labelGenderID.ForeColor = Color.Black;
+            labelGenderID.Location = new Point(108, 529);
+            labelGenderID.Margin = new Padding(4, 0, 4, 0);
+            labelGenderID.Name = "labelGenderID";
+            labelGenderID.Size = new Size(33, 15);
+            labelGenderID.TabIndex = 22;
+            labelGenderID.Text = "Пол:";
+            // 
+            // comboBoxGenderID
+            // 
+            comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
+            comboBoxGenderID.FormattingEnabled = true;
+            comboBoxGenderID.Location = new Point(152, 518);
+            comboBoxGenderID.Name = "comboBoxGenderID";
+            comboBoxGenderID.Size = new Size(455, 33);
+            comboBoxGenderID.TabIndex = 10;
             // 
             // labelControlEmployees
             // 
@@ -2544,7 +2599,7 @@
             // buttonNewEmployee
             // 
             buttonNewEmployee.FlatStyle = FlatStyle.Flat;
-            buttonNewEmployee.ForeColor = Color.WhiteSmoke;
+            buttonNewEmployee.ForeColor = Color.Black;
             buttonNewEmployee.Location = new Point(4, 3);
             buttonNewEmployee.Margin = new Padding(4, 3, 4, 3);
             buttonNewEmployee.Name = "buttonNewEmployee";
@@ -2552,11 +2607,12 @@
             buttonNewEmployee.TabIndex = 0;
             buttonNewEmployee.Text = "Новая запись";
             buttonNewEmployee.UseVisualStyleBackColor = true;
+            buttonNewEmployee.Click += ButtonNewEmployee_Click;
             // 
             // buttonDeleteEmployee
             // 
             buttonDeleteEmployee.FlatStyle = FlatStyle.Flat;
-            buttonDeleteEmployee.ForeColor = Color.WhiteSmoke;
+            buttonDeleteEmployee.ForeColor = Color.Black;
             buttonDeleteEmployee.Location = new Point(4, 78);
             buttonDeleteEmployee.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteEmployee.Name = "buttonDeleteEmployee";
@@ -2564,18 +2620,20 @@
             buttonDeleteEmployee.TabIndex = 1;
             buttonDeleteEmployee.Text = "Удалить";
             buttonDeleteEmployee.UseVisualStyleBackColor = true;
+            buttonDeleteEmployee.Click += ButtonDeleteEmployee_Click;
             // 
             // buttonChangeEmployee
             // 
             buttonChangeEmployee.FlatStyle = FlatStyle.Flat;
             buttonChangeEmployee.ForeColor = Color.Black;
-            buttonChangeEmployee.Location = new Point(8, 152);
+            buttonChangeEmployee.Location = new Point(4, 151);
             buttonChangeEmployee.Margin = new Padding(4, 3, 4, 3);
             buttonChangeEmployee.Name = "buttonChangeEmployee";
             buttonChangeEmployee.Size = new Size(236, 67);
             buttonChangeEmployee.TabIndex = 2;
             buttonChangeEmployee.Text = "Изменить";
             buttonChangeEmployee.UseVisualStyleBackColor = true;
+            buttonChangeEmployee.Click += ButtonChangeEmployee_Click;
             // 
             // buttonSaveEmployee
             // 
@@ -2588,6 +2646,7 @@
             buttonSaveEmployee.TabIndex = 3;
             buttonSaveEmployee.Text = "Сохранить";
             buttonSaveEmployee.UseVisualStyleBackColor = true;
+            buttonSaveEmployee.Click += ButtonSaveEmployee_Click;
             // 
             // buttonWordEmployee
             // 
@@ -2600,11 +2659,12 @@
             buttonWordEmployee.TabIndex = 4;
             buttonWordEmployee.Text = "Вывод в Word";
             buttonWordEmployee.UseVisualStyleBackColor = true;
+            buttonWordEmployee.Click += ButtonWordEmployee_Click;
             // 
             // buttonExcelEmployee
             // 
             buttonExcelEmployee.FlatStyle = FlatStyle.Flat;
-            buttonExcelEmployee.ForeColor = Color.WhiteSmoke;
+            buttonExcelEmployee.ForeColor = Color.Black;
             buttonExcelEmployee.Location = new Point(4, 375);
             buttonExcelEmployee.Margin = new Padding(4, 3, 4, 3);
             buttonExcelEmployee.Name = "buttonExcelEmployee";
@@ -2612,11 +2672,12 @@
             buttonExcelEmployee.TabIndex = 5;
             buttonExcelEmployee.Text = "Вывод в Excel";
             buttonExcelEmployee.UseVisualStyleBackColor = true;
+            buttonExcelEmployee.Click += ButtonExcelEmployee_Click;
             // 
             // buttonTXTEmployee
             // 
             buttonTXTEmployee.FlatStyle = FlatStyle.Flat;
-            buttonTXTEmployee.ForeColor = Color.WhiteSmoke;
+            buttonTXTEmployee.ForeColor = Color.Black;
             buttonTXTEmployee.Location = new Point(4, 449);
             buttonTXTEmployee.Margin = new Padding(4, 3, 4, 3);
             buttonTXTEmployee.Name = "buttonTXTEmployee";
@@ -2624,10 +2685,10 @@
             buttonTXTEmployee.TabIndex = 6;
             buttonTXTEmployee.Text = "Вывод в TXT";
             buttonTXTEmployee.UseVisualStyleBackColor = true;
+            buttonTXTEmployee.Click += ButtonTXTEmployee_Click;
             // 
             // tabPageProjects
             // 
-            tabPageProjects.BackgroundImage = (Image)resources.GetObject("tabPageProjects.BackgroundImage");
             tabPageProjects.Controls.Add(panelTitleProjects);
             tabPageProjects.Controls.Add(dataGridViewProjects);
             tabPageProjects.Controls.Add(panelRecordProjects);
@@ -2658,7 +2719,7 @@
             // 
             labelTitleProjects.AutoSize = true;
             labelTitleProjects.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleProjects.ForeColor = Color.WhiteSmoke;
+            labelTitleProjects.ForeColor = Color.Black;
             labelTitleProjects.Location = new Point(4, 3);
             labelTitleProjects.Margin = new Padding(4, 0, 4, 0);
             labelTitleProjects.Name = "labelTitleProjects";
@@ -2678,6 +2739,7 @@
             buttonClearProjects.Size = new Size(78, 77);
             buttonClearProjects.TabIndex = 0;
             buttonClearProjects.UseVisualStyleBackColor = true;
+            buttonClearProjects.Click += ButtonClear_Click;
             // 
             // buttonRefreshProjects
             // 
@@ -2691,6 +2753,7 @@
             buttonRefreshProjects.Size = new Size(78, 77);
             buttonRefreshProjects.TabIndex = 1;
             buttonRefreshProjects.UseVisualStyleBackColor = true;
+            buttonRefreshProjects.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchProjects
             // 
@@ -2700,6 +2763,7 @@
             textBoxSearchProjects.Name = "textBoxSearchProjects";
             textBoxSearchProjects.Size = new Size(173, 33);
             textBoxSearchProjects.TabIndex = 2;
+            textBoxSearchProjects.TextChanged += TextBoxSearchProjects_TextChanged;
             // 
             // dataGridViewProjects
             // 
@@ -2713,6 +2777,7 @@
             dataGridViewProjects.RowHeadersWidth = 62;
             dataGridViewProjects.Size = new Size(867, 352);
             dataGridViewProjects.TabIndex = 0;
+            dataGridViewProjects.CellClick += DataGridViewProjects_CellClick;
             // 
             // panelRecordProjects
             // 
@@ -2735,7 +2800,7 @@
             // 
             labelRecordProjects.AutoSize = true;
             labelRecordProjects.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelRecordProjects.ForeColor = Color.WhiteSmoke;
+            labelRecordProjects.ForeColor = Color.Black;
             labelRecordProjects.Location = new Point(4, 10);
             labelRecordProjects.Margin = new Padding(4, 0, 4, 0);
             labelRecordProjects.Name = "labelRecordProjects";
@@ -2746,7 +2811,7 @@
             // labelProjectID
             // 
             labelProjectID.AutoSize = true;
-            labelProjectID.ForeColor = Color.WhiteSmoke;
+            labelProjectID.ForeColor = Color.Black;
             labelProjectID.Location = new Point(93, 82);
             labelProjectID.Margin = new Padding(4, 0, 4, 0);
             labelProjectID.Name = "labelProjectID";
@@ -2766,7 +2831,7 @@
             // labelProjectName
             // 
             labelProjectName.AutoSize = true;
-            labelProjectName.ForeColor = Color.WhiteSmoke;
+            labelProjectName.ForeColor = Color.Black;
             labelProjectName.Location = new Point(32, 124);
             labelProjectName.Margin = new Padding(4, 0, 4, 0);
             labelProjectName.Name = "labelProjectName";
@@ -2786,7 +2851,7 @@
             // labelHourly
             // 
             labelHourly.AutoSize = true;
-            labelHourly.ForeColor = Color.WhiteSmoke;
+            labelHourly.ForeColor = Color.Black;
             labelHourly.Location = new Point(35, 169);
             labelHourly.Margin = new Padding(4, 0, 4, 0);
             labelHourly.Name = "labelHourly";
@@ -2806,7 +2871,7 @@
             // labePieceWork
             // 
             labePieceWork.AutoSize = true;
-            labePieceWork.ForeColor = Color.WhiteSmoke;
+            labePieceWork.ForeColor = Color.Black;
             labePieceWork.Location = new Point(43, 214);
             labePieceWork.Margin = new Padding(4, 0, 4, 0);
             labePieceWork.Name = "labePieceWork";
@@ -2820,7 +2885,6 @@
             textBoxPieceWork.Location = new Point(152, 203);
             textBoxPieceWork.Margin = new Padding(4, 3, 4, 3);
             textBoxPieceWork.Name = "textBoxPieceWork";
-            textBoxPieceWork.ReadOnly = true;
             textBoxPieceWork.Size = new Size(455, 33);
             textBoxPieceWork.TabIndex = 3;
             // 
@@ -2855,7 +2919,7 @@
             // buttonNewProject
             // 
             buttonNewProject.FlatStyle = FlatStyle.Flat;
-            buttonNewProject.ForeColor = Color.WhiteSmoke;
+            buttonNewProject.ForeColor = Color.Black;
             buttonNewProject.Location = new Point(4, 3);
             buttonNewProject.Margin = new Padding(4, 3, 4, 3);
             buttonNewProject.Name = "buttonNewProject";
@@ -2868,7 +2932,7 @@
             // buttonDeleteProject
             // 
             buttonDeleteProject.FlatStyle = FlatStyle.Flat;
-            buttonDeleteProject.ForeColor = Color.WhiteSmoke;
+            buttonDeleteProject.ForeColor = Color.Black;
             buttonDeleteProject.Location = new Point(4, 78);
             buttonDeleteProject.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteProject.Name = "buttonDeleteProject";
@@ -2920,7 +2984,7 @@
             // buttonExcelProject
             // 
             buttonExcelProject.FlatStyle = FlatStyle.Flat;
-            buttonExcelProject.ForeColor = Color.WhiteSmoke;
+            buttonExcelProject.ForeColor = Color.Black;
             buttonExcelProject.Location = new Point(4, 375);
             buttonExcelProject.Margin = new Padding(4, 3, 4, 3);
             buttonExcelProject.Name = "buttonExcelProject";
@@ -2933,7 +2997,7 @@
             // buttonTXTProject
             // 
             buttonTXTProject.FlatStyle = FlatStyle.Flat;
-            buttonTXTProject.ForeColor = Color.WhiteSmoke;
+            buttonTXTProject.ForeColor = Color.Black;
             buttonTXTProject.Location = new Point(4, 449);
             buttonTXTProject.Margin = new Padding(4, 3, 4, 3);
             buttonTXTProject.Name = "buttonTXTProject";
@@ -2964,8 +3028,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(895, 1034);
             Controls.Add(tabControl1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);

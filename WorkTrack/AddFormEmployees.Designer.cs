@@ -32,8 +32,6 @@
             labelTitle = new Label();
             label1 = new Label();
             buttonSave = new Button();
-            labelEmployeeID = new Label();
-            textBoxEmployeeID = new TextBox();
             labelFullName = new Label();
             textBoxFullName = new TextBox();
             labelBirthDate = new Label();
@@ -96,27 +94,6 @@
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
             // 
-            // labelEmployeeID
-            // 
-            labelEmployeeID.AutoSize = true;
-            labelEmployeeID.BackColor = Color.Transparent;
-            labelEmployeeID.ForeColor = Color.Black;
-            labelEmployeeID.Location = new Point(229, 281);
-            labelEmployeeID.Margin = new Padding(4, 0, 4, 0);
-            labelEmployeeID.Name = "labelEmployeeID";
-            labelEmployeeID.Size = new Size(48, 15);
-            labelEmployeeID.TabIndex = 34;
-            labelEmployeeID.Text = "Номер:";
-            // 
-            // textBoxEmployeeID
-            // 
-            textBoxEmployeeID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeID.Location = new Point(288, 267);
-            textBoxEmployeeID.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeID.Name = "textBoxEmployeeID";
-            textBoxEmployeeID.Size = new Size(455, 33);
-            textBoxEmployeeID.TabIndex = 23;
-            // 
             // labelFullName
             // 
             labelFullName.AutoSize = true;
@@ -126,7 +103,7 @@
             labelFullName.Margin = new Padding(4, 0, 4, 0);
             labelFullName.Name = "labelFullName";
             labelFullName.Size = new Size(103, 15);
-            labelFullName.TabIndex = 35;
+            labelFullName.TabIndex = 13;
             labelFullName.Text = "ФИО сотрудника:";
             // 
             // textBoxFullName
@@ -136,7 +113,7 @@
             textBoxFullName.Margin = new Padding(4, 3, 4, 3);
             textBoxFullName.Name = "textBoxFullName";
             textBoxFullName.Size = new Size(455, 33);
-            textBoxFullName.TabIndex = 24;
+            textBoxFullName.TabIndex = 0;
             // 
             // labelBirthDate
             // 
@@ -147,7 +124,7 @@
             labelBirthDate.Margin = new Padding(4, 0, 4, 0);
             labelBirthDate.Name = "labelBirthDate";
             labelBirthDate.Size = new Size(93, 15);
-            labelBirthDate.TabIndex = 36;
+            labelBirthDate.TabIndex = 14;
             labelBirthDate.Text = "Дата рождения:";
             // 
             // dateTimePickerBirthDate
@@ -156,7 +133,7 @@
             dateTimePickerBirthDate.Location = new Point(288, 357);
             dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
             dateTimePickerBirthDate.Size = new Size(455, 33);
-            dateTimePickerBirthDate.TabIndex = 25;
+            dateTimePickerBirthDate.TabIndex = 1;
             // 
             // labelBirthPlace
             // 
@@ -167,7 +144,7 @@
             labelBirthPlace.Margin = new Padding(4, 0, 4, 0);
             labelBirthPlace.Name = "labelBirthPlace";
             labelBirthPlace.Size = new Size(103, 15);
-            labelBirthPlace.TabIndex = 37;
+            labelBirthPlace.TabIndex = 15;
             labelBirthPlace.Text = "Место рождения:";
             // 
             // textBoxBirthPlace
@@ -177,7 +154,7 @@
             textBoxBirthPlace.Margin = new Padding(4, 3, 4, 3);
             textBoxBirthPlace.Name = "textBoxBirthPlace";
             textBoxBirthPlace.Size = new Size(455, 33);
-            textBoxBirthPlace.TabIndex = 26;
+            textBoxBirthPlace.TabIndex = 2;
             // 
             // labelPassportSeries
             // 
@@ -188,7 +165,7 @@
             labelPassportSeries.Margin = new Padding(4, 0, 4, 0);
             labelPassportSeries.Name = "labelPassportSeries";
             labelPassportSeries.Size = new Size(98, 15);
-            labelPassportSeries.TabIndex = 38;
+            labelPassportSeries.TabIndex = 16;
             labelPassportSeries.Text = "Серия паспорта:";
             // 
             // textBoxPassportSeries
@@ -199,7 +176,7 @@
             textBoxPassportSeries.Name = "textBoxPassportSeries";
             textBoxPassportSeries.ReadOnly = true;
             textBoxPassportSeries.Size = new Size(455, 33);
-            textBoxPassportSeries.TabIndex = 27;
+            textBoxPassportSeries.TabIndex = 3;
             // 
             // labelPassportNumber
             // 
@@ -210,7 +187,7 @@
             labelPassportNumber.Margin = new Padding(4, 0, 4, 0);
             labelPassportNumber.Name = "labelPassportNumber";
             labelPassportNumber.Size = new Size(102, 15);
-            labelPassportNumber.TabIndex = 39;
+            labelPassportNumber.TabIndex = 17;
             labelPassportNumber.Text = "Номер паспорта:";
             // 
             // textBoxPassportNumber
@@ -220,7 +197,7 @@
             textBoxPassportNumber.Margin = new Padding(4, 3, 4, 3);
             textBoxPassportNumber.Name = "textBoxPassportNumber";
             textBoxPassportNumber.Size = new Size(455, 33);
-            textBoxPassportNumber.TabIndex = 28;
+            textBoxPassportNumber.TabIndex = 4;
             // 
             // labelPhone
             // 
@@ -231,7 +208,7 @@
             labelPhone.Margin = new Padding(4, 0, 4, 0);
             labelPhone.Name = "labelPhone";
             labelPhone.Size = new Size(58, 15);
-            labelPhone.TabIndex = 40;
+            labelPhone.TabIndex = 18;
             labelPhone.Text = "Телефон:";
             // 
             // maskedTextBoxPhone
@@ -241,7 +218,7 @@
             maskedTextBoxPhone.Mask = "+7 (999) 999-99-99";
             maskedTextBoxPhone.Name = "maskedTextBoxPhone";
             maskedTextBoxPhone.Size = new Size(455, 33);
-            maskedTextBoxPhone.TabIndex = 29;
+            maskedTextBoxPhone.TabIndex = 5;
             // 
             // labelEmail
             // 
@@ -252,7 +229,7 @@
             labelEmail.Margin = new Padding(4, 0, 4, 0);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(44, 15);
-            labelEmail.TabIndex = 41;
+            labelEmail.TabIndex = 19;
             labelEmail.Text = "Почта:";
             // 
             // textBoxEmail
@@ -262,7 +239,7 @@
             textBoxEmail.Margin = new Padding(4, 3, 4, 3);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(455, 33);
-            textBoxEmail.TabIndex = 30;
+            textBoxEmail.TabIndex = 6;
             // 
             // labelINN
             // 
@@ -273,7 +250,7 @@
             labelINN.Margin = new Padding(4, 0, 4, 0);
             labelINN.Name = "labelINN";
             labelINN.Size = new Size(37, 15);
-            labelINN.TabIndex = 42;
+            labelINN.TabIndex = 20;
             labelINN.Text = "ИНН:";
             // 
             // textBoxINN
@@ -284,7 +261,7 @@
             textBoxINN.Name = "textBoxINN";
             textBoxINN.ReadOnly = true;
             textBoxINN.Size = new Size(455, 33);
-            textBoxINN.TabIndex = 31;
+            textBoxINN.TabIndex = 7;
             // 
             // labelPostID
             // 
@@ -295,7 +272,7 @@
             labelPostID.Margin = new Padding(4, 0, 4, 0);
             labelPostID.Name = "labelPostID";
             labelPostID.Size = new Size(72, 15);
-            labelPostID.TabIndex = 43;
+            labelPostID.TabIndex = 21;
             labelPostID.Text = "Должность:";
             // 
             // comboBoxPostID
@@ -306,7 +283,7 @@
             comboBoxPostID.Location = new Point(288, 672);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
-            comboBoxPostID.TabIndex = 32;
+            comboBoxPostID.TabIndex = 8;
             // 
             // labelGenderID
             // 
@@ -317,7 +294,7 @@
             labelGenderID.Margin = new Padding(4, 0, 4, 0);
             labelGenderID.Name = "labelGenderID";
             labelGenderID.Size = new Size(33, 15);
-            labelGenderID.TabIndex = 44;
+            labelGenderID.TabIndex = 22;
             labelGenderID.Text = "Пол:";
             // 
             // comboBoxGenderID
@@ -328,7 +305,7 @@
             comboBoxGenderID.Location = new Point(288, 717);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);
-            comboBoxGenderID.TabIndex = 33;
+            comboBoxGenderID.TabIndex = 9;
             // 
             // AddFormEmployees
             // 
@@ -339,8 +316,6 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelEmployeeID);
-            Controls.Add(textBoxEmployeeID);
             Controls.Add(labelFullName);
             Controls.Add(textBoxFullName);
             Controls.Add(labelBirthDate);
@@ -363,7 +338,10 @@
             Controls.Add(comboBoxGenderID);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormEmployees";
             Text = "Добавить сотрудника";
             ResumeLayout(false);
@@ -375,8 +353,6 @@
         private Label labelTitle;
         private Label label1;
         private Button buttonSave;
-        private Label labelEmployeeID;
-        private TextBox textBoxEmployeeID;
         private Label labelFullName;
         private TextBox textBoxFullName;
         private Label labelBirthDate;

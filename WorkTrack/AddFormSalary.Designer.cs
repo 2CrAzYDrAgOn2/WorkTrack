@@ -32,8 +32,6 @@
             labelTitle = new Label();
             label1 = new Label();
             buttonSave = new Button();
-            labelSalaryID = new Label();
-            textBoxSalaryID = new TextBox();
             labelSalaryAccrualIDSalary = new Label();
             textBoxSalaryAccrualIDSalary = new TextBox();
             labelEmployeeIDSalary = new Label();
@@ -68,7 +66,7 @@
             labelTitle.Margin = new Padding(4, 0, 4, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(175, 25);
-            labelTitle.TabIndex = 11;
+            labelTitle.TabIndex = 12;
             labelTitle.Text = "Создание записи:";
             // 
             // label1
@@ -81,7 +79,7 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(187, 21);
-            label1.TabIndex = 12;
+            label1.TabIndex = 13;
             label1.Text = "Начисление зарплаты";
             // 
             // buttonSave
@@ -93,31 +91,10 @@
             buttonSave.Margin = new Padding(4, 3, 4, 3);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(236, 65);
-            buttonSave.TabIndex = 10;
+            buttonSave.TabIndex = 11;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
-            // 
-            // labelSalaryID
-            // 
-            labelSalaryID.AutoSize = true;
-            labelSalaryID.BackColor = Color.Transparent;
-            labelSalaryID.ForeColor = Color.Black;
-            labelSalaryID.Location = new Point(233, 307);
-            labelSalaryID.Margin = new Padding(4, 0, 4, 0);
-            labelSalaryID.Name = "labelSalaryID";
-            labelSalaryID.Size = new Size(48, 15);
-            labelSalaryID.TabIndex = 37;
-            labelSalaryID.Text = "Номер:";
-            // 
-            // textBoxSalaryID
-            // 
-            textBoxSalaryID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSalaryID.Location = new Point(292, 293);
-            textBoxSalaryID.Margin = new Padding(4, 3, 4, 3);
-            textBoxSalaryID.Name = "textBoxSalaryID";
-            textBoxSalaryID.Size = new Size(455, 33);
-            textBoxSalaryID.TabIndex = 25;
             // 
             // labelSalaryAccrualIDSalary
             // 
@@ -128,7 +105,7 @@
             labelSalaryAccrualIDSalary.Margin = new Padding(4, 0, 4, 0);
             labelSalaryAccrualIDSalary.Name = "labelSalaryAccrualIDSalary";
             labelSalaryAccrualIDSalary.Size = new Size(103, 15);
-            labelSalaryAccrualIDSalary.TabIndex = 38;
+            labelSalaryAccrualIDSalary.TabIndex = 14;
             labelSalaryAccrualIDSalary.Text = "Номер зарплаты:";
             // 
             // textBoxSalaryAccrualIDSalary
@@ -138,7 +115,7 @@
             textBoxSalaryAccrualIDSalary.Margin = new Padding(4, 3, 4, 3);
             textBoxSalaryAccrualIDSalary.Name = "textBoxSalaryAccrualIDSalary";
             textBoxSalaryAccrualIDSalary.Size = new Size(455, 33);
-            textBoxSalaryAccrualIDSalary.TabIndex = 26;
+            textBoxSalaryAccrualIDSalary.TabIndex = 0;
             // 
             // labelEmployeeIDSalary
             // 
@@ -149,7 +126,7 @@
             labelEmployeeIDSalary.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDSalary.Name = "labelEmployeeIDSalary";
             labelEmployeeIDSalary.Size = new Size(114, 15);
-            labelEmployeeIDSalary.TabIndex = 39;
+            labelEmployeeIDSalary.TabIndex = 15;
             labelEmployeeIDSalary.Text = "Номер сотрудника:";
             // 
             // textBoxEmployeeIDSalary
@@ -159,7 +136,7 @@
             textBoxEmployeeIDSalary.Margin = new Padding(4, 3, 4, 3);
             textBoxEmployeeIDSalary.Name = "textBoxEmployeeIDSalary";
             textBoxEmployeeIDSalary.Size = new Size(455, 33);
-            textBoxEmployeeIDSalary.TabIndex = 27;
+            textBoxEmployeeIDSalary.TabIndex = 1;
             // 
             // labelAllDays
             // 
@@ -170,7 +147,7 @@
             labelAllDays.Margin = new Padding(4, 0, 4, 0);
             labelAllDays.Name = "labelAllDays";
             labelAllDays.Size = new Size(105, 15);
-            labelAllDays.TabIndex = 40;
+            labelAllDays.TabIndex = 16;
             labelAllDays.Text = "Дней отработано:";
             // 
             // textBoxAllDays
@@ -181,7 +158,7 @@
             textBoxAllDays.Name = "textBoxAllDays";
             textBoxAllDays.ReadOnly = true;
             textBoxAllDays.Size = new Size(455, 33);
-            textBoxAllDays.TabIndex = 28;
+            textBoxAllDays.TabIndex = 2;
             // 
             // labelAllHours
             // 
@@ -192,7 +169,7 @@
             labelAllHours.Margin = new Padding(4, 0, 4, 0);
             labelAllHours.Name = "labelAllHours";
             labelAllHours.Size = new Size(110, 15);
-            labelAllHours.TabIndex = 41;
+            labelAllHours.TabIndex = 17;
             labelAllHours.Text = "Часов отработано:";
             // 
             // textBoxAllHours
@@ -203,7 +180,7 @@
             textBoxAllHours.Name = "textBoxAllHours";
             textBoxAllHours.ReadOnly = true;
             textBoxAllHours.Size = new Size(455, 33);
-            textBoxAllHours.TabIndex = 29;
+            textBoxAllHours.TabIndex = 3;
             // 
             // labelPieceworkCharges
             // 
@@ -214,7 +191,7 @@
             labelPieceworkCharges.Margin = new Padding(4, 0, 4, 0);
             labelPieceworkCharges.Name = "labelPieceworkCharges";
             labelPieceworkCharges.Size = new Size(114, 15);
-            labelPieceworkCharges.TabIndex = 42;
+            labelPieceworkCharges.TabIndex = 18;
             labelPieceworkCharges.Text = "Сдельная зарплата:";
             // 
             // textBoxPieceworkCharges
@@ -224,7 +201,7 @@
             textBoxPieceworkCharges.Margin = new Padding(4, 3, 4, 3);
             textBoxPieceworkCharges.Name = "textBoxPieceworkCharges";
             textBoxPieceworkCharges.Size = new Size(455, 33);
-            textBoxPieceworkCharges.TabIndex = 30;
+            textBoxPieceworkCharges.TabIndex = 4;
             // 
             // labelHourlyCharges
             // 
@@ -235,7 +212,7 @@
             labelHourlyCharges.Margin = new Padding(4, 0, 4, 0);
             labelHourlyCharges.Name = "labelHourlyCharges";
             labelHourlyCharges.Size = new Size(122, 15);
-            labelHourlyCharges.TabIndex = 43;
+            labelHourlyCharges.TabIndex = 19;
             labelHourlyCharges.Text = "Почасовая зарплата:";
             // 
             // textBoxHourlyCharges
@@ -245,7 +222,7 @@
             textBoxHourlyCharges.Margin = new Padding(4, 3, 4, 3);
             textBoxHourlyCharges.Name = "textBoxHourlyCharges";
             textBoxHourlyCharges.Size = new Size(455, 33);
-            textBoxHourlyCharges.TabIndex = 31;
+            textBoxHourlyCharges.TabIndex = 5;
             // 
             // labelVacationPay
             // 
@@ -256,7 +233,7 @@
             labelVacationPay.Margin = new Padding(4, 0, 4, 0);
             labelVacationPay.Name = "labelVacationPay";
             labelVacationPay.Size = new Size(71, 15);
-            labelVacationPay.TabIndex = 44;
+            labelVacationPay.TabIndex = 20;
             labelVacationPay.Text = "Отпускные:";
             // 
             // textBoxVacationPay
@@ -267,7 +244,7 @@
             textBoxVacationPay.Name = "textBoxVacationPay";
             textBoxVacationPay.ReadOnly = true;
             textBoxVacationPay.Size = new Size(455, 33);
-            textBoxVacationPay.TabIndex = 32;
+            textBoxVacationPay.TabIndex = 6;
             // 
             // labelSickPay
             // 
@@ -278,7 +255,7 @@
             labelSickPay.Margin = new Padding(4, 0, 4, 0);
             labelSickPay.Name = "labelSickPay";
             labelSickPay.Size = new Size(80, 15);
-            labelSickPay.TabIndex = 45;
+            labelSickPay.TabIndex = 21;
             labelSickPay.Text = "Больничные:";
             // 
             // textBoxSickPay
@@ -289,7 +266,7 @@
             textBoxSickPay.Name = "textBoxSickPay";
             textBoxSickPay.ReadOnly = true;
             textBoxSickPay.Size = new Size(455, 33);
-            textBoxSickPay.TabIndex = 33;
+            textBoxSickPay.TabIndex = 7;
             // 
             // labelPersonalIncomeTax
             // 
@@ -300,7 +277,7 @@
             labelPersonalIncomeTax.Margin = new Padding(4, 0, 4, 0);
             labelPersonalIncomeTax.Name = "labelPersonalIncomeTax";
             labelPersonalIncomeTax.Size = new Size(44, 15);
-            labelPersonalIncomeTax.TabIndex = 46;
+            labelPersonalIncomeTax.TabIndex = 22;
             labelPersonalIncomeTax.Text = "НДФЛ:";
             // 
             // textBoxPersonalIncomeTax
@@ -310,7 +287,7 @@
             textBoxPersonalIncomeTax.Margin = new Padding(4, 3, 4, 3);
             textBoxPersonalIncomeTax.Name = "textBoxPersonalIncomeTax";
             textBoxPersonalIncomeTax.Size = new Size(455, 33);
-            textBoxPersonalIncomeTax.TabIndex = 34;
+            textBoxPersonalIncomeTax.TabIndex = 8;
             // 
             // labelContributions
             // 
@@ -321,7 +298,7 @@
             labelContributions.Margin = new Padding(4, 0, 4, 0);
             labelContributions.Name = "labelContributions";
             labelContributions.Size = new Size(48, 15);
-            labelContributions.TabIndex = 47;
+            labelContributions.TabIndex = 23;
             labelContributions.Text = "Сборы:";
             // 
             // textBoxContributions
@@ -331,7 +308,7 @@
             textBoxContributions.Margin = new Padding(4, 3, 4, 3);
             textBoxContributions.Name = "textBoxContributions";
             textBoxContributions.Size = new Size(455, 33);
-            textBoxContributions.TabIndex = 35;
+            textBoxContributions.TabIndex = 9;
             // 
             // labelTotal
             // 
@@ -342,7 +319,7 @@
             labelTotal.Margin = new Padding(4, 0, 4, 0);
             labelTotal.Name = "labelTotal";
             labelTotal.Size = new Size(43, 15);
-            labelTotal.TabIndex = 48;
+            labelTotal.TabIndex = 24;
             labelTotal.Text = "Итого:";
             // 
             // textBoxTotal
@@ -353,7 +330,7 @@
             textBoxTotal.Name = "textBoxTotal";
             textBoxTotal.ReadOnly = true;
             textBoxTotal.Size = new Size(455, 33);
-            textBoxTotal.TabIndex = 36;
+            textBoxTotal.TabIndex = 10;
             // 
             // AddFormSalary
             // 
@@ -364,8 +341,6 @@
             ClientSize = new Size(896, 841);
             Controls.Add(labelTitle);
             Controls.Add(label1);
-            Controls.Add(labelSalaryID);
-            Controls.Add(textBoxSalaryID);
             Controls.Add(labelSalaryAccrualIDSalary);
             Controls.Add(textBoxSalaryAccrualIDSalary);
             Controls.Add(labelEmployeeIDSalary);
@@ -390,7 +365,10 @@
             Controls.Add(textBoxTotal);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "AddFormSalary";
             Text = "Добавить начисление зарплаты";
             ResumeLayout(false);
@@ -402,8 +380,6 @@
         private Label labelTitle;
         private Label label1;
         private Button buttonSave;
-        private Label labelSalaryID;
-        private TextBox textBoxSalaryID;
         private Label labelSalaryAccrualIDSalary;
         private TextBox textBoxSalaryAccrualIDSalary;
         private Label labelEmployeeIDSalary;

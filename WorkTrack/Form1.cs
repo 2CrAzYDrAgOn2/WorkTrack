@@ -864,87 +864,122 @@ namespace WorkTrack
                 var selectedRowIndex = dataGridView.CurrentCell.RowIndex;
                 switch (dataGridView.Name)
                 {
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewProjects":
+                        var projectID = textBoxProjectID.Text;
+                        var projectName = textBoxProjectName.Text;
+                        var hourly = textBoxHourly.Text;
+                        var pieceWork = textBoxPieceWork.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(projectID, projectName, hourly, pieceWork);
+                        dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewEmployees":
+                        var employeeID = textBoxEmployeeID.Text;
+                        var fullName = textBoxFullName.Text;
+                        var birthDate = dateTimePickerBirthDate;
+                        var birthPlace = textBoxBirthPlace.Text;
+                        var passportSeries = textBoxPassportSeries.Text;
+                        var passportNumber = textBoxPassportNumber.Text;
+                        var phone = maskedTextBoxPhone.Text;
+                        var email = textBoxEmail.Text;
+                        var iNN = textBoxINN.Text;
+                        string queryPost = $"SELECT Post FROM Posts WHERE PostID = {postID}";
+                        SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultPost = commandPost.ExecuteScalar();
+                        comboBoxPostID.Text = resultPost.ToString();
+                        var postID = comboBoxPostID.Text;
+                        string queryGender = $"SELECT Gender FROM Genders WHERE GenderID = {genderID}";
+                        SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultGender = commandGender.ExecuteScalar();
+                        var genderID = comboBoxGenderID.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, postID, genderID);
+                        dataGridView.Rows[selectedRowIndex].Cells[11].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewSalaryAccruals":
+                        var salaryAccrualID = textBoxSalaryAccrualID.Text;
+                        var year = textBoxYear.Text;
+                        string queryMonth = $"SELECT Month FROM Months WHERE MonthID = {monthID}";
+                        SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultMonth = commandMonth.ExecuteScalar();
+                        comboBoxMonthID.Text = resultMonth.ToString();
+                        var monthID = comboBoxMonthID.Text;
+                        string queryProject = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectID}";
+                        SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultProject = commandProject.ExecuteScalar();
+                        textBoxProjectIDSalaryAccruals.Text = resultProject.ToString();
+                        var projectIDSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(salaryAccrualID, year, monthID, projectIDSalaryAccruals);
+                        dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewSalary":
+                        var salaryID = textBoxSalaryID.Text;
+                        var salaryAccrualIDSalary = textBoxSalaryAccrualIDSalary.Text;
+                        var employeeIDSalary = textBoxEmployeeIDSalary.Text;
+                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
+                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultEmployee = commandEmployee.ExecuteScalar();
+                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        dataGridView.Rows[selectedRowIndex].SetValues(salaryID, salaryAccrualIDSalary, employeeIDSalary);
+                        dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewAccountingsOfWorkingHours":
+                        var accountingOfWorkingHoursID = textBoxAccountingsOfWorkingHoursID.Text;
+                        var employeeIDAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
+                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
+                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultEmployee = commandEmployee.ExecuteScalar();
+                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        var projectIDAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
+                        string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectIDAccountingsOfWorkingHours}";
+                        SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultProjectAccountingsOfWorkingHours = commandProjectAccountingsOfWorkingHours.ExecuteScalar();
+                        textBoxProjectIDAccountingsOfWorkingHours.Text = resultProjectAccountingsOfWorkingHours.ToString();
+                        var typeOfRemunerationID = comboBoxTypeOfRemunerationID.Text;
+                        string queryTypeOfRemuneration = $"SELECT TypeOfRemuneration FROM TypesOfRemuneration WHERE TypeOfRemunerationID = {TypeOfRemunerationID}";
+                        SqlCommand commandTypeOfRemuneration = new(queryTypeOfRemuneration, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultTypeOfRemuneration = commandTypeOfRemuneration.ExecuteScalar();
+                        comboBoxTypeOfRemunerationID.Text = resultTypeOfRemuneration.ToString();
+                        var hoursOfWork = textBoxHoursOfWork.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(accountingOfWorkingHoursID, employeeIDAccountingsOfWorkingHours, projectIDAccountingsOfWorkingHours, typeOfRemunerationID, hoursOfWork);
+                        dataGridView.Rows[selectedRowIndex].Cells[5].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                    case "dataGridViewVacationPay":
+                        var vacationPayID = textBoxVacationPayID.Text;
+                        var employeeIDVacationPay = textBoxEmployeeIDVacationPay.Text;
+                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
+                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultEmployee = commandEmployee.ExecuteScalar();
+                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        var vacationStartDate = dateTimePickerVacationStartDate.Value;
+                        var vacationEndDate = dateTimePickerVacationEndDate.Value;
+                        dataGridView.Rows[selectedRowIndex].SetValues(vacationPayID, employeeIDVacationPay, vacationStartDate, vacationEndDate);
+                        dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
                         break;
 
-                    case "dataGridViewBooks":
-                        var bookID = textBoxBookID.Text;
-                        var titleBooks = textBoxTitleBooks.Text;
-                        var authorBooks = textBoxAuthorBooks.Text;
-                        var genreBooks = textBoxGenreBooks.Text;
-                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
-                        var iSBNBooks = textBoxISBNBooks.Text;
-                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                    case "dataGridViewSickPay":
+                        var sickPayID = textBoxSickPayID.Text;
+                        var employeeIDSickPay = textBoxEmployeeID.Text;
+                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
+                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object resultEmployee = commandEmployee.ExecuteScalar();
+                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        var sickStartDate = dateTimePickerSickStartDate.Value;
+                        var sickEndDate = dateTimePickerSickEndDate.Value;
+                        dataGridView.Rows[selectedRowIndex].SetValues(sickPayID, employeeIDSickPay, sickStartDate, sickEndDate);
                         dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
                         break;
 

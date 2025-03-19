@@ -1,4 +1,6 @@
-﻿namespace WorkTrack
+﻿using System.Data.SqlClient;
+
+namespace WorkTrack
 {
     public partial class AddFormSickPay : Form
     {
@@ -19,21 +21,19 @@
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var userLogin = textBoxRegistrationIDLoans.Text;
-                //string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                //SqlCommand command = new(query, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object result = command.ExecuteScalar();
-                //var registrationID = result.ToString();
-                //var bookID = textBoxBookIDLoans.Text;
-                //var loanDate = dateTimePickerLoanDateLoans.Value;
-                //DateTime? returnDate = checkBoxReturnDateLoans.Checked ? (DateTime?)null : dateTimePickerReturnDateLoans.Value;
-                //var isReturned = textBoxIsReturnedLoans.Text;
-                //var addQuery = $"insert into Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned) values ('{registrationID}', '{bookID}', '{loanDate:yyyy-MM-dd}', {returnDateValue}, '{isReturned}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var FullNameSickPay = textBoxEmployeeIDSickPay.Text;
+                string queryEmployeeSickPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{FullNameSickPay}'";
+                SqlCommand commandEmployeeSickPay = new(queryEmployeeSickPay, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultEmployeeSickPay = commandEmployeeSickPay.ExecuteScalar();
+                var employeeID = resultEmployeeSickPay.ToString();
+                var sickStartDate = dateTimePickerSickStartDate.Value;
+                var sickEndDate = dateTimePickerSickEndDate.Value;
+                var addQuery = $"insert into SickPay (EmployeeID, SickStartDate, SickEndDate) values ('{employeeID}', '{sickStartDate}', '{sickEndDate}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

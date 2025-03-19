@@ -38,12 +38,6 @@
             dateTimePickerSickStartDate = new DateTimePicker();
             labelSickEndDate = new Label();
             dateTimePickerSickEndDate = new DateTimePicker();
-            labelExperience = new Label();
-            textBoxExperience = new TextBox();
-            labelAverageDailyEarningsSickPay = new Label();
-            textBoxAverageDailyEarningsSickPay = new TextBox();
-            labelTotalSickPay = new Label();
-            textBoxTotalSickPay = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -147,71 +141,6 @@
             dateTimePickerSickEndDate.Size = new Size(455, 33);
             dateTimePickerSickEndDate.TabIndex = 2;
             // 
-            // labelExperience
-            // 
-            labelExperience.AutoSize = true;
-            labelExperience.BackColor = Color.Transparent;
-            labelExperience.ForeColor = Color.Black;
-            labelExperience.Location = new Point(199, 593);
-            labelExperience.Margin = new Padding(4, 0, 4, 0);
-            labelExperience.Name = "labelExperience";
-            labelExperience.Size = new Size(82, 15);
-            labelExperience.TabIndex = 12;
-            labelExperience.Text = "Стаж работы:";
-            // 
-            // textBoxExperience
-            // 
-            textBoxExperience.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxExperience.Location = new Point(292, 582);
-            textBoxExperience.Margin = new Padding(4, 3, 4, 3);
-            textBoxExperience.Name = "textBoxExperience";
-            textBoxExperience.Size = new Size(455, 33);
-            textBoxExperience.TabIndex = 3;
-            // 
-            // labelAverageDailyEarningsSickPay
-            // 
-            labelAverageDailyEarningsSickPay.AutoSize = true;
-            labelAverageDailyEarningsSickPay.BackColor = Color.Transparent;
-            labelAverageDailyEarningsSickPay.ForeColor = Color.Black;
-            labelAverageDailyEarningsSickPay.Location = new Point(120, 638);
-            labelAverageDailyEarningsSickPay.Margin = new Padding(4, 0, 4, 0);
-            labelAverageDailyEarningsSickPay.Name = "labelAverageDailyEarningsSickPay";
-            labelAverageDailyEarningsSickPay.Size = new Size(166, 15);
-            labelAverageDailyEarningsSickPay.TabIndex = 13;
-            labelAverageDailyEarningsSickPay.Text = "Средний дневной заработок:";
-            // 
-            // textBoxAverageDailyEarningsSickPay
-            // 
-            textBoxAverageDailyEarningsSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxAverageDailyEarningsSickPay.Location = new Point(292, 627);
-            textBoxAverageDailyEarningsSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxAverageDailyEarningsSickPay.Name = "textBoxAverageDailyEarningsSickPay";
-            textBoxAverageDailyEarningsSickPay.ReadOnly = true;
-            textBoxAverageDailyEarningsSickPay.Size = new Size(455, 33);
-            textBoxAverageDailyEarningsSickPay.TabIndex = 4;
-            // 
-            // labelTotalSickPay
-            // 
-            labelTotalSickPay.AutoSize = true;
-            labelTotalSickPay.BackColor = Color.Transparent;
-            labelTotalSickPay.ForeColor = Color.Black;
-            labelTotalSickPay.Location = new Point(238, 683);
-            labelTotalSickPay.Margin = new Padding(4, 0, 4, 0);
-            labelTotalSickPay.Name = "labelTotalSickPay";
-            labelTotalSickPay.Size = new Size(43, 15);
-            labelTotalSickPay.TabIndex = 14;
-            labelTotalSickPay.Text = "Итого:";
-            // 
-            // textBoxTotalSickPay
-            // 
-            textBoxTotalSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTotalSickPay.Location = new Point(292, 672);
-            textBoxTotalSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxTotalSickPay.Name = "textBoxTotalSickPay";
-            textBoxTotalSickPay.ReadOnly = true;
-            textBoxTotalSickPay.Size = new Size(455, 33);
-            textBoxTotalSickPay.TabIndex = 5;
-            // 
             // AddFormSickPay
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -227,12 +156,6 @@
             Controls.Add(dateTimePickerSickStartDate);
             Controls.Add(labelSickEndDate);
             Controls.Add(dateTimePickerSickEndDate);
-            Controls.Add(labelExperience);
-            Controls.Add(textBoxExperience);
-            Controls.Add(labelAverageDailyEarningsSickPay);
-            Controls.Add(textBoxAverageDailyEarningsSickPay);
-            Controls.Add(labelTotalSickPay);
-            Controls.Add(textBoxTotalSickPay);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -256,11 +179,5 @@
         private DateTimePicker dateTimePickerSickStartDate;
         private Label labelSickEndDate;
         private DateTimePicker dateTimePickerSickEndDate;
-        private Label labelExperience;
-        private TextBox textBoxExperience;
-        private Label labelAverageDailyEarningsSickPay;
-        private TextBox textBoxAverageDailyEarningsSickPay;
-        private Label labelTotalSickPay;
-        private TextBox textBoxTotalSickPay;
     }
 }

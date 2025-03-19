@@ -1,4 +1,6 @@
-﻿namespace WorkTrack
+﻿using System.Data.SqlClient;
+
+namespace WorkTrack
 {
     public partial class AddFormVacationPay : Form
     {
@@ -19,21 +21,19 @@
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var userLogin = textBoxRegistrationIDLoans.Text;
-                //string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                //SqlCommand command = new(query, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object result = command.ExecuteScalar();
-                //var registrationID = result.ToString();
-                //var bookID = textBoxBookIDLoans.Text;
-                //var loanDate = dateTimePickerLoanDateLoans.Value;
-                //DateTime? returnDate = checkBoxReturnDateLoans.Checked ? (DateTime?)null : dateTimePickerReturnDateLoans.Value;
-                //var isReturned = textBoxIsReturnedLoans.Text;
-                //var addQuery = $"insert into Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned) values ('{registrationID}', '{bookID}', '{loanDate:yyyy-MM-dd}', {returnDateValue}, '{isReturned}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var fullNameVacationPay = textBoxEmployeeIDVacationPay.Text;
+                string queryEmployeeVacationPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameVacationPay}'";
+                SqlCommand commandEmployeeVacationPay = new(queryEmployeeVacationPay, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultEmployeeVacationPay = commandEmployeeVacationPay.ExecuteScalar();
+                var employeeID = resultEmployeeVacationPay.ToString();
+                var vacationStartDate = dateTimePickerVacationStartDate.Value;
+                var vacationEndDate = dateTimePickerVacationEndDate.Value;
+                var addQuery = $"insert into VacationPay (EmployeeID, VacationStartDate, VacationEndDate) values ('{employeeID}', '{vacationStartDate}', '{vacationEndDate}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

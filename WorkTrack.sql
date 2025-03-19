@@ -183,4 +183,52 @@ SELECT * FROM VacationPay;
 SELECT * FROM SickPay;
 SELECT * FROM Registration;
 
+-- 1. ќтчЄт по начислению зарплат сотрудников за мес€ц
+SELECT 
+    s.SalaryID,
+    e.FullName,
+    m.MonthName,
+    s.AllDays,
+    s.AllHours,
+    s.PieceworkCharges,
+    s.HourlyCharges,
+    s.VacationPay,
+    s.SickPay,
+    s.PersonalIncomeTax,
+    s.Contributions,
+    s.Total
+FROM Salary s
+JOIN Employees e ON s.EmployeeID = e.EmployeeID
+JOIN SalaryAccruals sa ON s.SalaryAccrualID = sa.SalaryAccrualID
+JOIN Months m ON sa.MonthID = m.MonthID
+ORDER BY sa.Year DESC, m.MonthID DESC, e.FullName;
+
+-- 2. ќтчЄт по отработанным часам сотрудников за период
+SELECT 
+    e.FullName,
+    p.ProjectName,
+    t.TypeOfRemuneration,
+    SUM(a.HoursOfWork) AS TotalHoursWorked
+FROM AccountingsOfWorkingHours a
+JOIN Employees e ON a.EmployeeID = e.EmployeeID
+JOIN Projects p ON a.ProjectID = p.ProjectID
+JOIN TypesOfRemuneration t ON a.TypeOfRemunerationID = t.TypeOfRemunerationID
+GROUP BY e.FullName, p.ProjectName, t.TypeOfRemuneration
+ORDER BY e.FullName, p.ProjectName;
+
+-- 3. ќтчЄт по отпускным и больничным выплатам
+SELECT 
+    e.FullName,
+    v.VacationStartDate,
+    v.VacationEndDate,
+    v.Total AS VacationTotal,
+    s.SickStartDate,
+    s.SickEndDate,
+    s.Experience,
+    s.Total AS SickTotal
+FROM Employees e
+LEFT JOIN VacationPay v ON e.EmployeeID = v.EmployeeID
+LEFT JOIN SickPay s ON e.EmployeeID = s.EmployeeID
+ORDER BY e.FullName;
+
 DROP DATABASE WorkTrack;

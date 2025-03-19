@@ -63,6 +63,7 @@
             buttonTXTSickPay = new Button();
             tabPageVacationPay = new TabPage();
             panelTitleVacationPay = new Panel();
+            buttonReportVacationPay = new Button();
             labelTitleVacationPay = new Label();
             buttonClearVacationPay = new Button();
             buttonRefreshVacationPay = new Button();
@@ -93,6 +94,7 @@
             buttonTXTVacationPay = new Button();
             tabPageAccountingsOfWorkingHours = new TabPage();
             panelTitleAccountingsOfWorkingHours = new Panel();
+            buttonReportAccountingsOfWorkingHours = new Button();
             labelTitleAccountingsOfWorkingHours = new Label();
             buttonClearAccountingsOfWorkingHours = new Button();
             buttonRefreshAccountingsOfWorkingHours = new Button();
@@ -163,6 +165,7 @@
             buttonTXTSalary = new Button();
             tabPageSalaryAccruals = new TabPage();
             panelTitleSalaryAccruals = new Panel();
+            buttonReportSalaryAccruals = new Button();
             labelTitleSalaryAccruals = new Label();
             buttonClearSalaryAccruals = new Button();
             buttonRefreshSalaryAccruals = new Button();
@@ -697,6 +700,7 @@
             // 
             // panelTitleVacationPay
             // 
+            panelTitleVacationPay.Controls.Add(buttonReportVacationPay);
             panelTitleVacationPay.Controls.Add(labelTitleVacationPay);
             panelTitleVacationPay.Controls.Add(buttonClearVacationPay);
             panelTitleVacationPay.Controls.Add(buttonRefreshVacationPay);
@@ -706,6 +710,20 @@
             panelTitleVacationPay.Name = "panelTitleVacationPay";
             panelTitleVacationPay.Size = new Size(876, 84);
             panelTitleVacationPay.TabIndex = 3;
+            // 
+            // buttonReportVacationPay
+            // 
+            buttonReportVacationPay.BackgroundImage = (Image)resources.GetObject("buttonReportVacationPay.BackgroundImage");
+            buttonReportVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonReportVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportVacationPay.Location = new Point(442, 3);
+            buttonReportVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonReportVacationPay.Name = "buttonReportVacationPay";
+            buttonReportVacationPay.Size = new Size(78, 77);
+            buttonReportVacationPay.TabIndex = 5;
+            buttonReportVacationPay.UseVisualStyleBackColor = true;
+            buttonReportVacationPay.Click += ButtonReportVacationPay_Click;
             // 
             // labelTitleVacationPay
             // 
@@ -1061,6 +1079,7 @@
             // 
             // panelTitleAccountingsOfWorkingHours
             // 
+            panelTitleAccountingsOfWorkingHours.Controls.Add(buttonReportAccountingsOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(labelTitleAccountingsOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(buttonClearAccountingsOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(buttonRefreshAccountingsOfWorkingHours);
@@ -1070,6 +1089,20 @@
             panelTitleAccountingsOfWorkingHours.Name = "panelTitleAccountingsOfWorkingHours";
             panelTitleAccountingsOfWorkingHours.Size = new Size(876, 84);
             panelTitleAccountingsOfWorkingHours.TabIndex = 3;
+            // 
+            // buttonReportAccountingsOfWorkingHours
+            // 
+            buttonReportAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonReportAccountingsOfWorkingHours.BackgroundImage");
+            buttonReportAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonReportAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportAccountingsOfWorkingHours.Location = new Point(442, 3);
+            buttonReportAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonReportAccountingsOfWorkingHours.Name = "buttonReportAccountingsOfWorkingHours";
+            buttonReportAccountingsOfWorkingHours.Size = new Size(78, 77);
+            buttonReportAccountingsOfWorkingHours.TabIndex = 5;
+            buttonReportAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonReportAccountingsOfWorkingHours.Click += ButtonReportAccountingsOfWorkingHours_Click;
             // 
             // labelTitleAccountingsOfWorkingHours
             // 
@@ -1242,6 +1275,7 @@
             comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
             comboBoxTypeOfRemunerationID.FormattingEnabled = true;
+            comboBoxTypeOfRemunerationID.Items.AddRange(new object[] { "Почасовая оплата", "Сдельная оплата" });
             comboBoxTypeOfRemunerationID.Location = new Point(153, 203);
             comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
             comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
@@ -1909,6 +1943,7 @@
             // 
             // panelTitleSalaryAccruals
             // 
+            panelTitleSalaryAccruals.Controls.Add(buttonReportSalaryAccruals);
             panelTitleSalaryAccruals.Controls.Add(labelTitleSalaryAccruals);
             panelTitleSalaryAccruals.Controls.Add(buttonClearSalaryAccruals);
             panelTitleSalaryAccruals.Controls.Add(buttonRefreshSalaryAccruals);
@@ -1918,6 +1953,20 @@
             panelTitleSalaryAccruals.Name = "panelTitleSalaryAccruals";
             panelTitleSalaryAccruals.Size = new Size(876, 84);
             panelTitleSalaryAccruals.TabIndex = 3;
+            // 
+            // buttonReportSalaryAccruals
+            // 
+            buttonReportSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonReportSalaryAccruals.BackgroundImage");
+            buttonReportSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportSalaryAccruals.FlatStyle = FlatStyle.Flat;
+            buttonReportSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportSalaryAccruals.Location = new Point(442, 3);
+            buttonReportSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            buttonReportSalaryAccruals.Name = "buttonReportSalaryAccruals";
+            buttonReportSalaryAccruals.Size = new Size(78, 77);
+            buttonReportSalaryAccruals.TabIndex = 5;
+            buttonReportSalaryAccruals.UseVisualStyleBackColor = true;
+            buttonReportSalaryAccruals.Click += ButtonReportSalaryAccruals_Click;
             // 
             // labelTitleSalaryAccruals
             // 
@@ -2068,6 +2117,7 @@
             comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
             comboBoxMonthID.FormattingEnabled = true;
+            comboBoxMonthID.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
             comboBoxMonthID.Location = new Point(152, 158);
             comboBoxMonthID.Name = "comboBoxMonthID";
             comboBoxMonthID.Size = new Size(455, 33);
@@ -2542,6 +2592,7 @@
             comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
             comboBoxPostID.FormattingEnabled = true;
+            comboBoxPostID.Items.AddRange(new object[] { "Менеджер", "Инженер", "Оператор", "Бухгалтер", "Директор" });
             comboBoxPostID.Location = new Point(152, 473);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
@@ -2563,6 +2614,7 @@
             comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
             comboBoxGenderID.FormattingEnabled = true;
+            comboBoxGenderID.Items.AddRange(new object[] { "Мужской", "Женский" });
             comboBoxGenderID.Location = new Point(152, 518);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);
@@ -3359,5 +3411,8 @@
         private ComboBox comboBoxTypeOfRemunerationID;
         private Label labelTotalSickPay;
         private TextBox textBoxTotalSickPay;
+        private Button buttonReportVacationPay;
+        private Button buttonReportAccountingsOfWorkingHours;
+        private Button buttonReportSalaryAccruals;
     }
 }

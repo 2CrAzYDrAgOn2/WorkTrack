@@ -1,4 +1,6 @@
-﻿namespace WorkTrack
+﻿using System.Data.SqlClient;
+
+namespace WorkTrack
 {
     public partial class AddFormSalaryAccruals : Form
     {
@@ -19,21 +21,24 @@
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var userLogin = textBoxRegistrationIDLoans.Text;
-                //string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                //SqlCommand command = new(query, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object result = command.ExecuteScalar();
-                //var registrationID = result.ToString();
-                //var bookID = textBoxBookIDLoans.Text;
-                //var loanDate = dateTimePickerLoanDateLoans.Value;
-                //DateTime? returnDate = checkBoxReturnDateLoans.Checked ? (DateTime?)null : dateTimePickerReturnDateLoans.Value;
-                //var isReturned = textBoxIsReturnedLoans.Text;
-                //var addQuery = $"insert into Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned) values ('{registrationID}', '{bookID}', '{loanDate:yyyy-MM-dd}', {returnDateValue}, '{isReturned}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var year = textBoxYear.Text;
+                var month = comboBoxMonthID.Text;
+                string queryMonth = $"SELECT MonthID FROM Months WHERE MonthName = '{month}'";
+                SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultMonth = commandMonth.ExecuteScalar();
+                var monthID = resultMonth.ToString();
+                string projectNameSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
+                string queryProject = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameSalaryAccruals}'";
+                SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultProject = commandProject.ExecuteScalar();
+                var projectID = resultProject.ToString();
+                var addQuery = $"insert into SalaryAccruals (Year, MonthID, ProjectID) values ('{year}', '{monthID}', '{projectID}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

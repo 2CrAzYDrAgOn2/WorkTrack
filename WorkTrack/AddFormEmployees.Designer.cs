@@ -174,7 +174,6 @@
             textBoxPassportSeries.Location = new Point(288, 447);
             textBoxPassportSeries.Margin = new Padding(4, 3, 4, 3);
             textBoxPassportSeries.Name = "textBoxPassportSeries";
-            textBoxPassportSeries.ReadOnly = true;
             textBoxPassportSeries.Size = new Size(455, 33);
             textBoxPassportSeries.TabIndex = 3;
             // 
@@ -259,7 +258,6 @@
             textBoxINN.Location = new Point(288, 626);
             textBoxINN.Margin = new Padding(4, 3, 4, 3);
             textBoxINN.Name = "textBoxINN";
-            textBoxINN.ReadOnly = true;
             textBoxINN.Size = new Size(455, 33);
             textBoxINN.TabIndex = 7;
             // 
@@ -280,6 +278,7 @@
             comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
             comboBoxPostID.FormattingEnabled = true;
+            comboBoxPostID.Items.AddRange(new object[] { "Менеджер", "Инженер", "Оператор", "Бухгалтер", "Директор" });
             comboBoxPostID.Location = new Point(288, 672);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
@@ -302,6 +301,7 @@
             comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
             comboBoxGenderID.FormattingEnabled = true;
+            comboBoxGenderID.Items.AddRange(new object[] { "Мужской", "Женский" });
             comboBoxGenderID.Location = new Point(288, 717);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);

@@ -140,7 +140,6 @@
             textBoxPieceWork.Location = new Point(292, 583);
             textBoxPieceWork.Margin = new Padding(4, 3, 4, 3);
             textBoxPieceWork.Name = "textBoxPieceWork";
-            textBoxPieceWork.ReadOnly = true;
             textBoxPieceWork.Size = new Size(455, 33);
             textBoxPieceWork.TabIndex = 2;
             // 

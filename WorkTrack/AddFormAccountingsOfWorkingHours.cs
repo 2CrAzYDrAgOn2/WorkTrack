@@ -1,4 +1,6 @@
-﻿namespace WorkTrack
+﻿using System.Data.SqlClient;
+
+namespace WorkTrack
 {
     public partial class AddFormAccountingsOfWorkingHours : Form
     {
@@ -19,21 +21,30 @@
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var userLogin = textBoxRegistrationIDLoans.Text;
-                //string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                //SqlCommand command = new(query, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object result = command.ExecuteScalar();
-                //var registrationID = result.ToString();
-                //var bookID = textBoxBookIDLoans.Text;
-                //var loanDate = dateTimePickerLoanDateLoans.Value;
-                //DateTime? returnDate = checkBoxReturnDateLoans.Checked ? (DateTime?)null : dateTimePickerReturnDateLoans.Value;
-                //var isReturned = textBoxIsReturnedLoans.Text;
-                //var addQuery = $"insert into Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned) values ('{registrationID}', '{bookID}', '{loanDate:yyyy-MM-dd}', {returnDateValue}, '{isReturned}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var fullNameAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
+                string queryEmployeeAccountingsOfWorkingHours = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameAccountingsOfWorkingHours}'";
+                SqlCommand commandEmployeeAccountingsOfWorkingHours = new(queryEmployeeAccountingsOfWorkingHours, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultEmployeeAccountingsOfWorkingHours = commandEmployeeAccountingsOfWorkingHours.ExecuteScalar();
+                var employeeID = resultEmployeeAccountingsOfWorkingHours.ToString();
+                var projectNameAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
+                string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameAccountingsOfWorkingHours}'";
+                SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultProjectAccountingsOfWorkingHours = commandProjectAccountingsOfWorkingHours.ExecuteScalar();
+                var projectID = resultProjectAccountingsOfWorkingHours.ToString();
+                var typeOfRemuneration = comboBoxTypeOfRemunerationID.Text;
+                string queryTypeOfRemuneration = $"SELECT TypeOfRemunerationID FROM TypesOfRemuneration WHERE TypeOfRemuneration = '{typeOfRemuneration}'";
+                SqlCommand commandTypeOfRemuneration = new(queryTypeOfRemuneration, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultTypeOfRemuneration = commandTypeOfRemuneration.ExecuteScalar();
+                var typeOfRemunerationID = resultTypeOfRemuneration.ToString();
+                var hoursOfWork = textBoxHoursOfWork.Text;
+                var addQuery = $"insert into AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) values ('{employeeID}', '{projectID}', '{typeOfRemunerationID}', '{hoursOfWork}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

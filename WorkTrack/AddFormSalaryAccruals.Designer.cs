@@ -118,6 +118,7 @@
             comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
             comboBoxMonthID.FormattingEnabled = true;
+            comboBoxMonthID.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
             comboBoxMonthID.Location = new Point(290, 537);
             comboBoxMonthID.Name = "comboBoxMonthID";
             comboBoxMonthID.Size = new Size(455, 33);
@@ -141,7 +142,6 @@
             textBoxProjectIDSalaryAccruals.Location = new Point(290, 582);
             textBoxProjectIDSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
             textBoxProjectIDSalaryAccruals.Name = "textBoxProjectIDSalaryAccruals";
-            textBoxProjectIDSalaryAccruals.ReadOnly = true;
             textBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
             textBoxProjectIDSalaryAccruals.TabIndex = 2;
             // 

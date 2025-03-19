@@ -141,6 +141,7 @@
             comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
             comboBoxTypeOfRemunerationID.FormattingEnabled = true;
+            comboBoxTypeOfRemunerationID.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
             comboBoxTypeOfRemunerationID.Location = new Point(291, 582);
             comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
             comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
@@ -164,7 +165,6 @@
             textBoxHoursOfWork.Location = new Point(290, 627);
             textBoxHoursOfWork.Margin = new Padding(4, 3, 4, 3);
             textBoxHoursOfWork.Name = "textBoxHoursOfWork";
-            textBoxHoursOfWork.ReadOnly = true;
             textBoxHoursOfWork.Size = new Size(455, 33);
             textBoxHoursOfWork.TabIndex = 3;
             // 

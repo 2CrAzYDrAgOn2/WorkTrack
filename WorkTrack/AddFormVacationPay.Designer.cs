@@ -38,10 +38,6 @@
             dateTimePickerVacationStartDate = new DateTimePicker();
             labelVacationEndDate = new Label();
             dateTimePickerVacationEndDate = new DateTimePicker();
-            labelAverageDailyEarnings = new Label();
-            textBoxAverageDailyEarnings = new TextBox();
-            labelTotalVacationPay = new Label();
-            textBoxTotalVacationPay = new TextBox();
             SuspendLayout();
             // 
             // labelTitle
@@ -145,49 +141,6 @@
             dateTimePickerVacationEndDate.Size = new Size(455, 33);
             dateTimePickerVacationEndDate.TabIndex = 2;
             // 
-            // labelAverageDailyEarnings
-            // 
-            labelAverageDailyEarnings.AutoSize = true;
-            labelAverageDailyEarnings.BackColor = Color.Transparent;
-            labelAverageDailyEarnings.ForeColor = Color.Black;
-            labelAverageDailyEarnings.Location = new Point(114, 593);
-            labelAverageDailyEarnings.Margin = new Padding(4, 0, 4, 0);
-            labelAverageDailyEarnings.Name = "labelAverageDailyEarnings";
-            labelAverageDailyEarnings.Size = new Size(166, 15);
-            labelAverageDailyEarnings.TabIndex = 11;
-            labelAverageDailyEarnings.Text = "Средний дневной заработок:";
-            // 
-            // textBoxAverageDailyEarnings
-            // 
-            textBoxAverageDailyEarnings.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxAverageDailyEarnings.Location = new Point(291, 582);
-            textBoxAverageDailyEarnings.Margin = new Padding(4, 3, 4, 3);
-            textBoxAverageDailyEarnings.Name = "textBoxAverageDailyEarnings";
-            textBoxAverageDailyEarnings.Size = new Size(455, 33);
-            textBoxAverageDailyEarnings.TabIndex = 3;
-            // 
-            // labelTotalVacationPay
-            // 
-            labelTotalVacationPay.AutoSize = true;
-            labelTotalVacationPay.BackColor = Color.Transparent;
-            labelTotalVacationPay.ForeColor = Color.Black;
-            labelTotalVacationPay.Location = new Point(237, 638);
-            labelTotalVacationPay.Margin = new Padding(4, 0, 4, 0);
-            labelTotalVacationPay.Name = "labelTotalVacationPay";
-            labelTotalVacationPay.Size = new Size(43, 15);
-            labelTotalVacationPay.TabIndex = 12;
-            labelTotalVacationPay.Text = "Итого:";
-            // 
-            // textBoxTotalVacationPay
-            // 
-            textBoxTotalVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTotalVacationPay.Location = new Point(291, 627);
-            textBoxTotalVacationPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxTotalVacationPay.Name = "textBoxTotalVacationPay";
-            textBoxTotalVacationPay.ReadOnly = true;
-            textBoxTotalVacationPay.Size = new Size(455, 33);
-            textBoxTotalVacationPay.TabIndex = 4;
-            // 
             // AddFormVacationPay
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -203,10 +156,6 @@
             Controls.Add(dateTimePickerVacationStartDate);
             Controls.Add(labelVacationEndDate);
             Controls.Add(dateTimePickerVacationEndDate);
-            Controls.Add(labelAverageDailyEarnings);
-            Controls.Add(textBoxAverageDailyEarnings);
-            Controls.Add(labelTotalVacationPay);
-            Controls.Add(textBoxTotalVacationPay);
             Controls.Add(buttonSave);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -230,9 +179,5 @@
         private DateTimePicker dateTimePickerVacationStartDate;
         private Label labelVacationEndDate;
         private DateTimePicker dateTimePickerVacationEndDate;
-        private Label labelAverageDailyEarnings;
-        private TextBox textBoxAverageDailyEarnings;
-        private Label labelTotalVacationPay;
-        private TextBox textBoxTotalVacationPay;
     }
 }

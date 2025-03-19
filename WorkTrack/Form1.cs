@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Application = Microsoft.Office.Interop.Word.Application;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace WorkTrack
@@ -26,6 +27,10 @@ namespace WorkTrack
         private System.Windows.Forms.Timer timer;
         private NotifyIcon notifyIcon;
 
+        /// <summary>
+        /// Form1() вызывается при открытии формы
+        /// </summary>
+        /// <param name="admin"></param>
         public Form1(bool admin)
         {
             try
@@ -44,6 +49,9 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// CreateColumns() вызывается при создании колонок
+        /// </summary>
         private void CreateColumns()
         {
             try
@@ -111,6 +119,9 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ClearFields() вызывается при очистке полей
+        /// </summary>
         private void ClearFields()
         {
             try
@@ -162,6 +173,11 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ReadSingleRow() вызывается при чтении каждой строки
+        /// </summary>
+        /// <param name="dataGridView"></param>
+        /// <param name="iDataRecord"></param>
         private static void ReadSingleRow(DataGridView dataGridView, IDataRecord iDataRecord)
         {
             try
@@ -203,6 +219,11 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// RefreshDataGrid() вызывается при обновлении базы данных
+        /// </summary>
+        /// <param name="dataGridView"></param>
+        /// <param name="tableName"></param>
         private void RefreshDataGrid(DataGridView dataGridView, string tableName)
         {
             try
@@ -224,6 +245,9 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// InitializeNotifyIcon() вызывается при инициализации уведомления
+        /// </summary>
         private void InitializeNotifyIcon()
         {
             notifyIcon = new NotifyIcon
@@ -233,6 +257,9 @@ namespace WorkTrack
             };
         }
 
+        /// <summary>
+        /// InitializeTimer() вызывается при инициализации таймера
+        /// </summary>
         private void InitializeTimer()
         {
             timer = new System.Windows.Forms.Timer
@@ -243,11 +270,19 @@ namespace WorkTrack
             timer.Start();
         }
 
+        /// <summary>
+        /// Timer_Tick() вызывается при прошествии таймера
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Timer_Tick(object sender, EventArgs e)
         {
             ShowBalloonTip();
         }
 
+        /// <summary>
+        /// ShowBalloonTip() вызывается при показе уведомления
+        /// </summary>
         private void ShowBalloonTip()
         {
             notifyIcon.BalloonTipTitle = "РусМитКонсерв";
@@ -255,6 +290,11 @@ namespace WorkTrack
             notifyIcon.ShowBalloonTip(3000);
         }
 
+        /// <summary>
+        /// Form1_Load() вызывается при загрузке формы
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -274,6 +314,11 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// DataGridView_CellClick() вызывается при нажатии на ячейку
+        /// </summary>
+        /// <param name="dataGridView"></param>
+        /// <param name="selectedRow"></param>
         private void DataGridView_CellClick(DataGridView dataGridView, int selectedRow)
         {
             try
@@ -290,8 +335,8 @@ namespace WorkTrack
 
                     case "dataGridViewEmployees":
                         textBoxEmployeeID.Text = dataGridViewRow.Cells[0].Value.ToString();
-                        dateTimePickerBirthDate.Text = dataGridViewRow.Cells[1].Value.ToString();
-                        textBoxAuthorBooks.Text = dataGridViewRow.Cells[2].Value.ToString();
+                        textBoxFullName.Text = dataGridViewRow.Cells[1].Value.ToString();
+                        dateTimePickerBirthDate.Text = dataGridViewRow.Cells[2].Value.ToString();
                         textBoxBirthPlace.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxPassportSeries.Text = dataGridViewRow.Cells[4].Value.ToString();
                         textBoxPassportNumber.Text = dataGridViewRow.Cells[5].Value.ToString();
@@ -316,7 +361,7 @@ namespace WorkTrack
                         textBoxSalaryAccrualID.Text = dataGridViewRow.Cells[0].Value.ToString();
                         textBoxYear.Text = dataGridViewRow.Cells[1].Value.ToString();
                         var monthID = dataGridViewRow.Cells[2].Value.ToString();
-                        string queryMonth = $"SELECT Month FROM Months WHERE MonthID = {monthID}";
+                        string queryMonth = $"SELECT MonthName FROM Months WHERE MonthID = {monthID}";
                         SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultMonth = commandMonth.ExecuteScalar();
@@ -408,6 +453,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// Search() вызывается при поиске
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private void Search(DataGridView dataGridView)
         {
             try
@@ -506,6 +555,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// DeleteRow() вызывается при удалении строки
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private static void DeleteRow(DataGridView dataGridView)
         {
             try
@@ -584,6 +637,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// UpdateBase() вызывается при обновлении базы данных
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private void UpdateBase(DataGridView dataGridView)
         {
             try
@@ -857,6 +914,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// Change() вызывается при изменении базы данных
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private void Change(DataGridView dataGridView)
         {
             try
@@ -876,24 +937,25 @@ namespace WorkTrack
                     case "dataGridViewEmployees":
                         var employeeID = textBoxEmployeeID.Text;
                         var fullName = textBoxFullName.Text;
-                        var birthDate = dateTimePickerBirthDate;
+                        var birthDate = dateTimePickerBirthDate.Value;
                         var birthPlace = textBoxBirthPlace.Text;
                         var passportSeries = textBoxPassportSeries.Text;
                         var passportNumber = textBoxPassportNumber.Text;
                         var phone = maskedTextBoxPhone.Text;
                         var email = textBoxEmail.Text;
                         var iNN = textBoxINN.Text;
-                        string queryPost = $"SELECT Post FROM Posts WHERE PostID = {postID}";
+                        var post = comboBoxPostID.Text;
+                        string queryPost = $"SELECT PostID FROM Posts WHERE Post = '{post}'";
                         SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultPost = commandPost.ExecuteScalar();
-                        comboBoxPostID.Text = resultPost.ToString();
-                        var postID = comboBoxPostID.Text;
-                        string queryGender = $"SELECT Gender FROM Genders WHERE GenderID = {genderID}";
+                        var postID = resultPost.ToString();
+                        var gender = comboBoxGenderID.Text;
+                        string queryGender = $"SELECT GenderID FROM Genders WHERE Gender = '{gender}'";
                         SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultGender = commandGender.ExecuteScalar();
-                        var genderID = comboBoxGenderID.Text;
+                        var genderID = resultGender.ToString();
                         dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, postID, genderID);
                         dataGridView.Rows[selectedRowIndex].Cells[11].Value = RowState.Modified;
                         break;
@@ -901,18 +963,18 @@ namespace WorkTrack
                     case "dataGridViewSalaryAccruals":
                         var salaryAccrualID = textBoxSalaryAccrualID.Text;
                         var year = textBoxYear.Text;
-                        string queryMonth = $"SELECT Month FROM Months WHERE MonthID = {monthID}";
+                        var month = comboBoxMonthID.Text;
+                        string queryMonth = $"SELECT MonthID FROM Months WHERE MonthName = '{month}'";
                         SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultMonth = commandMonth.ExecuteScalar();
-                        comboBoxMonthID.Text = resultMonth.ToString();
-                        var monthID = comboBoxMonthID.Text;
-                        string queryProject = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectID}";
+                        var monthID = resultMonth.ToString();
+                        string projectNameSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
+                        string queryProject = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameSalaryAccruals}'";
                         SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultProject = commandProject.ExecuteScalar();
-                        textBoxProjectIDSalaryAccruals.Text = resultProject.ToString();
-                        var projectIDSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
+                        var projectIDSalaryAccruals = resultProject.ToString();
                         dataGridView.Rows[selectedRowIndex].SetValues(salaryAccrualID, year, monthID, projectIDSalaryAccruals);
                         dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
                         break;
@@ -920,36 +982,36 @@ namespace WorkTrack
                     case "dataGridViewSalary":
                         var salaryID = textBoxSalaryID.Text;
                         var salaryAccrualIDSalary = textBoxSalaryAccrualIDSalary.Text;
-                        var employeeIDSalary = textBoxEmployeeIDSalary.Text;
-                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
+                        var fullNameSalary = textBoxEmployeeIDSalary.Text;
+                        string queryEmployee = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameSalary}'";
                         SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultEmployee = commandEmployee.ExecuteScalar();
-                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        var employeeIDSalary = resultEmployee.ToString();
                         dataGridView.Rows[selectedRowIndex].SetValues(salaryID, salaryAccrualIDSalary, employeeIDSalary);
                         dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
 
                     case "dataGridViewAccountingsOfWorkingHours":
                         var accountingOfWorkingHoursID = textBoxAccountingsOfWorkingHoursID.Text;
-                        var employeeIDAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
-                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
-                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        var fullNameAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
+                        string queryEmployeeAccountingsOfWorkingHours = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameAccountingsOfWorkingHours}'";
+                        SqlCommand commandEmployeeAccountingsOfWorkingHours = new(queryEmployeeAccountingsOfWorkingHours, dataBase.GetConnection());
                         dataBase.OpenConnection();
-                        object resultEmployee = commandEmployee.ExecuteScalar();
-                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
-                        var projectIDAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
-                        string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectIDAccountingsOfWorkingHours}";
+                        object resultEmployeeAccountingsOfWorkingHours = commandEmployeeAccountingsOfWorkingHours.ExecuteScalar();
+                        var employeeIDAccountingsOfWorkingHours = resultEmployeeAccountingsOfWorkingHours.ToString();
+                        var projectNameAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
+                        string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameAccountingsOfWorkingHours}'";
                         SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultProjectAccountingsOfWorkingHours = commandProjectAccountingsOfWorkingHours.ExecuteScalar();
-                        textBoxProjectIDAccountingsOfWorkingHours.Text = resultProjectAccountingsOfWorkingHours.ToString();
-                        var typeOfRemunerationID = comboBoxTypeOfRemunerationID.Text;
-                        string queryTypeOfRemuneration = $"SELECT TypeOfRemuneration FROM TypesOfRemuneration WHERE TypeOfRemunerationID = {TypeOfRemunerationID}";
+                        var projectIDAccountingsOfWorkingHours = resultProjectAccountingsOfWorkingHours.ToString();
+                        var typeOfRemuneration = comboBoxTypeOfRemunerationID.Text;
+                        string queryTypeOfRemuneration = $"SELECT TypeOfRemunerationID FROM TypesOfRemuneration WHERE TypeOfRemuneration = '{typeOfRemuneration}'";
                         SqlCommand commandTypeOfRemuneration = new(queryTypeOfRemuneration, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultTypeOfRemuneration = commandTypeOfRemuneration.ExecuteScalar();
-                        comboBoxTypeOfRemunerationID.Text = resultTypeOfRemuneration.ToString();
+                        var typeOfRemunerationID = resultTypeOfRemuneration.ToString();
                         var hoursOfWork = textBoxHoursOfWork.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(accountingOfWorkingHoursID, employeeIDAccountingsOfWorkingHours, projectIDAccountingsOfWorkingHours, typeOfRemunerationID, hoursOfWork);
                         dataGridView.Rows[selectedRowIndex].Cells[5].Value = RowState.Modified;
@@ -957,12 +1019,12 @@ namespace WorkTrack
 
                     case "dataGridViewVacationPay":
                         var vacationPayID = textBoxVacationPayID.Text;
-                        var employeeIDVacationPay = textBoxEmployeeIDVacationPay.Text;
-                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
-                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        var fullNameVacationPay = textBoxEmployeeIDVacationPay.Text;
+                        string queryEmployeeVacationPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameVacationPay}'";
+                        SqlCommand commandEmployeeVacationPay = new(queryEmployeeVacationPay, dataBase.GetConnection());
                         dataBase.OpenConnection();
-                        object resultEmployee = commandEmployee.ExecuteScalar();
-                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        object resultEmployeeVacationPay = commandEmployeeVacationPay.ExecuteScalar();
+                        var employeeIDVacationPay = resultEmployeeVacationPay.ToString();
                         var vacationStartDate = dateTimePickerVacationStartDate.Value;
                         var vacationEndDate = dateTimePickerVacationEndDate.Value;
                         dataGridView.Rows[selectedRowIndex].SetValues(vacationPayID, employeeIDVacationPay, vacationStartDate, vacationEndDate);
@@ -971,32 +1033,16 @@ namespace WorkTrack
 
                     case "dataGridViewSickPay":
                         var sickPayID = textBoxSickPayID.Text;
-                        var employeeIDSickPay = textBoxEmployeeID.Text;
-                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
-                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
+                        var FullNameSickPay = textBoxEmployeeIDSickPay.Text;
+                        string queryEmployeeSickPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{FullNameSickPay}'";
+                        SqlCommand commandEmployeeSickPay = new(queryEmployeeSickPay, dataBase.GetConnection());
                         dataBase.OpenConnection();
-                        object resultEmployee = commandEmployee.ExecuteScalar();
-                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        object resultEmployeeSickPay = commandEmployeeSickPay.ExecuteScalar();
+                        var employeeIDSickPay = resultEmployeeSickPay.ToString();
                         var sickStartDate = dateTimePickerSickStartDate.Value;
                         var sickEndDate = dateTimePickerSickEndDate.Value;
                         dataGridView.Rows[selectedRowIndex].SetValues(sickPayID, employeeIDSickPay, sickStartDate, sickEndDate);
                         dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
-                        break;
-
-                    case "dataGridViewLoans":
-                        var loanID = textBoxLoanID.Text;
-                        var userLogin = textBoxRegistrationIDLoans.Text;
-                        string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                        SqlCommand command = new(query, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object result = command.ExecuteScalar();
-                        var registrationIDLoans = result.ToString();
-                        var bookIDLoans = textBoxBookIDLoans.Text;
-                        var loanDateLoans = dateTimePickerLoanDateLoans.Value;
-                        DateTime? returnDateLoans = dateTimePickerReturnDateLoans.Value;
-                        var isReturnedLoans = textBoxIsReturnedLoans.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(loanID, registrationIDLoans, bookIDLoans, loanDateLoans, returnDateLoans, isReturnedLoans);
-                        dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
                         break;
                 }
             }
@@ -1006,6 +1052,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ExportToWord() вызывается при экспорте в Word
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private void ExportToWord(DataGridView dataGridView)
         {
             try
@@ -1069,6 +1119,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ExportToExcel() вызывается при экспорте в Excel
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private void ExportToExcel(DataGridView dataGridView)
         {
             try
@@ -1139,6 +1193,10 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ExportToTXT() вызывается при экспорте в .txt
+        /// </summary>
+        /// <param name="dataGridView"></param>
         private static void ExportToTXT(DataGridView dataGridView)
         {
             string text = "";
@@ -1190,6 +1248,105 @@ namespace WorkTrack
             Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
         }
 
+        /// <summary>
+        /// Reports() вызывается при формировании отчетов
+        /// </summary>
+        /// <param name="report"></param>
+        private void Reports(string report)
+        {
+            dataBase.OpenConnection();
+            var wordApp = new Application { Visible = true };
+            Document doc = wordApp.Documents.Add();
+            Paragraph title = doc.Paragraphs.Add();
+            string query = "";
+            switch (report)
+            {
+                case "SalaryAccruals":
+                    title.Range.Text = "Отчёт по начислению зарплат сотрудников за месяц";
+                    query = @"SELECT
+                                s.SalaryID,
+                                e.FullName,
+                                m.MonthName,
+                                s.AllDays,
+                                s.AllHours,
+                                s.PieceworkCharges,
+                                s.HourlyCharges,
+                                s.VacationPay,
+                                s.SickPay,
+                                s.PersonalIncomeTax,
+                                s.Contributions,
+                                s.Total
+                            FROM Salary s
+                            JOIN Employees e ON s.EmployeeID = e.EmployeeID
+                            JOIN SalaryAccruals sa ON s.SalaryAccrualID = sa.SalaryAccrualID
+                            JOIN Months m ON sa.MonthID = m.MonthID
+                            ORDER BY sa.Year DESC, m.MonthID DESC, e.FullName;"
+                    ;
+                    break;
+
+                case "AccountingsOfWorkingHours":
+                    title.Range.Text = "Отчёт по отработанным часам сотрудников за период";
+                    query = @"SELECT
+                                e.FullName,
+                                p.ProjectName,
+                                t.TypeOfRemuneration,
+                                SUM(a.HoursOfWork) AS TotalHoursWorked
+                            FROM AccountingsOfWorkingHours a
+                            JOIN Employees e ON a.EmployeeID = e.EmployeeID
+                            JOIN Projects p ON a.ProjectID = p.ProjectID
+                            JOIN TypesOfRemuneration t ON a.TypeOfRemunerationID = t.TypeOfRemunerationID
+                            GROUP BY e.FullName, p.ProjectName, t.TypeOfRemuneration
+                            ORDER BY e.FullName, p.ProjectName;"
+                    ;
+                    break;
+
+                case "Vacation":
+                    title.Range.Text = "Отчёт по отпускным и больничным выплатам";
+                    query = @"SELECT
+                                e.FullName,
+                                v.VacationStartDate,
+                                v.VacationEndDate,
+                                v.Total AS VacationTotal,
+                                s.SickStartDate,
+                                s.SickEndDate,
+                                s.Experience,
+                                s.Total AS SickTotal
+                            FROM Employees e
+                            LEFT JOIN VacationPay v ON e.EmployeeID = v.EmployeeID
+                            LEFT JOIN SickPay s ON e.EmployeeID = s.EmployeeID
+                            ORDER BY e.FullName;"
+                    ;
+                    break;
+            }
+            SqlCommand command = new(query, dataBase.GetConnection());
+            SqlDataAdapter adapter = new(command);
+            System.Data.DataTable dataTable = new();
+            adapter.Fill(dataTable);
+            dataBase.CloseConnection();
+            title.Range.Font.Bold = 1;
+            title.Range.Font.Size = 14;
+            title.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+            title.Range.InsertParagraphAfter();
+            Table table = doc.Tables.Add(title.Range, dataTable.Rows.Count + 1, dataTable.Columns.Count);
+            table.Borders.Enable = 1;
+            for (int col = 0; col < dataTable.Columns.Count; col++)
+            {
+                table.Cell(1, col + 1).Range.Text = dataTable.Columns[col].ColumnName;
+            }
+            for (int row = 0; row < dataTable.Rows.Count; row++)
+            {
+                for (int col = 0; col < dataTable.Columns.Count; col++)
+                {
+                    table.Cell(row + 2, col + 1).Range.Text = dataTable.Rows[row][col].ToString();
+                }
+            }
+        }
+
+        /// <summary>
+        /// ButtonRefresh_Click() вызывается при нажатии на кнопку обновления
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonRefresh_Click(object sender, EventArgs e)
         {
             try
@@ -1209,6 +1366,11 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ButtonClear_Click() вызывается при нажатии на кнопку очистки
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonClear_Click(object sender, EventArgs e)
         {
             try
@@ -1221,229 +1383,536 @@ namespace WorkTrack
             }
         }
 
-        //private void ButtonNewBook_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        AddFormBooks addForm = new();
-        //        addForm.Show();
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonNewLoan_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        AddFormLoans addForm = new();
-        //        addForm.Show();
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonDeleteBook_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        DeleteRow(dataGridViewBooks);
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonDeleteLoan_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        DeleteRow(dataGridViewProjects);
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonChangeBook_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        Change(dataGridViewBooks);
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonChangeLoan_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        Change(dataGridViewProjects);
-        //        ClearFields();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonSaveBook_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (admin)
-        //        {
-        //            UpdateBase(dataGridViewBooks);
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("У вас недостаточно прав!");
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void ButtonSaveLoan_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        UpdateBase(dataGridViewProjects);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
+        /// <summary>
+        /// ButtonNewProject_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewProject_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormProjects addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewEmployee_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormEmployees addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewSalaryAccrual_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormSalaryAccruals addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewSalary_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormSalary addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormAccountingsOfWorkingHours addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewVacationPay_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormVacationPay addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonNewSickPay_Click() вызывается при нажатии на кнопку "Новая запись" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonNewSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                AddFormSickPay addForm = new();
+                addForm.Show();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteProject_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteProject_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewProjects);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteEmployee_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewEmployees);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteSalaryAccrual_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewSalaryAccruals);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteSalary_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewSalary);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewAccountingsOfWorkingHours);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteVacationPay_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewVacationPay);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonDeleteSickPay_Click() вызывается при нажатии на кнопку "Удалить" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonDeleteSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DeleteRow(dataGridViewSickPay);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeProject_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeProject_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewProjects);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeEmployee_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewEmployees);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeSalaryAccrual_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewSalaryAccruals);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeSalary_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewSalary);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewAccountingsOfWorkingHours);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeVacationPay_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewVacationPay);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonChangeSickPay_Click() вызывается при нажатии на кнопку "Изменить" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonChangeSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Change(dataGridViewSickPay);
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveProject_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveProject_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (admin)
+                {
+                    UpdateBase(dataGridViewProjects);
+                }
+                else
+                {
+                    MessageBox.Show("У вас недостаточно прав!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveEmployee_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (admin)
+                {
+                    UpdateBase(dataGridViewEmployees);
+                }
+                else
+                {
+                    MessageBox.Show("У вас недостаточно прав!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveSalaryAccrual_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (admin)
+                {
+                    UpdateBase(dataGridViewSalaryAccruals);
+                }
+                else
+                {
+                    MessageBox.Show("У вас недостаточно прав!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveSalary_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBase(dataGridViewSalary);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBase(dataGridViewAccountingsOfWorkingHours);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveVacationPay_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBase(dataGridViewVacationPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonSaveSickPay_Click() вызывается при нажатии на кнопку "Сохранить" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonSaveSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                UpdateBase(dataGridViewSickPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordProject_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordProject_Click(object sender, EventArgs e)
         {
             try
@@ -1456,30 +1925,113 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ButtonWordEmployee_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewEmployees);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordSalaryAccrual_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewSalaryAccruals);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordSalary_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewSalary);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewAccountingsOfWorkingHours);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordVacationPay_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewVacationPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonWordSickPay_Click() вызывается при нажатии на кнопку "Вывод в Word" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonWordSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToWord(dataGridViewSickPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelProject_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelProject_Click(object sender, EventArgs e)
         {
             try
@@ -1492,30 +2044,113 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ButtonExcelEmployee_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewEmployees);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelSalaryAccrual_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewSalaryAccruals);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelSalary_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewSalary);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewAccountingsOfWorkingHours);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelVacationPay_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewVacationPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonExcelSickPay_Click() вызывается при нажатии на кнопку "Вывод в Excel" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonExcelSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToExcel(dataGridViewSickPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTProject_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTProject_Click(object sender, EventArgs e)
         {
             try
@@ -1528,140 +2163,402 @@ namespace WorkTrack
             }
         }
 
+        /// <summary>
+        /// ButtonTXTEmployee_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTEmployee_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewEmployees);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTSalaryAccrual_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTSalaryAccrual_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewSalaryAccruals);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTSalary_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTSalary_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewSalary);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTAccountingOfWorkingHours_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewAccountingsOfWorkingHours);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTVacationPay_Click нажатии на кнопку "Вывод в TXT" на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTVacationPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewVacationPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// ButtonTXTSickPay_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ButtonTXTSickPay_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ExportToTXT(dataGridViewSickPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewProjects_CellClick() вызывается при нажатии на ячейку на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewProjects_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewProjects, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewEmployees_CellClick() вызывается при нажатии на ячейку на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewEmployees_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewEmployees, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewSalaryAccruals_CellClick() вызывается при нажатии на ячейку на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewSalaryAccruals_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewSalaryAccruals, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewSalary_CellClick() вызывается при нажатии на ячейку на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewSalary_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewSalary, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewAccountingsOfWorkingHours_CellClick() вызывается при нажатии на ячейку на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewAccountingsOfWorkingHours_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewAccountingsOfWorkingHours, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewVacationPay_CellClick() вызывается при нажатии на ячейку на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewVacationPay_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewVacationPay, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// DataGridViewSickPay_CellClick() вызывается при нажатии на ячейку на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridViewSickPay_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                selectedRow = e.RowIndex;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridView_CellClick(dataGridViewSickPay, selectedRow);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchProjects_TextChanged() вызывается при изменении текста на вкладке "Проекты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchProjects_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewProjects);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchEmployees_TextChanged() вызывается при изменении текста на вкладке "Сотрудники"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchEmployees_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewEmployees);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchSalaryAccruals_TextChanged() вызывается при изменении текста на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchSalaryAccruals_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewSalaryAccruals);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchSalary_TextChanged() вызывается при изменении текста на вкладке "Выплаты зарплат"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchSalary_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewSalary);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchAccountingsOfWorkingHours_TextChanged() вызывается при изменении текста на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchAccountingsOfWorkingHours_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewAccountingsOfWorkingHours);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchVacationPay_TextChanged() вызывается при изменении текста на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchVacationPay_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewVacationPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// TextBoxSearchSickPay_TextChanged() вызывается при изменении текста на вкладке "Больничные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBoxSearchSickPay_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Search(dataGridViewSickPay);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        //private void DataGridViewBooks_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    try
-        //    {
-        //        selectedRow = e.RowIndex;
-        //        if (e.RowIndex >= 0)
-        //        {
-        //            DataGridView_CellClick(dataGridViewBooks, selectedRow);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+        /// <summary>
+        /// ButtonReportSalaryAccruals_Click() вызывается при нажатии на кнопку отчета на вкладке "Зарплаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonReportSalaryAccruals_Click(object sender, EventArgs e)
+        {
+            Reports("SalaryAccruals");
+        }
 
-        //private void DataGridViewLoans_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    try
-        //    {
-        //        selectedRow = e.RowIndex;
-        //        if (e.RowIndex >= 0)
-        //        {
-        //            DataGridView_CellClick(dataGridViewProjects, selectedRow);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+        /// <summary>
+        /// ButtonReportAccountingsOfWorkingHours_Click() вызывается при нажатии на кнопку отчета на вкладке "Учет времени"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonReportAccountingsOfWorkingHours_Click(object sender, EventArgs e)
+        {
+            Reports("AccountingsOfWorkingHours");
+        }
 
-        //private void TextBoxSearchBooks_TextChanged(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        Search(dataGridViewBooks);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
-
-        //private void TextBoxSearchLoans_TextChanged(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        Search(dataGridViewProjects);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+        /// <summary>
+        /// ButtonReportVacationPay_Click() вызывается при нажатии на кнопку отчета на вкладке "Отпускные"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ButtonReportVacationPay_Click(object sender, EventArgs e)
+        {
+            Reports("VacationPay");
+        }
     }
 }

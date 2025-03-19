@@ -1,4 +1,6 @@
-﻿namespace WorkTrack
+﻿using System.Data.SqlClient;
+
+namespace WorkTrack
 {
     public partial class AddFormEmployees : Form
     {
@@ -19,21 +21,31 @@
         {
             try
             {
-                //dataBase.OpenConnection();
-                //var userLogin = textBoxRegistrationIDLoans.Text;
-                //string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-                //SqlCommand command = new(query, dataBase.GetConnection());
-                //dataBase.OpenConnection();
-                //object result = command.ExecuteScalar();
-                //var registrationID = result.ToString();
-                //var bookID = textBoxBookIDLoans.Text;
-                //var loanDate = dateTimePickerLoanDateLoans.Value;
-                //DateTime? returnDate = checkBoxReturnDateLoans.Checked ? (DateTime?)null : dateTimePickerReturnDateLoans.Value;
-                //var isReturned = textBoxIsReturnedLoans.Text;
-                //var addQuery = $"insert into Loans (RegistrationID, BookID, LoanDate, ReturnDate, IsReturned) values ('{registrationID}', '{bookID}', '{loanDate:yyyy-MM-dd}', {returnDateValue}, '{isReturned}')";
-                //var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
-                //sqlCommand.ExecuteNonQuery();
-                //MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dataBase.OpenConnection();
+                var fullName = textBoxFullName.Text;
+                var birthDate = dateTimePickerBirthDate.Value;
+                var birthPlace = textBoxBirthPlace.Text;
+                var passportSeries = textBoxPassportSeries.Text;
+                var passportNumber = textBoxPassportNumber.Text;
+                var phone = maskedTextBoxPhone.Text;
+                var email = textBoxEmail.Text;
+                var iNN = textBoxINN.Text;
+                var post = comboBoxPostID.Text;
+                string queryPost = $"SELECT PostID FROM Posts WHERE Post = '{post}'";
+                SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultPost = commandPost.ExecuteScalar();
+                var postID = resultPost.ToString();
+                var gender = comboBoxGenderID.Text;
+                string queryGender = $"SELECT GenderID FROM Genders WHERE Gender = '{gender}'";
+                SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
+                dataBase.OpenConnection();
+                object resultGender = commandGender.ExecuteScalar();
+                var genderID = resultGender.ToString();
+                var addQuery = $"insert into Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) values ('{fullName}', '{birthDate}', '{birthPlace}', '{passportSeries}', '{passportNumber}', '{phone}', '{email}', '{iNN}', '{postID}', '{genderID}')";
+                var sqlCommand = new SqlCommand(addQuery, dataBase.GetConnection());
+                sqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Запись успешно создана!", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

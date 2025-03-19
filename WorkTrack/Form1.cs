@@ -609,19 +609,19 @@ namespace WorkTrack
                             if (rowStateProjects == RowState.Modified)
                             {
                                 var projectID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}' where BookID = '{projectID}'";
+                                var projectName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var hourly = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var pieceWork = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var changeQuery = $"update Projects set ProjectName = '{projectName}', Hourly = '{hourly}', PieceWork = '{pieceWork}' where ProjectID = '{projectID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateProjects == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre) values ('{title}', '{author}', '{genre}')";
+                                var projectName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var hourly = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var pieceWork = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var newQuery = $"insert into Projects (ProjectName, Hourly, PieceWork) values ('{projectName}', '{hourly}', '{pieceWork}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -643,33 +643,33 @@ namespace WorkTrack
                             if (rowStateEmployees == RowState.Modified)
                             {
                                 var employeeID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{employeeID}'";
+                                var fullName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var birthDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var birthPlace = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var passportSeries = dataGridView.Rows[index].Cells[4].Value.ToString();
+                                var passportNumber = dataGridView.Rows[index].Cells[5].Value.ToString();
+                                var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
+                                var email = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var postID = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var genderID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var changeQuery = $"update Employees set FullName = '{fullName}', BirthDate = '{birthDate}', BirthPlace = '{birthPlace}', PassportSeries = '{passportSeries}', PassportNumber = '{passportNumber}', Phone = '{phone}', Email = '{email}', INN = '{iNN}', PostID = '{postID}', GenderID = '{genderID}' where EmployeeID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateEmployees == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var fullName = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var birthDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var birthPlace = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var passportSeries = dataGridView.Rows[index].Cells[4].Value.ToString();
+                                var passportNumber = dataGridView.Rows[index].Cells[5].Value.ToString();
+                                var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
+                                var email = dataGridView.Rows[index].Cells[7].Value.ToString();
+                                var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
+                                var postID = dataGridView.Rows[index].Cells[9].Value.ToString();
+                                var genderID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var newQuery = $"insert into Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) values ('{fullName}', '{birthDate}', '{birthPlace}', '{passportSeries}', '{passportNumber}', '{phone}', '{email}', '{iNN}', '{postID}', '{genderID}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -691,19 +691,19 @@ namespace WorkTrack
                             if (rowStateSalaryAccruals == RowState.Modified)
                             {
                                 var salaryAccrualID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}' where BookID = '{salaryAccrualID}'";
+                                var year = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var monthID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var projectID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var changeQuery = $"update SalaryAccruals set Year = '{year}', MonthID = '{monthID}', ProjectID = '{projectID}' where SalaryAccrualID = '{salaryAccrualID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateSalaryAccruals == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre) values ('{title}', '{author}', '{genre}')";
+                                var year = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var monthID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var projectID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var newQuery = $"insert into SalaryAccruals (Year, MonthID, ProjectID) values ('{year}', '{monthID}', '{projectID}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -725,35 +725,17 @@ namespace WorkTrack
                             if (rowStateSalary == RowState.Modified)
                             {
                                 var salaryID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[11].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{salaryID}'";
+                                var salaryAccrualID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var changeQuery = $"update Salary set SalaryAccrualID = '{salaryAccrualID}', EmployeeID = '{employeeID}' where SalaryID = '{salaryID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateSalary == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[7].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[11].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var salaryAccrualID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var newQuery = $"insert into Salary (SalaryAccrualID, EmployeeID) values ('{salaryAccrualID}', '{employeeID}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -775,21 +757,21 @@ namespace WorkTrack
                             if (rowStateAccountingsOfWorkingHours == RowState.Modified)
                             {
                                 var accountingOfWorkingHoursID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}' where BookID = '{accountingOfWorkingHoursID}'";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var projectID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var typeOfRemunerationID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var hoursOfWork = dataGridView.Rows[index].Cells[4].Value.ToString();
+                                var changeQuery = $"update AccountingsOfWorkingHours set EmployeeID = '{employeeID}', ProjectID = '{projectID}', TypeOfRemunerationID = '{typeOfRemunerationID}', HoursOfWork = '{hoursOfWork}' where AccountingOfWorkingHoursID = '{accountingOfWorkingHoursID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateAccountingsOfWorkingHours == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}')";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var projectID = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var typeOfRemunerationID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var hoursOfWork = dataGridView.Rows[index].Cells[4].Value.ToString();
+                                var newQuery = $"insert into AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) values ('{employeeID}', '{projectID}', '{typeOfRemunerationID}', '{hoursOfWork}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -811,23 +793,19 @@ namespace WorkTrack
                             if (rowStateVacationPay == RowState.Modified)
                             {
                                 var vacationPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}' where BookID = '{vacationPayID}'";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var vacationStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var vacationEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var changeQuery = $"update VacationPay set EmployeeID = '{employeeID}', VacationStartDate = '{vacationStartDate}', VacationEndDate = '{vacationEndDate}' where VacationPayID = '{vacationPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateVacationPay == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}')";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var vacationStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var vacationEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var newQuery = $"insert into VacationPay (EmployeeID, VacationStartDate, VacationEndDate) values ('{employeeID}', '{vacationStartDate}', '{vacationEndDate}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -849,25 +827,19 @@ namespace WorkTrack
                             if (rowStateSickPay == RowState.Modified)
                             {
                                 var sickPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var changeQuery = $"update Books set Title = '{title}', Author = '{author}', Genre = '{genre}', PublishedYear = '{publishedYear}', ISBN = '{iSBN}', CopiesAvailable = '{copiesAvailable}' where BookID = '{sickPayID}'";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var sickStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var sickEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var changeQuery = $"update SickPay set EmployeeID = '{employeeID}', SickStartDate = '{sickStartDate}', SickEndDate = '{sickEndDate}' where SickPayID = '{sickPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateSickPay == RowState.New)
                             {
-                                var title = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var author = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var genre = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var publishedYear = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var iSBN = dataGridView.Rows[index].Cells[5].Value.ToString();
-                                var copiesAvailable = dataGridView.Rows[index].Cells[6].Value.ToString();
-                                var newQuery = $"insert into Books (Title, Author, Genre, PublishedYear, ISBN, CopiesAvailable) values ('{title}', '{author}', '{genre}', '{publishedYear}', '{iSBN}', '{copiesAvailable}')";
+                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var sickStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
+                                var sickEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var newQuery = $"insert into SickPay (EmployeeID, SickStartDate, SickEndDate) values ('{employeeID}', '{sickStartDate}', '{sickEndDate}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -885,47 +857,119 @@ namespace WorkTrack
             }
         }
 
-        //private void Change(DataGridView dataGridView)
-        //{
-        //    try
-        //    {
-        //        var selectedRowIndex = dataGridView.CurrentCell.RowIndex;
-        //        switch (dataGridView.Name)
-        //        {
-        //            case "dataGridViewBooks":
-        //                var bookID = textBoxBookID.Text;
-        //                var titleBooks = textBoxTitleBooks.Text;
-        //                var authorBooks = textBoxAuthorBooks.Text;
-        //                var genreBooks = textBoxGenreBooks.Text;
-        //                var publishedYearBooks = textBoxPublishedYearBooks.Text;
-        //                var iSBNBooks = textBoxISBNBooks.Text;
-        //                var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
-        //                dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
-        //                dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
-        //                break;
+        private void Change(DataGridView dataGridView)
+        {
+            try
+            {
+                var selectedRowIndex = dataGridView.CurrentCell.RowIndex;
+                switch (dataGridView.Name)
+                {
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
 
-        //            case "dataGridViewLoans":
-        //                var loanID = textBoxLoanID.Text;
-        //                var userLogin = textBoxRegistrationIDLoans.Text;
-        //                string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
-        //                SqlCommand command = new(query, dataBase.GetConnection());
-        //                dataBase.OpenConnection();
-        //                object result = command.ExecuteScalar();
-        //                var registrationIDLoans = result.ToString();
-        //                var bookIDLoans = textBoxBookIDLoans.Text;
-        //                var loanDateLoans = dateTimePickerLoanDateLoans.Value;
-        //                DateTime? returnDateLoans = dateTimePickerReturnDateLoans.Value;
-        //                var isReturnedLoans = textBoxIsReturnedLoans.Text;
-        //                dataGridView.Rows[selectedRowIndex].SetValues(loanID, registrationIDLoans, bookIDLoans, loanDateLoans, returnDateLoans, isReturnedLoans);
-        //                dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
-        //                break;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewBooks":
+                        var bookID = textBoxBookID.Text;
+                        var titleBooks = textBoxTitleBooks.Text;
+                        var authorBooks = textBoxAuthorBooks.Text;
+                        var genreBooks = textBoxGenreBooks.Text;
+                        var publishedYearBooks = textBoxPublishedYearBooks.Text;
+                        var iSBNBooks = textBoxISBNBooks.Text;
+                        var copiesAvailableBooks = textBoxCopiesAvailableBooks.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(bookID, titleBooks, authorBooks, genreBooks, publishedYearBooks, iSBNBooks, copiesAvailableBooks);
+                        dataGridView.Rows[selectedRowIndex].Cells[7].Value = RowState.Modified;
+                        break;
+
+                    case "dataGridViewLoans":
+                        var loanID = textBoxLoanID.Text;
+                        var userLogin = textBoxRegistrationIDLoans.Text;
+                        string query = $"SELECT RegistrationID FROM Registration WHERE UserLogin = '{userLogin}'";
+                        SqlCommand command = new(query, dataBase.GetConnection());
+                        dataBase.OpenConnection();
+                        object result = command.ExecuteScalar();
+                        var registrationIDLoans = result.ToString();
+                        var bookIDLoans = textBoxBookIDLoans.Text;
+                        var loanDateLoans = dateTimePickerLoanDateLoans.Value;
+                        DateTime? returnDateLoans = dateTimePickerReturnDateLoans.Value;
+                        var isReturnedLoans = textBoxIsReturnedLoans.Text;
+                        dataGridView.Rows[selectedRowIndex].SetValues(loanID, registrationIDLoans, bookIDLoans, loanDateLoans, returnDateLoans, isReturnedLoans);
+                        dataGridView.Rows[selectedRowIndex].Cells[6].Value = RowState.Modified;
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void ExportToWord(DataGridView dataGridView)
         {

@@ -198,8 +198,6 @@
             textBoxSearchEmployees = new TextBox();
             dataGridViewEmployees = new DataGridView();
             panelRecordEmployees = new Panel();
-            labelDateOfEmployment = new Label();
-            dateTimePickerDateOfEmployment = new DateTimePicker();
             labelRecordEmployees = new Label();
             labelEmployeeID = new Label();
             textBoxEmployeeID = new TextBox();
@@ -219,6 +217,8 @@
             textBoxEmail = new TextBox();
             labelINN = new Label();
             textBoxINN = new TextBox();
+            labelDateOfEmployment = new Label();
+            dateTimePickerDateOfEmployment = new DateTimePicker();
             labelPostID = new Label();
             comboBoxPostID = new ComboBox();
             labelGenderID = new Label();
@@ -234,7 +234,6 @@
             buttonTXTEmployee = new Button();
             tabPageProjects = new TabPage();
             panelTitleProjects = new Panel();
-            labelTitleProjects = new Label();
             buttonClearProjects = new Button();
             buttonRefreshProjects = new Button();
             textBoxSearchProjects = new TextBox();
@@ -249,8 +248,6 @@
             textBoxHourly = new TextBox();
             labePieceWork = new Label();
             textBoxPieceWork = new TextBox();
-            labelControlProjects = new Label();
-            panelControlProjects = new Panel();
             buttonNewProject = new Button();
             buttonDeleteProject = new Button();
             buttonChangeProject = new Button();
@@ -259,6 +256,12 @@
             buttonExcelProject = new Button();
             buttonTXTProject = new Button();
             tabControl1 = new TabControl();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            panel1 = new Panel();
             tabPageSickPay.SuspendLayout();
             panelTitleSickPay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSickPay).BeginInit();
@@ -293,7 +296,6 @@
             panelTitleProjects.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewProjects).BeginInit();
             panelRecordProjects.SuspendLayout();
-            panelControlProjects.SuspendLayout();
             tabControl1.SuspendLayout();
             SuspendLayout();
             // 
@@ -2389,26 +2391,6 @@
             panelRecordEmployees.Size = new Size(611, 552);
             panelRecordEmployees.TabIndex = 1;
             // 
-            // labelDateOfEmployment
-            // 
-            labelDateOfEmployment.AutoSize = true;
-            labelDateOfEmployment.ForeColor = Color.Black;
-            labelDateOfEmployment.Location = new Point(47, 433);
-            labelDateOfEmployment.Margin = new Padding(4, 0, 4, 0);
-            labelDateOfEmployment.Name = "labelDateOfEmployment";
-            labelDateOfEmployment.Size = new Size(99, 15);
-            labelDateOfEmployment.TabIndex = 22;
-            labelDateOfEmployment.Text = "Дата устройства:";
-            // 
-            // dateTimePickerDateOfEmployment
-            // 
-            dateTimePickerDateOfEmployment.Enabled = false;
-            dateTimePickerDateOfEmployment.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerDateOfEmployment.Location = new Point(153, 419);
-            dateTimePickerDateOfEmployment.Name = "dateTimePickerDateOfEmployment";
-            dateTimePickerDateOfEmployment.Size = new Size(455, 33);
-            dateTimePickerDateOfEmployment.TabIndex = 9;
-            // 
             // labelRecordEmployees
             // 
             labelRecordEmployees.AutoSize = true;
@@ -2600,6 +2582,26 @@
             textBoxINN.Size = new Size(455, 33);
             textBoxINN.TabIndex = 8;
             // 
+            // labelDateOfEmployment
+            // 
+            labelDateOfEmployment.AutoSize = true;
+            labelDateOfEmployment.ForeColor = Color.Black;
+            labelDateOfEmployment.Location = new Point(47, 433);
+            labelDateOfEmployment.Margin = new Padding(4, 0, 4, 0);
+            labelDateOfEmployment.Name = "labelDateOfEmployment";
+            labelDateOfEmployment.Size = new Size(99, 15);
+            labelDateOfEmployment.TabIndex = 22;
+            labelDateOfEmployment.Text = "Дата устройства:";
+            // 
+            // dateTimePickerDateOfEmployment
+            // 
+            dateTimePickerDateOfEmployment.Enabled = false;
+            dateTimePickerDateOfEmployment.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerDateOfEmployment.Location = new Point(153, 419);
+            dateTimePickerDateOfEmployment.Name = "dateTimePickerDateOfEmployment";
+            dateTimePickerDateOfEmployment.Size = new Size(455, 33);
+            dateTimePickerDateOfEmployment.TabIndex = 9;
+            // 
             // labelPostID
             // 
             labelPostID.AutoSize = true;
@@ -2765,43 +2767,43 @@
             // 
             // tabPageProjects
             // 
-            tabPageProjects.Controls.Add(panelTitleProjects);
-            tabPageProjects.Controls.Add(dataGridViewProjects);
+            tabPageProjects.BackgroundImage = (Image)resources.GetObject("tabPageProjects.BackgroundImage");
+            tabPageProjects.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPageProjects.Controls.Add(buttonRefreshProjects);
+            tabPageProjects.Controls.Add(buttonClearProjects);
             tabPageProjects.Controls.Add(panelRecordProjects);
-            tabPageProjects.Controls.Add(labelControlProjects);
-            tabPageProjects.Controls.Add(panelControlProjects);
+            tabPageProjects.Controls.Add(dataGridViewProjects);
+            tabPageProjects.Controls.Add(panelTitleProjects);
             tabPageProjects.Location = new Point(4, 24);
             tabPageProjects.Margin = new Padding(4, 3, 4, 3);
             tabPageProjects.Name = "tabPageProjects";
             tabPageProjects.Padding = new Padding(4, 3, 4, 3);
-            tabPageProjects.Size = new Size(889, 1010);
+            tabPageProjects.Size = new Size(945, 1010);
             tabPageProjects.TabIndex = 1;
             tabPageProjects.Text = "Проекты";
             tabPageProjects.UseVisualStyleBackColor = true;
             // 
             // panelTitleProjects
             // 
-            panelTitleProjects.Controls.Add(labelTitleProjects);
-            panelTitleProjects.Controls.Add(buttonClearProjects);
-            panelTitleProjects.Controls.Add(buttonRefreshProjects);
+            panelTitleProjects.Controls.Add(panel1);
+            panelTitleProjects.Controls.Add(label5);
+            panelTitleProjects.Controls.Add(buttonTXTProject);
+            panelTitleProjects.Controls.Add(label4);
+            panelTitleProjects.Controls.Add(label3);
+            panelTitleProjects.Controls.Add(label2);
+            panelTitleProjects.Controls.Add(label1);
+            panelTitleProjects.Controls.Add(buttonExcelProject);
+            panelTitleProjects.Controls.Add(buttonWordProject);
+            panelTitleProjects.Controls.Add(buttonSaveProject);
+            panelTitleProjects.Controls.Add(buttonChangeProject);
+            panelTitleProjects.Controls.Add(buttonDeleteProject);
+            panelTitleProjects.Controls.Add(buttonNewProject);
             panelTitleProjects.Controls.Add(textBoxSearchProjects);
             panelTitleProjects.Location = new Point(0, 0);
             panelTitleProjects.Margin = new Padding(4, 3, 4, 3);
             panelTitleProjects.Name = "panelTitleProjects";
-            panelTitleProjects.Size = new Size(876, 84);
+            panelTitleProjects.Size = new Size(945, 110);
             panelTitleProjects.TabIndex = 3;
-            // 
-            // labelTitleProjects
-            // 
-            labelTitleProjects.AutoSize = true;
-            labelTitleProjects.Font = new Font("Segoe UI", 36F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            labelTitleProjects.ForeColor = Color.Black;
-            labelTitleProjects.Location = new Point(4, 3);
-            labelTitleProjects.Margin = new Padding(4, 0, 4, 0);
-            labelTitleProjects.Name = "labelTitleProjects";
-            labelTitleProjects.Size = new Size(221, 65);
-            labelTitleProjects.TabIndex = 4;
-            labelTitleProjects.Text = "Проекты";
             // 
             // buttonClearProjects
             // 
@@ -2809,10 +2811,10 @@
             buttonClearProjects.BackgroundImageLayout = ImageLayout.Stretch;
             buttonClearProjects.FlatStyle = FlatStyle.Flat;
             buttonClearProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearProjects.Location = new Point(528, 3);
+            buttonClearProjects.Location = new Point(827, 116);
             buttonClearProjects.Margin = new Padding(4, 3, 4, 3);
             buttonClearProjects.Name = "buttonClearProjects";
-            buttonClearProjects.Size = new Size(78, 77);
+            buttonClearProjects.Size = new Size(60, 60);
             buttonClearProjects.TabIndex = 0;
             buttonClearProjects.UseVisualStyleBackColor = true;
             buttonClearProjects.Click += ButtonClear_Click;
@@ -2823,10 +2825,10 @@
             buttonRefreshProjects.BackgroundImageLayout = ImageLayout.Stretch;
             buttonRefreshProjects.FlatStyle = FlatStyle.Flat;
             buttonRefreshProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshProjects.Location = new Point(614, 3);
+            buttonRefreshProjects.Location = new Point(70, 116);
             buttonRefreshProjects.Margin = new Padding(4, 3, 4, 3);
             buttonRefreshProjects.Name = "buttonRefreshProjects";
-            buttonRefreshProjects.Size = new Size(78, 77);
+            buttonRefreshProjects.Size = new Size(60, 60);
             buttonRefreshProjects.TabIndex = 1;
             buttonRefreshProjects.UseVisualStyleBackColor = true;
             buttonRefreshProjects.Click += ButtonRefresh_Click;
@@ -2834,10 +2836,10 @@
             // textBoxSearchProjects
             // 
             textBoxSearchProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSearchProjects.Location = new Point(699, 37);
+            textBoxSearchProjects.Location = new Point(663, 43);
             textBoxSearchProjects.Margin = new Padding(4, 3, 4, 3);
             textBoxSearchProjects.Name = "textBoxSearchProjects";
-            textBoxSearchProjects.Size = new Size(173, 33);
+            textBoxSearchProjects.Size = new Size(236, 33);
             textBoxSearchProjects.TabIndex = 2;
             textBoxSearchProjects.TextChanged += TextBoxSearchProjects_TextChanged;
             // 
@@ -2846,17 +2848,18 @@
             dataGridViewProjects.AllowUserToAddRows = false;
             dataGridViewProjects.AllowUserToDeleteRows = false;
             dataGridViewProjects.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewProjects.Location = new Point(9, 91);
+            dataGridViewProjects.Location = new Point(138, 116);
             dataGridViewProjects.Margin = new Padding(4, 3, 4, 3);
             dataGridViewProjects.Name = "dataGridViewProjects";
             dataGridViewProjects.ReadOnly = true;
             dataGridViewProjects.RowHeadersWidth = 62;
-            dataGridViewProjects.Size = new Size(867, 352);
+            dataGridViewProjects.Size = new Size(681, 334);
             dataGridViewProjects.TabIndex = 0;
             dataGridViewProjects.CellClick += DataGridViewProjects_CellClick;
             // 
             // panelRecordProjects
             // 
+            panelRecordProjects.BorderStyle = BorderStyle.FixedSingle;
             panelRecordProjects.Controls.Add(labelRecordProjects);
             panelRecordProjects.Controls.Add(labelProjectID);
             panelRecordProjects.Controls.Add(textBoxProjectID);
@@ -2866,10 +2869,10 @@
             panelRecordProjects.Controls.Add(textBoxHourly);
             panelRecordProjects.Controls.Add(labePieceWork);
             panelRecordProjects.Controls.Add(textBoxPieceWork);
-            panelRecordProjects.Location = new Point(9, 450);
+            panelRecordProjects.Location = new Point(149, 467);
             panelRecordProjects.Margin = new Padding(4, 3, 4, 3);
             panelRecordProjects.Name = "panelRecordProjects";
-            panelRecordProjects.Size = new Size(611, 552);
+            panelRecordProjects.Size = new Size(654, 286);
             panelRecordProjects.TabIndex = 1;
             // 
             // labelRecordProjects
@@ -2877,7 +2880,7 @@
             labelRecordProjects.AutoSize = true;
             labelRecordProjects.Font = new Font("Segoe UI Semibold", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             labelRecordProjects.ForeColor = Color.Black;
-            labelRecordProjects.Location = new Point(4, 10);
+            labelRecordProjects.Location = new Point(32, 19);
             labelRecordProjects.Margin = new Padding(4, 0, 4, 0);
             labelRecordProjects.Name = "labelRecordProjects";
             labelRecordProjects.Size = new Size(142, 47);
@@ -2887,18 +2890,19 @@
             // labelProjectID
             // 
             labelProjectID.AutoSize = true;
+            labelProjectID.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelProjectID.ForeColor = Color.Black;
-            labelProjectID.Location = new Point(93, 82);
+            labelProjectID.Location = new Point(105, 83);
             labelProjectID.Margin = new Padding(4, 0, 4, 0);
             labelProjectID.Name = "labelProjectID";
-            labelProjectID.Size = new Size(48, 15);
+            labelProjectID.Size = new Size(67, 21);
             labelProjectID.TabIndex = 5;
             labelProjectID.Text = "Номер:";
             // 
             // textBoxProjectID
             // 
             textBoxProjectID.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectID.Location = new Point(152, 68);
+            textBoxProjectID.Location = new Point(180, 77);
             textBoxProjectID.Margin = new Padding(4, 3, 4, 3);
             textBoxProjectID.Name = "textBoxProjectID";
             textBoxProjectID.Size = new Size(455, 33);
@@ -2907,18 +2911,19 @@
             // labelProjectName
             // 
             labelProjectName.AutoSize = true;
+            labelProjectName.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelProjectName.ForeColor = Color.Black;
-            labelProjectName.Location = new Point(32, 124);
+            labelProjectName.Location = new Point(14, 128);
             labelProjectName.Margin = new Padding(4, 0, 4, 0);
             labelProjectName.Name = "labelProjectName";
-            labelProjectName.Size = new Size(109, 15);
+            labelProjectName.Size = new Size(158, 21);
             labelProjectName.TabIndex = 6;
             labelProjectName.Text = "Название проекта:";
             // 
             // textBoxProjectName
             // 
             textBoxProjectName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectName.Location = new Point(152, 113);
+            textBoxProjectName.Location = new Point(180, 122);
             textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
             textBoxProjectName.Name = "textBoxProjectName";
             textBoxProjectName.Size = new Size(455, 33);
@@ -2927,18 +2932,19 @@
             // labelHourly
             // 
             labelHourly.AutoSize = true;
+            labelHourly.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelHourly.ForeColor = Color.Black;
-            labelHourly.Location = new Point(35, 169);
+            labelHourly.Location = new Point(13, 173);
             labelHourly.Margin = new Padding(4, 0, 4, 0);
             labelHourly.Name = "labelHourly";
-            labelHourly.Size = new Size(111, 15);
+            labelHourly.Size = new Size(159, 21);
             labelHourly.TabIndex = 7;
             labelHourly.Text = "Почасовая оплата:";
             // 
             // textBoxHourly
             // 
             textBoxHourly.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxHourly.Location = new Point(152, 158);
+            textBoxHourly.Location = new Point(180, 167);
             textBoxHourly.Margin = new Padding(4, 3, 4, 3);
             textBoxHourly.Name = "textBoxHourly";
             textBoxHourly.Size = new Size(455, 33);
@@ -2947,139 +2953,119 @@
             // labePieceWork
             // 
             labePieceWork.AutoSize = true;
+            labePieceWork.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labePieceWork.ForeColor = Color.Black;
-            labePieceWork.Location = new Point(43, 214);
+            labePieceWork.Location = new Point(23, 218);
             labePieceWork.Margin = new Padding(4, 0, 4, 0);
             labePieceWork.Name = "labePieceWork";
-            labePieceWork.Size = new Size(103, 15);
+            labePieceWork.Size = new Size(149, 21);
             labePieceWork.TabIndex = 8;
             labePieceWork.Text = "Сдельная оплата:";
             // 
             // textBoxPieceWork
             // 
             textBoxPieceWork.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPieceWork.Location = new Point(152, 203);
+            textBoxPieceWork.Location = new Point(180, 212);
             textBoxPieceWork.Margin = new Padding(4, 3, 4, 3);
             textBoxPieceWork.Name = "textBoxPieceWork";
             textBoxPieceWork.Size = new Size(455, 33);
             textBoxPieceWork.TabIndex = 3;
             // 
-            // labelControlProjects
-            // 
-            labelControlProjects.AutoSize = true;
-            labelControlProjects.BackColor = Color.Transparent;
-            labelControlProjects.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            labelControlProjects.ForeColor = Color.Black;
-            labelControlProjects.Location = new Point(632, 453);
-            labelControlProjects.Margin = new Padding(4, 0, 4, 0);
-            labelControlProjects.Name = "labelControlProjects";
-            labelControlProjects.Size = new Size(213, 25);
-            labelControlProjects.TabIndex = 4;
-            labelControlProjects.Text = "Управление записями:";
-            // 
-            // panelControlProjects
-            // 
-            panelControlProjects.Controls.Add(buttonNewProject);
-            panelControlProjects.Controls.Add(buttonDeleteProject);
-            panelControlProjects.Controls.Add(buttonChangeProject);
-            panelControlProjects.Controls.Add(buttonSaveProject);
-            panelControlProjects.Controls.Add(buttonWordProject);
-            panelControlProjects.Controls.Add(buttonExcelProject);
-            panelControlProjects.Controls.Add(buttonTXTProject);
-            panelControlProjects.Location = new Point(634, 482);
-            panelControlProjects.Margin = new Padding(4, 3, 4, 3);
-            panelControlProjects.Name = "panelControlProjects";
-            panelControlProjects.Size = new Size(243, 520);
-            panelControlProjects.TabIndex = 2;
-            // 
             // buttonNewProject
             // 
+            buttonNewProject.BackgroundImage = (Image)resources.GetObject("buttonNewProject.BackgroundImage");
+            buttonNewProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonNewProject.FlatStyle = FlatStyle.Flat;
             buttonNewProject.ForeColor = Color.Black;
-            buttonNewProject.Location = new Point(4, 3);
+            buttonNewProject.Location = new Point(22, 16);
             buttonNewProject.Margin = new Padding(4, 3, 4, 3);
             buttonNewProject.Name = "buttonNewProject";
-            buttonNewProject.Size = new Size(236, 67);
+            buttonNewProject.Size = new Size(60, 60);
             buttonNewProject.TabIndex = 0;
-            buttonNewProject.Text = "Новая запись";
             buttonNewProject.UseVisualStyleBackColor = true;
             buttonNewProject.Click += ButtonNewProject_Click;
             // 
             // buttonDeleteProject
             // 
+            buttonDeleteProject.BackgroundImage = (Image)resources.GetObject("buttonDeleteProject.BackgroundImage");
+            buttonDeleteProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonDeleteProject.FlatStyle = FlatStyle.Flat;
             buttonDeleteProject.ForeColor = Color.Black;
-            buttonDeleteProject.Location = new Point(4, 78);
+            buttonDeleteProject.Location = new Point(108, 16);
             buttonDeleteProject.Margin = new Padding(4, 3, 4, 3);
             buttonDeleteProject.Name = "buttonDeleteProject";
-            buttonDeleteProject.Size = new Size(236, 67);
+            buttonDeleteProject.Size = new Size(60, 60);
             buttonDeleteProject.TabIndex = 1;
-            buttonDeleteProject.Text = "Удалить";
             buttonDeleteProject.UseVisualStyleBackColor = true;
             buttonDeleteProject.Click += ButtonDeleteProject_Click;
             // 
             // buttonChangeProject
             // 
+            buttonChangeProject.BackgroundImage = (Image)resources.GetObject("buttonChangeProject.BackgroundImage");
+            buttonChangeProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonChangeProject.FlatStyle = FlatStyle.Flat;
             buttonChangeProject.ForeColor = Color.Black;
-            buttonChangeProject.Location = new Point(4, 152);
+            buttonChangeProject.Location = new Point(194, 16);
             buttonChangeProject.Margin = new Padding(4, 3, 4, 3);
             buttonChangeProject.Name = "buttonChangeProject";
-            buttonChangeProject.Size = new Size(236, 67);
+            buttonChangeProject.Size = new Size(60, 60);
             buttonChangeProject.TabIndex = 2;
-            buttonChangeProject.Text = "Изменить";
             buttonChangeProject.UseVisualStyleBackColor = true;
             buttonChangeProject.Click += ButtonChangeProject_Click;
             // 
             // buttonSaveProject
             // 
+            buttonSaveProject.BackgroundImage = (Image)resources.GetObject("buttonSaveProject.BackgroundImage");
+            buttonSaveProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonSaveProject.FlatStyle = FlatStyle.Flat;
             buttonSaveProject.ForeColor = Color.Black;
-            buttonSaveProject.Location = new Point(4, 226);
+            buttonSaveProject.Location = new Point(280, 16);
             buttonSaveProject.Margin = new Padding(4, 3, 4, 3);
             buttonSaveProject.Name = "buttonSaveProject";
-            buttonSaveProject.Size = new Size(236, 67);
+            buttonSaveProject.Size = new Size(60, 60);
             buttonSaveProject.TabIndex = 3;
-            buttonSaveProject.Text = "Сохранить";
             buttonSaveProject.UseVisualStyleBackColor = true;
             buttonSaveProject.Click += ButtonSaveProject_Click;
             // 
             // buttonWordProject
             // 
+            buttonWordProject.BackgroundImage = (Image)resources.GetObject("buttonWordProject.BackgroundImage");
+            buttonWordProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonWordProject.FlatStyle = FlatStyle.Flat;
             buttonWordProject.ForeColor = Color.Black;
-            buttonWordProject.Location = new Point(4, 301);
+            buttonWordProject.Location = new Point(405, 34);
             buttonWordProject.Margin = new Padding(4, 3, 4, 3);
             buttonWordProject.Name = "buttonWordProject";
-            buttonWordProject.Size = new Size(236, 67);
+            buttonWordProject.Size = new Size(60, 60);
             buttonWordProject.TabIndex = 4;
-            buttonWordProject.Text = "Вывод в Word";
             buttonWordProject.UseVisualStyleBackColor = true;
             buttonWordProject.Click += ButtonWordProject_Click;
             // 
             // buttonExcelProject
             // 
+            buttonExcelProject.BackgroundImage = (Image)resources.GetObject("buttonExcelProject.BackgroundImage");
+            buttonExcelProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonExcelProject.FlatStyle = FlatStyle.Flat;
             buttonExcelProject.ForeColor = Color.Black;
-            buttonExcelProject.Location = new Point(4, 375);
+            buttonExcelProject.Location = new Point(473, 34);
             buttonExcelProject.Margin = new Padding(4, 3, 4, 3);
             buttonExcelProject.Name = "buttonExcelProject";
-            buttonExcelProject.Size = new Size(236, 67);
+            buttonExcelProject.Size = new Size(60, 60);
             buttonExcelProject.TabIndex = 5;
-            buttonExcelProject.Text = "Вывод в Excel";
             buttonExcelProject.UseVisualStyleBackColor = true;
             buttonExcelProject.Click += ButtonExcelProject_Click;
             // 
             // buttonTXTProject
             // 
+            buttonTXTProject.BackgroundImage = (Image)resources.GetObject("buttonTXTProject.BackgroundImage");
+            buttonTXTProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonTXTProject.FlatStyle = FlatStyle.Flat;
             buttonTXTProject.ForeColor = Color.Black;
-            buttonTXTProject.Location = new Point(4, 449);
+            buttonTXTProject.Location = new Point(541, 34);
             buttonTXTProject.Margin = new Padding(4, 3, 4, 3);
             buttonTXTProject.Name = "buttonTXTProject";
-            buttonTXTProject.Size = new Size(236, 67);
+            buttonTXTProject.Size = new Size(60, 60);
             buttonTXTProject.TabIndex = 6;
-            buttonTXTProject.Text = "Вывод в TXT";
             buttonTXTProject.UseVisualStyleBackColor = true;
             buttonTXTProject.Click += ButtonTXTProject_Click;
             // 
@@ -3096,8 +3082,68 @@
             tabControl1.Margin = new Padding(4, 3, 4, 3);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(897, 1038);
+            tabControl1.Size = new Size(953, 1038);
             tabControl1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(8, 79);
+            label1.Name = "label1";
+            label1.Size = new Size(86, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Новая запись";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.Location = new Point(115, 79);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Удалить";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label3.Location = new Point(192, 79);
+            label3.Name = "label3";
+            label3.Size = new Size(65, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Изменить";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label4.Location = new Point(280, 79);
+            label4.Name = "label4";
+            label4.Size = new Size(68, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Сохранить";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label5.Location = new Point(459, 3);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 21);
+            label5.TabIndex = 10;
+            label5.Text = "Экспорт";
+            // 
+            // panel1
+            // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Location = new Point(899, 43);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(33, 33);
+            panel1.TabIndex = 11;
             // 
             // Form1
             // 
@@ -3105,7 +3151,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(895, 1034);
+            ClientSize = new Size(949, 881);
             Controls.Add(tabControl1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -3164,13 +3210,11 @@
             panelRecordEmployees.PerformLayout();
             panelControlEmployees.ResumeLayout(false);
             tabPageProjects.ResumeLayout(false);
-            tabPageProjects.PerformLayout();
             panelTitleProjects.ResumeLayout(false);
             panelTitleProjects.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewProjects).EndInit();
             panelRecordProjects.ResumeLayout(false);
             panelRecordProjects.PerformLayout();
-            panelControlProjects.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -3377,7 +3421,6 @@
         private Button buttonTXTEmployee;
         private TabPage tabPageProjects;
         private Panel panelTitleProjects;
-        private Label labelTitleProjects;
         private Button buttonClearProjects;
         private Button buttonRefreshProjects;
         private TextBox textBoxSearchProjects;
@@ -3392,8 +3435,6 @@
         private TextBox textBoxHourly;
         private Label labePieceWork;
         private TextBox textBoxPieceWork;
-        private Label labelControlProjects;
-        private Panel panelControlProjects;
         private Button buttonNewProject;
         private Button buttonDeleteProject;
         private Button buttonChangeProject;
@@ -3440,5 +3481,11 @@
         private Button buttonReportSalaryAccruals;
         private Label labelDateOfEmployment;
         private DateTimePicker dateTimePickerDateOfEmployment;
+        private Label label1;
+        private Label label3;
+        private Label label2;
+        private Label label4;
+        private Label label5;
+        private Panel panel1;
     }
 }

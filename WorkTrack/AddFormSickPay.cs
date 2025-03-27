@@ -44,5 +44,10 @@ namespace WorkTrack
                 dataBase.CloseConnection();
             }
         }
+
+        private void dateTimePickerSickEndDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

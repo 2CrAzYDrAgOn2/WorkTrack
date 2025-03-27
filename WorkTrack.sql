@@ -39,6 +39,7 @@ CREATE TABLE Employees (
     Phone NVARCHAR(18) UNIQUE NOT NULL,
     Email NVARCHAR(100) UNIQUE,
 	INN NVARCHAR(12) UNIQUE,
+	DateOfEmployment DATE DEFAULT GETDATE(),
 	PostID INT DEFAULT 0,
 	GenderID INT DEFAULT 0,
 	FOREIGN KEY (GenderID) REFERENCES Genders(GenderID),
@@ -58,15 +59,18 @@ CREATE TABLE Salary(
 	SalaryID INT PRIMARY KEY IDENTITY(1,1),
 	SalaryAccrualID INT,
 	EmployeeID INT,
-	AllDays INT,
-	AllHours INT,
-	PieceworkCharges FLOAT,
-	HourlyCharges FLOAT,
-	VacationPay FLOAT,
-	SickPay FLOAT,
-	PersonalIncomeTax FLOAT,
-	Contributions FLOAT,
-	Total FLOAT,
+	AllDays INT DEFAULT 0,
+	AllHours INT DEFAULT 0,
+	PieceworkCharges FLOAT DEFAULT 0,
+	HourlyCharges FLOAT DEFAULT 0,
+	VacationPay FLOAT DEFAULT 0,
+	SickPay FLOAT DEFAULT 0,
+	PersonalIncomeTax FLOAT DEFAULT 0,
+	Contributions FLOAT DEFAULT 0,
+	Total AS (
+		(PieceworkCharges + HourlyCharges + VacationPay + SickPay) 
+		- (PersonalIncomeTax + Contributions)
+	),
 	FOREIGN KEY (SalaryAccrualID) REFERENCES SalaryAccruals(SalaryAccrualID) ON DELETE CASCADE,
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
 );
@@ -87,8 +91,10 @@ CREATE TABLE VacationPay(
 	EmployeeID INT,
 	VacationStartDate DATETIME,
 	VacationEndDate DATETIME DEFAULT GETDATE(),
-	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0),
-	Total FLOAT,
+	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0) DEFAULT 0,
+	Total AS (
+		(DATEDIFF(DAY, VacationStartDate, VacationEndDate) + 1) * AverageDailyEarnings
+	),
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
 );
 
@@ -97,9 +103,11 @@ CREATE TABLE SickPay(
 	EmployeeID INT,
 	SickStartDate DATETIME,
 	SickEndDate DATETIME DEFAULT GETDATE(),
-	Experience INT,
-	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0),
-	Total FLOAT,
+	Experience INT DEFAULT 0,
+	AverageDailyEarnings FLOAT CHECK (AverageDailyEarnings >= 0) DEFAULT 0,
+	Total AS (
+		(DATEDIFF(DAY, SickStartDate, SickEndDate) + 1) * AverageDailyEarnings
+	),
 	FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID) ON DELETE CASCADE
 );
 
@@ -109,6 +117,89 @@ CREATE TABLE Registration (
     UserPassword NVARCHAR(50) NOT NULL,
 	IsAdmin BIT DEFAULT 0
 );
+
+
+CREATE TRIGGER trg_UpdateSalary
+ON AccountingsOfWorkingHours
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    UPDATE s
+    SET 
+        AllDays = (SELECT COUNT(DISTINCT awh.HoursOfWork / 8) FROM AccountingsOfWorkingHours awh WHERE awh.EmployeeID = s.EmployeeID),
+        AllHours = (SELECT SUM(awh.HoursOfWork) FROM AccountingsOfWorkingHours awh WHERE awh.EmployeeID = s.EmployeeID)
+    FROM Salary s
+    WHERE EXISTS (SELECT 1 FROM AccountingsOfWorkingHours awh WHERE awh.EmployeeID = s.EmployeeID);
+END;
+
+CREATE TRIGGER trg_CalculateSalaryAndComponents
+ON AccountingsOfWorkingHours
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    UPDATE s
+    SET 
+        PieceworkCharges = ROUND(ISNULL((
+            SELECT SUM(p.PieceWork * awh.HoursOfWork) 
+            FROM AccountingsOfWorkingHours awh 
+            JOIN Projects p ON awh.ProjectID = p.ProjectID 
+            WHERE awh.EmployeeID = s.EmployeeID
+        ), 0), 2),
+        HourlyCharges = ROUND(ISNULL(( 
+            SELECT SUM(p.Hourly * awh.HoursOfWork) 
+            FROM AccountingsOfWorkingHours awh 
+            JOIN Projects p ON awh.ProjectID = p.ProjectID 
+            WHERE awh.EmployeeID = s.EmployeeID
+        ), 0), 2),
+        VacationPay = ROUND(ISNULL(( 
+            SELECT SUM(vp.Total) 
+            FROM VacationPay vp 
+            WHERE vp.EmployeeID = s.EmployeeID
+        ), 0), 2),
+        SickPay = ROUND(ISNULL(( 
+            SELECT SUM(sp.Total) 
+            FROM SickPay sp 
+            WHERE sp.EmployeeID = s.EmployeeID
+        ), 0), 2)
+    FROM Salary s;
+    UPDATE s
+    SET 
+        PersonalIncomeTax = ROUND((s.HourlyCharges + s.PieceworkCharges + s.VacationPay + s.SickPay) * 0.13, 2),
+        Contributions = ROUND((s.HourlyCharges + s.PieceworkCharges + s.VacationPay + s.SickPay) * 0.3, 2)
+    FROM Salary s;
+END;
+
+CREATE TRIGGER trg_CalculateVacationPay
+ON VacationPay
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    UPDATE vp
+    SET AverageDailyEarnings = ROUND(ISNULL((SELECT SUM(s.HourlyCharges + s.PieceworkCharges) / 30.4 FROM Salary s WHERE s.EmployeeID = vp.EmployeeID), 0), 2)
+    FROM VacationPay vp;
+    UPDATE s
+    SET VacationPay = ROUND(ISNULL((SELECT SUM(vp.Total) FROM VacationPay vp WHERE vp.EmployeeID = s.EmployeeID), 0), 2)
+    FROM Salary s;
+END;
+
+CREATE TRIGGER trg_CalculateSickPay
+ON SickPay
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    UPDATE sp
+    SET Experience = DATEDIFF(YEAR, e.DateOfEmployment, GETDATE()),
+        AverageDailyEarnings = ROUND(ISNULL((SELECT SUM(s.HourlyCharges + s.PieceworkCharges) / 30.4 FROM Salary s WHERE s.EmployeeID = sp.EmployeeID), 0), 2)
+    FROM SickPay sp
+    JOIN Employees e ON sp.EmployeeID = e.EmployeeID;
+    UPDATE s
+    SET SickPay = ROUND(ISNULL((SELECT SUM(sp.Total) FROM SickPay sp WHERE sp.EmployeeID = s.EmployeeID), 0), 2)
+    FROM Salary s;
+END;
 
 INSERT INTO Genders (Gender) VALUES
 ('Мужской'),
@@ -148,23 +239,23 @@ INSERT INTO SalaryAccruals (Year, MonthID, ProjectID) VALUES
 (2025, 2, 2),
 (2025, 3, 3);
 
-INSERT INTO Salary (SalaryAccrualID, EmployeeID, AllDays, AllHours, PieceworkCharges, HourlyCharges, VacationPay, SickPay, PersonalIncomeTax, Contributions, Total) VALUES
-(1, 1, 20, 160, 2000, 8000, 500, 200, 1000, 500, 14000),
-(2, 2, 18, 160, 2500, 9600, 600, 150, 1200, 600, 17000),
-(3, 3, 22, 160, 3000, 8800, 700, 250, 1400, 700, 18500);
+INSERT INTO Salary (SalaryAccrualID, EmployeeID) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
 
 INSERT INTO AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) VALUES
-(1, 1, 1, 160),
-(2, 2, 2, 160),
-(3, 3, 2, 160);
+(1, 1, 1, 8),
+(2, 2, 2, 8),
+(3, 3, 2, 8);
 
-INSERT INTO VacationPay (EmployeeID, VacationStartDate, VacationEndDate, AverageDailyEarnings, Total) VALUES
-(1, '2025-06-01', '2025-06-10', 500, 5000),
-(2, '2025-07-01', '2025-07-10', 600, 6000);
+INSERT INTO VacationPay (EmployeeID, VacationStartDate, VacationEndDate) VALUES
+(1, '2025-06-01', '2025-11-01'),
+(2, '2025-07-01', '2025-12-01');
 
-INSERT INTO SickPay (EmployeeID, SickStartDate, SickEndDate, Experience, AverageDailyEarnings, Total) VALUES
-(1, '2025-03-01', '2025-03-05', 5, 400, 2000),
-(3, '2025-03-08', '2025-03-09', 7, 350, 350);
+INSERT INTO SickPay (EmployeeID, SickStartDate, SickEndDate) VALUES
+(1, '2025-03-01', '2025-08-01'),
+(3, '2025-03-08', '2025-08-08');
 
 INSERT INTO Registration (UserLogin, UserPassword, IsAdmin) VALUES
 ('admin', 'admin', 1),
@@ -232,3 +323,5 @@ LEFT JOIN SickPay s ON e.EmployeeID = s.EmployeeID
 ORDER BY e.FullName;
 
 DROP DATABASE WorkTrack;
+
+use w;

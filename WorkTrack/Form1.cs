@@ -70,6 +70,7 @@ namespace WorkTrack
                 dataGridViewEmployees.Columns.Add("Phone", "Телефон");
                 dataGridViewEmployees.Columns.Add("Email", "Почта");
                 dataGridViewEmployees.Columns.Add("INN", "ИНН");
+                dataGridViewEmployees.Columns.Add("DateOfEmployment", "Дата устройства");
                 dataGridViewEmployees.Columns.Add("PostID", "Должность");
                 dataGridViewEmployees.Columns.Add("GenderID", "Пол");
                 dataGridViewEmployees.Columns.Add("IsNew", String.Empty);
@@ -189,7 +190,7 @@ namespace WorkTrack
                         break;
 
                     case "dataGridViewEmployees":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.IsDBNull(2) ? "" : iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetString(3), iDataRecord.GetString(4), iDataRecord.GetString(5), iDataRecord.GetString(6), iDataRecord.IsDBNull(7) ? "" : iDataRecord.GetString(7), iDataRecord.IsDBNull(8) ? "" : iDataRecord.GetString(8), iDataRecord.GetInt32(9), iDataRecord.GetInt32(10), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.IsDBNull(2) ? "" : iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetString(3), iDataRecord.GetString(4), iDataRecord.GetString(5), iDataRecord.GetString(6), iDataRecord.IsDBNull(7) ? "" : iDataRecord.GetString(7), iDataRecord.IsDBNull(8) ? "" : iDataRecord.GetString(8), iDataRecord.IsDBNull(9) ? "" : iDataRecord.GetDateTime(9).ToString("yyyy-MM-dd"), iDataRecord.GetInt32(10), iDataRecord.GetInt32(11), RowState.Modified);
                         break;
 
                     case "dataGridViewSalaryAccruals":
@@ -343,13 +344,14 @@ namespace WorkTrack
                         maskedTextBoxPhone.Text = dataGridViewRow.Cells[6].Value.ToString();
                         textBoxEmail.Text = dataGridViewRow.Cells[7].Value.ToString();
                         textBoxINN.Text = dataGridViewRow.Cells[8].Value.ToString();
-                        var postID = dataGridViewRow.Cells[9].Value.ToString();
+                        dateTimePickerDateOfEmployment.Text = dataGridViewRow.Cells[9].Value.ToString();
+                        var postID = dataGridViewRow.Cells[10].Value.ToString();
                         string queryPost = $"SELECT Post FROM Posts WHERE PostID = {postID}";
                         SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         object resultPost = commandPost.ExecuteScalar();
                         comboBoxPostID.Text = resultPost.ToString();
-                        var genderID = dataGridViewRow.Cells[10].Value.ToString();
+                        var genderID = dataGridViewRow.Cells[11].Value.ToString();
                         string queryGender = $"SELECT Gender FROM Genders WHERE GenderID = {genderID}";
                         SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
                         dataBase.OpenConnection();
@@ -477,7 +479,7 @@ namespace WorkTrack
                         break;
 
                     case "dataGridViewEmployees":
-                        string searchStringEmployees = $"select * from Employees where concat (EmployeeID, FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) like '%" + textBoxSearchEmployees.Text + "%'";
+                        string searchStringEmployees = $"select * from Employees where concat (EmployeeID, FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, DateOfEmployment, PostID, GenderID) like '%" + textBoxSearchEmployees.Text + "%'";
                         SqlCommand sqlCommandEmployees = new(searchStringEmployees, dataBase.GetConnection());
                         dataBase.OpenConnection();
                         SqlDataReader sqlDataReaderEmployees = sqlCommandEmployees.ExecuteReader();
@@ -579,10 +581,10 @@ namespace WorkTrack
                     case "dataGridViewEmployees":
                         if (dataGridView.Rows[index].Cells[0].Value.ToString() == string.Empty)
                         {
-                            dataGridView.Rows[index].Cells[11].Value = RowState.Deleted;
+                            dataGridView.Rows[index].Cells[12].Value = RowState.Deleted;
                             return;
                         }
-                        dataGridView.Rows[index].Cells[11].Value = RowState.Deleted;
+                        dataGridView.Rows[index].Cells[12].Value = RowState.Deleted;
                         break;
 
                     case "dataGridViewSalaryAccruals":
@@ -685,7 +687,7 @@ namespace WorkTrack
                             break;
 
                         case "dataGridViewEmployees":
-                            var rowStateEmployees = (RowState)dataGridView.Rows[index].Cells[11].Value;
+                            var rowStateEmployees = (RowState)dataGridView.Rows[index].Cells[12].Value;
                             if (rowStateEmployees == RowState.Existed)
                             {
                                 continue;
@@ -708,8 +710,8 @@ namespace WorkTrack
                                 var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
                                 var email = dataGridView.Rows[index].Cells[7].Value.ToString();
                                 var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var postID = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var genderID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var postID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var genderID = dataGridView.Rows[index].Cells[11].Value.ToString();
                                 var changeQuery = $"update Employees set FullName = '{fullName}', BirthDate = '{birthDate}', BirthPlace = '{birthPlace}', PassportSeries = '{passportSeries}', PassportNumber = '{passportNumber}', Phone = '{phone}', Email = '{email}', INN = '{iNN}', PostID = '{postID}', GenderID = '{genderID}' where EmployeeID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
@@ -724,8 +726,8 @@ namespace WorkTrack
                                 var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
                                 var email = dataGridView.Rows[index].Cells[7].Value.ToString();
                                 var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var postID = dataGridView.Rows[index].Cells[9].Value.ToString();
-                                var genderID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var postID = dataGridView.Rows[index].Cells[10].Value.ToString();
+                                var genderID = dataGridView.Rows[index].Cells[11].Value.ToString();
                                 var newQuery = $"insert into Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) values ('{fullName}', '{birthDate}', '{birthPlace}', '{passportSeries}', '{passportNumber}', '{phone}', '{email}', '{iNN}', '{postID}', '{genderID}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
@@ -957,7 +959,7 @@ namespace WorkTrack
                         object resultGender = commandGender.ExecuteScalar();
                         var genderID = resultGender.ToString();
                         dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, postID, genderID);
-                        dataGridView.Rows[selectedRowIndex].Cells[11].Value = RowState.Modified;
+                        dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
 
                     case "dataGridViewSalaryAccruals":

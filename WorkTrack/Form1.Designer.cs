@@ -198,6 +198,8 @@
             textBoxSearchEmployees = new TextBox();
             dataGridViewEmployees = new DataGridView();
             panelRecordEmployees = new Panel();
+            labelDateOfEmployment = new Label();
+            dateTimePickerDateOfEmployment = new DateTimePicker();
             labelRecordEmployees = new Label();
             labelEmployeeID = new Label();
             textBoxEmployeeID = new TextBox();
@@ -2375,6 +2377,8 @@
             panelRecordEmployees.Controls.Add(textBoxEmail);
             panelRecordEmployees.Controls.Add(labelINN);
             panelRecordEmployees.Controls.Add(textBoxINN);
+            panelRecordEmployees.Controls.Add(labelDateOfEmployment);
+            panelRecordEmployees.Controls.Add(dateTimePickerDateOfEmployment);
             panelRecordEmployees.Controls.Add(labelPostID);
             panelRecordEmployees.Controls.Add(comboBoxPostID);
             panelRecordEmployees.Controls.Add(labelGenderID);
@@ -2385,6 +2389,26 @@
             panelRecordEmployees.Size = new Size(611, 552);
             panelRecordEmployees.TabIndex = 1;
             // 
+            // labelDateOfEmployment
+            // 
+            labelDateOfEmployment.AutoSize = true;
+            labelDateOfEmployment.ForeColor = Color.Black;
+            labelDateOfEmployment.Location = new Point(47, 433);
+            labelDateOfEmployment.Margin = new Padding(4, 0, 4, 0);
+            labelDateOfEmployment.Name = "labelDateOfEmployment";
+            labelDateOfEmployment.Size = new Size(99, 15);
+            labelDateOfEmployment.TabIndex = 22;
+            labelDateOfEmployment.Text = "Дата устройства:";
+            // 
+            // dateTimePickerDateOfEmployment
+            // 
+            dateTimePickerDateOfEmployment.Enabled = false;
+            dateTimePickerDateOfEmployment.Font = new Font("Segoe UI", 14.25F);
+            dateTimePickerDateOfEmployment.Location = new Point(153, 419);
+            dateTimePickerDateOfEmployment.Name = "dateTimePickerDateOfEmployment";
+            dateTimePickerDateOfEmployment.Size = new Size(455, 33);
+            dateTimePickerDateOfEmployment.TabIndex = 9;
+            // 
             // labelRecordEmployees
             // 
             labelRecordEmployees.AutoSize = true;
@@ -2394,7 +2418,7 @@
             labelRecordEmployees.Margin = new Padding(4, 0, 4, 0);
             labelRecordEmployees.Name = "labelRecordEmployees";
             labelRecordEmployees.Size = new Size(142, 47);
-            labelRecordEmployees.TabIndex = 11;
+            labelRecordEmployees.TabIndex = 12;
             labelRecordEmployees.Text = "Запись:";
             // 
             // labelEmployeeID
@@ -2405,7 +2429,7 @@
             labelEmployeeID.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeID.Name = "labelEmployeeID";
             labelEmployeeID.Size = new Size(48, 15);
-            labelEmployeeID.TabIndex = 12;
+            labelEmployeeID.TabIndex = 13;
             labelEmployeeID.Text = "Номер:";
             // 
             // textBoxEmployeeID
@@ -2421,17 +2445,17 @@
             // 
             labelFullName.AutoSize = true;
             labelFullName.ForeColor = Color.Black;
-            labelFullName.Location = new Point(43, 124);
+            labelFullName.Location = new Point(43, 118);
             labelFullName.Margin = new Padding(4, 0, 4, 0);
             labelFullName.Name = "labelFullName";
             labelFullName.Size = new Size(103, 15);
-            labelFullName.TabIndex = 13;
+            labelFullName.TabIndex = 14;
             labelFullName.Text = "ФИО сотрудника:";
             // 
             // textBoxFullName
             // 
             textBoxFullName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxFullName.Location = new Point(152, 113);
+            textBoxFullName.Location = new Point(152, 107);
             textBoxFullName.Margin = new Padding(4, 3, 4, 3);
             textBoxFullName.Name = "textBoxFullName";
             textBoxFullName.Size = new Size(455, 33);
@@ -2441,17 +2465,17 @@
             // 
             labelBirthDate.AutoSize = true;
             labelBirthDate.ForeColor = Color.Black;
-            labelBirthDate.Location = new Point(53, 172);
+            labelBirthDate.Location = new Point(53, 160);
             labelBirthDate.Margin = new Padding(4, 0, 4, 0);
             labelBirthDate.Name = "labelBirthDate";
             labelBirthDate.Size = new Size(93, 15);
-            labelBirthDate.TabIndex = 14;
+            labelBirthDate.TabIndex = 15;
             labelBirthDate.Text = "Дата рождения:";
             // 
             // dateTimePickerBirthDate
             // 
             dateTimePickerBirthDate.Font = new Font("Segoe UI", 14.25F);
-            dateTimePickerBirthDate.Location = new Point(152, 158);
+            dateTimePickerBirthDate.Location = new Point(152, 146);
             dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
             dateTimePickerBirthDate.Size = new Size(455, 33);
             dateTimePickerBirthDate.TabIndex = 2;
@@ -2460,17 +2484,17 @@
             // 
             labelBirthPlace.AutoSize = true;
             labelBirthPlace.ForeColor = Color.Black;
-            labelBirthPlace.Location = new Point(38, 214);
+            labelBirthPlace.Location = new Point(38, 196);
             labelBirthPlace.Margin = new Padding(4, 0, 4, 0);
             labelBirthPlace.Name = "labelBirthPlace";
             labelBirthPlace.Size = new Size(103, 15);
-            labelBirthPlace.TabIndex = 15;
+            labelBirthPlace.TabIndex = 16;
             labelBirthPlace.Text = "Место рождения:";
             // 
             // textBoxBirthPlace
             // 
             textBoxBirthPlace.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxBirthPlace.Location = new Point(152, 203);
+            textBoxBirthPlace.Location = new Point(152, 185);
             textBoxBirthPlace.Margin = new Padding(4, 3, 4, 3);
             textBoxBirthPlace.Name = "textBoxBirthPlace";
             textBoxBirthPlace.Size = new Size(455, 33);
@@ -2480,17 +2504,17 @@
             // 
             labelPassportSeries.AutoSize = true;
             labelPassportSeries.ForeColor = Color.Black;
-            labelPassportSeries.Location = new Point(43, 259);
+            labelPassportSeries.Location = new Point(43, 235);
             labelPassportSeries.Margin = new Padding(4, 0, 4, 0);
             labelPassportSeries.Name = "labelPassportSeries";
             labelPassportSeries.Size = new Size(98, 15);
-            labelPassportSeries.TabIndex = 16;
+            labelPassportSeries.TabIndex = 17;
             labelPassportSeries.Text = "Серия паспорта:";
             // 
             // textBoxPassportSeries
             // 
             textBoxPassportSeries.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPassportSeries.Location = new Point(152, 248);
+            textBoxPassportSeries.Location = new Point(152, 224);
             textBoxPassportSeries.Margin = new Padding(4, 3, 4, 3);
             textBoxPassportSeries.Name = "textBoxPassportSeries";
             textBoxPassportSeries.Size = new Size(455, 33);
@@ -2500,17 +2524,17 @@
             // 
             labelPassportNumber.AutoSize = true;
             labelPassportNumber.ForeColor = Color.Black;
-            labelPassportNumber.Location = new Point(39, 303);
+            labelPassportNumber.Location = new Point(39, 274);
             labelPassportNumber.Margin = new Padding(4, 0, 4, 0);
             labelPassportNumber.Name = "labelPassportNumber";
             labelPassportNumber.Size = new Size(102, 15);
-            labelPassportNumber.TabIndex = 17;
+            labelPassportNumber.TabIndex = 18;
             labelPassportNumber.Text = "Номер паспорта:";
             // 
             // textBoxPassportNumber
             // 
             textBoxPassportNumber.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxPassportNumber.Location = new Point(152, 292);
+            textBoxPassportNumber.Location = new Point(152, 263);
             textBoxPassportNumber.Margin = new Padding(4, 3, 4, 3);
             textBoxPassportNumber.Name = "textBoxPassportNumber";
             textBoxPassportNumber.Size = new Size(455, 33);
@@ -2520,17 +2544,17 @@
             // 
             labelPhone.AutoSize = true;
             labelPhone.ForeColor = Color.Black;
-            labelPhone.Location = new Point(83, 348);
+            labelPhone.Location = new Point(83, 313);
             labelPhone.Margin = new Padding(4, 0, 4, 0);
             labelPhone.Name = "labelPhone";
             labelPhone.Size = new Size(58, 15);
-            labelPhone.TabIndex = 18;
+            labelPhone.TabIndex = 19;
             labelPhone.Text = "Телефон:";
             // 
             // maskedTextBoxPhone
             // 
             maskedTextBoxPhone.Font = new Font("Segoe UI", 14.25F);
-            maskedTextBoxPhone.Location = new Point(152, 337);
+            maskedTextBoxPhone.Location = new Point(152, 302);
             maskedTextBoxPhone.Mask = "+7 (999) 999-99-99";
             maskedTextBoxPhone.Name = "maskedTextBoxPhone";
             maskedTextBoxPhone.Size = new Size(455, 33);
@@ -2540,17 +2564,17 @@
             // 
             labelEmail.AutoSize = true;
             labelEmail.ForeColor = Color.Black;
-            labelEmail.Location = new Point(93, 393);
+            labelEmail.Location = new Point(93, 352);
             labelEmail.Margin = new Padding(4, 0, 4, 0);
             labelEmail.Name = "labelEmail";
             labelEmail.Size = new Size(44, 15);
-            labelEmail.TabIndex = 19;
+            labelEmail.TabIndex = 20;
             labelEmail.Text = "Почта:";
             // 
             // textBoxEmail
             // 
             textBoxEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmail.Location = new Point(152, 382);
+            textBoxEmail.Location = new Point(152, 341);
             textBoxEmail.Margin = new Padding(4, 3, 4, 3);
             textBoxEmail.Name = "textBoxEmail";
             textBoxEmail.Size = new Size(455, 33);
@@ -2560,17 +2584,17 @@
             // 
             labelINN.AutoSize = true;
             labelINN.ForeColor = Color.Black;
-            labelINN.Location = new Point(104, 438);
+            labelINN.Location = new Point(104, 391);
             labelINN.Margin = new Padding(4, 0, 4, 0);
             labelINN.Name = "labelINN";
             labelINN.Size = new Size(37, 15);
-            labelINN.TabIndex = 20;
+            labelINN.TabIndex = 21;
             labelINN.Text = "ИНН:";
             // 
             // textBoxINN
             // 
             textBoxINN.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxINN.Location = new Point(152, 427);
+            textBoxINN.Location = new Point(152, 380);
             textBoxINN.Margin = new Padding(4, 3, 4, 3);
             textBoxINN.Name = "textBoxINN";
             textBoxINN.Size = new Size(455, 33);
@@ -2580,11 +2604,11 @@
             // 
             labelPostID.AutoSize = true;
             labelPostID.ForeColor = Color.Black;
-            labelPostID.Location = new Point(69, 484);
+            labelPostID.Location = new Point(69, 469);
             labelPostID.Margin = new Padding(4, 0, 4, 0);
             labelPostID.Name = "labelPostID";
             labelPostID.Size = new Size(72, 15);
-            labelPostID.TabIndex = 21;
+            labelPostID.TabIndex = 23;
             labelPostID.Text = "Должность:";
             // 
             // comboBoxPostID
@@ -2593,20 +2617,20 @@
             comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
             comboBoxPostID.FormattingEnabled = true;
             comboBoxPostID.Items.AddRange(new object[] { "Менеджер", "Инженер", "Оператор", "Бухгалтер", "Директор" });
-            comboBoxPostID.Location = new Point(152, 473);
+            comboBoxPostID.Location = new Point(152, 458);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
-            comboBoxPostID.TabIndex = 9;
+            comboBoxPostID.TabIndex = 10;
             // 
             // labelGenderID
             // 
             labelGenderID.AutoSize = true;
             labelGenderID.ForeColor = Color.Black;
-            labelGenderID.Location = new Point(108, 529);
+            labelGenderID.Location = new Point(108, 508);
             labelGenderID.Margin = new Padding(4, 0, 4, 0);
             labelGenderID.Name = "labelGenderID";
             labelGenderID.Size = new Size(33, 15);
-            labelGenderID.TabIndex = 22;
+            labelGenderID.TabIndex = 24;
             labelGenderID.Text = "Пол:";
             // 
             // comboBoxGenderID
@@ -2615,10 +2639,10 @@
             comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
             comboBoxGenderID.FormattingEnabled = true;
             comboBoxGenderID.Items.AddRange(new object[] { "Мужской", "Женский" });
-            comboBoxGenderID.Location = new Point(152, 518);
+            comboBoxGenderID.Location = new Point(152, 497);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);
-            comboBoxGenderID.TabIndex = 10;
+            comboBoxGenderID.TabIndex = 11;
             // 
             // labelControlEmployees
             // 
@@ -3414,5 +3438,7 @@
         private Button buttonReportVacationPay;
         private Button buttonReportAccountingsOfWorkingHours;
         private Button buttonReportSalaryAccruals;
+        private Label labelDateOfEmployment;
+        private DateTimePicker dateTimePickerDateOfEmployment;
     }
 }

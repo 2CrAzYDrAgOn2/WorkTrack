@@ -46,7 +46,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(302, 23);
+            label1.Location = new Point(228, 22);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(202, 46);
@@ -135,7 +135,7 @@
             panel1.Controls.Add(textBoxEmployeeIDVacationPay);
             panel1.Controls.Add(labelVacationStartDate);
             panel1.Controls.Add(labelVacationEndDate);
-            panel1.Location = new Point(130, 109);
+            panel1.Location = new Point(56, 108);
             panel1.Name = "panel1";
             panel1.Size = new Size(538, 298);
             panel1.TabIndex = 11;
@@ -146,7 +146,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(61, 75, 86);
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(804, 474);
+            ClientSize = new Size(649, 457);
             Controls.Add(label1);
             Controls.Add(panel1);
             DoubleBuffered = true;

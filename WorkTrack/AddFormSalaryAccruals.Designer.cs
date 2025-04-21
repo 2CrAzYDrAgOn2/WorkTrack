@@ -44,7 +44,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(302, 23);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -54,7 +54,7 @@
             // 
             // buttonSave
             // 
-            buttonSave.BackColor = Color.Transparent;
+            buttonSave.BackColor = Color.FromArgb(10, 189, 188);
             buttonSave.FlatStyle = FlatStyle.Flat;
             buttonSave.Font = new Font("Segoe UI", 15F);
             buttonSave.ForeColor = Color.Black;
@@ -82,7 +82,7 @@
             labelMonthID.AutoSize = true;
             labelMonthID.BackColor = Color.Transparent;
             labelMonthID.Font = new Font("Segoe UI", 15F);
-            labelMonthID.ForeColor = Color.Black;
+            labelMonthID.ForeColor = Color.White;
             labelMonthID.Location = new Point(232, 65);
             labelMonthID.Margin = new Padding(4, 0, 4, 0);
             labelMonthID.Name = "labelMonthID";
@@ -113,11 +113,12 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(buttonSave);
+            panel1.BackColor = Color.FromArgb(81, 95, 106);
             panel1.Controls.Add(textBoxYear);
-            panel1.Controls.Add(textBoxProjectIDSalaryAccruals);
             panel1.Controls.Add(labelMonthID);
             panel1.Controls.Add(comboBoxMonthID);
+            panel1.Controls.Add(textBoxProjectIDSalaryAccruals);
+            panel1.Controls.Add(buttonSave);
             panel1.Location = new Point(123, 94);
             panel1.Name = "panel1";
             panel1.Size = new Size(541, 291);
@@ -127,6 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(61, 75, 86);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(804, 455);
             Controls.Add(label1);

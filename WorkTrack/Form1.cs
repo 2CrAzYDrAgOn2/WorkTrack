@@ -56,68 +56,83 @@ namespace WorkTrack
         {
             try
             {
-                dataGridViewProjects.Columns.Add("ProjectID", "Номер");
-                dataGridViewProjects.Columns.Add("ProjectName", "Название проекта");
-                dataGridViewProjects.Columns.Add("Hourly", "Почасовая оплата");
-                dataGridViewProjects.Columns.Add("PieceWork", "Сдельная оплата");
+                dataGridViewProjects.Columns.Add("Номер", "Номер");
+                dataGridViewProjects.Columns.Add("Название проекта", "Название проекта");
+                dataGridViewProjects.Columns.Add("Почасовая оплата", "Почасовая оплата");
+                dataGridViewProjects.Columns.Add("Сдельная оплата", "Сдельная оплата");
                 dataGridViewProjects.Columns.Add("IsNew", String.Empty);
-                dataGridViewEmployees.Columns.Add("EmployeeID", "Номер");
-                dataGridViewEmployees.Columns.Add("FullName", "ФИО сотрудника");
-                dataGridViewEmployees.Columns.Add("BirthDate", "Дата рождения");
-                dataGridViewEmployees.Columns.Add("BirthPlace", "Место рождения");
-                dataGridViewEmployees.Columns.Add("PassportSeries", "Серия паспорта");
-                dataGridViewEmployees.Columns.Add("PassportNumber", "Номер паспорт");
-                dataGridViewEmployees.Columns.Add("Phone", "Телефон");
-                dataGridViewEmployees.Columns.Add("Email", "Почта");
-                dataGridViewEmployees.Columns.Add("INN", "ИНН");
-                dataGridViewEmployees.Columns.Add("DateOfEmployment", "Дата устройства");
-                dataGridViewEmployees.Columns.Add("PostID", "Должность");
-                dataGridViewEmployees.Columns.Add("GenderID", "Пол");
+                dataGridViewEmployees.Columns.Add("Номер", "Номер");
+                dataGridViewEmployees.Columns.Add("ФИО сотрудника", "ФИО сотрудника");
+                dataGridViewEmployees.Columns.Add("Дата рождения", "Дата рождения");
+                dataGridViewEmployees.Columns.Add("Место рождения", "Место рождения");
+                dataGridViewEmployees.Columns.Add("Серия паспорта", "Серия паспорта");
+                dataGridViewEmployees.Columns.Add("Номер паспорт", "Номер паспорт");
+                dataGridViewEmployees.Columns.Add("Телефон", "Телефон");
+                dataGridViewEmployees.Columns.Add("Почта", "Почта");
+                dataGridViewEmployees.Columns.Add("ИНН", "ИНН");
+                dataGridViewEmployees.Columns.Add("Дата устройства", "Дата устройства");
+                dataGridViewEmployees.Columns.Add("Должность", "Должность");
+                dataGridViewEmployees.Columns.Add("Пол", "Пол");
                 dataGridViewEmployees.Columns.Add("IsNew", String.Empty);
-                dataGridViewSalaryAccruals.Columns.Add("SalaryAccrualID", "Номер");
-                dataGridViewSalaryAccruals.Columns.Add("Year", "Год");
-                dataGridViewSalaryAccruals.Columns.Add("MonthID", "Месяц");
-                dataGridViewSalaryAccruals.Columns.Add("ProjectID", "Проект");
+                dataGridViewSalaryAccruals.Columns.Add("Номер", "Номер");
+                dataGridViewSalaryAccruals.Columns.Add("Год", "Год");
+                dataGridViewSalaryAccruals.Columns.Add("Месяц", "Месяц");
+                dataGridViewSalaryAccruals.Columns.Add("Проект", "Проект");
                 dataGridViewSalaryAccruals.Columns.Add("IsNew", String.Empty);
-                dataGridViewSalary.Columns.Add("SalaryID", "Номер");
-                dataGridViewSalary.Columns.Add("SalaryAccrualID", "Номер зарплаты");
-                dataGridViewSalary.Columns.Add("EmployeeID", "Номер сотрудника");
-                dataGridViewSalary.Columns.Add("AllDays", "Дней отработано");
-                dataGridViewSalary.Columns.Add("AllHours", "Часов отработано");
-                dataGridViewSalary.Columns.Add("PieceworkCharges", "Сдельные начисления");
-                dataGridViewSalary.Columns.Add("HourlyCharges", "Почасовые начисления");
-                dataGridViewSalary.Columns.Add("VacationPay", "Отпускные");
-                dataGridViewSalary.Columns.Add("SickPay", "Больничные");
-                dataGridViewSalary.Columns.Add("PersonalIncomeTax", "НДФЛ");
-                dataGridViewSalary.Columns.Add("Contributions", "Взносы");
-                dataGridViewSalary.Columns.Add("Total", "Итого");
+                dataGridViewSalary.Columns.Add("Номер", "Номер");
+                dataGridViewSalary.Columns.Add("Номер зарплаты", "Номер зарплаты");
+                dataGridViewSalary.Columns.Add("Номер сотрудника", "Номер сотрудника");
+                dataGridViewSalary.Columns.Add("Дней отработано", "Дней отработано");
+                dataGridViewSalary.Columns.Add("Часов отработано", "Часов отработано");
+                dataGridViewSalary.Columns.Add("Сдельные начисления", "Сдельные начисления");
+                dataGridViewSalary.Columns.Add("Почасовые начисления", "Почасовые начисления");
+                dataGridViewSalary.Columns.Add("Отпускные", "Отпускные");
+                dataGridViewSalary.Columns.Add("Больничные", "Больничные");
+                dataGridViewSalary.Columns.Add("НДФЛ", "НДФЛ");
+                dataGridViewSalary.Columns.Add("Взносы", "Взносы");
+                dataGridViewSalary.Columns.Add("Итого", "Итого");
                 dataGridViewSalary.Columns.Add("IsNew", String.Empty);
-                dataGridViewAccountingsOfWorkingHours.Columns.Add("AccountingOfWorkingHoursID", "Номер");
-                dataGridViewAccountingsOfWorkingHours.Columns.Add("EmployeeID", "Сотрудник");
-                dataGridViewAccountingsOfWorkingHours.Columns.Add("ProjectID", "Проект");
-                dataGridViewAccountingsOfWorkingHours.Columns.Add("TypeOfRemunerationID", "Тип работы");
-                dataGridViewAccountingsOfWorkingHours.Columns.Add("HoursOfWork", "Количество");
+                dataGridViewAccountingsOfWorkingHours.Columns.Add("Номер", "Номер");
+                dataGridViewAccountingsOfWorkingHours.Columns.Add("Сотрудник", "Сотрудник");
+                dataGridViewAccountingsOfWorkingHours.Columns.Add("Проект", "Проект");
+                dataGridViewAccountingsOfWorkingHours.Columns.Add("Тип работы", "Тип работы");
+                dataGridViewAccountingsOfWorkingHours.Columns.Add("Количество", "Количество");
                 dataGridViewAccountingsOfWorkingHours.Columns.Add("IsNew", String.Empty);
-                dataGridViewVacationPay.Columns.Add("VacationPayID", "Номер");
-                dataGridViewVacationPay.Columns.Add("EmployeeID", "Сотрудник");
-                dataGridViewVacationPay.Columns.Add("VacationStartDate", "Дата начала отпуска");
-                dataGridViewVacationPay.Columns.Add("VacationEndDate", "Дата конца отпуска");
-                dataGridViewVacationPay.Columns.Add("AverageDailyEarnings", "Средний дневной заработок");
-                dataGridViewVacationPay.Columns.Add("Total", "Итого");
+                dataGridViewVacationPay.Columns.Add("Номер", "Номер");
+                dataGridViewVacationPay.Columns.Add("Сотрудник", "Сотрудник");
+                dataGridViewVacationPay.Columns.Add("Дата начала отпуска", "Дата начала отпуска");
+                dataGridViewVacationPay.Columns.Add("Дата конца отпуска", "Дата конца отпуска");
+                dataGridViewVacationPay.Columns.Add("Средний дневной заработок", "Средний дневной заработок");
+                dataGridViewVacationPay.Columns.Add("Итого", "Итого");
                 dataGridViewVacationPay.Columns.Add("IsNew", String.Empty);
-                dataGridViewSickPay.Columns.Add("SickPayID", "Номер");
-                dataGridViewSickPay.Columns.Add("EmployeeID", "Сотрудник");
-                dataGridViewSickPay.Columns.Add("SickStartDate", "Дата начала больничного");
-                dataGridViewSickPay.Columns.Add("SickEndDate", "Дата конца больничного");
-                dataGridViewSickPay.Columns.Add("Experience", "Стаж работы");
-                dataGridViewSickPay.Columns.Add("AverageDailyEarnings", "Средний дневной заработок");
-                dataGridViewSickPay.Columns.Add("Total", "Итого");
+                dataGridViewSickPay.Columns.Add("Номер", "Номер");
+                dataGridViewSickPay.Columns.Add("Сотрудник", "Сотрудник");
+                dataGridViewSickPay.Columns.Add("Дата начала больничного", "Дата начала больничного");
+                dataGridViewSickPay.Columns.Add("Дата конца больничного", "Дата конца больничного");
+                dataGridViewSickPay.Columns.Add("Стаж работы", "Стаж работы");
+                dataGridViewSickPay.Columns.Add("Средний дневной заработок", "Средний дневной заработок");
+                dataGridViewSickPay.Columns.Add("Итого", "Итого");
                 dataGridViewSickPay.Columns.Add("IsNew", String.Empty);
+                HideIsNewColumns();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        /// <summary>
+        /// HideIsNewColumns() вызывается при прятании колонок
+        /// </summary>
+        private void HideIsNewColumns()
+        {
+            dataGridViewProjects.Columns["IsNew"].Visible = false;
+            dataGridViewEmployees.Columns["IsNew"].Visible = false;
+            dataGridViewSalaryAccruals.Columns["IsNew"].Visible = false;
+            dataGridViewSalary.Columns["IsNew"].Visible = false;
+            dataGridViewAccountingsOfWorkingHours.Columns["IsNew"].Visible = false;
+            dataGridViewVacationPay.Columns["IsNew"].Visible = false;
+            dataGridViewSickPay.Columns["IsNew"].Visible = false;
         }
 
         /// <summary>
@@ -141,10 +156,7 @@ namespace WorkTrack
                 textBoxINN.Text = "";
                 textBoxSalaryAccrualID.Text = "";
                 textBoxYear.Text = "";
-                textBoxProjectIDSalaryAccruals.Text = "";
                 textBoxSalaryID.Text = "";
-                textBoxSalaryAccrualIDSalary.Text = "";
-                textBoxEmployeeIDSalary.Text = "";
                 textBoxAllDays.Text = "";
                 textBoxAllHours.Text = "";
                 textBoxPieceworkCharges.Text = "";
@@ -155,11 +167,8 @@ namespace WorkTrack
                 textBoxContributions.Text = "";
                 textBoxTotal.Text = "";
                 textBoxAccountingsOfWorkingHoursID.Text = "";
-                textBoxEmployeeIDAccountingsOfWorkingHours.Text = "";
-                textBoxProjectIDAccountingsOfWorkingHours.Text = "";
                 textBoxHoursOfWork.Text = "";
                 textBoxVacationPayID.Text = "";
-                textBoxEmployeeIDVacationPay.Text = "";
                 textBoxAverageDailyEarnings.Text = "";
                 textBoxTotalVacationPay.Text = "";
                 textBoxSickPayID.Text = "";
@@ -239,6 +248,7 @@ namespace WorkTrack
                     ReadSingleRow(dataGridView, sqlDataReader);
                 }
                 sqlDataReader.Close();
+                FillAllComboBoxes();
             }
             catch (Exception ex)
             {
@@ -345,46 +355,21 @@ namespace WorkTrack
                         textBoxEmail.Text = dataGridViewRow.Cells[7].Value.ToString();
                         textBoxINN.Text = dataGridViewRow.Cells[8].Value.ToString();
                         dateTimePickerDateOfEmployment.Text = dataGridViewRow.Cells[9].Value.ToString();
-                        var postID = dataGridViewRow.Cells[10].Value.ToString();
-                        string queryPost = $"SELECT Post FROM Posts WHERE PostID = {postID}";
-                        SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultPost = commandPost.ExecuteScalar();
-                        comboBoxPostID.Text = resultPost.ToString();
-                        var genderID = dataGridViewRow.Cells[11].Value.ToString();
-                        string queryGender = $"SELECT Gender FROM Genders WHERE GenderID = {genderID}";
-                        SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultGender = commandGender.ExecuteScalar();
-                        comboBoxGenderID.Text = resultGender.ToString();
+                        comboBoxPostID.Text = dataGridViewRow.Cells[10].Value.ToString();
+                        comboBoxGenderID.Text = dataGridViewRow.Cells[11].Value.ToString();
                         break;
 
                     case "dataGridViewSalaryAccruals":
                         textBoxSalaryAccrualID.Text = dataGridViewRow.Cells[0].Value.ToString();
                         textBoxYear.Text = dataGridViewRow.Cells[1].Value.ToString();
-                        var monthID = dataGridViewRow.Cells[2].Value.ToString();
-                        string queryMonth = $"SELECT MonthName FROM Months WHERE MonthID = {monthID}";
-                        SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultMonth = commandMonth.ExecuteScalar();
-                        comboBoxMonthID.Text = resultMonth.ToString();
-                        var projectID = dataGridViewRow.Cells[3].Value.ToString();
-                        string queryProject = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectID}";
-                        SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultProject = commandProject.ExecuteScalar();
-                        textBoxProjectIDSalaryAccruals.Text = resultProject.ToString();
+                        comboBoxMonthID.Text = dataGridViewRow.Cells[2].Value.ToString();
+                        comboBoxProjectIDSalaryAccruals.Text = dataGridViewRow.Cells[3].Value.ToString();
                         break;
 
                     case "dataGridViewSalary":
                         textBoxSalaryID.Text = dataGridViewRow.Cells[0].Value.ToString();
-                        textBoxSalaryAccrualIDSalary.Text = dataGridViewRow.Cells[1].Value.ToString();
-                        var employeeID = dataGridViewRow.Cells[2].Value.ToString();
-                        string queryEmployee = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeID}";
-                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployee = commandEmployee.ExecuteScalar();
-                        textBoxEmployeeIDSalary.Text = resultEmployee.ToString();
+                        comboBoxSalaryAccrualIDSalary.Text = dataGridViewRow.Cells[1].Value.ToString();
+                        comboBoxEmployeeIDSalary.Text = dataGridViewRow.Cells[2].Value.ToString();
                         textBoxAllDays.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxAllHours.Text = dataGridViewRow.Cells[4].Value.ToString();
                         textBoxPieceworkCharges.Text = dataGridViewRow.Cells[5].Value.ToString();
@@ -398,35 +383,15 @@ namespace WorkTrack
 
                     case "dataGridViewAccountingsOfWorkingHours":
                         textBoxAccountingsOfWorkingHoursID.Text = dataGridViewRow.Cells[0].Value.ToString();
-                        var employeeIDAccountingsOfWorkingHours = dataGridViewRow.Cells[1].Value.ToString();
-                        string queryEmployeeAccountingsOfWorkingHours = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeIDAccountingsOfWorkingHours}";
-                        SqlCommand commandEmployeeAccountingsOfWorkingHours = new(queryEmployeeAccountingsOfWorkingHours, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployeeAccountingsOfWorkingHours = commandEmployeeAccountingsOfWorkingHours.ExecuteScalar();
-                        textBoxEmployeeIDAccountingsOfWorkingHours.Text = resultEmployeeAccountingsOfWorkingHours.ToString();
-                        var projectIDAccountingsOfWorkingHours = dataGridViewRow.Cells[2].Value.ToString();
-                        string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectName FROM Projects WHERE ProjectID = {projectIDAccountingsOfWorkingHours}";
-                        SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultProjectAccountingsOfWorkingHours = commandProjectAccountingsOfWorkingHours.ExecuteScalar();
-                        textBoxProjectIDAccountingsOfWorkingHours.Text = resultProjectAccountingsOfWorkingHours.ToString();
-                        var TypeOfRemunerationID = dataGridViewRow.Cells[3].Value.ToString();
-                        string queryTypeOfRemuneration = $"SELECT TypeOfRemuneration FROM TypesOfRemuneration WHERE TypeOfRemunerationID = {TypeOfRemunerationID}";
-                        SqlCommand commandTypeOfRemuneration = new(queryTypeOfRemuneration, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultTypeOfRemuneration = commandTypeOfRemuneration.ExecuteScalar();
-                        comboBoxTypeOfRemunerationID.Text = resultTypeOfRemuneration.ToString();
+                        comboBoxEmployeeIDAccountingsOfWorkingHours.Text = dataGridViewRow.Cells[1].Value.ToString();
+                        comboBoxProjectIDAccountingsOfWorkingHours.Text = dataGridViewRow.Cells[2].Value.ToString();
+                        comboBoxTypeOfRemunerationID.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxHoursOfWork.Text = dataGridViewRow.Cells[4].Value.ToString();
                         break;
 
                     case "dataGridViewVacationPay":
                         textBoxVacationPayID.Text = dataGridViewRow.Cells[0].Value.ToString();
-                        var employeeIDVacationPay = dataGridViewRow.Cells[1].Value.ToString();
-                        string queryVacationPay = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeIDVacationPay}";
-                        SqlCommand commandVacationPay = new(queryVacationPay, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultVacationPay = commandVacationPay.ExecuteScalar();
-                        textBoxEmployeeIDVacationPay.Text = resultVacationPay.ToString();
+                        comboBoxEmployeeIDVacationPay.Text = dataGridViewRow.Cells[1].Value.ToString();
                         dateTimePickerVacationStartDate.Text = dataGridViewRow.Cells[2].Value.ToString();
                         dateTimePickerVacationEndDate.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxAverageDailyEarnings.Text = dataGridViewRow.Cells[4].Value.ToString();
@@ -435,12 +400,7 @@ namespace WorkTrack
 
                     case "dataGridViewSickPay":
                         textBoxSickPayID.Text = dataGridViewRow.Cells[0].Value.ToString();
-                        var employeeIDSickPay = dataGridViewRow.Cells[1].Value.ToString();
-                        string querySickPay = $"SELECT FullName FROM Employees WHERE EmployeeID = {employeeIDSickPay}";
-                        SqlCommand commandSickPay = new(querySickPay, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultSickPay = commandSickPay.ExecuteScalar();
-                        textBoxEmployeeIDSickPay.Text = resultSickPay.ToString();
+                        comboBoxEmployeeIDSickPay.Text = dataGridViewRow.Cells[1].Value.ToString();
                         dateTimePickerSickStartDate.Text = dataGridViewRow.Cells[2].Value.ToString();
                         dateTimePickerSickEndDate.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxExperience.Text = dataGridViewRow.Cells[4].Value.ToString();
@@ -664,6 +624,7 @@ namespace WorkTrack
                                 var deleteQuery = $"delete from Projects where ProjectID = '{projectID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateProjects == RowState.Modified)
                             {
@@ -674,6 +635,7 @@ namespace WorkTrack
                                 var changeQuery = $"update Projects set ProjectName = '{projectName}', Hourly = '{hourly}', PieceWork = '{pieceWork}' where ProjectID = '{projectID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateProjects == RowState.New)
                             {
@@ -683,6 +645,7 @@ namespace WorkTrack
                                 var newQuery = $"insert into Projects (ProjectName, Hourly, PieceWork) values ('{projectName}', '{hourly}', '{pieceWork}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -698,6 +661,7 @@ namespace WorkTrack
                                 var deleteQuery = $"delete from Employees where EmployeeID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEmployees == RowState.Modified)
                             {
@@ -710,11 +674,28 @@ namespace WorkTrack
                                 var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
                                 var email = dataGridView.Rows[index].Cells[7].Value.ToString();
                                 var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var postID = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var genderID = dataGridView.Rows[index].Cells[11].Value.ToString();
-                                var changeQuery = $"update Employees set FullName = '{fullName}', BirthDate = '{birthDate}', BirthPlace = '{birthPlace}', PassportSeries = '{passportSeries}', PassportNumber = '{passportNumber}', Phone = '{phone}', Email = '{email}', INN = '{iNN}', PostID = '{postID}', GenderID = '{genderID}' where EmployeeID = '{employeeID}'";
+                                var postName = dataGridView.Rows[index].Cells[10].Value?.ToString();
+                                string postIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(postName))
+                                {
+                                    var getPostIdQuery = $"SELECT PostID FROM Posts WHERE Post = '{postName}'";
+                                    var postIdCommand = new SqlCommand(getPostIdQuery, dataBase.GetConnection());
+                                    var result = postIdCommand.ExecuteScalar();
+                                    postIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var genderName = dataGridView.Rows[index].Cells[11].Value?.ToString();
+                                string genderIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(genderName))
+                                {
+                                    var getGenderIdQuery = $"SELECT GenderID FROM Genders WHERE Gender = '{genderName}'";
+                                    var genderIdCommand = new SqlCommand(getGenderIdQuery, dataBase.GetConnection());
+                                    var result = genderIdCommand.ExecuteScalar();
+                                    genderIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var changeQuery = $"update Employees set FullName = '{fullName}', BirthDate = '{birthDate}', BirthPlace = '{birthPlace}', PassportSeries = '{passportSeries}', PassportNumber = '{passportNumber}', Phone = '{phone}', Email = '{email}', INN = '{iNN}', PostID = '{postIdValue}', GenderID = '{genderIdValue}' where EmployeeID = '{employeeID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateEmployees == RowState.New)
                             {
@@ -726,11 +707,28 @@ namespace WorkTrack
                                 var phone = dataGridView.Rows[index].Cells[6].Value.ToString();
                                 var email = dataGridView.Rows[index].Cells[7].Value.ToString();
                                 var iNN = dataGridView.Rows[index].Cells[8].Value.ToString();
-                                var postID = dataGridView.Rows[index].Cells[10].Value.ToString();
-                                var genderID = dataGridView.Rows[index].Cells[11].Value.ToString();
-                                var newQuery = $"insert into Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) values ('{fullName}', '{birthDate}', '{birthPlace}', '{passportSeries}', '{passportNumber}', '{phone}', '{email}', '{iNN}', '{postID}', '{genderID}')";
+                                var postName = dataGridView.Rows[index].Cells[10].Value?.ToString();
+                                string postIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(postName))
+                                {
+                                    var getPostIdQuery = $"SELECT PostID FROM Posts WHERE Post = '{postName}'";
+                                    var postIdCommand = new SqlCommand(getPostIdQuery, dataBase.GetConnection());
+                                    var result = postIdCommand.ExecuteScalar();
+                                    postIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var genderName = dataGridView.Rows[index].Cells[11].Value?.ToString();
+                                string genderIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(genderName))
+                                {
+                                    var getGenderIdQuery = $"SELECT GenderID FROM Genders WHERE Gender = '{genderName}'";
+                                    var genderIdCommand = new SqlCommand(getGenderIdQuery, dataBase.GetConnection());
+                                    var result = genderIdCommand.ExecuteScalar();
+                                    genderIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var newQuery = $"insert into Employees (FullName, BirthDate, BirthPlace, PassportSeries, PassportNumber, Phone, Email, INN, PostID, GenderID) values ('{fullName}', '{birthDate}', '{birthPlace}', '{passportSeries}', '{passportNumber}', '{phone}', '{email}', '{iNN}', '{postIdValue}', '{genderIdValue}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -746,25 +744,60 @@ namespace WorkTrack
                                 var deleteQuery = $"delete from SalaryAccruals where SalaryAccrualID = '{salaryAccrualID}'";
                                 var sqlCommand = new SqlCommand(deleteQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateSalaryAccruals == RowState.Modified)
                             {
                                 var salaryAccrualID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var year = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var monthID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var projectID = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var changeQuery = $"update SalaryAccruals set Year = '{year}', MonthID = '{monthID}', ProjectID = '{projectID}' where SalaryAccrualID = '{salaryAccrualID}'";
+                                var monthName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string monthIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(monthName))
+                                {
+                                    var getMonthIdQuery = $"SELECT MonthID FROM Months WHERE MonthName = '{monthName}'";
+                                    var monthIdCommand = new SqlCommand(getMonthIdQuery, dataBase.GetConnection());
+                                    var result = monthIdCommand.ExecuteScalar();
+                                    monthIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var projectName = dataGridView.Rows[index].Cells[3].Value?.ToString();
+                                string projectIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(projectName))
+                                {
+                                    var getProjectIdQuery = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectName}'";
+                                    var projectIdCommand = new SqlCommand(getProjectIdQuery, dataBase.GetConnection());
+                                    var result = projectIdCommand.ExecuteScalar();
+                                    projectIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var changeQuery = $"update SalaryAccruals set Year = '{year}', MonthID = '{monthIdValue}', ProjectID = '{projectIdValue}' where SalaryAccrualID = '{salaryAccrualID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             if (rowStateSalaryAccruals == RowState.New)
                             {
                                 var year = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var monthID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var projectID = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var newQuery = $"insert into SalaryAccruals (Year, MonthID, ProjectID) values ('{year}', '{monthID}', '{projectID}')";
+                                var monthName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string monthIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(monthName))
+                                {
+                                    var getMonthIdQuery = $"SELECT MonthID FROM Months WHERE MonthName = '{monthName}'";
+                                    var monthIdCommand = new SqlCommand(getMonthIdQuery, dataBase.GetConnection());
+                                    var result = monthIdCommand.ExecuteScalar();
+                                    monthIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var projectName = dataGridView.Rows[index].Cells[3].Value?.ToString();
+                                string projectIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(projectName))
+                                {
+                                    var getProjectIdQuery = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectName}'";
+                                    var projectIdCommand = new SqlCommand(getProjectIdQuery, dataBase.GetConnection());
+                                    var result = projectIdCommand.ExecuteScalar();
+                                    projectIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var newQuery = $"insert into SalaryAccruals (Year, MonthID, ProjectID) values ('{year}', '{monthIdValue}', '{projectIdValue}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
+                                FillAllComboBoxes();
                             }
                             break;
 
@@ -785,16 +818,32 @@ namespace WorkTrack
                             {
                                 var salaryID = dataGridView.Rows[index].Cells[0].Value.ToString();
                                 var salaryAccrualID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var employeeID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var changeQuery = $"update Salary set SalaryAccrualID = '{salaryAccrualID}', EmployeeID = '{employeeID}' where SalaryID = '{salaryID}'";
+                                var employeeName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var changeQuery = $"update Salary set SalaryAccrualID = '{salaryAccrualID}', EmployeeID = '{employeeIdValue}' where SalaryID = '{salaryID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateSalary == RowState.New)
                             {
                                 var salaryAccrualID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var employeeID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var newQuery = $"insert into Salary (SalaryAccrualID, EmployeeID) values ('{salaryAccrualID}', '{employeeID}')";
+                                var employeeName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var newQuery = $"insert into Salary (SalaryAccrualID, EmployeeID) values ('{salaryAccrualID}', '{employeeIdValue}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -816,21 +865,69 @@ namespace WorkTrack
                             if (rowStateAccountingsOfWorkingHours == RowState.Modified)
                             {
                                 var accountingOfWorkingHoursID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var projectID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var typeOfRemunerationID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var projectName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string projectIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(projectName))
+                                {
+                                    var getProjectIdQuery = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectName}'";
+                                    var projectIdCommand = new SqlCommand(getProjectIdQuery, dataBase.GetConnection());
+                                    var result = projectIdCommand.ExecuteScalar();
+                                    projectIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var typeName = dataGridView.Rows[index].Cells[3].Value?.ToString();
+                                string typeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(typeName))
+                                {
+                                    var getTypeIdQuery = $"SELECT TypeOfRemunerationID FROM TypesOfRemuneration WHERE TypeOfRemuneration = '{typeName}'";
+                                    var typeIdCommand = new SqlCommand(getTypeIdQuery, dataBase.GetConnection());
+                                    var result = typeIdCommand.ExecuteScalar();
+                                    typeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var hoursOfWork = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var changeQuery = $"update AccountingsOfWorkingHours set EmployeeID = '{employeeID}', ProjectID = '{projectID}', TypeOfRemunerationID = '{typeOfRemunerationID}', HoursOfWork = '{hoursOfWork}' where AccountingOfWorkingHoursID = '{accountingOfWorkingHoursID}'";
+                                var changeQuery = $"update AccountingsOfWorkingHours set EmployeeID = '{employeeIdValue}', ProjectID = '{projectIdValue}', TypeOfRemunerationID = '{typeIdValue}', HoursOfWork = '{hoursOfWork}' where AccountingOfWorkingHoursID = '{accountingOfWorkingHoursID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateAccountingsOfWorkingHours == RowState.New)
                             {
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
-                                var projectID = dataGridView.Rows[index].Cells[2].Value.ToString();
-                                var typeOfRemunerationID = dataGridView.Rows[index].Cells[3].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var projectName = dataGridView.Rows[index].Cells[2].Value?.ToString();
+                                string projectIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(projectName))
+                                {
+                                    var getProjectIdQuery = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectName}'";
+                                    var projectIdCommand = new SqlCommand(getProjectIdQuery, dataBase.GetConnection());
+                                    var result = projectIdCommand.ExecuteScalar();
+                                    projectIdValue = result?.ToString() ?? "NULL";
+                                }
+                                var typeName = dataGridView.Rows[index].Cells[3].Value?.ToString();
+                                string typeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(typeName))
+                                {
+                                    var getTypeIdQuery = $"SELECT TypeOfRemunerationID FROM TypesOfRemuneration WHERE TypeOfRemuneration = '{typeName}'";
+                                    var typeIdCommand = new SqlCommand(getTypeIdQuery, dataBase.GetConnection());
+                                    var result = typeIdCommand.ExecuteScalar();
+                                    typeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var hoursOfWork = dataGridView.Rows[index].Cells[4].Value.ToString();
-                                var newQuery = $"insert into AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) values ('{employeeID}', '{projectID}', '{typeOfRemunerationID}', '{hoursOfWork}')";
+                                var newQuery = $"insert into AccountingsOfWorkingHours (EmployeeID, ProjectID, TypeOfRemunerationID, HoursOfWork) values ('{employeeIdValue}', '{projectIdValue}', '{typeIdValue}', '{hoursOfWork}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -852,19 +949,35 @@ namespace WorkTrack
                             if (rowStateVacationPay == RowState.Modified)
                             {
                                 var vacationPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var vacationStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var vacationEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var changeQuery = $"update VacationPay set EmployeeID = '{employeeID}', VacationStartDate = '{vacationStartDate}', VacationEndDate = '{vacationEndDate}' where VacationPayID = '{vacationPayID}'";
+                                var changeQuery = $"update VacationPay set EmployeeID = '{employeeIdValue}', VacationStartDate = '{vacationStartDate}', VacationEndDate = '{vacationEndDate}' where VacationPayID = '{vacationPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateVacationPay == RowState.New)
                             {
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var vacationStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var vacationEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var newQuery = $"insert into VacationPay (EmployeeID, VacationStartDate, VacationEndDate) values ('{employeeID}', '{vacationStartDate}', '{vacationEndDate}')";
+                                var newQuery = $"insert into VacationPay (EmployeeID, VacationStartDate, VacationEndDate) values ('{employeeIdValue}', '{vacationStartDate}', '{vacationEndDate}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -886,19 +999,35 @@ namespace WorkTrack
                             if (rowStateSickPay == RowState.Modified)
                             {
                                 var sickPayID = dataGridView.Rows[index].Cells[0].Value.ToString();
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var sickStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var sickEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var changeQuery = $"update SickPay set EmployeeID = '{employeeID}', SickStartDate = '{sickStartDate}', SickEndDate = '{sickEndDate}' where SickPayID = '{sickPayID}'";
+                                var changeQuery = $"update SickPay set EmployeeID = '{employeeIdValue}', SickStartDate = '{sickStartDate}', SickEndDate = '{sickEndDate}' where SickPayID = '{sickPayID}'";
                                 var sqlCommand = new SqlCommand(changeQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
                             if (rowStateSickPay == RowState.New)
                             {
-                                var employeeID = dataGridView.Rows[index].Cells[1].Value.ToString();
+                                var employeeName = dataGridView.Rows[index].Cells[1].Value?.ToString();
+                                string employeeIdValue = "NULL";
+                                if (!string.IsNullOrEmpty(employeeName))
+                                {
+                                    var getEmployeeIdQuery = $"SELECT EmployeeID FROM Employees WHERE FullName = '{employeeName}'";
+                                    var employeeIdCommand = new SqlCommand(getEmployeeIdQuery, dataBase.GetConnection());
+                                    var result = employeeIdCommand.ExecuteScalar();
+                                    employeeIdValue = result?.ToString() ?? "NULL";
+                                }
                                 var sickStartDate = dataGridView.Rows[index].Cells[2].Value.ToString();
                                 var sickEndDate = dataGridView.Rows[index].Cells[3].Value.ToString();
-                                var newQuery = $"insert into SickPay (EmployeeID, SickStartDate, SickEndDate) values ('{employeeID}', '{sickStartDate}', '{sickEndDate}')";
+                                var newQuery = $"insert into SickPay (EmployeeID, SickStartDate, SickEndDate) values ('{employeeIdValue}', '{sickStartDate}', '{sickEndDate}')";
                                 var sqlCommand = new SqlCommand(newQuery, dataBase.GetConnection());
                                 sqlCommand.ExecuteNonQuery();
                             }
@@ -946,18 +1075,8 @@ namespace WorkTrack
                         var phone = maskedTextBoxPhone.Text;
                         var email = textBoxEmail.Text;
                         var iNN = textBoxINN.Text;
-                        var post = comboBoxPostID.Text;
-                        string queryPost = $"SELECT PostID FROM Posts WHERE Post = '{post}'";
-                        SqlCommand commandPost = new(queryPost, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultPost = commandPost.ExecuteScalar();
-                        var postID = resultPost.ToString();
-                        var gender = comboBoxGenderID.Text;
-                        string queryGender = $"SELECT GenderID FROM Genders WHERE Gender = '{gender}'";
-                        SqlCommand commandGender = new(queryGender, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultGender = commandGender.ExecuteScalar();
-                        var genderID = resultGender.ToString();
+                        var postID = comboBoxPostID.Text;
+                        var genderID = comboBoxGenderID.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, postID, genderID);
                         dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
@@ -965,55 +1084,25 @@ namespace WorkTrack
                     case "dataGridViewSalaryAccruals":
                         var salaryAccrualID = textBoxSalaryAccrualID.Text;
                         var year = textBoxYear.Text;
-                        var month = comboBoxMonthID.Text;
-                        string queryMonth = $"SELECT MonthID FROM Months WHERE MonthName = '{month}'";
-                        SqlCommand commandMonth = new(queryMonth, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultMonth = commandMonth.ExecuteScalar();
-                        var monthID = resultMonth.ToString();
-                        string projectNameSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
-                        string queryProject = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameSalaryAccruals}'";
-                        SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultProject = commandProject.ExecuteScalar();
-                        var projectIDSalaryAccruals = resultProject.ToString();
+                        var monthID = comboBoxMonthID.Text;
+                        var projectIDSalaryAccruals = comboBoxProjectIDSalaryAccruals.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(salaryAccrualID, year, monthID, projectIDSalaryAccruals);
                         dataGridView.Rows[selectedRowIndex].Cells[4].Value = RowState.Modified;
                         break;
 
                     case "dataGridViewSalary":
                         var salaryID = textBoxSalaryID.Text;
-                        var salaryAccrualIDSalary = textBoxSalaryAccrualIDSalary.Text;
-                        var fullNameSalary = textBoxEmployeeIDSalary.Text;
-                        string queryEmployee = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameSalary}'";
-                        SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployee = commandEmployee.ExecuteScalar();
-                        var employeeIDSalary = resultEmployee.ToString();
+                        var salaryAccrualIDSalary = comboBoxSalaryAccrualIDSalary.Text;
+                        var employeeIDSalary = comboBoxEmployeeIDSalary.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(salaryID, salaryAccrualIDSalary, employeeIDSalary);
                         dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
 
                     case "dataGridViewAccountingsOfWorkingHours":
                         var accountingOfWorkingHoursID = textBoxAccountingsOfWorkingHoursID.Text;
-                        var fullNameAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
-                        string queryEmployeeAccountingsOfWorkingHours = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameAccountingsOfWorkingHours}'";
-                        SqlCommand commandEmployeeAccountingsOfWorkingHours = new(queryEmployeeAccountingsOfWorkingHours, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployeeAccountingsOfWorkingHours = commandEmployeeAccountingsOfWorkingHours.ExecuteScalar();
-                        var employeeIDAccountingsOfWorkingHours = resultEmployeeAccountingsOfWorkingHours.ToString();
-                        var projectNameAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
-                        string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameAccountingsOfWorkingHours}'";
-                        SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultProjectAccountingsOfWorkingHours = commandProjectAccountingsOfWorkingHours.ExecuteScalar();
-                        var projectIDAccountingsOfWorkingHours = resultProjectAccountingsOfWorkingHours.ToString();
-                        var typeOfRemuneration = comboBoxTypeOfRemunerationID.Text;
-                        string queryTypeOfRemuneration = $"SELECT TypeOfRemunerationID FROM TypesOfRemuneration WHERE TypeOfRemuneration = '{typeOfRemuneration}'";
-                        SqlCommand commandTypeOfRemuneration = new(queryTypeOfRemuneration, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultTypeOfRemuneration = commandTypeOfRemuneration.ExecuteScalar();
-                        var typeOfRemunerationID = resultTypeOfRemuneration.ToString();
+                        var employeeIDAccountingsOfWorkingHours = comboBoxEmployeeIDAccountingsOfWorkingHours.Text;
+                        var projectIDAccountingsOfWorkingHours = comboBoxProjectIDAccountingsOfWorkingHours.Text;
+                        var typeOfRemunerationID = comboBoxTypeOfRemunerationID.Text;
                         var hoursOfWork = textBoxHoursOfWork.Text;
                         dataGridView.Rows[selectedRowIndex].SetValues(accountingOfWorkingHoursID, employeeIDAccountingsOfWorkingHours, projectIDAccountingsOfWorkingHours, typeOfRemunerationID, hoursOfWork);
                         dataGridView.Rows[selectedRowIndex].Cells[5].Value = RowState.Modified;
@@ -1021,12 +1110,7 @@ namespace WorkTrack
 
                     case "dataGridViewVacationPay":
                         var vacationPayID = textBoxVacationPayID.Text;
-                        var fullNameVacationPay = textBoxEmployeeIDVacationPay.Text;
-                        string queryEmployeeVacationPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameVacationPay}'";
-                        SqlCommand commandEmployeeVacationPay = new(queryEmployeeVacationPay, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployeeVacationPay = commandEmployeeVacationPay.ExecuteScalar();
-                        var employeeIDVacationPay = resultEmployeeVacationPay.ToString();
+                        var employeeIDVacationPay = comboBoxEmployeeIDVacationPay.Text;
                         var vacationStartDate = dateTimePickerVacationStartDate.Value;
                         var vacationEndDate = dateTimePickerVacationEndDate.Value;
                         dataGridView.Rows[selectedRowIndex].SetValues(vacationPayID, employeeIDVacationPay, vacationStartDate, vacationEndDate);
@@ -1035,12 +1119,7 @@ namespace WorkTrack
 
                     case "dataGridViewSickPay":
                         var sickPayID = textBoxSickPayID.Text;
-                        var FullNameSickPay = textBoxEmployeeIDSickPay.Text;
-                        string queryEmployeeSickPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{FullNameSickPay}'";
-                        SqlCommand commandEmployeeSickPay = new(queryEmployeeSickPay, dataBase.GetConnection());
-                        dataBase.OpenConnection();
-                        object resultEmployeeSickPay = commandEmployeeSickPay.ExecuteScalar();
-                        var employeeIDSickPay = resultEmployeeSickPay.ToString();
+                        var employeeIDSickPay = comboBoxEmployeeIDSickPay.Text;
                         var sickStartDate = dateTimePickerSickStartDate.Value;
                         var sickEndDate = dateTimePickerSickEndDate.Value;
                         dataGridView.Rows[selectedRowIndex].SetValues(sickPayID, employeeIDSickPay, sickStartDate, sickEndDate);
@@ -1196,61 +1275,6 @@ namespace WorkTrack
         }
 
         /// <summary>
-        /// ExportToTXT() вызывается при экспорте в .txt
-        /// </summary>
-        /// <param name="dataGridView"></param>
-        private static void ExportToTXT(DataGridView dataGridView)
-        {
-            string text = "";
-            switch (dataGridView.Name)
-            {
-                case "dataGridViewProjects":
-                    text += "Данные проектов\n\n";
-                    break;
-
-                case "dataGridViewEmployees":
-                    text += "Данные сотрудников\n\n";
-                    break;
-
-                case "dataGridViewSalaryAccruals":
-                    text += "Данные зарплат\n\n";
-                    break;
-
-                case "dataGridViewSalary":
-                    text += "Данные начислений зарплат\n\n";
-                    break;
-
-                case "dataGridViewAccountingsOfWorkingHours":
-                    text += "Данные учета времени\n\n";
-                    break;
-
-                case "dataGridViewVacationPay":
-                    text += "Данные рассчета отпусков\n\n";
-                    break;
-
-                case "dataGridViewSickPay":
-                    text += "Данные рассчета больничных\n\n";
-                    break;
-            }
-            for (int col = 0; col < dataGridView.ColumnCount; col++)
-            {
-                text += dataGridView.Columns[col].HeaderText + "\t";
-            }
-            text += "\n";
-            for (int row = 0; row < dataGridView.RowCount; row++)
-            {
-                for (int col = 0; col < dataGridView.ColumnCount - 1; col++)
-                {
-                    text += dataGridView[col, row].Value?.ToString() + "\t";
-                }
-                text += "\n";
-            }
-            string filePath = "данные.txt";
-            File.WriteAllText(filePath, text);
-            Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
-        }
-
-        /// <summary>
         /// Reports() вызывается при формировании отчетов
         /// </summary>
         /// <param name="report"></param>
@@ -1341,6 +1365,86 @@ namespace WorkTrack
                 {
                     table.Cell(row + 2, col + 1).Range.Text = dataTable.Rows[row][col].ToString();
                 }
+            }
+        }
+
+        /// <summary>
+        /// FillAllComboBoxes() Заполняет все внешние ключи
+        /// </summary>
+        private void FillAllComboBoxes()
+        {
+            try
+            {
+                dataBase.OpenConnection();
+                comboBoxMonthID.Items.Clear();
+                var monthsQuery = "SELECT MonthName FROM Months ORDER BY MonthName";
+                var monthsCommand = new SqlCommand(monthsQuery, dataBase.GetConnection());
+                var monthsReader = monthsCommand.ExecuteReader();
+                while (monthsReader.Read())
+                {
+                    comboBoxMonthID.Items.Add(monthsReader.GetString(0));
+                }
+                monthsReader.Close();
+                comboBoxProjectIDSalaryAccruals.Items.Clear();
+                var projectsQuery = "SELECT ProjectName FROM Projects ORDER BY ProjectName";
+                var projectsCommand = new SqlCommand(projectsQuery, dataBase.GetConnection());
+                var projectsReader = projectsCommand.ExecuteReader();
+                while (projectsReader.Read())
+                {
+                    comboBoxProjectIDSalaryAccruals.Items.Add(projectsReader.GetString(0));
+                }
+                projectsReader.Close();
+                comboBoxSalaryAccrualIDSalary.Items.Clear();
+                var salaryAccrualsQuery = "SELECT SalaryAccrualID FROM SalaryAccruals ORDER BY SalaryAccrualID";
+                var salaryAccrualsCommand = new SqlCommand(salaryAccrualsQuery, dataBase.GetConnection());
+                var salaryAccrualsReader = salaryAccrualsCommand.ExecuteReader();
+                while (salaryAccrualsReader.Read())
+                {
+                    comboBoxSalaryAccrualIDSalary.Items.Add(salaryAccrualsReader.GetInt32(0));
+                }
+                salaryAccrualsReader.Close();
+                comboBoxEmployeeIDSalary.Items.Clear();
+                comboBoxEmployeeIDAccountingsOfWorkingHours.Items.Clear();
+                comboBoxEmployeeIDVacationPay.Items.Clear();
+                comboBoxEmployeeIDSickPay.Items.Clear();
+                var employeesQuery = "SELECT FullName FROM Employees ORDER BY FullName";
+                var employeesCommand = new SqlCommand(employeesQuery, dataBase.GetConnection());
+                var employeesReader = employeesCommand.ExecuteReader();
+                while (employeesReader.Read())
+                {
+                    string employeeName = employeesReader.GetString(0);
+                    comboBoxEmployeeIDSalary.Items.Add(employeeName);
+                    comboBoxEmployeeIDAccountingsOfWorkingHours.Items.Add(employeeName);
+                    comboBoxEmployeeIDVacationPay.Items.Add(employeeName);
+                    comboBoxEmployeeIDSickPay.Items.Add(employeeName);
+                }
+                employeesReader.Close();
+                comboBoxProjectIDAccountingsOfWorkingHours.Items.Clear();
+                var projectsQuery2 = "SELECT ProjectName FROM Projects ORDER BY ProjectName";
+                var projectsCommand2 = new SqlCommand(projectsQuery2, dataBase.GetConnection());
+                var projectsReader2 = projectsCommand2.ExecuteReader();
+                while (projectsReader2.Read())
+                {
+                    comboBoxProjectIDAccountingsOfWorkingHours.Items.Add(projectsReader2.GetString(0));
+                }
+                projectsReader2.Close();
+                comboBoxTypeOfRemunerationID.Items.Clear();
+                var typesQuery = "SELECT TypeOfRemuneration FROM TypesOfRemuneration ORDER BY TypeOfRemuneration";
+                var typesCommand = new SqlCommand(typesQuery, dataBase.GetConnection());
+                var typesReader = typesCommand.ExecuteReader();
+                while (typesReader.Read())
+                {
+                    comboBoxTypeOfRemunerationID.Items.Add(typesReader.GetString(0));
+                }
+                typesReader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке данных в комбобоксы: {ex.Message}");
+            }
+            finally
+            {
+                dataBase.CloseConnection();
             }
         }
 
@@ -2149,125 +2253,6 @@ namespace WorkTrack
         }
 
         /// <summary>
-        /// ButtonTXTProject_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Проекты"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTProject_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewProjects);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTEmployee_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Сотрудники"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTEmployee_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewEmployees);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTSalaryAccrual_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Зарплаты"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTSalaryAccrual_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewSalaryAccruals);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTSalary_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Выплаты зарплат"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTSalary_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewSalary);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTAccountingOfWorkingHours_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Учет времени"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTAccountingOfWorkingHours_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewAccountingsOfWorkingHours);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTVacationPay_Click нажатии на кнопку "Вывод в TXT" на вкладке "Отпускные"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTVacationPay_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewVacationPay);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// ButtonTXTSickPay_Click() вызывается при нажатии на кнопку "Вывод в TXT" на вкладке "Больничные"
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ButtonTXTSickPay_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ExportToTXT(dataGridViewSickPay);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        /// <summary>
         /// DataGridViewProjects_CellClick() вызывается при нажатии на ячейку на вкладке "Проекты"
         /// </summary>
         /// <param name="sender"></param>
@@ -2561,16 +2546,6 @@ namespace WorkTrack
         private void ButtonReportVacationPay_Click(object sender, EventArgs e)
         {
             Reports("VacationPay");
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

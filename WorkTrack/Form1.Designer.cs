@@ -31,14 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabPageSickPay = new TabPage();
             panelTitleSickPay = new Panel();
+            buttonExcelSickPay = new Button();
+            buttonWordSickPay = new Button();
+            buttonSaveSickPay = new Button();
+            buttonChangeSickPay = new Button();
+            buttonDeleteSickPay = new Button();
+            buttonNewSickPay = new Button();
             label31 = new Label();
             label32 = new Label();
             label33 = new Label();
             label34 = new Label();
             label35 = new Label();
             panel7 = new Panel();
-            buttonClearSickPay = new Button();
-            buttonRefreshSickPay = new Button();
             textBoxSearchSickPay = new TextBox();
             dataGridViewSickPay = new DataGridView();
             panelRecordSickPay = new Panel();
@@ -46,9 +50,10 @@
             labelSickPayID = new Label();
             textBoxSickPayID = new TextBox();
             labelEmployeeIDSickPay = new Label();
-            textBoxEmployeeIDSickPay = new TextBox();
+            comboBoxEmployeeIDSickPay = new ComboBox();
             labelSickStartDate = new Label();
             dateTimePickerSickStartDate = new DateTimePicker();
+            labelSickEndDate = new Label();
             dateTimePickerSickEndDate = new DateTimePicker();
             labelExperience = new Label();
             textBoxExperience = new TextBox();
@@ -56,24 +61,21 @@
             textBoxAverageDailyEarningsSickPay = new TextBox();
             labelTotalSickPay = new Label();
             textBoxTotalSickPay = new TextBox();
-            buttonNewSickPay = new Button();
-            buttonDeleteSickPay = new Button();
-            buttonChangeSickPay = new Button();
-            buttonSaveSickPay = new Button();
-            buttonWordSickPay = new Button();
-            buttonExcelSickPay = new Button();
-            buttonTXTSickPay = new Button();
+            buttonRefreshSickPay = new Button();
             tabPageVacationPay = new TabPage();
             panelTitleVacationPay = new Panel();
+            buttonWordVacationPay = new Button();
+            buttonExcelVacationPay = new Button();
+            buttonSaveVacationPay = new Button();
+            buttonChangeVacationPay = new Button();
+            buttonDeleteVacationPay = new Button();
+            buttonNewVacationPay = new Button();
             label26 = new Label();
             label27 = new Label();
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
             panel6 = new Panel();
-            buttonReportVacationPay = new Button();
-            buttonClearVacationPay = new Button();
-            buttonRefreshVacationPay = new Button();
             textBoxSearchVacationPay = new TextBox();
             dataGridViewVacationPay = new DataGridView();
             panelRecordVacationPay = new Panel();
@@ -81,7 +83,7 @@
             labelVacationPayID = new Label();
             textBoxVacationPayID = new TextBox();
             labelEmployeeIDVacationPay = new Label();
-            textBoxEmployeeIDVacationPay = new TextBox();
+            comboBoxEmployeeIDVacationPay = new ComboBox();
             labelVacationStartDate = new Label();
             dateTimePickerVacationStartDate = new DateTimePicker();
             labelVacationEndDate = new Label();
@@ -90,24 +92,22 @@
             textBoxAverageDailyEarnings = new TextBox();
             labelTotalVacationPay = new Label();
             textBoxTotalVacationPay = new TextBox();
-            buttonNewVacationPay = new Button();
-            buttonDeleteVacationPay = new Button();
-            buttonChangeVacationPay = new Button();
-            buttonSaveVacationPay = new Button();
-            buttonWordVacationPay = new Button();
-            buttonExcelVacationPay = new Button();
-            buttonTXTVacationPay = new Button();
+            buttonRefreshVacationPay = new Button();
+            buttonReportVacationPay = new Button();
             tabPageAccountingsOfWorkingHours = new TabPage();
             panelTitleAccountingsOfWorkingHours = new Panel();
+            buttonExcelAccountingOfWorkingHours = new Button();
+            buttonWordAccountingOfWorkingHours = new Button();
+            buttonSaveAccountingOfWorkingHours = new Button();
+            buttonChangeAccountingOfWorkingHours = new Button();
+            buttonDeleteAccountingOfWorkingHours = new Button();
+            buttonNewAccountingOfWorkingHours = new Button();
             label21 = new Label();
             label22 = new Label();
             label23 = new Label();
             label24 = new Label();
             label25 = new Label();
             panel5 = new Panel();
-            buttonReportAccountingsOfWorkingHours = new Button();
-            buttonClearAccountingsOfWorkingHours = new Button();
-            buttonRefreshAccountingsOfWorkingHours = new Button();
             textBoxSearchAccountingsOfWorkingHours = new TextBox();
             dataGridViewAccountingsOfWorkingHours = new DataGridView();
             panelRecordAccountingsOfWorkingHours = new Panel();
@@ -115,39 +115,38 @@
             labelAccountingsOfWorkingHoursID = new Label();
             textBoxAccountingsOfWorkingHoursID = new TextBox();
             labelEmployeeIDAccountingsOfWorkingHours = new Label();
-            textBoxEmployeeIDAccountingsOfWorkingHours = new TextBox();
+            comboBoxEmployeeIDAccountingsOfWorkingHours = new ComboBox();
             labelProjectIDAccountingsOfWorkingHours = new Label();
-            textBoxProjectIDAccountingsOfWorkingHours = new TextBox();
+            comboBoxProjectIDAccountingsOfWorkingHours = new ComboBox();
             labelTypeOfRemunerationID = new Label();
             comboBoxTypeOfRemunerationID = new ComboBox();
             labelHoursOfWork = new Label();
             textBoxHoursOfWork = new TextBox();
-            buttonNewAccountingOfWorkingHours = new Button();
-            buttonDeleteAccountingOfWorkingHours = new Button();
-            buttonChangeAccountingOfWorkingHours = new Button();
-            buttonSaveAccountingOfWorkingHours = new Button();
-            buttonWordAccountingOfWorkingHours = new Button();
-            buttonExcelAccountingOfWorkingHours = new Button();
-            buttonTXTAccountingOfWorkingHours = new Button();
+            buttonRefreshAccountingsOfWorkingHours = new Button();
+            buttonReportAccountingsOfWorkingHours = new Button();
             tabPageSalary = new TabPage();
             panelTitleSalary = new Panel();
+            buttonExcelSalary = new Button();
+            buttonWordSalary = new Button();
+            buttonSaveSalary = new Button();
+            buttonChangeSalary = new Button();
+            buttonDeleteSalary = new Button();
+            buttonNewSalary = new Button();
             label16 = new Label();
             label17 = new Label();
             label18 = new Label();
             label19 = new Label();
             label20 = new Label();
             panel4 = new Panel();
-            buttonClearSalary = new Button();
-            buttonRefreshSalary = new Button();
             textBoxSearchSalary = new TextBox();
             dataGridViewSalary = new DataGridView();
             panelRecordSalary = new Panel();
             labelSalaryID = new Label();
             textBoxSalaryID = new TextBox();
             labelSalaryAccrualIDSalary = new Label();
-            textBoxSalaryAccrualIDSalary = new TextBox();
+            comboBoxSalaryAccrualIDSalary = new ComboBox();
             labelEmployeeIDSalary = new Label();
-            textBoxEmployeeIDSalary = new TextBox();
+            comboBoxEmployeeIDSalary = new ComboBox();
             labelAllDays = new Label();
             textBoxAllDays = new TextBox();
             labelAllHours = new Label();
@@ -166,24 +165,21 @@
             textBoxContributions = new TextBox();
             labelTotal = new Label();
             textBoxTotal = new TextBox();
-            buttonNewSalary = new Button();
-            buttonDeleteSalary = new Button();
-            buttonChangeSalary = new Button();
-            buttonSaveSalary = new Button();
-            buttonWordSalary = new Button();
-            buttonExcelSalary = new Button();
-            buttonTXTSalary = new Button();
+            buttonRefreshSalary = new Button();
             tabPageSalaryAccruals = new TabPage();
             panelTitleSalaryAccruals = new Panel();
+            buttonExcelSalaryAccrual = new Button();
+            buttonWordSalaryAccrual = new Button();
+            buttonSaveSalaryAccrual = new Button();
+            buttonChangeSalaryAccrual = new Button();
+            buttonDeleteSalaryAccrual = new Button();
+            buttonNewSalaryAccrual = new Button();
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
             panel3 = new Panel();
-            buttonReportSalaryAccruals = new Button();
-            buttonClearSalaryAccruals = new Button();
-            buttonRefreshSalaryAccruals = new Button();
             textBoxSearchSalaryAccruals = new TextBox();
             dataGridViewSalaryAccruals = new DataGridView();
             panelRecordSalaryAccruals = new Panel();
@@ -195,24 +191,23 @@
             labelMonthID = new Label();
             comboBoxMonthID = new ComboBox();
             labelProjectIDSalaryAccruals = new Label();
-            textBoxProjectIDSalaryAccruals = new TextBox();
-            buttonNewSalaryAccrual = new Button();
-            buttonDeleteSalaryAccrual = new Button();
-            buttonChangeSalaryAccrual = new Button();
-            buttonSaveSalaryAccrual = new Button();
-            buttonWordSalaryAccrual = new Button();
-            buttonExcelSalaryAccrual = new Button();
-            buttonTXTSalaryAccrual = new Button();
+            comboBoxProjectIDSalaryAccruals = new ComboBox();
+            buttonRefreshSalaryAccruals = new Button();
+            buttonReportSalaryAccruals = new Button();
             tabPageEmployees = new TabPage();
             panelTitleEmployees = new Panel();
+            buttonExcelEmployee = new Button();
+            buttonWordEmployee = new Button();
+            buttonSaveEmployee = new Button();
+            buttonChangeEmployee = new Button();
+            buttonDeleteEmployee = new Button();
+            buttonNewEmployee = new Button();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             panel2 = new Panel();
-            buttonClearEmployees = new Button();
-            buttonRefreshEmployees = new Button();
             textBoxSearchEmployees = new TextBox();
             dataGridViewEmployees = new DataGridView();
             panelRecordEmployees = new Panel();
@@ -240,16 +235,9 @@
             comboBoxPostID = new ComboBox();
             labelGenderID = new Label();
             comboBoxGenderID = new ComboBox();
-            buttonNewEmployee = new Button();
-            buttonDeleteEmployee = new Button();
-            buttonChangeEmployee = new Button();
-            buttonSaveEmployee = new Button();
-            buttonWordEmployee = new Button();
-            buttonExcelEmployee = new Button();
-            buttonTXTEmployee = new Button();
+            buttonRefreshEmployees = new Button();
             tabPageProjects = new TabPage();
             buttonRefreshProjects = new Button();
-            buttonClearProjects = new Button();
             panelRecordProjects = new Panel();
             labelRecordProjects = new Label();
             labelProjectID = new Label();
@@ -264,7 +252,6 @@
             panelTitleProjects = new Panel();
             panel1 = new Panel();
             label5 = new Label();
-            buttonTXTProject = new Button();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
@@ -277,7 +264,6 @@
             buttonNewProject = new Button();
             textBoxSearchProjects = new TextBox();
             tabControl1 = new TabControl();
-            labelSickEndDate = new Label();
             tabPageSickPay.SuspendLayout();
             panelTitleSickPay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSickPay).BeginInit();
@@ -317,7 +303,6 @@
             tabPageSickPay.Controls.Add(dataGridViewSickPay);
             tabPageSickPay.Controls.Add(panelRecordSickPay);
             tabPageSickPay.Controls.Add(buttonRefreshSickPay);
-            tabPageSickPay.Controls.Add(buttonClearSickPay);
             tabPageSickPay.Location = new Point(4, 24);
             tabPageSickPay.Margin = new Padding(4, 3, 4, 3);
             tabPageSickPay.Name = "tabPageSickPay";
@@ -329,7 +314,6 @@
             // 
             // panelTitleSickPay
             // 
-            panelTitleSickPay.Controls.Add(buttonTXTSickPay);
             panelTitleSickPay.Controls.Add(buttonExcelSickPay);
             panelTitleSickPay.Controls.Add(buttonWordSickPay);
             panelTitleSickPay.Controls.Add(buttonSaveSickPay);
@@ -348,6 +332,96 @@
             panelTitleSickPay.Name = "panelTitleSickPay";
             panelTitleSickPay.Size = new Size(945, 110);
             panelTitleSickPay.TabIndex = 3;
+            // 
+            // buttonExcelSickPay
+            // 
+            buttonExcelSickPay.BackgroundImage = (Image)resources.GetObject("buttonExcelSickPay.BackgroundImage");
+            buttonExcelSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelSickPay.FlatStyle = FlatStyle.Flat;
+            buttonExcelSickPay.ForeColor = Color.Black;
+            buttonExcelSickPay.Location = new Point(502, 25);
+            buttonExcelSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSickPay.Name = "buttonExcelSickPay";
+            buttonExcelSickPay.Size = new Size(60, 60);
+            buttonExcelSickPay.TabIndex = 5;
+            buttonExcelSickPay.Text = " ";
+            buttonExcelSickPay.UseVisualStyleBackColor = true;
+            buttonExcelSickPay.Click += ButtonExcelSickPay_Click;
+            // 
+            // buttonWordSickPay
+            // 
+            buttonWordSickPay.BackgroundImage = (Image)resources.GetObject("buttonWordSickPay.BackgroundImage");
+            buttonWordSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordSickPay.FlatStyle = FlatStyle.Flat;
+            buttonWordSickPay.ForeColor = Color.Black;
+            buttonWordSickPay.Location = new Point(434, 25);
+            buttonWordSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSickPay.Name = "buttonWordSickPay";
+            buttonWordSickPay.Size = new Size(60, 60);
+            buttonWordSickPay.TabIndex = 4;
+            buttonWordSickPay.Text = " ";
+            buttonWordSickPay.UseVisualStyleBackColor = true;
+            buttonWordSickPay.Click += ButtonWordSickPay_Click;
+            // 
+            // buttonSaveSickPay
+            // 
+            buttonSaveSickPay.BackgroundImage = (Image)resources.GetObject("buttonSaveSickPay.BackgroundImage");
+            buttonSaveSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveSickPay.FlatStyle = FlatStyle.Flat;
+            buttonSaveSickPay.ForeColor = Color.Black;
+            buttonSaveSickPay.Location = new Point(281, 15);
+            buttonSaveSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSickPay.Name = "buttonSaveSickPay";
+            buttonSaveSickPay.Size = new Size(60, 60);
+            buttonSaveSickPay.TabIndex = 3;
+            buttonSaveSickPay.Text = " ";
+            buttonSaveSickPay.UseVisualStyleBackColor = true;
+            buttonSaveSickPay.Click += ButtonSaveSickPay_Click;
+            // 
+            // buttonChangeSickPay
+            // 
+            buttonChangeSickPay.BackgroundImage = (Image)resources.GetObject("buttonChangeSickPay.BackgroundImage");
+            buttonChangeSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeSickPay.FlatStyle = FlatStyle.Flat;
+            buttonChangeSickPay.ForeColor = Color.Black;
+            buttonChangeSickPay.Location = new Point(193, 15);
+            buttonChangeSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSickPay.Name = "buttonChangeSickPay";
+            buttonChangeSickPay.Size = new Size(60, 60);
+            buttonChangeSickPay.TabIndex = 2;
+            buttonChangeSickPay.Text = " ";
+            buttonChangeSickPay.UseVisualStyleBackColor = true;
+            buttonChangeSickPay.Click += ButtonChangeSickPay_Click;
+            // 
+            // buttonDeleteSickPay
+            // 
+            buttonDeleteSickPay.BackgroundImage = (Image)resources.GetObject("buttonDeleteSickPay.BackgroundImage");
+            buttonDeleteSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteSickPay.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSickPay.ForeColor = Color.Black;
+            buttonDeleteSickPay.Location = new Point(109, 15);
+            buttonDeleteSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSickPay.Name = "buttonDeleteSickPay";
+            buttonDeleteSickPay.Size = new Size(60, 60);
+            buttonDeleteSickPay.TabIndex = 1;
+            buttonDeleteSickPay.Text = " ";
+            buttonDeleteSickPay.UseVisualStyleBackColor = true;
+            buttonDeleteSickPay.Click += ButtonDeleteSickPay_Click;
+            // 
+            // buttonNewSickPay
+            // 
+            buttonNewSickPay.BackgroundImage = (Image)resources.GetObject("buttonNewSickPay.BackgroundImage");
+            buttonNewSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewSickPay.FlatStyle = FlatStyle.Flat;
+            buttonNewSickPay.ForeColor = Color.Black;
+            buttonNewSickPay.Location = new Point(22, 15);
+            buttonNewSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSickPay.Name = "buttonNewSickPay";
+            buttonNewSickPay.Size = new Size(60, 60);
+            buttonNewSickPay.TabIndex = 0;
+            buttonNewSickPay.Text = " ";
+            buttonNewSickPay.UseVisualStyleBackColor = true;
+            buttonNewSickPay.Click += ButtonNewSickPay_Click;
             // 
             // label31
             // 
@@ -408,34 +482,6 @@
             panel7.Size = new Size(33, 33);
             panel7.TabIndex = 13;
             // 
-            // buttonClearSickPay
-            // 
-            buttonClearSickPay.BackgroundImage = (Image)resources.GetObject("buttonClearSickPay.BackgroundImage");
-            buttonClearSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearSickPay.FlatStyle = FlatStyle.Flat;
-            buttonClearSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearSickPay.Location = new Point(827, 116);
-            buttonClearSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonClearSickPay.Name = "buttonClearSickPay";
-            buttonClearSickPay.Size = new Size(60, 60);
-            buttonClearSickPay.TabIndex = 0;
-            buttonClearSickPay.UseVisualStyleBackColor = true;
-            buttonClearSickPay.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshSickPay
-            // 
-            buttonRefreshSickPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshSickPay.BackgroundImage");
-            buttonRefreshSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshSickPay.FlatStyle = FlatStyle.Flat;
-            buttonRefreshSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshSickPay.Location = new Point(70, 116);
-            buttonRefreshSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshSickPay.Name = "buttonRefreshSickPay";
-            buttonRefreshSickPay.Size = new Size(60, 60);
-            buttonRefreshSickPay.TabIndex = 1;
-            buttonRefreshSickPay.UseVisualStyleBackColor = true;
-            buttonRefreshSickPay.Click += ButtonRefresh_Click;
-            // 
             // textBoxSearchSickPay
             // 
             textBoxSearchSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -466,7 +512,7 @@
             panelRecordSickPay.Controls.Add(labelSickPayID);
             panelRecordSickPay.Controls.Add(textBoxSickPayID);
             panelRecordSickPay.Controls.Add(labelEmployeeIDSickPay);
-            panelRecordSickPay.Controls.Add(textBoxEmployeeIDSickPay);
+            panelRecordSickPay.Controls.Add(comboBoxEmployeeIDSickPay);
             panelRecordSickPay.Controls.Add(labelSickStartDate);
             panelRecordSickPay.Controls.Add(dateTimePickerSickStartDate);
             panelRecordSickPay.Controls.Add(labelSickEndDate);
@@ -521,21 +567,22 @@
             labelEmployeeIDSickPay.AutoSize = true;
             labelEmployeeIDSickPay.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelEmployeeIDSickPay.ForeColor = Color.Black;
-            labelEmployeeIDSickPay.Location = new Point(65, 122);
+            labelEmployeeIDSickPay.Location = new Point(80, 122);
             labelEmployeeIDSickPay.Margin = new Padding(4, 0, 4, 0);
             labelEmployeeIDSickPay.Name = "labelEmployeeIDSickPay";
-            labelEmployeeIDSickPay.Size = new Size(162, 21);
+            labelEmployeeIDSickPay.Size = new Size(147, 21);
             labelEmployeeIDSickPay.TabIndex = 9;
-            labelEmployeeIDSickPay.Text = "Номер сотрудника:";
+            labelEmployeeIDSickPay.Text = "ФИО сотрудника:";
             // 
-            // textBoxEmployeeIDSickPay
+            // comboBoxEmployeeIDSickPay
             // 
-            textBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDSickPay.Location = new Point(235, 116);
-            textBoxEmployeeIDSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDSickPay.Name = "textBoxEmployeeIDSickPay";
-            textBoxEmployeeIDSickPay.Size = new Size(455, 33);
-            textBoxEmployeeIDSickPay.TabIndex = 1;
+            comboBoxEmployeeIDSickPay.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDSickPay.FormattingEnabled = true;
+            comboBoxEmployeeIDSickPay.Location = new Point(234, 116);
+            comboBoxEmployeeIDSickPay.Name = "comboBoxEmployeeIDSickPay";
+            comboBoxEmployeeIDSickPay.Size = new Size(456, 33);
+            comboBoxEmployeeIDSickPay.TabIndex = 15;
             // 
             // labelSickStartDate
             // 
@@ -556,6 +603,18 @@
             dateTimePickerSickStartDate.Name = "dateTimePickerSickStartDate";
             dateTimePickerSickStartDate.Size = new Size(455, 33);
             dateTimePickerSickStartDate.TabIndex = 2;
+            // 
+            // labelSickEndDate
+            // 
+            labelSickEndDate.AutoSize = true;
+            labelSickEndDate.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            labelSickEndDate.ForeColor = Color.Black;
+            labelSickEndDate.Location = new Point(14, 216);
+            labelSickEndDate.Margin = new Padding(4, 0, 4, 0);
+            labelSickEndDate.Name = "labelSickEndDate";
+            labelSickEndDate.Size = new Size(213, 21);
+            labelSickEndDate.TabIndex = 11;
+            labelSickEndDate.Text = "Дата конца больничного:";
             // 
             // dateTimePickerSickEndDate
             // 
@@ -631,110 +690,19 @@
             textBoxTotalSickPay.Size = new Size(455, 33);
             textBoxTotalSickPay.TabIndex = 6;
             // 
-            // buttonNewSickPay
+            // buttonRefreshSickPay
             // 
-            buttonNewSickPay.BackgroundImage = (Image)resources.GetObject("buttonNewSickPay.BackgroundImage");
-            buttonNewSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewSickPay.FlatStyle = FlatStyle.Flat;
-            buttonNewSickPay.ForeColor = Color.Black;
-            buttonNewSickPay.Location = new Point(22, 15);
-            buttonNewSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonNewSickPay.Name = "buttonNewSickPay";
-            buttonNewSickPay.Size = new Size(60, 60);
-            buttonNewSickPay.TabIndex = 0;
-            buttonNewSickPay.Text = " ";
-            buttonNewSickPay.UseVisualStyleBackColor = true;
-            buttonNewSickPay.Click += ButtonNewSickPay_Click;
-            // 
-            // buttonDeleteSickPay
-            // 
-            buttonDeleteSickPay.BackgroundImage = (Image)resources.GetObject("buttonDeleteSickPay.BackgroundImage");
-            buttonDeleteSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteSickPay.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSickPay.ForeColor = Color.Black;
-            buttonDeleteSickPay.Location = new Point(109, 15);
-            buttonDeleteSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteSickPay.Name = "buttonDeleteSickPay";
-            buttonDeleteSickPay.Size = new Size(60, 60);
-            buttonDeleteSickPay.TabIndex = 1;
-            buttonDeleteSickPay.Text = " ";
-            buttonDeleteSickPay.UseVisualStyleBackColor = true;
-            buttonDeleteSickPay.Click += ButtonDeleteSickPay_Click;
-            // 
-            // buttonChangeSickPay
-            // 
-            buttonChangeSickPay.BackgroundImage = (Image)resources.GetObject("buttonChangeSickPay.BackgroundImage");
-            buttonChangeSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeSickPay.FlatStyle = FlatStyle.Flat;
-            buttonChangeSickPay.ForeColor = Color.Black;
-            buttonChangeSickPay.Location = new Point(193, 15);
-            buttonChangeSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeSickPay.Name = "buttonChangeSickPay";
-            buttonChangeSickPay.Size = new Size(60, 60);
-            buttonChangeSickPay.TabIndex = 2;
-            buttonChangeSickPay.Text = " ";
-            buttonChangeSickPay.UseVisualStyleBackColor = true;
-            buttonChangeSickPay.Click += ButtonChangeSickPay_Click;
-            // 
-            // buttonSaveSickPay
-            // 
-            buttonSaveSickPay.BackgroundImage = (Image)resources.GetObject("buttonSaveSickPay.BackgroundImage");
-            buttonSaveSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveSickPay.FlatStyle = FlatStyle.Flat;
-            buttonSaveSickPay.ForeColor = Color.Black;
-            buttonSaveSickPay.Location = new Point(281, 15);
-            buttonSaveSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveSickPay.Name = "buttonSaveSickPay";
-            buttonSaveSickPay.Size = new Size(60, 60);
-            buttonSaveSickPay.TabIndex = 3;
-            buttonSaveSickPay.Text = " ";
-            buttonSaveSickPay.UseVisualStyleBackColor = true;
-            buttonSaveSickPay.Click += ButtonSaveSickPay_Click;
-            // 
-            // buttonWordSickPay
-            // 
-            buttonWordSickPay.BackgroundImage = (Image)resources.GetObject("buttonWordSickPay.BackgroundImage");
-            buttonWordSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordSickPay.FlatStyle = FlatStyle.Flat;
-            buttonWordSickPay.ForeColor = Color.Black;
-            buttonWordSickPay.Location = new Point(406, 33);
-            buttonWordSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonWordSickPay.Name = "buttonWordSickPay";
-            buttonWordSickPay.Size = new Size(60, 60);
-            buttonWordSickPay.TabIndex = 4;
-            buttonWordSickPay.Text = " ";
-            buttonWordSickPay.UseVisualStyleBackColor = true;
-            buttonWordSickPay.Click += ButtonWordSickPay_Click;
-            // 
-            // buttonExcelSickPay
-            // 
-            buttonExcelSickPay.BackgroundImage = (Image)resources.GetObject("buttonExcelSickPay.BackgroundImage");
-            buttonExcelSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelSickPay.FlatStyle = FlatStyle.Flat;
-            buttonExcelSickPay.ForeColor = Color.Black;
-            buttonExcelSickPay.Location = new Point(474, 33);
-            buttonExcelSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelSickPay.Name = "buttonExcelSickPay";
-            buttonExcelSickPay.Size = new Size(60, 60);
-            buttonExcelSickPay.TabIndex = 5;
-            buttonExcelSickPay.Text = " ";
-            buttonExcelSickPay.UseVisualStyleBackColor = true;
-            buttonExcelSickPay.Click += ButtonExcelSickPay_Click;
-            // 
-            // buttonTXTSickPay
-            // 
-            buttonTXTSickPay.BackgroundImage = (Image)resources.GetObject("buttonTXTSickPay.BackgroundImage");
-            buttonTXTSickPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTSickPay.FlatStyle = FlatStyle.Flat;
-            buttonTXTSickPay.ForeColor = Color.Black;
-            buttonTXTSickPay.Location = new Point(542, 33);
-            buttonTXTSickPay.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTSickPay.Name = "buttonTXTSickPay";
-            buttonTXTSickPay.Size = new Size(60, 60);
-            buttonTXTSickPay.TabIndex = 6;
-            buttonTXTSickPay.Text = " ";
-            buttonTXTSickPay.UseVisualStyleBackColor = true;
-            buttonTXTSickPay.Click += ButtonTXTSickPay_Click;
+            buttonRefreshSickPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshSickPay.BackgroundImage");
+            buttonRefreshSickPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSickPay.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSickPay.Location = new Point(70, 116);
+            buttonRefreshSickPay.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSickPay.Name = "buttonRefreshSickPay";
+            buttonRefreshSickPay.Size = new Size(60, 60);
+            buttonRefreshSickPay.TabIndex = 1;
+            buttonRefreshSickPay.UseVisualStyleBackColor = true;
+            buttonRefreshSickPay.Click += ButtonRefresh_Click;
             // 
             // tabPageVacationPay
             // 
@@ -744,7 +712,6 @@
             tabPageVacationPay.Controls.Add(dataGridViewVacationPay);
             tabPageVacationPay.Controls.Add(panelRecordVacationPay);
             tabPageVacationPay.Controls.Add(buttonRefreshVacationPay);
-            tabPageVacationPay.Controls.Add(buttonClearVacationPay);
             tabPageVacationPay.Controls.Add(buttonReportVacationPay);
             tabPageVacationPay.Location = new Point(4, 24);
             tabPageVacationPay.Margin = new Padding(4, 3, 4, 3);
@@ -757,7 +724,6 @@
             // 
             // panelTitleVacationPay
             // 
-            panelTitleVacationPay.Controls.Add(buttonTXTVacationPay);
             panelTitleVacationPay.Controls.Add(buttonWordVacationPay);
             panelTitleVacationPay.Controls.Add(buttonExcelVacationPay);
             panelTitleVacationPay.Controls.Add(buttonSaveVacationPay);
@@ -776,6 +742,96 @@
             panelTitleVacationPay.Name = "panelTitleVacationPay";
             panelTitleVacationPay.Size = new Size(945, 110);
             panelTitleVacationPay.TabIndex = 3;
+            // 
+            // buttonWordVacationPay
+            // 
+            buttonWordVacationPay.BackgroundImage = (Image)resources.GetObject("buttonWordVacationPay.BackgroundImage");
+            buttonWordVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonWordVacationPay.ForeColor = Color.Black;
+            buttonWordVacationPay.Location = new Point(433, 25);
+            buttonWordVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonWordVacationPay.Name = "buttonWordVacationPay";
+            buttonWordVacationPay.Size = new Size(60, 60);
+            buttonWordVacationPay.TabIndex = 4;
+            buttonWordVacationPay.Text = " ";
+            buttonWordVacationPay.UseVisualStyleBackColor = true;
+            buttonWordVacationPay.Click += ButtonWordVacationPay_Click;
+            // 
+            // buttonExcelVacationPay
+            // 
+            buttonExcelVacationPay.BackgroundImage = (Image)resources.GetObject("buttonExcelVacationPay.BackgroundImage");
+            buttonExcelVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonExcelVacationPay.ForeColor = Color.Black;
+            buttonExcelVacationPay.Location = new Point(501, 25);
+            buttonExcelVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelVacationPay.Name = "buttonExcelVacationPay";
+            buttonExcelVacationPay.Size = new Size(60, 60);
+            buttonExcelVacationPay.TabIndex = 5;
+            buttonExcelVacationPay.Text = " ";
+            buttonExcelVacationPay.UseVisualStyleBackColor = true;
+            buttonExcelVacationPay.Click += ButtonExcelVacationPay_Click;
+            // 
+            // buttonSaveVacationPay
+            // 
+            buttonSaveVacationPay.BackgroundImage = (Image)resources.GetObject("buttonSaveVacationPay.BackgroundImage");
+            buttonSaveVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonSaveVacationPay.ForeColor = Color.Black;
+            buttonSaveVacationPay.Location = new Point(281, 15);
+            buttonSaveVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveVacationPay.Name = "buttonSaveVacationPay";
+            buttonSaveVacationPay.Size = new Size(60, 60);
+            buttonSaveVacationPay.TabIndex = 3;
+            buttonSaveVacationPay.Text = " ";
+            buttonSaveVacationPay.UseVisualStyleBackColor = true;
+            buttonSaveVacationPay.Click += ButtonSaveVacationPay_Click;
+            // 
+            // buttonChangeVacationPay
+            // 
+            buttonChangeVacationPay.BackgroundImage = (Image)resources.GetObject("buttonChangeVacationPay.BackgroundImage");
+            buttonChangeVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonChangeVacationPay.ForeColor = Color.Black;
+            buttonChangeVacationPay.Location = new Point(193, 15);
+            buttonChangeVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeVacationPay.Name = "buttonChangeVacationPay";
+            buttonChangeVacationPay.Size = new Size(60, 60);
+            buttonChangeVacationPay.TabIndex = 2;
+            buttonChangeVacationPay.Text = " ";
+            buttonChangeVacationPay.UseVisualStyleBackColor = true;
+            buttonChangeVacationPay.Click += ButtonChangeVacationPay_Click;
+            // 
+            // buttonDeleteVacationPay
+            // 
+            buttonDeleteVacationPay.BackgroundImage = (Image)resources.GetObject("buttonDeleteVacationPay.BackgroundImage");
+            buttonDeleteVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonDeleteVacationPay.ForeColor = Color.Black;
+            buttonDeleteVacationPay.Location = new Point(109, 15);
+            buttonDeleteVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteVacationPay.Name = "buttonDeleteVacationPay";
+            buttonDeleteVacationPay.Size = new Size(60, 60);
+            buttonDeleteVacationPay.TabIndex = 1;
+            buttonDeleteVacationPay.Text = " ";
+            buttonDeleteVacationPay.UseVisualStyleBackColor = true;
+            buttonDeleteVacationPay.Click += ButtonDeleteVacationPay_Click;
+            // 
+            // buttonNewVacationPay
+            // 
+            buttonNewVacationPay.BackgroundImage = (Image)resources.GetObject("buttonNewVacationPay.BackgroundImage");
+            buttonNewVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonNewVacationPay.ForeColor = Color.Black;
+            buttonNewVacationPay.Location = new Point(27, 15);
+            buttonNewVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonNewVacationPay.Name = "buttonNewVacationPay";
+            buttonNewVacationPay.Size = new Size(60, 60);
+            buttonNewVacationPay.TabIndex = 0;
+            buttonNewVacationPay.Text = " ";
+            buttonNewVacationPay.UseVisualStyleBackColor = true;
+            buttonNewVacationPay.Click += ButtonNewVacationPay_Click;
             // 
             // label26
             // 
@@ -836,48 +892,6 @@
             panel6.Size = new Size(33, 33);
             panel6.TabIndex = 13;
             // 
-            // buttonReportVacationPay
-            // 
-            buttonReportVacationPay.BackgroundImage = (Image)resources.GetObject("buttonReportVacationPay.BackgroundImage");
-            buttonReportVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonReportVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonReportVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportVacationPay.Location = new Point(827, 182);
-            buttonReportVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonReportVacationPay.Name = "buttonReportVacationPay";
-            buttonReportVacationPay.Size = new Size(60, 60);
-            buttonReportVacationPay.TabIndex = 5;
-            buttonReportVacationPay.UseVisualStyleBackColor = true;
-            buttonReportVacationPay.Click += ButtonReportVacationPay_Click;
-            // 
-            // buttonClearVacationPay
-            // 
-            buttonClearVacationPay.BackgroundImage = (Image)resources.GetObject("buttonClearVacationPay.BackgroundImage");
-            buttonClearVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonClearVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearVacationPay.Location = new Point(827, 116);
-            buttonClearVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonClearVacationPay.Name = "buttonClearVacationPay";
-            buttonClearVacationPay.Size = new Size(60, 60);
-            buttonClearVacationPay.TabIndex = 0;
-            buttonClearVacationPay.UseVisualStyleBackColor = true;
-            buttonClearVacationPay.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshVacationPay
-            // 
-            buttonRefreshVacationPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshVacationPay.BackgroundImage");
-            buttonRefreshVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonRefreshVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshVacationPay.Location = new Point(70, 116);
-            buttonRefreshVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshVacationPay.Name = "buttonRefreshVacationPay";
-            buttonRefreshVacationPay.Size = new Size(60, 60);
-            buttonRefreshVacationPay.TabIndex = 1;
-            buttonRefreshVacationPay.UseVisualStyleBackColor = true;
-            buttonRefreshVacationPay.Click += ButtonRefresh_Click;
-            // 
             // textBoxSearchVacationPay
             // 
             textBoxSearchVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -908,7 +922,7 @@
             panelRecordVacationPay.Controls.Add(labelVacationPayID);
             panelRecordVacationPay.Controls.Add(textBoxVacationPayID);
             panelRecordVacationPay.Controls.Add(labelEmployeeIDVacationPay);
-            panelRecordVacationPay.Controls.Add(textBoxEmployeeIDVacationPay);
+            panelRecordVacationPay.Controls.Add(comboBoxEmployeeIDVacationPay);
             panelRecordVacationPay.Controls.Add(labelVacationStartDate);
             panelRecordVacationPay.Controls.Add(dateTimePickerVacationStartDate);
             panelRecordVacationPay.Controls.Add(labelVacationEndDate);
@@ -968,14 +982,15 @@
             labelEmployeeIDVacationPay.TabIndex = 8;
             labelEmployeeIDVacationPay.Text = "ФИО сотрудника:";
             // 
-            // textBoxEmployeeIDVacationPay
+            // comboBoxEmployeeIDVacationPay
             // 
-            textBoxEmployeeIDVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDVacationPay.Location = new Point(238, 111);
-            textBoxEmployeeIDVacationPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDVacationPay.Name = "textBoxEmployeeIDVacationPay";
-            textBoxEmployeeIDVacationPay.Size = new Size(455, 33);
-            textBoxEmployeeIDVacationPay.TabIndex = 1;
+            comboBoxEmployeeIDVacationPay.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDVacationPay.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDVacationPay.FormattingEnabled = true;
+            comboBoxEmployeeIDVacationPay.Location = new Point(238, 111);
+            comboBoxEmployeeIDVacationPay.Name = "comboBoxEmployeeIDVacationPay";
+            comboBoxEmployeeIDVacationPay.Size = new Size(455, 33);
+            comboBoxEmployeeIDVacationPay.TabIndex = 1;
             // 
             // labelVacationStartDate
             // 
@@ -1061,110 +1076,33 @@
             textBoxTotalVacationPay.Size = new Size(455, 33);
             textBoxTotalVacationPay.TabIndex = 5;
             // 
-            // buttonNewVacationPay
+            // buttonRefreshVacationPay
             // 
-            buttonNewVacationPay.BackgroundImage = (Image)resources.GetObject("buttonNewVacationPay.BackgroundImage");
-            buttonNewVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonNewVacationPay.ForeColor = Color.Black;
-            buttonNewVacationPay.Location = new Point(27, 15);
-            buttonNewVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonNewVacationPay.Name = "buttonNewVacationPay";
-            buttonNewVacationPay.Size = new Size(60, 60);
-            buttonNewVacationPay.TabIndex = 0;
-            buttonNewVacationPay.Text = " ";
-            buttonNewVacationPay.UseVisualStyleBackColor = true;
-            buttonNewVacationPay.Click += ButtonNewVacationPay_Click;
+            buttonRefreshVacationPay.BackgroundImage = (Image)resources.GetObject("buttonRefreshVacationPay.BackgroundImage");
+            buttonRefreshVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonRefreshVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshVacationPay.Location = new Point(70, 116);
+            buttonRefreshVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshVacationPay.Name = "buttonRefreshVacationPay";
+            buttonRefreshVacationPay.Size = new Size(60, 60);
+            buttonRefreshVacationPay.TabIndex = 1;
+            buttonRefreshVacationPay.UseVisualStyleBackColor = true;
+            buttonRefreshVacationPay.Click += ButtonRefresh_Click;
             // 
-            // buttonDeleteVacationPay
+            // buttonReportVacationPay
             // 
-            buttonDeleteVacationPay.BackgroundImage = (Image)resources.GetObject("buttonDeleteVacationPay.BackgroundImage");
-            buttonDeleteVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonDeleteVacationPay.ForeColor = Color.Black;
-            buttonDeleteVacationPay.Location = new Point(109, 15);
-            buttonDeleteVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteVacationPay.Name = "buttonDeleteVacationPay";
-            buttonDeleteVacationPay.Size = new Size(60, 60);
-            buttonDeleteVacationPay.TabIndex = 1;
-            buttonDeleteVacationPay.Text = " ";
-            buttonDeleteVacationPay.UseVisualStyleBackColor = true;
-            buttonDeleteVacationPay.Click += ButtonDeleteVacationPay_Click;
-            // 
-            // buttonChangeVacationPay
-            // 
-            buttonChangeVacationPay.BackgroundImage = (Image)resources.GetObject("buttonChangeVacationPay.BackgroundImage");
-            buttonChangeVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonChangeVacationPay.ForeColor = Color.Black;
-            buttonChangeVacationPay.Location = new Point(193, 15);
-            buttonChangeVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeVacationPay.Name = "buttonChangeVacationPay";
-            buttonChangeVacationPay.Size = new Size(60, 60);
-            buttonChangeVacationPay.TabIndex = 2;
-            buttonChangeVacationPay.Text = " ";
-            buttonChangeVacationPay.UseVisualStyleBackColor = true;
-            buttonChangeVacationPay.Click += ButtonChangeVacationPay_Click;
-            // 
-            // buttonSaveVacationPay
-            // 
-            buttonSaveVacationPay.BackgroundImage = (Image)resources.GetObject("buttonSaveVacationPay.BackgroundImage");
-            buttonSaveVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonSaveVacationPay.ForeColor = Color.Black;
-            buttonSaveVacationPay.Location = new Point(281, 15);
-            buttonSaveVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveVacationPay.Name = "buttonSaveVacationPay";
-            buttonSaveVacationPay.Size = new Size(60, 60);
-            buttonSaveVacationPay.TabIndex = 3;
-            buttonSaveVacationPay.Text = " ";
-            buttonSaveVacationPay.UseVisualStyleBackColor = true;
-            buttonSaveVacationPay.Click += ButtonSaveVacationPay_Click;
-            // 
-            // buttonWordVacationPay
-            // 
-            buttonWordVacationPay.BackgroundImage = (Image)resources.GetObject("buttonWordVacationPay.BackgroundImage");
-            buttonWordVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonWordVacationPay.ForeColor = Color.Black;
-            buttonWordVacationPay.Location = new Point(406, 37);
-            buttonWordVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonWordVacationPay.Name = "buttonWordVacationPay";
-            buttonWordVacationPay.Size = new Size(60, 60);
-            buttonWordVacationPay.TabIndex = 4;
-            buttonWordVacationPay.Text = " ";
-            buttonWordVacationPay.UseVisualStyleBackColor = true;
-            buttonWordVacationPay.Click += ButtonWordVacationPay_Click;
-            // 
-            // buttonExcelVacationPay
-            // 
-            buttonExcelVacationPay.BackgroundImage = (Image)resources.GetObject("buttonExcelVacationPay.BackgroundImage");
-            buttonExcelVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonExcelVacationPay.ForeColor = Color.Black;
-            buttonExcelVacationPay.Location = new Point(474, 37);
-            buttonExcelVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelVacationPay.Name = "buttonExcelVacationPay";
-            buttonExcelVacationPay.Size = new Size(60, 60);
-            buttonExcelVacationPay.TabIndex = 5;
-            buttonExcelVacationPay.Text = " ";
-            buttonExcelVacationPay.UseVisualStyleBackColor = true;
-            buttonExcelVacationPay.Click += ButtonExcelVacationPay_Click;
-            // 
-            // buttonTXTVacationPay
-            // 
-            buttonTXTVacationPay.BackgroundImage = (Image)resources.GetObject("buttonTXTVacationPay.BackgroundImage");
-            buttonTXTVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTVacationPay.FlatStyle = FlatStyle.Flat;
-            buttonTXTVacationPay.ForeColor = Color.Black;
-            buttonTXTVacationPay.Location = new Point(542, 37);
-            buttonTXTVacationPay.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTVacationPay.Name = "buttonTXTVacationPay";
-            buttonTXTVacationPay.Size = new Size(60, 60);
-            buttonTXTVacationPay.TabIndex = 6;
-            buttonTXTVacationPay.Text = " ";
-            buttonTXTVacationPay.UseVisualStyleBackColor = true;
-            buttonTXTVacationPay.Click += ButtonTXTVacationPay_Click;
+            buttonReportVacationPay.BackgroundImage = (Image)resources.GetObject("buttonReportVacationPay.BackgroundImage");
+            buttonReportVacationPay.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportVacationPay.FlatStyle = FlatStyle.Flat;
+            buttonReportVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportVacationPay.Location = new Point(827, 116);
+            buttonReportVacationPay.Margin = new Padding(4, 3, 4, 3);
+            buttonReportVacationPay.Name = "buttonReportVacationPay";
+            buttonReportVacationPay.Size = new Size(60, 60);
+            buttonReportVacationPay.TabIndex = 5;
+            buttonReportVacationPay.UseVisualStyleBackColor = true;
+            buttonReportVacationPay.Click += ButtonReportVacationPay_Click;
             // 
             // tabPageAccountingsOfWorkingHours
             // 
@@ -1174,7 +1112,6 @@
             tabPageAccountingsOfWorkingHours.Controls.Add(dataGridViewAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Controls.Add(panelRecordAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Controls.Add(buttonRefreshAccountingsOfWorkingHours);
-            tabPageAccountingsOfWorkingHours.Controls.Add(buttonClearAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Controls.Add(buttonReportAccountingsOfWorkingHours);
             tabPageAccountingsOfWorkingHours.Location = new Point(4, 24);
             tabPageAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
@@ -1187,7 +1124,6 @@
             // 
             // panelTitleAccountingsOfWorkingHours
             // 
-            panelTitleAccountingsOfWorkingHours.Controls.Add(buttonTXTAccountingOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(buttonExcelAccountingOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(buttonWordAccountingOfWorkingHours);
             panelTitleAccountingsOfWorkingHours.Controls.Add(buttonSaveAccountingOfWorkingHours);
@@ -1206,6 +1142,96 @@
             panelTitleAccountingsOfWorkingHours.Name = "panelTitleAccountingsOfWorkingHours";
             panelTitleAccountingsOfWorkingHours.Size = new Size(945, 110);
             panelTitleAccountingsOfWorkingHours.TabIndex = 3;
+            // 
+            // buttonExcelAccountingOfWorkingHours
+            // 
+            buttonExcelAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonExcelAccountingOfWorkingHours.BackgroundImage");
+            buttonExcelAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonExcelAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonExcelAccountingOfWorkingHours.Location = new Point(494, 26);
+            buttonExcelAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelAccountingOfWorkingHours.Name = "buttonExcelAccountingOfWorkingHours";
+            buttonExcelAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonExcelAccountingOfWorkingHours.TabIndex = 5;
+            buttonExcelAccountingOfWorkingHours.Text = " ";
+            buttonExcelAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonExcelAccountingOfWorkingHours.Click += ButtonExcelAccountingOfWorkingHours_Click;
+            // 
+            // buttonWordAccountingOfWorkingHours
+            // 
+            buttonWordAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonWordAccountingOfWorkingHours.BackgroundImage");
+            buttonWordAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonWordAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonWordAccountingOfWorkingHours.Location = new Point(426, 26);
+            buttonWordAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonWordAccountingOfWorkingHours.Name = "buttonWordAccountingOfWorkingHours";
+            buttonWordAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonWordAccountingOfWorkingHours.TabIndex = 4;
+            buttonWordAccountingOfWorkingHours.Text = " ";
+            buttonWordAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonWordAccountingOfWorkingHours.Click += ButtonWordAccountingOfWorkingHours_Click;
+            // 
+            // buttonSaveAccountingOfWorkingHours
+            // 
+            buttonSaveAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonSaveAccountingOfWorkingHours.BackgroundImage");
+            buttonSaveAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonSaveAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonSaveAccountingOfWorkingHours.Location = new Point(279, 15);
+            buttonSaveAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveAccountingOfWorkingHours.Name = "buttonSaveAccountingOfWorkingHours";
+            buttonSaveAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonSaveAccountingOfWorkingHours.TabIndex = 3;
+            buttonSaveAccountingOfWorkingHours.Text = " ";
+            buttonSaveAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonSaveAccountingOfWorkingHours.Click += ButtonSaveAccountingOfWorkingHours_Click;
+            // 
+            // buttonChangeAccountingOfWorkingHours
+            // 
+            buttonChangeAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonChangeAccountingOfWorkingHours.BackgroundImage");
+            buttonChangeAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonChangeAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonChangeAccountingOfWorkingHours.Location = new Point(191, 15);
+            buttonChangeAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeAccountingOfWorkingHours.Name = "buttonChangeAccountingOfWorkingHours";
+            buttonChangeAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonChangeAccountingOfWorkingHours.TabIndex = 2;
+            buttonChangeAccountingOfWorkingHours.Text = " ";
+            buttonChangeAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonChangeAccountingOfWorkingHours.Click += ButtonChangeAccountingOfWorkingHours_Click;
+            // 
+            // buttonDeleteAccountingOfWorkingHours
+            // 
+            buttonDeleteAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonDeleteAccountingOfWorkingHours.BackgroundImage");
+            buttonDeleteAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonDeleteAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonDeleteAccountingOfWorkingHours.Location = new Point(107, 15);
+            buttonDeleteAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteAccountingOfWorkingHours.Name = "buttonDeleteAccountingOfWorkingHours";
+            buttonDeleteAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonDeleteAccountingOfWorkingHours.TabIndex = 1;
+            buttonDeleteAccountingOfWorkingHours.Text = " ";
+            buttonDeleteAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonDeleteAccountingOfWorkingHours.Click += ButtonDeleteAccountingOfWorkingHours_Click;
+            // 
+            // buttonNewAccountingOfWorkingHours
+            // 
+            buttonNewAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonNewAccountingOfWorkingHours.BackgroundImage");
+            buttonNewAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonNewAccountingOfWorkingHours.ForeColor = Color.Black;
+            buttonNewAccountingOfWorkingHours.Location = new Point(23, 15);
+            buttonNewAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonNewAccountingOfWorkingHours.Name = "buttonNewAccountingOfWorkingHours";
+            buttonNewAccountingOfWorkingHours.Size = new Size(60, 60);
+            buttonNewAccountingOfWorkingHours.TabIndex = 0;
+            buttonNewAccountingOfWorkingHours.Text = " ";
+            buttonNewAccountingOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonNewAccountingOfWorkingHours.Click += ButtonNewAccountingOfWorkingHours_Click;
             // 
             // label21
             // 
@@ -1266,48 +1292,6 @@
             panel5.Size = new Size(33, 33);
             panel5.TabIndex = 13;
             // 
-            // buttonReportAccountingsOfWorkingHours
-            // 
-            buttonReportAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonReportAccountingsOfWorkingHours.BackgroundImage");
-            buttonReportAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonReportAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonReportAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportAccountingsOfWorkingHours.Location = new Point(827, 182);
-            buttonReportAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonReportAccountingsOfWorkingHours.Name = "buttonReportAccountingsOfWorkingHours";
-            buttonReportAccountingsOfWorkingHours.Size = new Size(60, 60);
-            buttonReportAccountingsOfWorkingHours.TabIndex = 5;
-            buttonReportAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonReportAccountingsOfWorkingHours.Click += ButtonReportAccountingsOfWorkingHours_Click;
-            // 
-            // buttonClearAccountingsOfWorkingHours
-            // 
-            buttonClearAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonClearAccountingsOfWorkingHours.BackgroundImage");
-            buttonClearAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonClearAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearAccountingsOfWorkingHours.Location = new Point(827, 116);
-            buttonClearAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonClearAccountingsOfWorkingHours.Name = "buttonClearAccountingsOfWorkingHours";
-            buttonClearAccountingsOfWorkingHours.Size = new Size(60, 60);
-            buttonClearAccountingsOfWorkingHours.TabIndex = 0;
-            buttonClearAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonClearAccountingsOfWorkingHours.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshAccountingsOfWorkingHours
-            // 
-            buttonRefreshAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonRefreshAccountingsOfWorkingHours.BackgroundImage");
-            buttonRefreshAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonRefreshAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshAccountingsOfWorkingHours.Location = new Point(70, 116);
-            buttonRefreshAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshAccountingsOfWorkingHours.Name = "buttonRefreshAccountingsOfWorkingHours";
-            buttonRefreshAccountingsOfWorkingHours.Size = new Size(60, 60);
-            buttonRefreshAccountingsOfWorkingHours.TabIndex = 1;
-            buttonRefreshAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonRefreshAccountingsOfWorkingHours.Click += ButtonRefresh_Click;
-            // 
             // textBoxSearchAccountingsOfWorkingHours
             // 
             textBoxSearchAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -1338,9 +1322,9 @@
             panelRecordAccountingsOfWorkingHours.Controls.Add(labelAccountingsOfWorkingHoursID);
             panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxAccountingsOfWorkingHoursID);
             panelRecordAccountingsOfWorkingHours.Controls.Add(labelEmployeeIDAccountingsOfWorkingHours);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxEmployeeIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(comboBoxEmployeeIDAccountingsOfWorkingHours);
             panelRecordAccountingsOfWorkingHours.Controls.Add(labelProjectIDAccountingsOfWorkingHours);
-            panelRecordAccountingsOfWorkingHours.Controls.Add(textBoxProjectIDAccountingsOfWorkingHours);
+            panelRecordAccountingsOfWorkingHours.Controls.Add(comboBoxProjectIDAccountingsOfWorkingHours);
             panelRecordAccountingsOfWorkingHours.Controls.Add(labelTypeOfRemunerationID);
             panelRecordAccountingsOfWorkingHours.Controls.Add(comboBoxTypeOfRemunerationID);
             panelRecordAccountingsOfWorkingHours.Controls.Add(labelHoursOfWork);
@@ -1396,14 +1380,15 @@
             labelEmployeeIDAccountingsOfWorkingHours.TabIndex = 7;
             labelEmployeeIDAccountingsOfWorkingHours.Text = "ФИО сотрудника:";
             // 
-            // textBoxEmployeeIDAccountingsOfWorkingHours
+            // comboBoxEmployeeIDAccountingsOfWorkingHours
             // 
-            textBoxEmployeeIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDAccountingsOfWorkingHours.Location = new Point(152, 113);
-            textBoxEmployeeIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDAccountingsOfWorkingHours.Name = "textBoxEmployeeIDAccountingsOfWorkingHours";
-            textBoxEmployeeIDAccountingsOfWorkingHours.Size = new Size(455, 33);
-            textBoxEmployeeIDAccountingsOfWorkingHours.TabIndex = 1;
+            comboBoxEmployeeIDAccountingsOfWorkingHours.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDAccountingsOfWorkingHours.FormattingEnabled = true;
+            comboBoxEmployeeIDAccountingsOfWorkingHours.Location = new Point(152, 113);
+            comboBoxEmployeeIDAccountingsOfWorkingHours.Name = "comboBoxEmployeeIDAccountingsOfWorkingHours";
+            comboBoxEmployeeIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            comboBoxEmployeeIDAccountingsOfWorkingHours.TabIndex = 1;
             // 
             // labelProjectIDAccountingsOfWorkingHours
             // 
@@ -1417,14 +1402,15 @@
             labelProjectIDAccountingsOfWorkingHours.TabIndex = 8;
             labelProjectIDAccountingsOfWorkingHours.Text = "Проект:";
             // 
-            // textBoxProjectIDAccountingsOfWorkingHours
+            // comboBoxProjectIDAccountingsOfWorkingHours
             // 
-            textBoxProjectIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectIDAccountingsOfWorkingHours.Location = new Point(152, 158);
-            textBoxProjectIDAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            textBoxProjectIDAccountingsOfWorkingHours.Name = "textBoxProjectIDAccountingsOfWorkingHours";
-            textBoxProjectIDAccountingsOfWorkingHours.Size = new Size(455, 33);
-            textBoxProjectIDAccountingsOfWorkingHours.TabIndex = 2;
+            comboBoxProjectIDAccountingsOfWorkingHours.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxProjectIDAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F);
+            comboBoxProjectIDAccountingsOfWorkingHours.FormattingEnabled = true;
+            comboBoxProjectIDAccountingsOfWorkingHours.Location = new Point(152, 158);
+            comboBoxProjectIDAccountingsOfWorkingHours.Name = "comboBoxProjectIDAccountingsOfWorkingHours";
+            comboBoxProjectIDAccountingsOfWorkingHours.Size = new Size(455, 33);
+            comboBoxProjectIDAccountingsOfWorkingHours.TabIndex = 2;
             // 
             // labelTypeOfRemunerationID
             // 
@@ -1443,7 +1429,6 @@
             comboBoxTypeOfRemunerationID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxTypeOfRemunerationID.Font = new Font("Segoe UI", 14.25F);
             comboBoxTypeOfRemunerationID.FormattingEnabled = true;
-            comboBoxTypeOfRemunerationID.Items.AddRange(new object[] { "Почасовая оплата", "Сдельная оплата" });
             comboBoxTypeOfRemunerationID.Location = new Point(153, 203);
             comboBoxTypeOfRemunerationID.Name = "comboBoxTypeOfRemunerationID";
             comboBoxTypeOfRemunerationID.Size = new Size(455, 33);
@@ -1470,110 +1455,33 @@
             textBoxHoursOfWork.Size = new Size(455, 33);
             textBoxHoursOfWork.TabIndex = 4;
             // 
-            // buttonNewAccountingOfWorkingHours
+            // buttonRefreshAccountingsOfWorkingHours
             // 
-            buttonNewAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonNewAccountingOfWorkingHours.BackgroundImage");
-            buttonNewAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonNewAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonNewAccountingOfWorkingHours.Location = new Point(23, 15);
-            buttonNewAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonNewAccountingOfWorkingHours.Name = "buttonNewAccountingOfWorkingHours";
-            buttonNewAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonNewAccountingOfWorkingHours.TabIndex = 0;
-            buttonNewAccountingOfWorkingHours.Text = " ";
-            buttonNewAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonNewAccountingOfWorkingHours.Click += ButtonNewAccountingOfWorkingHours_Click;
+            buttonRefreshAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonRefreshAccountingsOfWorkingHours.BackgroundImage");
+            buttonRefreshAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonRefreshAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshAccountingsOfWorkingHours.Location = new Point(70, 116);
+            buttonRefreshAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshAccountingsOfWorkingHours.Name = "buttonRefreshAccountingsOfWorkingHours";
+            buttonRefreshAccountingsOfWorkingHours.Size = new Size(60, 60);
+            buttonRefreshAccountingsOfWorkingHours.TabIndex = 1;
+            buttonRefreshAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonRefreshAccountingsOfWorkingHours.Click += ButtonRefresh_Click;
             // 
-            // buttonDeleteAccountingOfWorkingHours
+            // buttonReportAccountingsOfWorkingHours
             // 
-            buttonDeleteAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonDeleteAccountingOfWorkingHours.BackgroundImage");
-            buttonDeleteAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonDeleteAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonDeleteAccountingOfWorkingHours.Location = new Point(107, 15);
-            buttonDeleteAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteAccountingOfWorkingHours.Name = "buttonDeleteAccountingOfWorkingHours";
-            buttonDeleteAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonDeleteAccountingOfWorkingHours.TabIndex = 1;
-            buttonDeleteAccountingOfWorkingHours.Text = " ";
-            buttonDeleteAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonDeleteAccountingOfWorkingHours.Click += ButtonDeleteAccountingOfWorkingHours_Click;
-            // 
-            // buttonChangeAccountingOfWorkingHours
-            // 
-            buttonChangeAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonChangeAccountingOfWorkingHours.BackgroundImage");
-            buttonChangeAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonChangeAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonChangeAccountingOfWorkingHours.Location = new Point(191, 15);
-            buttonChangeAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeAccountingOfWorkingHours.Name = "buttonChangeAccountingOfWorkingHours";
-            buttonChangeAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonChangeAccountingOfWorkingHours.TabIndex = 2;
-            buttonChangeAccountingOfWorkingHours.Text = " ";
-            buttonChangeAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonChangeAccountingOfWorkingHours.Click += ButtonChangeAccountingOfWorkingHours_Click;
-            // 
-            // buttonSaveAccountingOfWorkingHours
-            // 
-            buttonSaveAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonSaveAccountingOfWorkingHours.BackgroundImage");
-            buttonSaveAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonSaveAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonSaveAccountingOfWorkingHours.Location = new Point(279, 15);
-            buttonSaveAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveAccountingOfWorkingHours.Name = "buttonSaveAccountingOfWorkingHours";
-            buttonSaveAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonSaveAccountingOfWorkingHours.TabIndex = 3;
-            buttonSaveAccountingOfWorkingHours.Text = " ";
-            buttonSaveAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonSaveAccountingOfWorkingHours.Click += ButtonSaveAccountingOfWorkingHours_Click;
-            // 
-            // buttonWordAccountingOfWorkingHours
-            // 
-            buttonWordAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonWordAccountingOfWorkingHours.BackgroundImage");
-            buttonWordAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonWordAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonWordAccountingOfWorkingHours.Location = new Point(404, 37);
-            buttonWordAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonWordAccountingOfWorkingHours.Name = "buttonWordAccountingOfWorkingHours";
-            buttonWordAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonWordAccountingOfWorkingHours.TabIndex = 4;
-            buttonWordAccountingOfWorkingHours.Text = " ";
-            buttonWordAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonWordAccountingOfWorkingHours.Click += ButtonWordAccountingOfWorkingHours_Click;
-            // 
-            // buttonExcelAccountingOfWorkingHours
-            // 
-            buttonExcelAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonExcelAccountingOfWorkingHours.BackgroundImage");
-            buttonExcelAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonExcelAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonExcelAccountingOfWorkingHours.Location = new Point(472, 37);
-            buttonExcelAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelAccountingOfWorkingHours.Name = "buttonExcelAccountingOfWorkingHours";
-            buttonExcelAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonExcelAccountingOfWorkingHours.TabIndex = 5;
-            buttonExcelAccountingOfWorkingHours.Text = " ";
-            buttonExcelAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonExcelAccountingOfWorkingHours.Click += ButtonExcelAccountingOfWorkingHours_Click;
-            // 
-            // buttonTXTAccountingOfWorkingHours
-            // 
-            buttonTXTAccountingOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonTXTAccountingOfWorkingHours.BackgroundImage");
-            buttonTXTAccountingOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTAccountingOfWorkingHours.FlatStyle = FlatStyle.Flat;
-            buttonTXTAccountingOfWorkingHours.ForeColor = Color.Black;
-            buttonTXTAccountingOfWorkingHours.Location = new Point(540, 37);
-            buttonTXTAccountingOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTAccountingOfWorkingHours.Name = "buttonTXTAccountingOfWorkingHours";
-            buttonTXTAccountingOfWorkingHours.Size = new Size(60, 60);
-            buttonTXTAccountingOfWorkingHours.TabIndex = 6;
-            buttonTXTAccountingOfWorkingHours.Text = " ";
-            buttonTXTAccountingOfWorkingHours.UseVisualStyleBackColor = true;
-            buttonTXTAccountingOfWorkingHours.Click += ButtonTXTAccountingOfWorkingHours_Click;
+            buttonReportAccountingsOfWorkingHours.BackgroundImage = (Image)resources.GetObject("buttonReportAccountingsOfWorkingHours.BackgroundImage");
+            buttonReportAccountingsOfWorkingHours.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportAccountingsOfWorkingHours.FlatStyle = FlatStyle.Flat;
+            buttonReportAccountingsOfWorkingHours.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportAccountingsOfWorkingHours.Location = new Point(827, 116);
+            buttonReportAccountingsOfWorkingHours.Margin = new Padding(4, 3, 4, 3);
+            buttonReportAccountingsOfWorkingHours.Name = "buttonReportAccountingsOfWorkingHours";
+            buttonReportAccountingsOfWorkingHours.Size = new Size(60, 60);
+            buttonReportAccountingsOfWorkingHours.TabIndex = 5;
+            buttonReportAccountingsOfWorkingHours.UseVisualStyleBackColor = true;
+            buttonReportAccountingsOfWorkingHours.Click += ButtonReportAccountingsOfWorkingHours_Click;
             // 
             // tabPageSalary
             // 
@@ -1583,7 +1491,6 @@
             tabPageSalary.Controls.Add(dataGridViewSalary);
             tabPageSalary.Controls.Add(panelRecordSalary);
             tabPageSalary.Controls.Add(buttonRefreshSalary);
-            tabPageSalary.Controls.Add(buttonClearSalary);
             tabPageSalary.Location = new Point(4, 24);
             tabPageSalary.Margin = new Padding(4, 3, 4, 3);
             tabPageSalary.Name = "tabPageSalary";
@@ -1595,7 +1502,6 @@
             // 
             // panelTitleSalary
             // 
-            panelTitleSalary.Controls.Add(buttonTXTSalary);
             panelTitleSalary.Controls.Add(buttonExcelSalary);
             panelTitleSalary.Controls.Add(buttonWordSalary);
             panelTitleSalary.Controls.Add(buttonSaveSalary);
@@ -1614,6 +1520,96 @@
             panelTitleSalary.Name = "panelTitleSalary";
             panelTitleSalary.Size = new Size(945, 110);
             panelTitleSalary.TabIndex = 3;
+            // 
+            // buttonExcelSalary
+            // 
+            buttonExcelSalary.BackgroundImage = (Image)resources.GetObject("buttonExcelSalary.BackgroundImage");
+            buttonExcelSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelSalary.FlatStyle = FlatStyle.Flat;
+            buttonExcelSalary.ForeColor = Color.Black;
+            buttonExcelSalary.Location = new Point(500, 25);
+            buttonExcelSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSalary.Name = "buttonExcelSalary";
+            buttonExcelSalary.Size = new Size(60, 60);
+            buttonExcelSalary.TabIndex = 5;
+            buttonExcelSalary.Text = " ";
+            buttonExcelSalary.UseVisualStyleBackColor = true;
+            buttonExcelSalary.Click += ButtonExcelSalary_Click;
+            // 
+            // buttonWordSalary
+            // 
+            buttonWordSalary.BackgroundImage = (Image)resources.GetObject("buttonWordSalary.BackgroundImage");
+            buttonWordSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordSalary.FlatStyle = FlatStyle.Flat;
+            buttonWordSalary.ForeColor = Color.Black;
+            buttonWordSalary.Location = new Point(432, 25);
+            buttonWordSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSalary.Name = "buttonWordSalary";
+            buttonWordSalary.Size = new Size(60, 60);
+            buttonWordSalary.TabIndex = 4;
+            buttonWordSalary.Text = " ";
+            buttonWordSalary.UseVisualStyleBackColor = true;
+            buttonWordSalary.Click += ButtonWordSalary_Click;
+            // 
+            // buttonSaveSalary
+            // 
+            buttonSaveSalary.BackgroundImage = (Image)resources.GetObject("buttonSaveSalary.BackgroundImage");
+            buttonSaveSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveSalary.FlatStyle = FlatStyle.Flat;
+            buttonSaveSalary.ForeColor = Color.Black;
+            buttonSaveSalary.Location = new Point(280, 16);
+            buttonSaveSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSalary.Name = "buttonSaveSalary";
+            buttonSaveSalary.Size = new Size(60, 60);
+            buttonSaveSalary.TabIndex = 3;
+            buttonSaveSalary.Text = " ";
+            buttonSaveSalary.UseVisualStyleBackColor = true;
+            buttonSaveSalary.Click += ButtonSaveSalary_Click;
+            // 
+            // buttonChangeSalary
+            // 
+            buttonChangeSalary.BackgroundImage = (Image)resources.GetObject("buttonChangeSalary.BackgroundImage");
+            buttonChangeSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeSalary.FlatStyle = FlatStyle.Flat;
+            buttonChangeSalary.ForeColor = Color.Black;
+            buttonChangeSalary.Location = new Point(192, 16);
+            buttonChangeSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSalary.Name = "buttonChangeSalary";
+            buttonChangeSalary.Size = new Size(60, 60);
+            buttonChangeSalary.TabIndex = 2;
+            buttonChangeSalary.Text = " ";
+            buttonChangeSalary.UseVisualStyleBackColor = true;
+            buttonChangeSalary.Click += ButtonChangeSalary_Click;
+            // 
+            // buttonDeleteSalary
+            // 
+            buttonDeleteSalary.BackgroundImage = (Image)resources.GetObject("buttonDeleteSalary.BackgroundImage");
+            buttonDeleteSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteSalary.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSalary.ForeColor = Color.Black;
+            buttonDeleteSalary.Location = new Point(108, 16);
+            buttonDeleteSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSalary.Name = "buttonDeleteSalary";
+            buttonDeleteSalary.Size = new Size(60, 60);
+            buttonDeleteSalary.TabIndex = 1;
+            buttonDeleteSalary.Text = " ";
+            buttonDeleteSalary.UseVisualStyleBackColor = true;
+            buttonDeleteSalary.Click += ButtonDeleteSalary_Click;
+            // 
+            // buttonNewSalary
+            // 
+            buttonNewSalary.BackgroundImage = (Image)resources.GetObject("buttonNewSalary.BackgroundImage");
+            buttonNewSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewSalary.FlatStyle = FlatStyle.Flat;
+            buttonNewSalary.ForeColor = Color.Black;
+            buttonNewSalary.Location = new Point(22, 16);
+            buttonNewSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSalary.Name = "buttonNewSalary";
+            buttonNewSalary.Size = new Size(60, 60);
+            buttonNewSalary.TabIndex = 0;
+            buttonNewSalary.Text = " ";
+            buttonNewSalary.UseVisualStyleBackColor = true;
+            buttonNewSalary.Click += ButtonNewSalary_Click;
             // 
             // label16
             // 
@@ -1674,34 +1670,6 @@
             panel4.Size = new Size(33, 33);
             panel4.TabIndex = 13;
             // 
-            // buttonClearSalary
-            // 
-            buttonClearSalary.BackgroundImage = (Image)resources.GetObject("buttonClearSalary.BackgroundImage");
-            buttonClearSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearSalary.FlatStyle = FlatStyle.Flat;
-            buttonClearSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearSalary.Location = new Point(827, 116);
-            buttonClearSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonClearSalary.Name = "buttonClearSalary";
-            buttonClearSalary.Size = new Size(60, 60);
-            buttonClearSalary.TabIndex = 0;
-            buttonClearSalary.UseVisualStyleBackColor = true;
-            buttonClearSalary.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshSalary
-            // 
-            buttonRefreshSalary.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalary.BackgroundImage");
-            buttonRefreshSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshSalary.FlatStyle = FlatStyle.Flat;
-            buttonRefreshSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshSalary.Location = new Point(70, 116);
-            buttonRefreshSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshSalary.Name = "buttonRefreshSalary";
-            buttonRefreshSalary.Size = new Size(60, 60);
-            buttonRefreshSalary.TabIndex = 1;
-            buttonRefreshSalary.UseVisualStyleBackColor = true;
-            buttonRefreshSalary.Click += ButtonRefresh_Click;
-            // 
             // textBoxSearchSalary
             // 
             textBoxSearchSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -1731,9 +1699,9 @@
             panelRecordSalary.Controls.Add(labelSalaryID);
             panelRecordSalary.Controls.Add(textBoxSalaryID);
             panelRecordSalary.Controls.Add(labelSalaryAccrualIDSalary);
-            panelRecordSalary.Controls.Add(textBoxSalaryAccrualIDSalary);
+            panelRecordSalary.Controls.Add(comboBoxSalaryAccrualIDSalary);
             panelRecordSalary.Controls.Add(labelEmployeeIDSalary);
-            panelRecordSalary.Controls.Add(textBoxEmployeeIDSalary);
+            panelRecordSalary.Controls.Add(comboBoxEmployeeIDSalary);
             panelRecordSalary.Controls.Add(labelAllDays);
             panelRecordSalary.Controls.Add(textBoxAllDays);
             panelRecordSalary.Controls.Add(labelAllHours);
@@ -1791,14 +1759,15 @@
             labelSalaryAccrualIDSalary.TabIndex = 14;
             labelSalaryAccrualIDSalary.Text = "Номер зарплаты:";
             // 
-            // textBoxSalaryAccrualIDSalary
+            // comboBoxSalaryAccrualIDSalary
             // 
-            textBoxSalaryAccrualIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSalaryAccrualIDSalary.Location = new Point(191, 41);
-            textBoxSalaryAccrualIDSalary.Margin = new Padding(4, 3, 4, 3);
-            textBoxSalaryAccrualIDSalary.Name = "textBoxSalaryAccrualIDSalary";
-            textBoxSalaryAccrualIDSalary.Size = new Size(455, 33);
-            textBoxSalaryAccrualIDSalary.TabIndex = 1;
+            comboBoxSalaryAccrualIDSalary.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSalaryAccrualIDSalary.Font = new Font("Segoe UI", 14.25F);
+            comboBoxSalaryAccrualIDSalary.FormattingEnabled = true;
+            comboBoxSalaryAccrualIDSalary.Location = new Point(190, 41);
+            comboBoxSalaryAccrualIDSalary.Name = "comboBoxSalaryAccrualIDSalary";
+            comboBoxSalaryAccrualIDSalary.Size = new Size(456, 33);
+            comboBoxSalaryAccrualIDSalary.TabIndex = 1;
             // 
             // labelEmployeeIDSalary
             // 
@@ -1812,14 +1781,15 @@
             labelEmployeeIDSalary.TabIndex = 15;
             labelEmployeeIDSalary.Text = "ФИО сотрудника:";
             // 
-            // textBoxEmployeeIDSalary
+            // comboBoxEmployeeIDSalary
             // 
-            textBoxEmployeeIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDSalary.Location = new Point(191, 79);
-            textBoxEmployeeIDSalary.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDSalary.Name = "textBoxEmployeeIDSalary";
-            textBoxEmployeeIDSalary.Size = new Size(455, 33);
-            textBoxEmployeeIDSalary.TabIndex = 2;
+            comboBoxEmployeeIDSalary.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDSalary.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDSalary.FormattingEnabled = true;
+            comboBoxEmployeeIDSalary.Location = new Point(190, 80);
+            comboBoxEmployeeIDSalary.Name = "comboBoxEmployeeIDSalary";
+            comboBoxEmployeeIDSalary.Size = new Size(455, 33);
+            comboBoxEmployeeIDSalary.TabIndex = 2;
             // 
             // labelAllDays
             // 
@@ -2019,110 +1989,19 @@
             textBoxTotal.Size = new Size(455, 33);
             textBoxTotal.TabIndex = 11;
             // 
-            // buttonNewSalary
+            // buttonRefreshSalary
             // 
-            buttonNewSalary.BackgroundImage = (Image)resources.GetObject("buttonNewSalary.BackgroundImage");
-            buttonNewSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewSalary.FlatStyle = FlatStyle.Flat;
-            buttonNewSalary.ForeColor = Color.Black;
-            buttonNewSalary.Location = new Point(22, 16);
-            buttonNewSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonNewSalary.Name = "buttonNewSalary";
-            buttonNewSalary.Size = new Size(60, 60);
-            buttonNewSalary.TabIndex = 0;
-            buttonNewSalary.Text = " ";
-            buttonNewSalary.UseVisualStyleBackColor = true;
-            buttonNewSalary.Click += ButtonNewSalary_Click;
-            // 
-            // buttonDeleteSalary
-            // 
-            buttonDeleteSalary.BackgroundImage = (Image)resources.GetObject("buttonDeleteSalary.BackgroundImage");
-            buttonDeleteSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteSalary.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSalary.ForeColor = Color.Black;
-            buttonDeleteSalary.Location = new Point(108, 16);
-            buttonDeleteSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteSalary.Name = "buttonDeleteSalary";
-            buttonDeleteSalary.Size = new Size(60, 60);
-            buttonDeleteSalary.TabIndex = 1;
-            buttonDeleteSalary.Text = " ";
-            buttonDeleteSalary.UseVisualStyleBackColor = true;
-            buttonDeleteSalary.Click += ButtonDeleteSalary_Click;
-            // 
-            // buttonChangeSalary
-            // 
-            buttonChangeSalary.BackgroundImage = (Image)resources.GetObject("buttonChangeSalary.BackgroundImage");
-            buttonChangeSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeSalary.FlatStyle = FlatStyle.Flat;
-            buttonChangeSalary.ForeColor = Color.Black;
-            buttonChangeSalary.Location = new Point(192, 16);
-            buttonChangeSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeSalary.Name = "buttonChangeSalary";
-            buttonChangeSalary.Size = new Size(60, 60);
-            buttonChangeSalary.TabIndex = 2;
-            buttonChangeSalary.Text = " ";
-            buttonChangeSalary.UseVisualStyleBackColor = true;
-            buttonChangeSalary.Click += ButtonChangeSalary_Click;
-            // 
-            // buttonSaveSalary
-            // 
-            buttonSaveSalary.BackgroundImage = (Image)resources.GetObject("buttonSaveSalary.BackgroundImage");
-            buttonSaveSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveSalary.FlatStyle = FlatStyle.Flat;
-            buttonSaveSalary.ForeColor = Color.Black;
-            buttonSaveSalary.Location = new Point(280, 16);
-            buttonSaveSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveSalary.Name = "buttonSaveSalary";
-            buttonSaveSalary.Size = new Size(60, 60);
-            buttonSaveSalary.TabIndex = 3;
-            buttonSaveSalary.Text = " ";
-            buttonSaveSalary.UseVisualStyleBackColor = true;
-            buttonSaveSalary.Click += ButtonSaveSalary_Click;
-            // 
-            // buttonWordSalary
-            // 
-            buttonWordSalary.BackgroundImage = (Image)resources.GetObject("buttonWordSalary.BackgroundImage");
-            buttonWordSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordSalary.FlatStyle = FlatStyle.Flat;
-            buttonWordSalary.ForeColor = Color.Black;
-            buttonWordSalary.Location = new Point(405, 34);
-            buttonWordSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonWordSalary.Name = "buttonWordSalary";
-            buttonWordSalary.Size = new Size(60, 60);
-            buttonWordSalary.TabIndex = 4;
-            buttonWordSalary.Text = " ";
-            buttonWordSalary.UseVisualStyleBackColor = true;
-            buttonWordSalary.Click += ButtonWordSalary_Click;
-            // 
-            // buttonExcelSalary
-            // 
-            buttonExcelSalary.BackgroundImage = (Image)resources.GetObject("buttonExcelSalary.BackgroundImage");
-            buttonExcelSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelSalary.FlatStyle = FlatStyle.Flat;
-            buttonExcelSalary.ForeColor = Color.Black;
-            buttonExcelSalary.Location = new Point(473, 34);
-            buttonExcelSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelSalary.Name = "buttonExcelSalary";
-            buttonExcelSalary.Size = new Size(60, 60);
-            buttonExcelSalary.TabIndex = 5;
-            buttonExcelSalary.Text = " ";
-            buttonExcelSalary.UseVisualStyleBackColor = true;
-            buttonExcelSalary.Click += ButtonExcelSalary_Click;
-            // 
-            // buttonTXTSalary
-            // 
-            buttonTXTSalary.BackgroundImage = (Image)resources.GetObject("buttonTXTSalary.BackgroundImage");
-            buttonTXTSalary.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTSalary.FlatStyle = FlatStyle.Flat;
-            buttonTXTSalary.ForeColor = Color.Black;
-            buttonTXTSalary.Location = new Point(541, 34);
-            buttonTXTSalary.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTSalary.Name = "buttonTXTSalary";
-            buttonTXTSalary.Size = new Size(60, 60);
-            buttonTXTSalary.TabIndex = 6;
-            buttonTXTSalary.Text = " ";
-            buttonTXTSalary.UseVisualStyleBackColor = true;
-            buttonTXTSalary.Click += ButtonTXTSalary_Click;
+            buttonRefreshSalary.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalary.BackgroundImage");
+            buttonRefreshSalary.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSalary.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSalary.Location = new Point(70, 116);
+            buttonRefreshSalary.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSalary.Name = "buttonRefreshSalary";
+            buttonRefreshSalary.Size = new Size(60, 60);
+            buttonRefreshSalary.TabIndex = 1;
+            buttonRefreshSalary.UseVisualStyleBackColor = true;
+            buttonRefreshSalary.Click += ButtonRefresh_Click;
             // 
             // tabPageSalaryAccruals
             // 
@@ -2132,7 +2011,6 @@
             tabPageSalaryAccruals.Controls.Add(dataGridViewSalaryAccruals);
             tabPageSalaryAccruals.Controls.Add(panelRecordSalaryAccruals);
             tabPageSalaryAccruals.Controls.Add(buttonRefreshSalaryAccruals);
-            tabPageSalaryAccruals.Controls.Add(buttonClearSalaryAccruals);
             tabPageSalaryAccruals.Controls.Add(buttonReportSalaryAccruals);
             tabPageSalaryAccruals.Location = new Point(4, 24);
             tabPageSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
@@ -2145,7 +2023,6 @@
             // 
             // panelTitleSalaryAccruals
             // 
-            panelTitleSalaryAccruals.Controls.Add(buttonTXTSalaryAccrual);
             panelTitleSalaryAccruals.Controls.Add(buttonExcelSalaryAccrual);
             panelTitleSalaryAccruals.Controls.Add(buttonWordSalaryAccrual);
             panelTitleSalaryAccruals.Controls.Add(buttonSaveSalaryAccrual);
@@ -2165,6 +2042,96 @@
             panelTitleSalaryAccruals.Size = new Size(945, 110);
             panelTitleSalaryAccruals.TabIndex = 3;
             // 
+            // buttonExcelSalaryAccrual
+            // 
+            buttonExcelSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonExcelSalaryAccrual.BackgroundImage");
+            buttonExcelSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonExcelSalaryAccrual.ForeColor = Color.Black;
+            buttonExcelSalaryAccrual.Location = new Point(502, 32);
+            buttonExcelSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelSalaryAccrual.Name = "buttonExcelSalaryAccrual";
+            buttonExcelSalaryAccrual.Size = new Size(60, 60);
+            buttonExcelSalaryAccrual.TabIndex = 5;
+            buttonExcelSalaryAccrual.Text = " ";
+            buttonExcelSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonExcelSalaryAccrual.Click += ButtonExcelSalaryAccrual_Click;
+            // 
+            // buttonWordSalaryAccrual
+            // 
+            buttonWordSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonWordSalaryAccrual.BackgroundImage");
+            buttonWordSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonWordSalaryAccrual.ForeColor = Color.Black;
+            buttonWordSalaryAccrual.Location = new Point(434, 32);
+            buttonWordSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonWordSalaryAccrual.Name = "buttonWordSalaryAccrual";
+            buttonWordSalaryAccrual.Size = new Size(60, 60);
+            buttonWordSalaryAccrual.TabIndex = 4;
+            buttonWordSalaryAccrual.Text = " ";
+            buttonWordSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonWordSalaryAccrual.Click += ButtonWordSalaryAccrual_Click;
+            // 
+            // buttonSaveSalaryAccrual
+            // 
+            buttonSaveSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonSaveSalaryAccrual.BackgroundImage");
+            buttonSaveSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonSaveSalaryAccrual.ForeColor = Color.Black;
+            buttonSaveSalaryAccrual.Location = new Point(289, 21);
+            buttonSaveSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveSalaryAccrual.Name = "buttonSaveSalaryAccrual";
+            buttonSaveSalaryAccrual.Size = new Size(60, 60);
+            buttonSaveSalaryAccrual.TabIndex = 3;
+            buttonSaveSalaryAccrual.Text = " ";
+            buttonSaveSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonSaveSalaryAccrual.Click += ButtonSaveSalaryAccrual_Click;
+            // 
+            // buttonChangeSalaryAccrual
+            // 
+            buttonChangeSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonChangeSalaryAccrual.BackgroundImage");
+            buttonChangeSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonChangeSalaryAccrual.ForeColor = Color.Black;
+            buttonChangeSalaryAccrual.Location = new Point(193, 21);
+            buttonChangeSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeSalaryAccrual.Name = "buttonChangeSalaryAccrual";
+            buttonChangeSalaryAccrual.Size = new Size(60, 60);
+            buttonChangeSalaryAccrual.TabIndex = 2;
+            buttonChangeSalaryAccrual.Text = " ";
+            buttonChangeSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonChangeSalaryAccrual.Click += ButtonChangeSalaryAccrual_Click;
+            // 
+            // buttonDeleteSalaryAccrual
+            // 
+            buttonDeleteSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonDeleteSalaryAccrual.BackgroundImage");
+            buttonDeleteSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonDeleteSalaryAccrual.ForeColor = Color.Black;
+            buttonDeleteSalaryAccrual.Location = new Point(109, 21);
+            buttonDeleteSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteSalaryAccrual.Name = "buttonDeleteSalaryAccrual";
+            buttonDeleteSalaryAccrual.Size = new Size(60, 60);
+            buttonDeleteSalaryAccrual.TabIndex = 1;
+            buttonDeleteSalaryAccrual.Text = " ";
+            buttonDeleteSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonDeleteSalaryAccrual.Click += ButtonDeleteSalaryAccrual_Click;
+            // 
+            // buttonNewSalaryAccrual
+            // 
+            buttonNewSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonNewSalaryAccrual.BackgroundImage");
+            buttonNewSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewSalaryAccrual.FlatStyle = FlatStyle.Flat;
+            buttonNewSalaryAccrual.ForeColor = Color.Black;
+            buttonNewSalaryAccrual.Location = new Point(22, 21);
+            buttonNewSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
+            buttonNewSalaryAccrual.Name = "buttonNewSalaryAccrual";
+            buttonNewSalaryAccrual.Size = new Size(60, 60);
+            buttonNewSalaryAccrual.TabIndex = 0;
+            buttonNewSalaryAccrual.Text = " ";
+            buttonNewSalaryAccrual.UseVisualStyleBackColor = true;
+            buttonNewSalaryAccrual.Click += ButtonNewSalaryAccrual_Click;
+            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -2174,7 +2141,6 @@
             label11.Size = new Size(74, 21);
             label11.TabIndex = 18;
             label11.Text = "Экспорт";
-            label11.Click += label11_Click;
             // 
             // label12
             // 
@@ -2225,48 +2191,6 @@
             panel3.Size = new Size(33, 33);
             panel3.TabIndex = 13;
             // 
-            // buttonReportSalaryAccruals
-            // 
-            buttonReportSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonReportSalaryAccruals.BackgroundImage");
-            buttonReportSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonReportSalaryAccruals.FlatStyle = FlatStyle.Flat;
-            buttonReportSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonReportSalaryAccruals.Location = new Point(827, 182);
-            buttonReportSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
-            buttonReportSalaryAccruals.Name = "buttonReportSalaryAccruals";
-            buttonReportSalaryAccruals.Size = new Size(60, 60);
-            buttonReportSalaryAccruals.TabIndex = 5;
-            buttonReportSalaryAccruals.UseVisualStyleBackColor = true;
-            buttonReportSalaryAccruals.Click += ButtonReportSalaryAccruals_Click;
-            // 
-            // buttonClearSalaryAccruals
-            // 
-            buttonClearSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonClearSalaryAccruals.BackgroundImage");
-            buttonClearSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearSalaryAccruals.FlatStyle = FlatStyle.Flat;
-            buttonClearSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearSalaryAccruals.Location = new Point(827, 116);
-            buttonClearSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
-            buttonClearSalaryAccruals.Name = "buttonClearSalaryAccruals";
-            buttonClearSalaryAccruals.Size = new Size(60, 60);
-            buttonClearSalaryAccruals.TabIndex = 0;
-            buttonClearSalaryAccruals.UseVisualStyleBackColor = true;
-            buttonClearSalaryAccruals.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshSalaryAccruals
-            // 
-            buttonRefreshSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalaryAccruals.BackgroundImage");
-            buttonRefreshSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshSalaryAccruals.FlatStyle = FlatStyle.Flat;
-            buttonRefreshSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshSalaryAccruals.Location = new Point(70, 116);
-            buttonRefreshSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshSalaryAccruals.Name = "buttonRefreshSalaryAccruals";
-            buttonRefreshSalaryAccruals.Size = new Size(60, 60);
-            buttonRefreshSalaryAccruals.TabIndex = 1;
-            buttonRefreshSalaryAccruals.UseVisualStyleBackColor = true;
-            buttonRefreshSalaryAccruals.Click += ButtonRefresh_Click;
-            // 
             // textBoxSearchSalaryAccruals
             // 
             textBoxSearchSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -2301,7 +2225,7 @@
             panelRecordSalaryAccruals.Controls.Add(labelMonthID);
             panelRecordSalaryAccruals.Controls.Add(comboBoxMonthID);
             panelRecordSalaryAccruals.Controls.Add(labelProjectIDSalaryAccruals);
-            panelRecordSalaryAccruals.Controls.Add(textBoxProjectIDSalaryAccruals);
+            panelRecordSalaryAccruals.Controls.Add(comboBoxProjectIDSalaryAccruals);
             panelRecordSalaryAccruals.Location = new Point(177, 456);
             panelRecordSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
             panelRecordSalaryAccruals.Name = "panelRecordSalaryAccruals";
@@ -2379,7 +2303,6 @@
             comboBoxMonthID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxMonthID.Font = new Font("Segoe UI", 14.25F);
             comboBoxMonthID.FormattingEnabled = true;
-            comboBoxMonthID.Items.AddRange(new object[] { "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" });
             comboBoxMonthID.Location = new Point(152, 158);
             comboBoxMonthID.Name = "comboBoxMonthID";
             comboBoxMonthID.Size = new Size(455, 33);
@@ -2397,119 +2320,43 @@
             labelProjectIDSalaryAccruals.TabIndex = 8;
             labelProjectIDSalaryAccruals.Text = "Проект:";
             // 
-            // textBoxProjectIDSalaryAccruals
+            // comboBoxProjectIDSalaryAccruals
             // 
-            textBoxProjectIDSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectIDSalaryAccruals.Location = new Point(152, 203);
-            textBoxProjectIDSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
-            textBoxProjectIDSalaryAccruals.Name = "textBoxProjectIDSalaryAccruals";
-            textBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
-            textBoxProjectIDSalaryAccruals.TabIndex = 3;
+            comboBoxProjectIDSalaryAccruals.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxProjectIDSalaryAccruals.Font = new Font("Segoe UI", 14.25F);
+            comboBoxProjectIDSalaryAccruals.FormattingEnabled = true;
+            comboBoxProjectIDSalaryAccruals.Location = new Point(151, 203);
+            comboBoxProjectIDSalaryAccruals.Name = "comboBoxProjectIDSalaryAccruals";
+            comboBoxProjectIDSalaryAccruals.Size = new Size(455, 33);
+            comboBoxProjectIDSalaryAccruals.TabIndex = 3;
             // 
-            // buttonNewSalaryAccrual
+            // buttonRefreshSalaryAccruals
             // 
-            buttonNewSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonNewSalaryAccrual.BackgroundImage");
-            buttonNewSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonNewSalaryAccrual.ForeColor = Color.Black;
-            buttonNewSalaryAccrual.Location = new Point(22, 21);
-            buttonNewSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonNewSalaryAccrual.Name = "buttonNewSalaryAccrual";
-            buttonNewSalaryAccrual.Size = new Size(60, 60);
-            buttonNewSalaryAccrual.TabIndex = 0;
-            buttonNewSalaryAccrual.Text = " ";
-            buttonNewSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonNewSalaryAccrual.Click += ButtonNewSalaryAccrual_Click;
+            buttonRefreshSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonRefreshSalaryAccruals.BackgroundImage");
+            buttonRefreshSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshSalaryAccruals.FlatStyle = FlatStyle.Flat;
+            buttonRefreshSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshSalaryAccruals.Location = new Point(70, 116);
+            buttonRefreshSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshSalaryAccruals.Name = "buttonRefreshSalaryAccruals";
+            buttonRefreshSalaryAccruals.Size = new Size(60, 60);
+            buttonRefreshSalaryAccruals.TabIndex = 1;
+            buttonRefreshSalaryAccruals.UseVisualStyleBackColor = true;
+            buttonRefreshSalaryAccruals.Click += ButtonRefresh_Click;
             // 
-            // buttonDeleteSalaryAccrual
+            // buttonReportSalaryAccruals
             // 
-            buttonDeleteSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonDeleteSalaryAccrual.BackgroundImage");
-            buttonDeleteSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonDeleteSalaryAccrual.ForeColor = Color.Black;
-            buttonDeleteSalaryAccrual.Location = new Point(109, 21);
-            buttonDeleteSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteSalaryAccrual.Name = "buttonDeleteSalaryAccrual";
-            buttonDeleteSalaryAccrual.Size = new Size(60, 60);
-            buttonDeleteSalaryAccrual.TabIndex = 1;
-            buttonDeleteSalaryAccrual.Text = " ";
-            buttonDeleteSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonDeleteSalaryAccrual.Click += ButtonDeleteSalaryAccrual_Click;
-            // 
-            // buttonChangeSalaryAccrual
-            // 
-            buttonChangeSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonChangeSalaryAccrual.BackgroundImage");
-            buttonChangeSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonChangeSalaryAccrual.ForeColor = Color.Black;
-            buttonChangeSalaryAccrual.Location = new Point(193, 21);
-            buttonChangeSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeSalaryAccrual.Name = "buttonChangeSalaryAccrual";
-            buttonChangeSalaryAccrual.Size = new Size(60, 60);
-            buttonChangeSalaryAccrual.TabIndex = 2;
-            buttonChangeSalaryAccrual.Text = " ";
-            buttonChangeSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonChangeSalaryAccrual.Click += ButtonChangeSalaryAccrual_Click;
-            // 
-            // buttonSaveSalaryAccrual
-            // 
-            buttonSaveSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonSaveSalaryAccrual.BackgroundImage");
-            buttonSaveSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonSaveSalaryAccrual.ForeColor = Color.Black;
-            buttonSaveSalaryAccrual.Location = new Point(289, 21);
-            buttonSaveSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveSalaryAccrual.Name = "buttonSaveSalaryAccrual";
-            buttonSaveSalaryAccrual.Size = new Size(60, 60);
-            buttonSaveSalaryAccrual.TabIndex = 3;
-            buttonSaveSalaryAccrual.Text = " ";
-            buttonSaveSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonSaveSalaryAccrual.Click += ButtonSaveSalaryAccrual_Click;
-            // 
-            // buttonWordSalaryAccrual
-            // 
-            buttonWordSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonWordSalaryAccrual.BackgroundImage");
-            buttonWordSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonWordSalaryAccrual.ForeColor = Color.Black;
-            buttonWordSalaryAccrual.Location = new Point(406, 39);
-            buttonWordSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonWordSalaryAccrual.Name = "buttonWordSalaryAccrual";
-            buttonWordSalaryAccrual.Size = new Size(60, 60);
-            buttonWordSalaryAccrual.TabIndex = 4;
-            buttonWordSalaryAccrual.Text = " ";
-            buttonWordSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonWordSalaryAccrual.Click += ButtonWordSalaryAccrual_Click;
-            // 
-            // buttonExcelSalaryAccrual
-            // 
-            buttonExcelSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonExcelSalaryAccrual.BackgroundImage");
-            buttonExcelSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonExcelSalaryAccrual.ForeColor = Color.Black;
-            buttonExcelSalaryAccrual.Location = new Point(474, 39);
-            buttonExcelSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelSalaryAccrual.Name = "buttonExcelSalaryAccrual";
-            buttonExcelSalaryAccrual.Size = new Size(60, 60);
-            buttonExcelSalaryAccrual.TabIndex = 5;
-            buttonExcelSalaryAccrual.Text = " ";
-            buttonExcelSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonExcelSalaryAccrual.Click += ButtonExcelSalaryAccrual_Click;
-            // 
-            // buttonTXTSalaryAccrual
-            // 
-            buttonTXTSalaryAccrual.BackgroundImage = (Image)resources.GetObject("buttonTXTSalaryAccrual.BackgroundImage");
-            buttonTXTSalaryAccrual.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTSalaryAccrual.FlatStyle = FlatStyle.Flat;
-            buttonTXTSalaryAccrual.ForeColor = Color.Black;
-            buttonTXTSalaryAccrual.Location = new Point(542, 39);
-            buttonTXTSalaryAccrual.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTSalaryAccrual.Name = "buttonTXTSalaryAccrual";
-            buttonTXTSalaryAccrual.Size = new Size(60, 60);
-            buttonTXTSalaryAccrual.TabIndex = 6;
-            buttonTXTSalaryAccrual.Text = " ";
-            buttonTXTSalaryAccrual.UseVisualStyleBackColor = true;
-            buttonTXTSalaryAccrual.Click += ButtonTXTSalaryAccrual_Click;
+            buttonReportSalaryAccruals.BackgroundImage = (Image)resources.GetObject("buttonReportSalaryAccruals.BackgroundImage");
+            buttonReportSalaryAccruals.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonReportSalaryAccruals.FlatStyle = FlatStyle.Flat;
+            buttonReportSalaryAccruals.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonReportSalaryAccruals.Location = new Point(827, 116);
+            buttonReportSalaryAccruals.Margin = new Padding(4, 3, 4, 3);
+            buttonReportSalaryAccruals.Name = "buttonReportSalaryAccruals";
+            buttonReportSalaryAccruals.Size = new Size(60, 60);
+            buttonReportSalaryAccruals.TabIndex = 5;
+            buttonReportSalaryAccruals.UseVisualStyleBackColor = true;
+            buttonReportSalaryAccruals.Click += ButtonReportSalaryAccruals_Click;
             // 
             // tabPageEmployees
             // 
@@ -2519,7 +2366,6 @@
             tabPageEmployees.Controls.Add(dataGridViewEmployees);
             tabPageEmployees.Controls.Add(panelRecordEmployees);
             tabPageEmployees.Controls.Add(buttonRefreshEmployees);
-            tabPageEmployees.Controls.Add(buttonClearEmployees);
             tabPageEmployees.Location = new Point(4, 24);
             tabPageEmployees.Margin = new Padding(4, 3, 4, 3);
             tabPageEmployees.Name = "tabPageEmployees";
@@ -2531,7 +2377,6 @@
             // 
             // panelTitleEmployees
             // 
-            panelTitleEmployees.Controls.Add(buttonTXTEmployee);
             panelTitleEmployees.Controls.Add(buttonExcelEmployee);
             panelTitleEmployees.Controls.Add(buttonWordEmployee);
             panelTitleEmployees.Controls.Add(buttonSaveEmployee);
@@ -2550,6 +2395,96 @@
             panelTitleEmployees.Name = "panelTitleEmployees";
             panelTitleEmployees.Size = new Size(945, 110);
             panelTitleEmployees.TabIndex = 3;
+            // 
+            // buttonExcelEmployee
+            // 
+            buttonExcelEmployee.BackgroundImage = (Image)resources.GetObject("buttonExcelEmployee.BackgroundImage");
+            buttonExcelEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonExcelEmployee.FlatStyle = FlatStyle.Flat;
+            buttonExcelEmployee.ForeColor = Color.Black;
+            buttonExcelEmployee.Location = new Point(500, 29);
+            buttonExcelEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonExcelEmployee.Name = "buttonExcelEmployee";
+            buttonExcelEmployee.Size = new Size(60, 60);
+            buttonExcelEmployee.TabIndex = 5;
+            buttonExcelEmployee.Text = " ";
+            buttonExcelEmployee.UseVisualStyleBackColor = true;
+            buttonExcelEmployee.Click += ButtonExcelEmployee_Click;
+            // 
+            // buttonWordEmployee
+            // 
+            buttonWordEmployee.BackgroundImage = (Image)resources.GetObject("buttonWordEmployee.BackgroundImage");
+            buttonWordEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonWordEmployee.FlatStyle = FlatStyle.Flat;
+            buttonWordEmployee.ForeColor = Color.Black;
+            buttonWordEmployee.Location = new Point(432, 29);
+            buttonWordEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonWordEmployee.Name = "buttonWordEmployee";
+            buttonWordEmployee.Size = new Size(60, 60);
+            buttonWordEmployee.TabIndex = 4;
+            buttonWordEmployee.Text = " ";
+            buttonWordEmployee.UseVisualStyleBackColor = true;
+            buttonWordEmployee.Click += ButtonWordEmployee_Click;
+            // 
+            // buttonSaveEmployee
+            // 
+            buttonSaveEmployee.BackgroundImage = (Image)resources.GetObject("buttonSaveEmployee.BackgroundImage");
+            buttonSaveEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSaveEmployee.FlatStyle = FlatStyle.Flat;
+            buttonSaveEmployee.ForeColor = Color.Black;
+            buttonSaveEmployee.Location = new Point(289, 18);
+            buttonSaveEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonSaveEmployee.Name = "buttonSaveEmployee";
+            buttonSaveEmployee.Size = new Size(60, 60);
+            buttonSaveEmployee.TabIndex = 3;
+            buttonSaveEmployee.Text = " ";
+            buttonSaveEmployee.UseVisualStyleBackColor = true;
+            buttonSaveEmployee.Click += ButtonSaveEmployee_Click;
+            // 
+            // buttonChangeEmployee
+            // 
+            buttonChangeEmployee.BackgroundImage = (Image)resources.GetObject("buttonChangeEmployee.BackgroundImage");
+            buttonChangeEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonChangeEmployee.FlatStyle = FlatStyle.Flat;
+            buttonChangeEmployee.ForeColor = Color.Black;
+            buttonChangeEmployee.Location = new Point(198, 18);
+            buttonChangeEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonChangeEmployee.Name = "buttonChangeEmployee";
+            buttonChangeEmployee.Size = new Size(60, 60);
+            buttonChangeEmployee.TabIndex = 2;
+            buttonChangeEmployee.Text = " ";
+            buttonChangeEmployee.UseVisualStyleBackColor = true;
+            buttonChangeEmployee.Click += ButtonChangeEmployee_Click;
+            // 
+            // buttonDeleteEmployee
+            // 
+            buttonDeleteEmployee.BackgroundImage = (Image)resources.GetObject("buttonDeleteEmployee.BackgroundImage");
+            buttonDeleteEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDeleteEmployee.FlatStyle = FlatStyle.Flat;
+            buttonDeleteEmployee.ForeColor = Color.Black;
+            buttonDeleteEmployee.Location = new Point(113, 18);
+            buttonDeleteEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonDeleteEmployee.Name = "buttonDeleteEmployee";
+            buttonDeleteEmployee.Size = new Size(60, 60);
+            buttonDeleteEmployee.TabIndex = 1;
+            buttonDeleteEmployee.Text = " ";
+            buttonDeleteEmployee.UseVisualStyleBackColor = true;
+            buttonDeleteEmployee.Click += ButtonDeleteEmployee_Click;
+            // 
+            // buttonNewEmployee
+            // 
+            buttonNewEmployee.BackgroundImage = (Image)resources.GetObject("buttonNewEmployee.BackgroundImage");
+            buttonNewEmployee.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonNewEmployee.FlatStyle = FlatStyle.Flat;
+            buttonNewEmployee.ForeColor = Color.Black;
+            buttonNewEmployee.Location = new Point(24, 18);
+            buttonNewEmployee.Margin = new Padding(4, 3, 4, 3);
+            buttonNewEmployee.Name = "buttonNewEmployee";
+            buttonNewEmployee.Size = new Size(60, 60);
+            buttonNewEmployee.TabIndex = 0;
+            buttonNewEmployee.Text = " ";
+            buttonNewEmployee.UseVisualStyleBackColor = true;
+            buttonNewEmployee.Click += ButtonNewEmployee_Click;
             // 
             // label6
             // 
@@ -2609,34 +2544,6 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(33, 33);
             panel2.TabIndex = 12;
-            // 
-            // buttonClearEmployees
-            // 
-            buttonClearEmployees.BackgroundImage = (Image)resources.GetObject("buttonClearEmployees.BackgroundImage");
-            buttonClearEmployees.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearEmployees.FlatStyle = FlatStyle.Flat;
-            buttonClearEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearEmployees.Location = new Point(827, 116);
-            buttonClearEmployees.Margin = new Padding(4, 3, 4, 3);
-            buttonClearEmployees.Name = "buttonClearEmployees";
-            buttonClearEmployees.Size = new Size(60, 60);
-            buttonClearEmployees.TabIndex = 0;
-            buttonClearEmployees.UseVisualStyleBackColor = true;
-            buttonClearEmployees.Click += ButtonClear_Click;
-            // 
-            // buttonRefreshEmployees
-            // 
-            buttonRefreshEmployees.BackgroundImage = (Image)resources.GetObject("buttonRefreshEmployees.BackgroundImage");
-            buttonRefreshEmployees.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonRefreshEmployees.FlatStyle = FlatStyle.Flat;
-            buttonRefreshEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonRefreshEmployees.Location = new Point(70, 116);
-            buttonRefreshEmployees.Margin = new Padding(4, 3, 4, 3);
-            buttonRefreshEmployees.Name = "buttonRefreshEmployees";
-            buttonRefreshEmployees.Size = new Size(60, 60);
-            buttonRefreshEmployees.TabIndex = 1;
-            buttonRefreshEmployees.UseVisualStyleBackColor = true;
-            buttonRefreshEmployees.Click += ButtonRefresh_Click;
             // 
             // textBoxSearchEmployees
             // 
@@ -2920,7 +2827,6 @@
             comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
             comboBoxPostID.FormattingEnabled = true;
-            comboBoxPostID.Items.AddRange(new object[] { "Менеджер", "Инженер", "Оператор", "Бухгалтер", "Директор" });
             comboBoxPostID.Location = new Point(152, 393);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
@@ -2943,123 +2849,30 @@
             comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
             comboBoxGenderID.FormattingEnabled = true;
-            comboBoxGenderID.Items.AddRange(new object[] { "Мужской", "Женский" });
             comboBoxGenderID.Location = new Point(152, 432);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);
             comboBoxGenderID.TabIndex = 11;
             // 
-            // buttonNewEmployee
+            // buttonRefreshEmployees
             // 
-            buttonNewEmployee.BackgroundImage = (Image)resources.GetObject("buttonNewEmployee.BackgroundImage");
-            buttonNewEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonNewEmployee.FlatStyle = FlatStyle.Flat;
-            buttonNewEmployee.ForeColor = Color.Black;
-            buttonNewEmployee.Location = new Point(24, 18);
-            buttonNewEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonNewEmployee.Name = "buttonNewEmployee";
-            buttonNewEmployee.Size = new Size(60, 60);
-            buttonNewEmployee.TabIndex = 0;
-            buttonNewEmployee.Text = " ";
-            buttonNewEmployee.UseVisualStyleBackColor = true;
-            buttonNewEmployee.Click += ButtonNewEmployee_Click;
-            // 
-            // buttonDeleteEmployee
-            // 
-            buttonDeleteEmployee.BackgroundImage = (Image)resources.GetObject("buttonDeleteEmployee.BackgroundImage");
-            buttonDeleteEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDeleteEmployee.FlatStyle = FlatStyle.Flat;
-            buttonDeleteEmployee.ForeColor = Color.Black;
-            buttonDeleteEmployee.Location = new Point(113, 18);
-            buttonDeleteEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonDeleteEmployee.Name = "buttonDeleteEmployee";
-            buttonDeleteEmployee.Size = new Size(60, 60);
-            buttonDeleteEmployee.TabIndex = 1;
-            buttonDeleteEmployee.Text = " ";
-            buttonDeleteEmployee.UseVisualStyleBackColor = true;
-            buttonDeleteEmployee.Click += ButtonDeleteEmployee_Click;
-            // 
-            // buttonChangeEmployee
-            // 
-            buttonChangeEmployee.BackgroundImage = (Image)resources.GetObject("buttonChangeEmployee.BackgroundImage");
-            buttonChangeEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonChangeEmployee.FlatStyle = FlatStyle.Flat;
-            buttonChangeEmployee.ForeColor = Color.Black;
-            buttonChangeEmployee.Location = new Point(198, 18);
-            buttonChangeEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonChangeEmployee.Name = "buttonChangeEmployee";
-            buttonChangeEmployee.Size = new Size(60, 60);
-            buttonChangeEmployee.TabIndex = 2;
-            buttonChangeEmployee.Text = " ";
-            buttonChangeEmployee.UseVisualStyleBackColor = true;
-            buttonChangeEmployee.Click += ButtonChangeEmployee_Click;
-            // 
-            // buttonSaveEmployee
-            // 
-            buttonSaveEmployee.BackgroundImage = (Image)resources.GetObject("buttonSaveEmployee.BackgroundImage");
-            buttonSaveEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonSaveEmployee.FlatStyle = FlatStyle.Flat;
-            buttonSaveEmployee.ForeColor = Color.Black;
-            buttonSaveEmployee.Location = new Point(289, 18);
-            buttonSaveEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonSaveEmployee.Name = "buttonSaveEmployee";
-            buttonSaveEmployee.Size = new Size(60, 60);
-            buttonSaveEmployee.TabIndex = 3;
-            buttonSaveEmployee.Text = " ";
-            buttonSaveEmployee.UseVisualStyleBackColor = true;
-            buttonSaveEmployee.Click += ButtonSaveEmployee_Click;
-            // 
-            // buttonWordEmployee
-            // 
-            buttonWordEmployee.BackgroundImage = (Image)resources.GetObject("buttonWordEmployee.BackgroundImage");
-            buttonWordEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonWordEmployee.FlatStyle = FlatStyle.Flat;
-            buttonWordEmployee.ForeColor = Color.Black;
-            buttonWordEmployee.Location = new Point(406, 36);
-            buttonWordEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonWordEmployee.Name = "buttonWordEmployee";
-            buttonWordEmployee.Size = new Size(60, 60);
-            buttonWordEmployee.TabIndex = 4;
-            buttonWordEmployee.Text = " ";
-            buttonWordEmployee.UseVisualStyleBackColor = true;
-            buttonWordEmployee.Click += ButtonWordEmployee_Click;
-            // 
-            // buttonExcelEmployee
-            // 
-            buttonExcelEmployee.BackgroundImage = (Image)resources.GetObject("buttonExcelEmployee.BackgroundImage");
-            buttonExcelEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonExcelEmployee.FlatStyle = FlatStyle.Flat;
-            buttonExcelEmployee.ForeColor = Color.Black;
-            buttonExcelEmployee.Location = new Point(474, 36);
-            buttonExcelEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonExcelEmployee.Name = "buttonExcelEmployee";
-            buttonExcelEmployee.Size = new Size(60, 60);
-            buttonExcelEmployee.TabIndex = 5;
-            buttonExcelEmployee.Text = " ";
-            buttonExcelEmployee.UseVisualStyleBackColor = true;
-            buttonExcelEmployee.Click += ButtonExcelEmployee_Click;
-            // 
-            // buttonTXTEmployee
-            // 
-            buttonTXTEmployee.BackgroundImage = (Image)resources.GetObject("buttonTXTEmployee.BackgroundImage");
-            buttonTXTEmployee.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTEmployee.FlatStyle = FlatStyle.Flat;
-            buttonTXTEmployee.ForeColor = Color.Black;
-            buttonTXTEmployee.Location = new Point(542, 36);
-            buttonTXTEmployee.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTEmployee.Name = "buttonTXTEmployee";
-            buttonTXTEmployee.Size = new Size(60, 60);
-            buttonTXTEmployee.TabIndex = 6;
-            buttonTXTEmployee.Text = " ";
-            buttonTXTEmployee.UseVisualStyleBackColor = true;
-            buttonTXTEmployee.Click += ButtonTXTEmployee_Click;
+            buttonRefreshEmployees.BackgroundImage = (Image)resources.GetObject("buttonRefreshEmployees.BackgroundImage");
+            buttonRefreshEmployees.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonRefreshEmployees.FlatStyle = FlatStyle.Flat;
+            buttonRefreshEmployees.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            buttonRefreshEmployees.Location = new Point(70, 116);
+            buttonRefreshEmployees.Margin = new Padding(4, 3, 4, 3);
+            buttonRefreshEmployees.Name = "buttonRefreshEmployees";
+            buttonRefreshEmployees.Size = new Size(60, 60);
+            buttonRefreshEmployees.TabIndex = 1;
+            buttonRefreshEmployees.UseVisualStyleBackColor = true;
+            buttonRefreshEmployees.Click += ButtonRefresh_Click;
             // 
             // tabPageProjects
             // 
             tabPageProjects.BackgroundImage = (Image)resources.GetObject("tabPageProjects.BackgroundImage");
             tabPageProjects.BackgroundImageLayout = ImageLayout.Stretch;
             tabPageProjects.Controls.Add(buttonRefreshProjects);
-            tabPageProjects.Controls.Add(buttonClearProjects);
             tabPageProjects.Controls.Add(panelRecordProjects);
             tabPageProjects.Controls.Add(dataGridViewProjects);
             tabPageProjects.Controls.Add(panelTitleProjects);
@@ -3085,20 +2898,6 @@
             buttonRefreshProjects.TabIndex = 1;
             buttonRefreshProjects.UseVisualStyleBackColor = true;
             buttonRefreshProjects.Click += ButtonRefresh_Click;
-            // 
-            // buttonClearProjects
-            // 
-            buttonClearProjects.BackgroundImage = (Image)resources.GetObject("buttonClearProjects.BackgroundImage");
-            buttonClearProjects.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonClearProjects.FlatStyle = FlatStyle.Flat;
-            buttonClearProjects.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonClearProjects.Location = new Point(827, 116);
-            buttonClearProjects.Margin = new Padding(4, 3, 4, 3);
-            buttonClearProjects.Name = "buttonClearProjects";
-            buttonClearProjects.Size = new Size(60, 60);
-            buttonClearProjects.TabIndex = 0;
-            buttonClearProjects.UseVisualStyleBackColor = true;
-            buttonClearProjects.Click += ButtonClear_Click;
             // 
             // panelRecordProjects
             // 
@@ -3232,7 +3031,6 @@
             // 
             panelTitleProjects.Controls.Add(panel1);
             panelTitleProjects.Controls.Add(label5);
-            panelTitleProjects.Controls.Add(buttonTXTProject);
             panelTitleProjects.Controls.Add(label4);
             panelTitleProjects.Controls.Add(label3);
             panelTitleProjects.Controls.Add(label2);
@@ -3269,20 +3067,6 @@
             label5.TabIndex = 10;
             label5.Text = "Экспорт";
             // 
-            // buttonTXTProject
-            // 
-            buttonTXTProject.BackgroundImage = (Image)resources.GetObject("buttonTXTProject.BackgroundImage");
-            buttonTXTProject.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonTXTProject.FlatStyle = FlatStyle.Flat;
-            buttonTXTProject.ForeColor = Color.Black;
-            buttonTXTProject.Location = new Point(541, 34);
-            buttonTXTProject.Margin = new Padding(4, 3, 4, 3);
-            buttonTXTProject.Name = "buttonTXTProject";
-            buttonTXTProject.Size = new Size(60, 60);
-            buttonTXTProject.TabIndex = 6;
-            buttonTXTProject.UseVisualStyleBackColor = true;
-            buttonTXTProject.Click += ButtonTXTProject_Click;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -3302,7 +3086,6 @@
             label3.Size = new Size(65, 15);
             label3.TabIndex = 8;
             label3.Text = "Изменить";
-            label3.Click += label3_Click;
             // 
             // label2
             // 
@@ -3330,7 +3113,7 @@
             buttonExcelProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonExcelProject.FlatStyle = FlatStyle.Flat;
             buttonExcelProject.ForeColor = Color.Black;
-            buttonExcelProject.Location = new Point(473, 34);
+            buttonExcelProject.Location = new Point(494, 31);
             buttonExcelProject.Margin = new Padding(4, 3, 4, 3);
             buttonExcelProject.Name = "buttonExcelProject";
             buttonExcelProject.Size = new Size(60, 60);
@@ -3344,7 +3127,7 @@
             buttonWordProject.BackgroundImageLayout = ImageLayout.Stretch;
             buttonWordProject.FlatStyle = FlatStyle.Flat;
             buttonWordProject.ForeColor = Color.Black;
-            buttonWordProject.Location = new Point(405, 34);
+            buttonWordProject.Location = new Point(426, 31);
             buttonWordProject.Margin = new Padding(4, 3, 4, 3);
             buttonWordProject.Name = "buttonWordProject";
             buttonWordProject.Size = new Size(60, 60);
@@ -3433,18 +3216,6 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(953, 1038);
             tabControl1.TabIndex = 0;
-            // 
-            // labelSickEndDate
-            // 
-            labelSickEndDate.AutoSize = true;
-            labelSickEndDate.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            labelSickEndDate.ForeColor = Color.Black;
-            labelSickEndDate.Location = new Point(14, 216);
-            labelSickEndDate.Margin = new Padding(4, 0, 4, 0);
-            labelSickEndDate.Name = "labelSickEndDate";
-            labelSickEndDate.Size = new Size(213, 21);
-            labelSickEndDate.TabIndex = 11;
-            labelSickEndDate.Text = "Дата конца больничного:";
             // 
             // Form1
             // 
@@ -3545,7 +3316,6 @@
         private Button button26;
         private TabPage tabPageSickPay;
         private Panel panelTitleSickPay;
-        private Button buttonClearSickPay;
         private Button buttonRefreshSickPay;
         private TextBox textBoxSearchSickPay;
         private DataGridView dataGridViewSickPay;
@@ -3554,7 +3324,6 @@
         private Label labelSickPayID;
         private TextBox textBoxSickPayID;
         private Label labelEmployeeIDSickPay;
-        private TextBox textBoxEmployeeIDSickPay;
         private Label labelSickStartDate;
         private DateTimePicker dateTimePickerSickStartDate;
         private DateTimePicker dateTimePickerSickEndDate;
@@ -3570,11 +3339,9 @@
         private Button buttonSaveSickPay;
         private Button buttonWordSickPay;
         private Button buttonExcelSickPay;
-        private Button buttonTXTSickPay;
         private TabPage tabPageVacationPay;
         private Panel panelTitleVacationPay;
         private Button buttonReportVacationPay;
-        private Button buttonClearVacationPay;
         private Button buttonRefreshVacationPay;
         private TextBox textBoxSearchVacationPay;
         private DataGridView dataGridViewVacationPay;
@@ -3583,7 +3350,6 @@
         private Label labelVacationPayID;
         private TextBox textBoxVacationPayID;
         private Label labelEmployeeIDVacationPay;
-        private TextBox textBoxEmployeeIDVacationPay;
         private Label labelVacationStartDate;
         private DateTimePicker dateTimePickerVacationStartDate;
         private Label labelVacationEndDate;
@@ -3598,11 +3364,9 @@
         private Button buttonSaveVacationPay;
         private Button buttonWordVacationPay;
         private Button buttonExcelVacationPay;
-        private Button buttonTXTVacationPay;
         private TabPage tabPageAccountingsOfWorkingHours;
         private Panel panelTitleAccountingsOfWorkingHours;
         private Button buttonReportAccountingsOfWorkingHours;
-        private Button buttonClearAccountingsOfWorkingHours;
         private Button buttonRefreshAccountingsOfWorkingHours;
         private TextBox textBoxSearchAccountingsOfWorkingHours;
         private DataGridView dataGridViewAccountingsOfWorkingHours;
@@ -3611,9 +3375,7 @@
         private Label labelAccountingsOfWorkingHoursID;
         private TextBox textBoxAccountingsOfWorkingHoursID;
         private Label labelEmployeeIDAccountingsOfWorkingHours;
-        private TextBox textBoxEmployeeIDAccountingsOfWorkingHours;
         private Label labelProjectIDAccountingsOfWorkingHours;
-        private TextBox textBoxProjectIDAccountingsOfWorkingHours;
         private Label labelTypeOfRemunerationID;
         private ComboBox comboBoxTypeOfRemunerationID;
         private Label labelHoursOfWork;
@@ -3624,10 +3386,8 @@
         private Button buttonSaveAccountingOfWorkingHours;
         private Button buttonWordAccountingOfWorkingHours;
         private Button buttonExcelAccountingOfWorkingHours;
-        private Button buttonTXTAccountingOfWorkingHours;
         private TabPage tabPageSalary;
         private Panel panelTitleSalary;
-        private Button buttonClearSalary;
         private Button buttonRefreshSalary;
         private TextBox textBoxSearchSalary;
         private DataGridView dataGridViewSalary;
@@ -3635,9 +3395,7 @@
         private Label labelSalaryID;
         private TextBox textBoxSalaryID;
         private Label labelSalaryAccrualIDSalary;
-        private TextBox textBoxSalaryAccrualIDSalary;
         private Label labelEmployeeIDSalary;
-        private TextBox textBoxEmployeeIDSalary;
         private Label labelAllDays;
         private TextBox textBoxAllDays;
         private Label labelAllHours;
@@ -3662,11 +3420,9 @@
         private Button buttonSaveSalary;
         private Button buttonWordSalary;
         private Button buttonExcelSalary;
-        private Button buttonTXTSalary;
         private TabPage tabPageSalaryAccruals;
         private Panel panelTitleSalaryAccruals;
         private Button buttonReportSalaryAccruals;
-        private Button buttonClearSalaryAccruals;
         private Button buttonRefreshSalaryAccruals;
         private TextBox textBoxSearchSalaryAccruals;
         private DataGridView dataGridViewSalaryAccruals;
@@ -3679,17 +3435,14 @@
         private Label labelMonthID;
         private ComboBox comboBoxMonthID;
         private Label labelProjectIDSalaryAccruals;
-        private TextBox textBoxProjectIDSalaryAccruals;
         private Button buttonNewSalaryAccrual;
         private Button buttonDeleteSalaryAccrual;
         private Button buttonChangeSalaryAccrual;
         private Button buttonSaveSalaryAccrual;
         private Button buttonWordSalaryAccrual;
         private Button buttonExcelSalaryAccrual;
-        private Button buttonTXTSalaryAccrual;
         private TabPage tabPageEmployees;
         private Panel panelTitleEmployees;
-        private Button buttonClearEmployees;
         private Button buttonRefreshEmployees;
         private TextBox textBoxSearchEmployees;
         private DataGridView dataGridViewEmployees;
@@ -3724,10 +3477,8 @@
         private Button buttonSaveEmployee;
         private Button buttonWordEmployee;
         private Button buttonExcelEmployee;
-        private Button buttonTXTEmployee;
         private TabPage tabPageProjects;
         private Button buttonRefreshProjects;
-        private Button buttonClearProjects;
         private Panel panelRecordProjects;
         private Label labelRecordProjects;
         private Label labelProjectID;
@@ -3742,7 +3493,6 @@
         private Panel panelTitleProjects;
         private Panel panel1;
         private Label label5;
-        private Button buttonTXTProject;
         private Label label4;
         private Label label3;
         private Label label2;
@@ -3792,5 +3542,12 @@
         private Label label19;
         private Label label20;
         private Label labelSickEndDate;
+        private ComboBox comboBoxEmployeeIDVacationPay;
+        private ComboBox comboBoxEmployeeIDAccountingsOfWorkingHours;
+        private ComboBox comboBoxProjectIDAccountingsOfWorkingHours;
+        private ComboBox comboBoxSalaryAccrualIDSalary;
+        private ComboBox comboBoxEmployeeIDSalary;
+        private ComboBox comboBoxProjectIDSalaryAccruals;
+        private ComboBox comboBoxEmployeeIDSickPay;
     }
 }

@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormProjects));
             buttonSave = new Button();
             label1 = new Label();
-            textBoxProjectName = new TextBox();
             textBoxHourly = new TextBox();
             textBoxPieceWork = new TextBox();
             panel1 = new Panel();
+            textBoxProjectName = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,16 +65,6 @@
             label1.Size = new Size(140, 46);
             label1.TabIndex = 5;
             label1.Text = "Проект";
-            // 
-            // textBoxProjectName
-            // 
-            textBoxProjectName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxProjectName.Location = new Point(42, 27);
-            textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
-            textBoxProjectName.Name = "textBoxProjectName";
-            textBoxProjectName.PlaceholderText = "Название проекта";
-            textBoxProjectName.Size = new Size(455, 33);
-            textBoxProjectName.TabIndex = 0;
             // 
             // textBoxHourly
             // 
@@ -108,6 +98,16 @@
             panel1.Size = new Size(541, 297);
             panel1.TabIndex = 9;
             // 
+            // textBoxProjectName
+            // 
+            textBoxProjectName.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxProjectName.Location = new Point(42, 27);
+            textBoxProjectName.Margin = new Padding(4, 3, 4, 3);
+            textBoxProjectName.Name = "textBoxProjectName";
+            textBoxProjectName.PlaceholderText = "Название проекта";
+            textBoxProjectName.Size = new Size(455, 33);
+            textBoxProjectName.TabIndex = 0;
+            // 
             // AddFormProjects
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -134,9 +134,9 @@
         #endregion
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label label1;
-        private TextBox textBoxProjectName;
         private TextBox textBoxHourly;
         private TextBox textBoxPieceWork;
         private Panel panel1;
+        private TextBox textBoxProjectName;
     }
 }

@@ -10,6 +10,26 @@ namespace WorkTrack
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxSalaryAccrualIDSalary.Items.Clear();
+            var salaryAccrualsQuery = "SELECT SalaryAccrualID FROM SalaryAccruals ORDER BY SalaryAccrualID";
+            var salaryAccrualsCommand = new SqlCommand(salaryAccrualsQuery, dataBase.GetConnection());
+            var salaryAccrualsReader = salaryAccrualsCommand.ExecuteReader();
+            while (salaryAccrualsReader.Read())
+            {
+                comboBoxSalaryAccrualIDSalary.Items.Add(salaryAccrualsReader.GetInt32(0));
+            }
+            salaryAccrualsReader.Close();
+            comboBoxEmployeeIDSalary.Items.Clear();
+            var employeesQuery = "SELECT FullName FROM Employees ORDER BY FullName";
+            var employeesCommand = new SqlCommand(employeesQuery, dataBase.GetConnection());
+            var employeesReader = employeesCommand.ExecuteReader();
+            while (employeesReader.Read())
+            {
+                string employeeName = employeesReader.GetString(0);
+                comboBoxEmployeeIDSalary.Items.Add(employeeName);
+            }
+            employeesReader.Close();
         }
 
         /// <summary>
@@ -22,8 +42,8 @@ namespace WorkTrack
             try
             {
                 dataBase.OpenConnection();
-                var salaryAccrualID = textBoxSalaryAccrualIDSalary.Text;
-                var fullNameSalary = textBoxEmployeeIDSalary.Text;
+                var salaryAccrualID = comboBoxSalaryAccrualIDSalary.Text;
+                var fullNameSalary = comboBoxEmployeeIDSalary.Text;
                 string queryEmployee = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameSalary}'";
                 SqlCommand commandEmployee = new(queryEmployee, dataBase.GetConnection());
                 dataBase.OpenConnection();

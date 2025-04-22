@@ -1132,9 +1132,10 @@ namespace WorkTrack
                         var phone = maskedTextBoxPhone.Text;
                         var email = textBoxEmail.Text;
                         var iNN = textBoxINN.Text;
+                        var dateOfEmployment = dateTimePickerDateOfEmployment.Value;
                         var postID = comboBoxPostID.Text;
                         var genderID = comboBoxGenderID.Text;
-                        dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, postID, genderID);
+                        dataGridView.Rows[selectedRowIndex].SetValues(employeeID, fullName, birthDate, birthPlace, passportSeries, passportNumber, phone, email, iNN, dateOfEmployment, postID, genderID);
                         dataGridView.Rows[selectedRowIndex].Cells[12].Value = RowState.Modified;
                         break;
 
@@ -1516,10 +1517,6 @@ namespace WorkTrack
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка при загрузке данных в комбобоксы: {ex.Message}");
-            }
-            finally
-            {
-                dataBase.CloseConnection();
             }
         }
 

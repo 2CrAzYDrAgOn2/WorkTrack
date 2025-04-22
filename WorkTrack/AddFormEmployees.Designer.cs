@@ -213,7 +213,6 @@
             comboBoxPostID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxPostID.Font = new Font("Segoe UI", 14.25F);
             comboBoxPostID.FormattingEnabled = true;
-            comboBoxPostID.Items.AddRange(new object[] { "Менеджер", "Инженер", "Оператор", "Бухгалтер", "Директор" });
             comboBoxPostID.Location = new Point(111, 520);
             comboBoxPostID.Name = "comboBoxPostID";
             comboBoxPostID.Size = new Size(455, 33);
@@ -224,7 +223,6 @@
             comboBoxGenderID.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxGenderID.Font = new Font("Segoe UI", 14.25F);
             comboBoxGenderID.FormattingEnabled = true;
-            comboBoxGenderID.Items.AddRange(new object[] { "Мужской", "Женский" });
             comboBoxGenderID.Location = new Point(111, 592);
             comboBoxGenderID.Name = "comboBoxGenderID";
             comboBoxGenderID.Size = new Size(455, 33);

@@ -10,6 +10,16 @@ namespace WorkTrack
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxEmployeeIDVacationPay.Items.Clear();
+            var employeesQuery = "SELECT FullName FROM Employees ORDER BY FullName";
+            var employeesCommand = new SqlCommand(employeesQuery, dataBase.GetConnection());
+            var employeesReader = employeesCommand.ExecuteReader();
+            while (employeesReader.Read())
+            {
+                string employeeName = employeesReader.GetString(0);
+                comboBoxEmployeeIDVacationPay.Items.Add(employeeName);
+            }
         }
 
         /// <summary>
@@ -22,7 +32,7 @@ namespace WorkTrack
             try
             {
                 dataBase.OpenConnection();
-                var fullNameVacationPay = textBoxEmployeeIDVacationPay.Text;
+                var fullNameVacationPay = comboBoxEmployeeIDVacationPay.Text;
                 string queryEmployeeVacationPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameVacationPay}'";
                 SqlCommand commandEmployeeVacationPay = new(queryEmployeeVacationPay, dataBase.GetConnection());
                 dataBase.OpenConnection();

@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormSickPay));
             label1 = new Label();
             buttonSave = new Button();
-            textBoxEmployeeIDSickPay = new TextBox();
             labelSickStartDate = new Label();
             dateTimePickerSickStartDate = new DateTimePicker();
             labelSickEndDate = new Label();
             dateTimePickerSickEndDate = new DateTimePicker();
             panel1 = new Panel();
+            labelMonthID = new Label();
+            comboBoxEmployeeIDSickPay = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,16 +69,6 @@
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
-            // 
-            // textBoxEmployeeIDSickPay
-            // 
-            textBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDSickPay.Location = new Point(42, 21);
-            textBoxEmployeeIDSickPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDSickPay.Name = "textBoxEmployeeIDSickPay";
-            textBoxEmployeeIDSickPay.PlaceholderText = "Номер сотрудника";
-            textBoxEmployeeIDSickPay.Size = new Size(170, 33);
-            textBoxEmployeeIDSickPay.TabIndex = 0;
             // 
             // labelSickStartDate
             // 
@@ -126,8 +117,9 @@
             // 
             panel1.BackColor = Color.FromArgb(81, 95, 106);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(labelMonthID);
+            panel1.Controls.Add(comboBoxEmployeeIDSickPay);
             panel1.Controls.Add(dateTimePickerSickStartDate);
-            panel1.Controls.Add(textBoxEmployeeIDSickPay);
             panel1.Controls.Add(labelSickStartDate);
             panel1.Controls.Add(buttonSave);
             panel1.Controls.Add(labelSickEndDate);
@@ -136,6 +128,29 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(541, 298);
             panel1.TabIndex = 12;
+            // 
+            // labelMonthID
+            // 
+            labelMonthID.AutoSize = true;
+            labelMonthID.BackColor = Color.Transparent;
+            labelMonthID.Font = new Font("Segoe UI", 15F);
+            labelMonthID.ForeColor = Color.White;
+            labelMonthID.Location = new Point(197, 0);
+            labelMonthID.Margin = new Padding(4, 0, 4, 0);
+            labelMonthID.Name = "labelMonthID";
+            labelMonthID.Size = new Size(172, 28);
+            labelMonthID.TabIndex = 13;
+            labelMonthID.Text = "ФИО сотрудника:";
+            // 
+            // comboBoxEmployeeIDSickPay
+            // 
+            comboBoxEmployeeIDSickPay.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDSickPay.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDSickPay.FormattingEnabled = true;
+            comboBoxEmployeeIDSickPay.Location = new Point(42, 30);
+            comboBoxEmployeeIDSickPay.Name = "comboBoxEmployeeIDSickPay";
+            comboBoxEmployeeIDSickPay.Size = new Size(455, 33);
+            comboBoxEmployeeIDSickPay.TabIndex = 0;
             // 
             // AddFormSickPay
             // 
@@ -162,11 +177,12 @@
         #endregion
         private Label label1;
         private Button buttonSave;
-        private TextBox textBoxEmployeeIDSickPay;
         private Label labelSickStartDate;
         private DateTimePicker dateTimePickerSickStartDate;
         private Label labelSickEndDate;
         private DateTimePicker dateTimePickerSickEndDate;
         private Panel panel1;
+        private Label labelMonthID;
+        private ComboBox comboBoxEmployeeIDSickPay;
     }
 }

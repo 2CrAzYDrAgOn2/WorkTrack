@@ -10,6 +10,16 @@ namespace WorkTrack
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxEmployeeIDSickPay.Items.Clear();
+            var employeesQuery = "SELECT FullName FROM Employees ORDER BY FullName";
+            var employeesCommand = new SqlCommand(employeesQuery, dataBase.GetConnection());
+            var employeesReader = employeesCommand.ExecuteReader();
+            while (employeesReader.Read())
+            {
+                string employeeName = employeesReader.GetString(0);
+                comboBoxEmployeeIDSickPay.Items.Add(employeeName);
+            }
         }
 
         /// <summary>
@@ -22,7 +32,7 @@ namespace WorkTrack
             try
             {
                 dataBase.OpenConnection();
-                var FullNameSickPay = textBoxEmployeeIDSickPay.Text;
+                var FullNameSickPay = comboBoxEmployeeIDSickPay.Text;
                 string queryEmployeeSickPay = $"SELECT EmployeeID FROM Employees WHERE FullName = '{FullNameSickPay}'";
                 SqlCommand commandEmployeeSickPay = new(queryEmployeeSickPay, dataBase.GetConnection());
                 dataBase.OpenConnection();
@@ -47,7 +57,6 @@ namespace WorkTrack
 
         private void dateTimePickerSickEndDate_ValueChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

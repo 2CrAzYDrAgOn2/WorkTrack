@@ -31,9 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormSalary));
             label1 = new Label();
             buttonSave = new Button();
-            textBoxSalaryAccrualIDSalary = new TextBox();
-            textBoxEmployeeIDSalary = new TextBox();
             panel1 = new Panel();
+            label2 = new Label();
+            comboBoxEmployeeIDSalary = new ComboBox();
+            labelMonthID = new Label();
+            comboBoxSalaryAccrualIDSalary = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,36 +67,64 @@
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
             // 
-            // textBoxSalaryAccrualIDSalary
-            // 
-            textBoxSalaryAccrualIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxSalaryAccrualIDSalary.Location = new Point(44, 26);
-            textBoxSalaryAccrualIDSalary.Margin = new Padding(4, 3, 4, 3);
-            textBoxSalaryAccrualIDSalary.Name = "textBoxSalaryAccrualIDSalary";
-            textBoxSalaryAccrualIDSalary.PlaceholderText = "Номер зарплаты";
-            textBoxSalaryAccrualIDSalary.Size = new Size(455, 33);
-            textBoxSalaryAccrualIDSalary.TabIndex = 0;
-            // 
-            // textBoxEmployeeIDSalary
-            // 
-            textBoxEmployeeIDSalary.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDSalary.Location = new Point(44, 86);
-            textBoxEmployeeIDSalary.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDSalary.Name = "textBoxEmployeeIDSalary";
-            textBoxEmployeeIDSalary.PlaceholderText = "Номер сотрудника";
-            textBoxEmployeeIDSalary.Size = new Size(455, 33);
-            textBoxEmployeeIDSalary.TabIndex = 1;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(81, 95, 106);
-            panel1.Controls.Add(textBoxSalaryAccrualIDSalary);
-            panel1.Controls.Add(textBoxEmployeeIDSalary);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(buttonSave);
+            panel1.Controls.Add(comboBoxEmployeeIDSalary);
+            panel1.Controls.Add(labelMonthID);
+            panel1.Controls.Add(comboBoxSalaryAccrualIDSalary);
             panel1.Location = new Point(123, 94);
             panel1.Name = "panel1";
             panel1.Size = new Size(541, 217);
             panel1.TabIndex = 14;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 15F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(177, 67);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(172, 28);
+            label2.TabIndex = 18;
+            label2.Text = "ФИО сотрудника:";
+            // 
+            // comboBoxEmployeeIDSalary
+            // 
+            comboBoxEmployeeIDSalary.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDSalary.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDSalary.FormattingEnabled = true;
+            comboBoxEmployeeIDSalary.Location = new Point(44, 98);
+            comboBoxEmployeeIDSalary.Name = "comboBoxEmployeeIDSalary";
+            comboBoxEmployeeIDSalary.Size = new Size(455, 33);
+            comboBoxEmployeeIDSalary.TabIndex = 1;
+            // 
+            // labelMonthID
+            // 
+            labelMonthID.AutoSize = true;
+            labelMonthID.BackColor = Color.Transparent;
+            labelMonthID.Font = new Font("Segoe UI", 15F);
+            labelMonthID.ForeColor = Color.White;
+            labelMonthID.Location = new Point(178, 0);
+            labelMonthID.Margin = new Padding(4, 0, 4, 0);
+            labelMonthID.Name = "labelMonthID";
+            labelMonthID.Size = new Size(169, 28);
+            labelMonthID.TabIndex = 16;
+            labelMonthID.Text = "Номер зарплаты:";
+            // 
+            // comboBoxSalaryAccrualIDSalary
+            // 
+            comboBoxSalaryAccrualIDSalary.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSalaryAccrualIDSalary.Font = new Font("Segoe UI", 14.25F);
+            comboBoxSalaryAccrualIDSalary.FormattingEnabled = true;
+            comboBoxSalaryAccrualIDSalary.Location = new Point(44, 31);
+            comboBoxSalaryAccrualIDSalary.Name = "comboBoxSalaryAccrualIDSalary";
+            comboBoxSalaryAccrualIDSalary.Size = new Size(455, 33);
+            comboBoxSalaryAccrualIDSalary.TabIndex = 0;
             // 
             // AddFormSalary
             // 
@@ -121,8 +151,10 @@
         #endregion
         private Label label1;
         private Button buttonSave;
-        private TextBox textBoxSalaryAccrualIDSalary;
-        private TextBox textBoxEmployeeIDSalary;
         private Panel panel1;
+        private Label label2;
+        private ComboBox comboBoxEmployeeIDSalary;
+        private Label labelMonthID;
+        private ComboBox comboBoxSalaryAccrualIDSalary;
     }
 }

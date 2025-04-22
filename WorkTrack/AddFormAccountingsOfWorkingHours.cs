@@ -10,6 +10,35 @@ namespace WorkTrack
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxEmployeeIDAccountingsOfWorkingHours.Items.Clear();
+            var employeesQuery = "SELECT FullName FROM Employees ORDER BY FullName";
+            var employeesCommand = new SqlCommand(employeesQuery, dataBase.GetConnection());
+            var employeesReader = employeesCommand.ExecuteReader();
+            while (employeesReader.Read())
+            {
+                string employeeName = employeesReader.GetString(0);
+                comboBoxEmployeeIDAccountingsOfWorkingHours.Items.Add(employeeName);
+            }
+            employeesReader.Close();
+            comboBoxProjectIDAccountingsOfWorkingHours.Items.Clear();
+            var projectsQuery2 = "SELECT ProjectName FROM Projects ORDER BY ProjectName";
+            var projectsCommand2 = new SqlCommand(projectsQuery2, dataBase.GetConnection());
+            var projectsReader2 = projectsCommand2.ExecuteReader();
+            while (projectsReader2.Read())
+            {
+                comboBoxProjectIDAccountingsOfWorkingHours.Items.Add(projectsReader2.GetString(0));
+            }
+            projectsReader2.Close();
+            comboBoxTypeOfRemunerationID.Items.Clear();
+            var typesQuery = "SELECT TypeOfRemuneration FROM TypesOfRemuneration ORDER BY TypeOfRemuneration";
+            var typesCommand = new SqlCommand(typesQuery, dataBase.GetConnection());
+            var typesReader = typesCommand.ExecuteReader();
+            while (typesReader.Read())
+            {
+                comboBoxTypeOfRemunerationID.Items.Add(typesReader.GetString(0));
+            }
+            typesReader.Close();
         }
 
         /// <summary>
@@ -22,13 +51,13 @@ namespace WorkTrack
             try
             {
                 dataBase.OpenConnection();
-                var fullNameAccountingsOfWorkingHours = textBoxEmployeeIDAccountingsOfWorkingHours.Text;
+                var fullNameAccountingsOfWorkingHours = comboBoxEmployeeIDAccountingsOfWorkingHours.Text;
                 string queryEmployeeAccountingsOfWorkingHours = $"SELECT EmployeeID FROM Employees WHERE FullName = '{fullNameAccountingsOfWorkingHours}'";
                 SqlCommand commandEmployeeAccountingsOfWorkingHours = new(queryEmployeeAccountingsOfWorkingHours, dataBase.GetConnection());
                 dataBase.OpenConnection();
                 object resultEmployeeAccountingsOfWorkingHours = commandEmployeeAccountingsOfWorkingHours.ExecuteScalar();
                 var employeeID = resultEmployeeAccountingsOfWorkingHours.ToString();
-                var projectNameAccountingsOfWorkingHours = textBoxProjectIDAccountingsOfWorkingHours.Text;
+                var projectNameAccountingsOfWorkingHours = comboBoxProjectIDAccountingsOfWorkingHours.Text;
                 string queryProjectAccountingsOfWorkingHours = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameAccountingsOfWorkingHours}'";
                 SqlCommand commandProjectAccountingsOfWorkingHours = new(queryProjectAccountingsOfWorkingHours, dataBase.GetConnection());
                 dataBase.OpenConnection();

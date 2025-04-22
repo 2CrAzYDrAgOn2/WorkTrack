@@ -31,12 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormVacationPay));
             label1 = new Label();
             buttonSave = new Button();
-            textBoxEmployeeIDVacationPay = new TextBox();
             dateTimePickerVacationStartDate = new DateTimePicker();
             dateTimePickerVacationEndDate = new DateTimePicker();
             labelVacationEndDate = new Label();
             labelVacationStartDate = new Label();
             panel1 = new Panel();
+            labelMonthID = new Label();
+            comboBoxEmployeeIDVacationPay = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,20 +69,6 @@
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
             buttonSave.Click += ButtonSave_Click;
-            // 
-            // textBoxEmployeeIDVacationPay
-            // 
-            textBoxEmployeeIDVacationPay.BackColor = SystemColors.Window;
-            textBoxEmployeeIDVacationPay.BorderStyle = BorderStyle.FixedSingle;
-            textBoxEmployeeIDVacationPay.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxEmployeeIDVacationPay.ForeColor = Color.Black;
-            textBoxEmployeeIDVacationPay.Location = new Point(39, 26);
-            textBoxEmployeeIDVacationPay.Margin = new Padding(4, 3, 4, 3);
-            textBoxEmployeeIDVacationPay.Name = "textBoxEmployeeIDVacationPay";
-            textBoxEmployeeIDVacationPay.PlaceholderText = "Номер сотрудника";
-            textBoxEmployeeIDVacationPay.Size = new Size(170, 33);
-            textBoxEmployeeIDVacationPay.TabIndex = 0;
-            textBoxEmployeeIDVacationPay.TextAlign = HorizontalAlignment.Center;
             // 
             // dateTimePickerVacationStartDate
             // 
@@ -129,16 +116,40 @@
             // 
             panel1.BackColor = Color.FromArgb(81, 95, 106);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(labelMonthID);
+            panel1.Controls.Add(comboBoxEmployeeIDVacationPay);
             panel1.Controls.Add(dateTimePickerVacationEndDate);
             panel1.Controls.Add(buttonSave);
             panel1.Controls.Add(dateTimePickerVacationStartDate);
-            panel1.Controls.Add(textBoxEmployeeIDVacationPay);
             panel1.Controls.Add(labelVacationStartDate);
             panel1.Controls.Add(labelVacationEndDate);
             panel1.Location = new Point(56, 108);
             panel1.Name = "panel1";
             panel1.Size = new Size(538, 298);
             panel1.TabIndex = 11;
+            // 
+            // labelMonthID
+            // 
+            labelMonthID.AutoSize = true;
+            labelMonthID.BackColor = Color.Transparent;
+            labelMonthID.Font = new Font("Segoe UI", 15F);
+            labelMonthID.ForeColor = Color.White;
+            labelMonthID.Location = new Point(182, 0);
+            labelMonthID.Margin = new Padding(4, 0, 4, 0);
+            labelMonthID.Name = "labelMonthID";
+            labelMonthID.Size = new Size(172, 28);
+            labelMonthID.TabIndex = 12;
+            labelMonthID.Text = "ФИО сотрудника:";
+            // 
+            // comboBoxEmployeeIDVacationPay
+            // 
+            comboBoxEmployeeIDVacationPay.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxEmployeeIDVacationPay.Font = new Font("Segoe UI", 14.25F);
+            comboBoxEmployeeIDVacationPay.FormattingEnabled = true;
+            comboBoxEmployeeIDVacationPay.Location = new Point(40, 31);
+            comboBoxEmployeeIDVacationPay.Name = "comboBoxEmployeeIDVacationPay";
+            comboBoxEmployeeIDVacationPay.Size = new Size(455, 33);
+            comboBoxEmployeeIDVacationPay.TabIndex = 0;
             // 
             // AddFormVacationPay
             // 
@@ -165,11 +176,12 @@
         #endregion
         private Label label1;
         private Button buttonSave;
-        private TextBox textBoxEmployeeIDVacationPay;
         private DateTimePicker dateTimePickerVacationStartDate;
         private DateTimePicker dateTimePickerVacationEndDate;
         private Label labelVacationEndDate;
         private Label labelVacationStartDate;
         private Panel panel1;
+        private Label labelMonthID;
+        private ComboBox comboBoxEmployeeIDVacationPay;
     }
 }

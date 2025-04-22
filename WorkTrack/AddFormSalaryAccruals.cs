@@ -10,6 +10,25 @@ namespace WorkTrack
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dataBase.OpenConnection();
+            comboBoxMonthID.Items.Clear();
+            var monthsQuery = "SELECT MonthName FROM Months ORDER BY MonthName";
+            var monthsCommand = new SqlCommand(monthsQuery, dataBase.GetConnection());
+            var monthsReader = monthsCommand.ExecuteReader();
+            while (monthsReader.Read())
+            {
+                comboBoxMonthID.Items.Add(monthsReader.GetString(0));
+            }
+            monthsReader.Close();
+            comboBoxProjectIDSalaryAccruals.Items.Clear();
+            var projectsQuery = "SELECT ProjectName FROM Projects ORDER BY ProjectName";
+            var projectsCommand = new SqlCommand(projectsQuery, dataBase.GetConnection());
+            var projectsReader = projectsCommand.ExecuteReader();
+            while (projectsReader.Read())
+            {
+                comboBoxProjectIDSalaryAccruals.Items.Add(projectsReader.GetString(0));
+            }
+            projectsReader.Close();
         }
 
         /// <summary>
@@ -29,7 +48,7 @@ namespace WorkTrack
                 dataBase.OpenConnection();
                 object resultMonth = commandMonth.ExecuteScalar();
                 var monthID = resultMonth.ToString();
-                string projectNameSalaryAccruals = textBoxProjectIDSalaryAccruals.Text;
+                string projectNameSalaryAccruals = comboBoxProjectIDSalaryAccruals.Text;
                 string queryProject = $"SELECT ProjectID FROM Projects WHERE ProjectName = '{projectNameSalaryAccruals}'";
                 SqlCommand commandProject = new(queryProject, dataBase.GetConnection());
                 dataBase.OpenConnection();

@@ -199,27 +199,27 @@ namespace WorkTrack
                         break;
 
                     case "dataGridViewEmployees":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.IsDBNull(2) ? "" : iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetString(3), iDataRecord.GetString(4), iDataRecord.GetString(5), iDataRecord.GetString(6), iDataRecord.IsDBNull(7) ? "" : iDataRecord.GetString(7), iDataRecord.IsDBNull(8) ? "" : iDataRecord.GetString(8), iDataRecord.IsDBNull(9) ? "" : iDataRecord.GetDateTime(9).ToString("yyyy-MM-dd"), iDataRecord.GetInt32(10), iDataRecord.GetInt32(11), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.IsDBNull(2) ? "" : iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetString(3), iDataRecord.GetString(4), iDataRecord.GetString(5), iDataRecord.GetString(6), iDataRecord.IsDBNull(7) ? "" : iDataRecord.GetString(7), iDataRecord.IsDBNull(8) ? "" : iDataRecord.GetString(8), iDataRecord.IsDBNull(9) ? "" : iDataRecord.GetDateTime(9).ToString("yyyy-MM-dd"), iDataRecord.GetString(10), iDataRecord.GetString(11), RowState.Modified);
                         break;
 
                     case "dataGridViewSalaryAccruals":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetInt32(2), iDataRecord.GetInt32(3), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetString(2), iDataRecord.GetString(3), RowState.Modified);
                         break;
 
                     case "dataGridViewSalary":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetInt32(2), iDataRecord.GetInt32(3), iDataRecord.GetInt32(4), iDataRecord.GetDouble(5), iDataRecord.GetDouble(6), iDataRecord.GetDouble(7), iDataRecord.GetDouble(8), iDataRecord.GetDouble(9), iDataRecord.GetDouble(10), iDataRecord.GetDouble(11), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetString(2), iDataRecord.GetInt32(3), iDataRecord.GetInt32(4), iDataRecord.GetDouble(5), iDataRecord.GetDouble(6), iDataRecord.GetDouble(7), iDataRecord.GetDouble(8), iDataRecord.GetDouble(9), iDataRecord.GetDouble(10), iDataRecord.GetDouble(11), RowState.Modified);
                         break;
 
                     case "dataGridViewAccountingsOfWorkingHours":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetInt32(2), iDataRecord.GetInt32(3), iDataRecord.GetInt32(4), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetString(2), iDataRecord.GetString(3), iDataRecord.GetInt32(4), RowState.Modified);
                         break;
 
                     case "dataGridViewVacationPay":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.GetDouble(4), iDataRecord.GetDouble(5), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.GetDouble(4), iDataRecord.GetDouble(5), RowState.Modified);
                         break;
 
                     case "dataGridViewSickPay":
-                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetInt32(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.GetInt32(4), iDataRecord.GetDouble(5), iDataRecord.GetDouble(6), RowState.Modified);
+                        dataGridView.Rows.Add(iDataRecord.GetInt32(0), iDataRecord.GetString(1), iDataRecord.GetDateTime(2).ToString("yyyy-MM-dd"), iDataRecord.GetDateTime(3).ToString("yyyy-MM-dd"), iDataRecord.GetInt32(4), iDataRecord.GetDouble(5), iDataRecord.GetDouble(6), RowState.Modified);
                         break;
                 }
             }
@@ -239,7 +239,64 @@ namespace WorkTrack
             try
             {
                 dataGridView.Rows.Clear();
-                string queryString = $"select * from {tableName}";
+                string queryString = "";
+                switch (tableName)
+                {
+                    case "Projects":
+                        queryString = "SELECT * FROM Projects";
+                        break;
+
+                    case "Employees":
+                        queryString = @"SELECT e.EmployeeID, e.FullName, e.BirthDate, e.BirthPlace,
+                      e.PassportSeries, e.PassportNumber, e.Phone, e.Email, e.INN,
+                      e.DateOfEmployment, p.Post AS PostName, g.Gender AS GenderName
+                      FROM Employees e
+                      LEFT JOIN Posts p ON e.PostID = p.PostID
+                      LEFT JOIN Genders g ON e.GenderID = g.GenderID";
+                        break;
+
+                    case "SalaryAccruals":
+                        queryString = @"SELECT sa.SalaryAccrualID, sa.Year, m.MonthName, p.ProjectName
+                      FROM SalaryAccruals sa
+                      LEFT JOIN Months m ON sa.MonthID = m.MonthID
+                      LEFT JOIN Projects p ON sa.ProjectID = p.ProjectID";
+                        break;
+
+                    case "Salary":
+                        queryString = @"SELECT s.SalaryID, s.SalaryAccrualID,
+                          e.FullName AS EmployeeName,
+                          s.AllDays, s.AllHours, s.PieceworkCharges,
+                          s.HourlyCharges, s.VacationPay, s.SickPay,
+                          s.PersonalIncomeTax, s.Contributions, s.Total
+                   FROM Salary s
+                   LEFT JOIN Employees e ON s.EmployeeID = e.EmployeeID";
+                        break;
+
+                    case "AccountingsOfWorkingHours":
+                        queryString = @"SELECT a.AccountingOfWorkingHoursID, e.FullName AS EmployeeName,
+                      p.ProjectName, tor.TypeOfRemuneration, a.HoursOfWork
+                      FROM AccountingsOfWorkingHours a
+                      LEFT JOIN Employees e ON a.EmployeeID = e.EmployeeID
+                      LEFT JOIN Projects p ON a.ProjectID = p.ProjectID
+                      LEFT JOIN TypesOfRemuneration tor ON a.TypeOfRemunerationID = tor.TypeOfRemunerationID";
+                        break;
+
+                    case "VacationPay":
+                        queryString = @"SELECT v.VacationPayID, e.FullName AS EmployeeName,
+                      v.VacationStartDate, v.VacationEndDate,
+                      v.AverageDailyEarnings, v.Total
+                      FROM VacationPay v
+                      LEFT JOIN Employees e ON v.EmployeeID = e.EmployeeID";
+                        break;
+
+                    case "SickPay":
+                        queryString = @"SELECT s.SickPayID, e.FullName AS EmployeeName,
+                      s.SickStartDate, s.SickEndDate, s.Experience,
+                      s.AverageDailyEarnings, s.Total
+                      FROM SickPay s
+                      LEFT JOIN Employees e ON s.EmployeeID = e.EmployeeID";
+                        break;
+                }
                 SqlCommand sqlCommand = new(queryString, dataBase.GetConnection());
                 dataBase.OpenConnection();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -1376,6 +1433,24 @@ namespace WorkTrack
             try
             {
                 dataBase.OpenConnection();
+                comboBoxPostID.Items.Clear();
+                var postsQuery = "SELECT Post FROM Posts ORDER BY Post";
+                var postsCommand = new SqlCommand(postsQuery, dataBase.GetConnection());
+                var postsReader = postsCommand.ExecuteReader();
+                while (postsReader.Read())
+                {
+                    comboBoxPostID.Items.Add(postsReader.GetString(0));
+                }
+                postsReader.Close();
+                comboBoxGenderID.Items.Clear();
+                var gendersQuery = "SELECT Gender FROM Genders ORDER BY Gender";
+                var gendersCommand = new SqlCommand(gendersQuery, dataBase.GetConnection());
+                var gendersReader = gendersCommand.ExecuteReader();
+                while (gendersReader.Read())
+                {
+                    comboBoxGenderID.Items.Add(gendersReader.GetString(0));
+                }
+                gendersReader.Close();
                 comboBoxMonthID.Items.Clear();
                 var monthsQuery = "SELECT MonthName FROM Months ORDER BY MonthName";
                 var monthsCommand = new SqlCommand(monthsQuery, dataBase.GetConnection());

@@ -399,6 +399,7 @@ namespace WorkTrack
                         textBoxProjectName.Text = dataGridViewRow.Cells[1].Value.ToString();
                         textBoxHourly.Text = dataGridViewRow.Cells[2].Value.ToString();
                         textBoxPieceWork.Text = dataGridViewRow.Cells[3].Value.ToString();
+                        panelRecordProjects.Visible = true;
                         break;
 
                     case "dataGridViewEmployees":
@@ -414,6 +415,7 @@ namespace WorkTrack
                         dateTimePickerDateOfEmployment.Text = dataGridViewRow.Cells[9].Value.ToString();
                         comboBoxPostID.Text = dataGridViewRow.Cells[10].Value.ToString();
                         comboBoxGenderID.Text = dataGridViewRow.Cells[11].Value.ToString();
+                        panelRecordEmployees.Visible = true;
                         break;
 
                     case "dataGridViewSalaryAccruals":
@@ -421,6 +423,7 @@ namespace WorkTrack
                         textBoxYear.Text = dataGridViewRow.Cells[1].Value.ToString();
                         comboBoxMonthID.Text = dataGridViewRow.Cells[2].Value.ToString();
                         comboBoxProjectIDSalaryAccruals.Text = dataGridViewRow.Cells[3].Value.ToString();
+                        panelRecordSalaryAccruals.Visible = true;
                         break;
 
                     case "dataGridViewSalary":
@@ -436,6 +439,7 @@ namespace WorkTrack
                         textBoxPersonalIncomeTax.Text = dataGridViewRow.Cells[9].Value.ToString();
                         textBoxContributions.Text = dataGridViewRow.Cells[10].Value.ToString();
                         textBoxTotal.Text = dataGridViewRow.Cells[11].Value.ToString();
+                        panelRecordSalary.Visible = true;
                         break;
 
                     case "dataGridViewAccountingsOfWorkingHours":
@@ -444,6 +448,7 @@ namespace WorkTrack
                         comboBoxProjectIDAccountingsOfWorkingHours.Text = dataGridViewRow.Cells[2].Value.ToString();
                         comboBoxTypeOfRemunerationID.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxHoursOfWork.Text = dataGridViewRow.Cells[4].Value.ToString();
+                        panelRecordAccountingsOfWorkingHours.Visible = true;
                         break;
 
                     case "dataGridViewVacationPay":
@@ -453,6 +458,7 @@ namespace WorkTrack
                         dateTimePickerVacationEndDate.Text = dataGridViewRow.Cells[3].Value.ToString();
                         textBoxAverageDailyEarnings.Text = dataGridViewRow.Cells[4].Value.ToString();
                         textBoxTotalVacationPay.Text = dataGridViewRow.Cells[5].Value.ToString();
+                        panelRecordVacationPay.Visible = true;
                         break;
 
                     case "dataGridViewSickPay":
@@ -463,6 +469,7 @@ namespace WorkTrack
                         textBoxExperience.Text = dataGridViewRow.Cells[4].Value.ToString();
                         textBoxAverageDailyEarningsSickPay.Text = dataGridViewRow.Cells[5].Value.ToString();
                         textBoxTotalSickPay.Text = dataGridViewRow.Cells[6].Value.ToString();
+                        panelRecordSickPay.Visible = true;
                         break;
                 }
             }
@@ -582,6 +589,15 @@ namespace WorkTrack
         {
             try
             {
+                DialogResult result = MessageBox.Show(
+            "Вы уверены, что хотите удалить эту запись?",
+            "Подтверждение удаления",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Question);
+                if (result != DialogResult.Yes)
+                {
+                    return;
+                }
                 int index = dataGridView.CurrentCell.RowIndex;
                 dataGridView.Rows[index].Visible = false;
                 switch (dataGridView.Name)

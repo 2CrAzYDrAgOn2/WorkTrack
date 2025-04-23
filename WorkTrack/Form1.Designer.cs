@@ -528,6 +528,7 @@
             panelRecordSickPay.Name = "panelRecordSickPay";
             panelRecordSickPay.Size = new Size(694, 381);
             panelRecordSickPay.TabIndex = 1;
+            panelRecordSickPay.Visible = false;
             // 
             // labelRecordSickPay
             // 
@@ -936,6 +937,7 @@
             panelRecordVacationPay.Name = "panelRecordVacationPay";
             panelRecordVacationPay.Size = new Size(704, 340);
             panelRecordVacationPay.TabIndex = 1;
+            panelRecordVacationPay.Visible = false;
             // 
             // labelRecordVacationPay
             // 
@@ -1334,6 +1336,7 @@
             panelRecordAccountingsOfWorkingHours.Name = "panelRecordAccountingsOfWorkingHours";
             panelRecordAccountingsOfWorkingHours.Size = new Size(611, 306);
             panelRecordAccountingsOfWorkingHours.TabIndex = 1;
+            panelRecordAccountingsOfWorkingHours.Visible = false;
             // 
             // labelRecordAccountingsOfWorkingHours
             // 
@@ -1725,6 +1728,7 @@
             panelRecordSalary.Name = "panelRecordSalary";
             panelRecordSalary.Size = new Size(650, 476);
             panelRecordSalary.TabIndex = 1;
+            panelRecordSalary.Visible = false;
             // 
             // labelSalaryID
             // 
@@ -2231,6 +2235,7 @@
             panelRecordSalaryAccruals.Name = "panelRecordSalaryAccruals";
             panelRecordSalaryAccruals.Size = new Size(611, 258);
             panelRecordSalaryAccruals.TabIndex = 1;
+            panelRecordSalaryAccruals.Visible = false;
             // 
             // labelRecordSalaryAccruals
             // 
@@ -2600,6 +2605,7 @@
             panelRecordEmployees.Name = "panelRecordEmployees";
             panelRecordEmployees.Size = new Size(611, 473);
             panelRecordEmployees.TabIndex = 1;
+            panelRecordEmployees.Visible = false;
             // 
             // labelEmployeeID
             // 
@@ -2916,6 +2922,7 @@
             panelRecordProjects.Name = "panelRecordProjects";
             panelRecordProjects.Size = new Size(654, 286);
             panelRecordProjects.TabIndex = 1;
+            panelRecordProjects.Visible = false;
             // 
             // labelRecordProjects
             // 
